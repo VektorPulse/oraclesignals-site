@@ -1,5 +1,5 @@
 {
- "updated": "Oct 31, 8:30 AM ET",
+ "updated": "Oct 31, 10:30 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -29,36 +29,44 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 27,
-   "lost": 9,
+   "won": 29,
+   "lost": 12,
    "push": 0,
-   "pnl": -17
+   "pnl": -260
   },
   {
    "label": "Tennis",
    "emoji": "🎾",
-   "won": 6,
+   "won": 7,
    "lost": 2,
    "push": 0,
-   "pnl": 68
+   "pnl": 114
   }
  ],
  "wins": [
   {
-   "when": "Oct 31, 8:30 AM ET",
+   "when": "Oct 31, 10:30 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Preston @ Stoke · at 77¢",
-   "pnl": 27.81
+   "title": "RB Leipzig or draw",
+   "detail": "RB Leipzig @ Schalke · at 78¢",
+   "pnl": 26.26
   },
   {
-   "when": "Oct 31, 8:30 AM ET",
+   "when": "Oct 31, 10:30 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Under 3.5 goals",
-   "detail": "Preston @ Stoke · at 72¢",
-   "pnl": 36.22
+   "title": "Under 4.5 goals",
+   "detail": "RB Leipzig @ Schalke · at 75¢",
+   "pnl": 31.04
+  },
+  {
+   "when": "Oct 31, 10:00 AM ET",
+   "emoji": "🎾",
+   "kind": "Tennis",
+   "title": "Alcaraz to win",
+   "detail": "Alcaraz vs Medvedev · at 67¢",
+   "pnl": 45.88
   },
   {
    "when": "Oct 31, 8:30 AM ET",
@@ -163,14 +171,6 @@
    "title": "Under 59.5 points",
    "detail": "Panthers @ Packers · at 83¢",
    "pnl": 19.07
-  },
-  {
-   "when": "Oct 29, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Under 62.5 points",
-   "detail": "Panthers @ Packers · at 88¢",
-   "pnl": 12.69
   }
  ]
 }
