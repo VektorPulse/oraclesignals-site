@@ -1,5 +1,5 @@
 {
- "updated": "Oct 31, 10:30 AM ET",
+ "updated": "Oct 31, 11:00 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -29,36 +29,44 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 29,
-   "lost": 12,
+   "won": 34,
+   "lost": 13,
    "push": 0,
-   "pnl": -260
+   "pnl": -120
   },
   {
    "label": "Tennis",
    "emoji": "🎾",
    "won": 7,
-   "lost": 2,
+   "lost": 4,
    "push": 0,
-   "pnl": 114
+   "pnl": -86
   }
  ],
  "wins": [
   {
-   "when": "Oct 31, 10:30 AM ET",
+   "when": "Oct 31, 11:00 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "RB Leipzig or draw",
-   "detail": "RB Leipzig @ Schalke · at 78¢",
-   "pnl": 26.26
+   "title": "Over 2.5 goals",
+   "detail": "Charlton @ Boro · at 70¢",
+   "pnl": 39.92
   },
   {
-   "when": "Oct 31, 10:30 AM ET",
+   "when": "Oct 31, 11:00 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Under 4.5 goals",
-   "detail": "RB Leipzig @ Schalke · at 75¢",
-   "pnl": 31.04
+   "detail": "Charlton @ Boro · at 74¢",
+   "pnl": 32.72
+  },
+  {
+   "when": "Oct 31, 11:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "RB Leipzig or draw + Boro to win",
+   "detail": "RBL@SCH + CHA@MID · at None¢",
+   "pnl": 76.27
   },
   {
    "when": "Oct 31, 10:00 AM ET",
@@ -67,14 +75,6 @@
    "title": "Alcaraz to win",
    "detail": "Alcaraz vs Medvedev · at 67¢",
    "pnl": 45.88
-  },
-  {
-   "when": "Oct 31, 8:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 1.5 goals",
-   "detail": "Preston @ Stoke · at 77¢",
-   "pnl": 27.81
   },
   {
    "when": "Oct 31, 8:15 AM ET",
