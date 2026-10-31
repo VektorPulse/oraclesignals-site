@@ -1,5 +1,5 @@
 {
- "updated": "Oct 31, 8:15 AM ET",
+ "updated": "Oct 31, 8:30 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -29,10 +29,10 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 23,
-   "lost": 8,
+   "won": 27,
+   "lost": 9,
    "push": 0,
-   "pnl": -31
+   "pnl": -17
   },
   {
    "label": "Tennis",
@@ -44,6 +44,30 @@
   }
  ],
  "wins": [
+  {
+   "when": "Oct 31, 8:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "No draw",
+   "detail": "Preston @ Stoke · at 77¢",
+   "pnl": 27.81
+  },
+  {
+   "when": "Oct 31, 8:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Under 3.5 goals",
+   "detail": "Preston @ Stoke · at 72¢",
+   "pnl": 36.22
+  },
+  {
+   "when": "Oct 31, 8:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 1.5 goals",
+   "detail": "Preston @ Stoke · at 77¢",
+   "pnl": 27.81
+  },
   {
    "when": "Oct 31, 8:15 AM ET",
    "emoji": "₿",
@@ -123,30 +147,6 @@
    "title": "BTC UP in 15 minutes",
    "detail": "called at 86¢",
    "pnl": 15.07
-  },
-  {
-   "when": "Oct 30, 4:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Wrexham @ Sheffield Utd · at 72¢",
-   "pnl": 36.22
-  },
-  {
-   "when": "Oct 30, 4:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Under 3.5 goals",
-   "detail": "Wrexham @ Sheffield Utd · at 73¢",
-   "pnl": 34.45
-  },
-  {
-   "when": "Oct 30, 4:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Sheffield Utd or draw",
-   "detail": "Wrexham @ Sheffield Utd · at 70¢",
-   "pnl": 39.92
   },
   {
    "when": "Oct 30, 10:00 AM ET",
