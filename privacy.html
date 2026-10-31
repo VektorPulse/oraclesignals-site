@@ -7,6 +7,12 @@
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="assets/favicon-32.png">
 <link rel="stylesheet" href="style.css">
+<!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel) -->
+<script>
+!function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");
+whop.setScope("biz_SU1IiiyXN9Ee8N");
+whop.track("page");
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -26,15 +32,17 @@
       <li><b>Telegram bot (bot plans):</b> your Telegram chat ID and name, your settings, and the trades the bot
         places for you. If you connect Kalshi, your API key is stored encrypted and is used only to place and manage
         orders on your account.</li>
-      <li><b>This website</b> uses no cookies, analytics or trackers.</li>
+      <li><b>This website</b> uses Whop's analytics script to count page views and to link visits to purchases on
+        Whop, so we can see which pages and ads bring members. It may store an identifier in your browser. We don't
+        use any other analytics or advertising trackers.</li>
     </ul>
 
     <h2>How we use it</h2>
     <p>Only to run the service: to give you access, deliver calls and picks, run the bot for you, and answer support
-      requests. We don't sell or rent your data, and we don't use it for advertising.</p>
+      requests, and to measure how visitors find us. We don't sell or rent your data.</p>
 
     <h2>Who else sees it</h2>
-    <p>The services we run on: Whop (payments), Discord, Telegram, Kalshi (only for your own orders, when you connect
+    <p>The services we run on: Whop (payments and website analytics), Discord, Telegram, Kalshi (only for your own orders, when you connect
       it) and our hosting provider. Each has its own privacy policy.</p>
 
     <h2>Keeping and deleting</h2>
