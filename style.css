@@ -84,6 +84,32 @@ section p.sub { color: var(--muted); margin: 0 0 28px; max-width: 46em; }
 .plan li { margin: 4px 0; }
 .plan .btn { text-align: center; }
 
+/* the record and the carousel of recent wins */
+.stats { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-bottom: 30px; }
+.stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 18px; }
+.stat-label { color: var(--muted); font-weight: 700; font-size: .9rem; }
+.stat-rec { font-size: 1.9rem; font-weight: 900; margin-top: 4px; }
+.stat-pct { color: #cbd5e1; font-size: .92rem; }
+.stat-pnl { font-weight: 800; margin-top: 6px; font-size: .95rem; }
+.stat-pnl.up { color: var(--green); }
+.stat-pnl.down { color: var(--red); }
+.carousel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.carousel-head h3 { margin: 0; font-size: 1.2rem; }
+.arrows button { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel);
+                 color: var(--text); font-size: 1.4rem; line-height: 1; cursor: pointer; margin-left: 6px; }
+.arrows button:hover { border-color: var(--gold); color: var(--gold); }
+.carousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px;
+            scrollbar-width: thin; }
+.win { flex: 0 0 260px; scroll-snap-align: start; border-radius: var(--radius); padding: 18px;
+       background: linear-gradient(180deg, rgba(34, 197, 94, .22), rgba(21, 128, 61, .12)), var(--panel);
+       border: 1px solid rgba(34, 197, 94, .45); }
+.win-top { color: var(--muted); font-weight: 700; font-size: .85rem; }
+.win-title { font-size: 1.15rem; font-weight: 900; margin: 8px 0 4px; }
+.win-detail { color: #cbd5e1; font-size: .92rem; min-height: 2.6em; }
+.win-pnl { color: #86efac; font-weight: 900; font-size: 1.25rem; margin-top: 10px; }
+.win-when { color: var(--muted); font-size: .82rem; margin-top: 4px; }
+.note { color: var(--muted); font-size: .88rem; margin: 14px 0 0; }
+
 /* steps and FAQ */
 .steps { counter-reset: s; display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); }
 .steps .card::before { counter-increment: s; content: counter(s); display: inline-grid; place-items: center;
