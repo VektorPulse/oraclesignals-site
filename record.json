@@ -1,5 +1,5 @@
 {
- "updated": "Oct 31, 12:00 PM ET",
+ "updated": "Oct 31, 2:00 PM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -21,18 +21,18 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 30,
+   "won": 35,
    "lost": 5,
    "push": 0,
-   "pnl": 508
+   "pnl": 677
   },
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 34,
-   "lost": 13,
+   "won": 38,
+   "lost": 14,
    "push": 0,
-   "pnl": -120
+   "pnl": -83
   },
   {
    "label": "Tennis",
@@ -45,52 +45,52 @@
  ],
  "wins": [
   {
-   "when": "Oct 31, 12:00 PM ET",
+   "when": "Oct 31, 2:00 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "Under 49.5 points",
-   "detail": "Wisconsin @ Iowa · at 83¢",
-   "pnl": 19.07
-  },
-  {
-   "when": "Oct 31, 12:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Under 46.5 points",
-   "detail": "Wisconsin @ Iowa · at 77¢",
-   "pnl": 27.81
-  },
-  {
-   "when": "Oct 31, 12:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Iowa +13.5 + Texas Tech +10.5",
-   "detail": "WIS@IOWA + ARIZ@TTU · at None¢",
-   "pnl": 43.84
-  },
-  {
-   "when": "Oct 31, 11:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 2.5 goals",
-   "detail": "Charlton @ Boro · at 70¢",
+   "title": "Colorado +4.5",
+   "detail": "Kansas State @ Colorado · at 70¢",
    "pnl": 39.92
   },
   {
-   "when": "Oct 31, 11:00 AM ET",
+   "when": "Oct 31, 2:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Under 60.5 points",
+   "detail": "Kansas State @ Colorado · at 81¢",
+   "pnl": 21.84
+  },
+  {
+   "when": "Oct 31, 2:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 30.5 points",
+   "detail": "Kansas State @ Colorado · at 87¢",
+   "pnl": 13.91
+  },
+  {
+   "when": "Oct 31, 2:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Philadelphia +1.5",
+   "detail": "Philadelphia @ Cincinnati · at 81¢",
+   "pnl": 21.84
+  },
+  {
+   "when": "Oct 31, 2:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Under 4.5 goals",
-   "detail": "Charlton @ Boro · at 74¢",
-   "pnl": 32.72
+   "detail": "Philadelphia @ Cincinnati · at 73¢",
+   "pnl": 34.45
   },
   {
-   "when": "Oct 31, 11:00 AM ET",
+   "when": "Oct 31, 2:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "RB Leipzig or draw + Boro to win",
-   "detail": "RBL@SCH + CHA@MID · at None¢",
-   "pnl": 76.27
+   "title": "Cincinnati or draw",
+   "detail": "Philadelphia @ Cincinnati · at 64¢",
+   "pnl": 52.41
   },
   {
    "when": "Oct 31, 10:00 AM ET",
