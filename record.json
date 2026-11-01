@@ -1,12 +1,12 @@
 {
- "updated": "Nov 1, 1:00 AM ET",
+ "updated": "Nov 1, 2:15 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 340,
+  "won": 343,
   "lost": 33,
-  "pnl": 422,
+  "pnl": 461,
   "since": "Oct 8, 2026"
  },
  "sports": [
@@ -45,6 +45,30 @@
  ],
  "wins": [
   {
+   "when": "Nov 1, 2:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "pnl": 15.07
+  },
+  {
+   "when": "Nov 1, 2:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢",
+   "pnl": 10.25
+  },
+  {
+   "when": "Nov 1, 1:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 87¢",
+   "pnl": 13.9
+  },
+  {
    "when": "Nov 1, 1:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -69,22 +93,6 @@
    "pnl": 8.58
   },
   {
-   "when": "Oct 31, 10:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 95¢",
-   "pnl": 5.26
-  },
-  {
-   "when": "Oct 31, 9:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 87¢",
-   "pnl": 13.9
-  },
-  {
    "when": "Oct 31, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
@@ -107,14 +115,6 @@
    "title": "Mississippi State +35.5",
    "detail": "Mississippi State @ Texas · at 86¢",
    "pnl": 15.15
-  },
-  {
-   "when": "Oct 31, 7:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢",
-   "pnl": 10.01
   },
   {
    "when": "Oct 31, 2:00 PM ET",
