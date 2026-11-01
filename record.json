@@ -1,12 +1,12 @@
 {
- "updated": "Oct 31, 11:00 PM ET",
+ "updated": "Nov 1, 1:15 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 338,
+  "won": 339,
   "lost": 33,
-  "pnl": 398,
+  "pnl": 413,
   "since": "Oct 8, 2026"
  },
  "sports": [
@@ -44,6 +44,14 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 1, 1:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 86¢",
+   "pnl": 15.07
+  },
   {
    "when": "Oct 31, 11:00 PM ET",
    "emoji": "₿",
@@ -139,14 +147,6 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 85¢",
    "pnl": 16.41
-  },
-  {
-   "when": "Oct 31, 7:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 88¢",
-   "pnl": 12.61
   },
   {
    "when": "Oct 31, 12:30 AM ET",
