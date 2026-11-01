@@ -1,12 +1,12 @@
 {
- "updated": "Nov 1, 1:15 AM ET",
+ "updated": "Nov 1, 1:00 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 339,
+  "won": 340,
   "lost": 33,
-  "pnl": 413,
+  "pnl": 422,
   "since": "Oct 8, 2026"
  },
  "sports": [
@@ -44,6 +44,14 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 1, 1:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 91¢",
+   "pnl": 9.29
+  },
   {
    "when": "Nov 1, 1:15 AM ET",
    "emoji": "₿",
@@ -139,14 +147,6 @@
    "title": "Alcaraz to win",
    "detail": "Alcaraz vs Medvedev · at 67¢",
    "pnl": 45.88
-  },
-  {
-   "when": "Oct 31, 8:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 85¢",
-   "pnl": 16.41
   },
   {
    "when": "Oct 31, 12:30 AM ET",
