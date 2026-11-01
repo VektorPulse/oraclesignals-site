@@ -29,18 +29,18 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 38,
-   "lost": 14,
+   "won": 40,
+   "lost": 17,
    "push": 0,
-   "pnl": -83
+   "pnl": -323
   },
   {
    "label": "Tennis",
    "emoji": "🎾",
-   "won": 8,
+   "won": 9,
    "lost": 4,
    "push": 0,
-   "pnl": -68
+   "pnl": -48
   }
  ],
  "wins": [
@@ -51,6 +51,30 @@
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢",
    "pnl": 9.65
+  },
+  {
+   "when": "Nov 1, 8:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "No draw",
+   "detail": "Sevilla @ Getafe · at 68¢",
+   "pnl": 43.84
+  },
+  {
+   "when": "Nov 1, 8:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Getafe +1.5",
+   "detail": "Sevilla @ Getafe · at 85¢",
+   "pnl": 16.42
+  },
+  {
+   "when": "Nov 1, 8:00 AM ET",
+   "emoji": "🎾",
+   "kind": "Tennis",
+   "title": "Alcaraz to win",
+   "detail": "Alcaraz vs de Minaur · at 82¢",
+   "pnl": 20.43
   },
   {
    "when": "Nov 1, 7:30 AM ET",
@@ -128,22 +152,6 @@
    "when": "Oct 31, 2:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Philadelphia +1.5",
-   "detail": "Philadelphia @ Cincinnati · at 81¢",
-   "pnl": 21.84
-  },
-  {
-   "when": "Oct 31, 2:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Under 4.5 goals",
-   "detail": "Philadelphia @ Cincinnati · at 73¢",
-   "pnl": 34.45
-  },
-  {
-   "when": "Oct 31, 2:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
    "title": "Cincinnati or draw",
    "detail": "Philadelphia @ Cincinnati · at 64¢",
    "pnl": 52.41
@@ -155,14 +163,6 @@
    "title": "Alcaraz to win",
    "detail": "Alcaraz vs Medvedev · at 67¢",
    "pnl": 45.88
-  },
-  {
-   "when": "Oct 31, 12:30 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Shnaider to win",
-   "detail": "Pohánková vs Shnaider · at 71¢",
-   "pnl": 38.04
   },
   {
    "when": "Oct 29, 8:15 PM ET",
