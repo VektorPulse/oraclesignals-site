@@ -29,10 +29,10 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 45,
-   "lost": 17,
+   "won": 49,
+   "lost": 18,
    "push": 0,
-   "pnl": -190
+   "pnl": -183
   },
   {
    "label": "Tennis",
@@ -53,28 +53,28 @@
    "pnl": 12.61
   },
   {
-   "when": "Nov 1, 9:00 AM ET",
+   "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Cagliari +2.5",
-   "detail": "Cagliari @ Lazio · at 79¢",
-   "pnl": 24.75
+   "title": "Genoa or draw",
+   "detail": "Genoa @ Lecce · at 73¢",
+   "pnl": 34.45
   },
   {
-   "when": "Nov 1, 9:00 AM ET",
+   "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Under 3.5 goals",
-   "detail": "Cagliari @ Lazio · at 69¢",
+   "title": "No draw",
+   "detail": "Genoa @ Lecce · at 69¢",
    "pnl": 41.85
   },
   {
-   "when": "Nov 1, 9:00 AM ET",
+   "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 1.5 goals",
-   "detail": "Cagliari @ Lazio · at 78¢",
-   "pnl": 26.26
+   "title": "Genoa +1.5",
+   "detail": "Genoa @ Lecce · at 91¢",
+   "pnl": 9.2
   },
   {
    "when": "Nov 1, 8:15 AM ET",
