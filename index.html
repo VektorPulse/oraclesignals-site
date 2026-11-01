@@ -60,7 +60,7 @@ whop.track("page");
 
   <section id="results" hidden>
     <h2>The record</h2>
-    <p class="sub">Every call and pick since launch, wins and losses, at $100 each after fees.
+    <p class="sub">Every call and pick since launch, wins and losses. Calls and picks aren't trades we placed: see the <a href="risk.html">Risk Disclosure</a>.
       <span id="updated"></span></p>
     <div class="stats" id="stats"></div>
     <div class="carousel-head"><h3>Recent wins</h3>
@@ -132,7 +132,7 @@ whop.track("page");
     follow the rules where you live.</div>
 
   <footer>
-    <div class="links"><a href="terms.html">Terms</a><a href="refund.html">Refund policy</a>
+    <div class="links"><a href="terms.html">Terms</a><a href="risk.html">Risk</a><a href="refund.html">Refund policy</a>
       <a href="privacy.html">Privacy</a><a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></div>
     © 2026 Oracle Signals. Not affiliated with Kalshi.
   </footer>
@@ -148,16 +148,13 @@ whop.track("page");
   } catch (e) { return; }
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls;
     if (text !== undefined) n.textContent = text; return n; };
-  const money = v => (v >= 0 ? "+$" : "−$") + Math.abs(v).toLocaleString("en-US",
-    {minimumFractionDigits: Math.abs(v) < 100 && v % 1 ? 2 : 0, maximumFractionDigits: 2});
   const stats = document.getElementById("stats");
   for (const s of [d.btc, ...(d.coins || []), ...(d.sports || [])]) {
     if (!s || !(s.won + s.lost)) continue;
     const box = el("div", "stat");
     box.append(el("div", "stat-label", `${s.emoji} ${s.label}`),
                el("div", "stat-rec", `${s.won}–${s.lost}${s.push ? "–" + s.push : ""}`),
-               el("div", "stat-pct", `${Math.round(100 * s.won / (s.won + s.lost))}% won`),
-               el("div", "stat-pnl " + (s.pnl >= 0 ? "up" : "down"), `${money(s.pnl)} at $100 each`));
+               el("div", "stat-pct", `${Math.round(100 * s.won / (s.won + s.lost))}% won`));
     stats.append(box);
   }
   if (d.btc && d.btc.since) document.getElementById("updated").textContent = `BTC calls since ${d.btc.since}.`;
@@ -165,7 +162,7 @@ whop.track("page");
   for (const w of d.wins || []) {
     const c = el("article", "win");
     c.append(el("div", "win-top", `${w.emoji} ${w.kind}`), el("div", "win-title", w.title),
-             el("div", "win-detail", w.detail), el("div", "win-pnl", `✅ ${money(w.pnl)} on $100`),
+             el("div", "win-detail", w.detail), el("div", "win-pnl", "✅ Won"),
              el("div", "win-when", w.when));
     row.append(c);
   }

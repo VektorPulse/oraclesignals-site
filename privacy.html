@@ -20,41 +20,53 @@ whop.track("page");
     <a class="brand" href="./"><img src="assets/icon-180.png" alt=""><span><b>ORACLE</b> SIGNALS</span></a>
   </header>
   <main class="doc">
-    <h1>Privacy policy</h1>
-    <p class="date">Last updated: November 2, 2026</p>
-
-    <h2>What we collect</h2>
-    <ul>
-      <li><b>Payments:</b> handled entirely by Whop. We never see or store your card details. Whop tells us your
-        membership status and the Discord account you connected.</li>
-      <li><b>Discord:</b> your Discord user ID and name, and which roles you have, so the right channels open for
-        you.</li>
-      <li><b>Telegram bot (bot plans):</b> your Telegram chat ID and name, your settings, and the trades the bot
-        places for you. If you connect Kalshi, your API key is stored encrypted and is used only to place and manage
-        orders on your account.</li>
-      <li><b>This website</b> uses Whop's analytics script to count page views and to link visits to purchases on
-        Whop, so we can see which pages and ads bring members. To recognize a returning visitor it may store an
-        identifier in your browser or use a browser fingerprint (details of your browser and device). We don't use
-        any other analytics or advertising trackers.</li>
-    </ul>
-
-    <h2>How we use it</h2>
-    <p>Only to run the service: to give you access, deliver calls and picks, run the bot for you, and answer support
-      requests, and to measure how visitors find us. We don't sell or rent your data.</p>
-
-    <h2>Who else sees it</h2>
-    <p>The services we run on: Whop (payments and website analytics), Discord, Telegram, Kalshi (only for your own orders, when you connect
-      it) and our hosting provider. Each has its own privacy policy.</p>
-
-    <h2>Keeping and deleting</h2>
-    <p>You can disconnect the bot at any time, which deletes your Kalshi key. To have the rest of your data deleted,
-      email us and we'll do it within 30 days, except records we must keep by law.</p>
-
-    <h2>Contact</h2>
-    <p><a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="date"><b>Effective date:</b> November 2, 2026 · <b>Last updated:</b> November 2, 2026</p>
+    <h2>The short version</h2>
+    <ul><li>We collect only what we need to run your plan, the Discord and the Bot.</li><li><b>Your Kalshi API key is stored encrypted.</b> It's never logged or shared, and /disconnect deletes it.</li><li><b>We don't sell your data.</b> Payments are handled by Whop, and we never see your card details.</li><li>You can ask us to see or delete your data anytime: <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></li></ul>
+    <h2>1. What we collect, and why</h2>
+    <div class="table"><table>
+      <tr><th>What</th><th>From</th><th>Why</th></tr>
+      <tr><td>Discord user ID, username and roles, and the buttons you tap (such as 🎟 Get access)</td><td>Discord</td><td>To open the channels in your plan and run the server</td></tr>
+      <tr><td>Your plan, status (trial, active, cancelled), Whop username and linked Discord account</td><td>Whop</td><td>To match your payment to your access, and for referral links</td></tr>
+      <tr><td>Telegram chat ID, display name and the commands you send the Bot</td><td>Telegram</td><td>To run the Bot for you</td></tr>
+      <tr><td>Kalshi API key ID, private key and authenticator secret</td><td>You, in the Bot</td><td>To connect the Bot to your Kalshi account</td></tr>
+      <tr><td>Your Bot settings, balance, orders, trades and results</td><td>Kalshi, through your key</td><td>To trade for you and show your results</td></tr>
+      <tr><td>Emails you send us</td><td>You</td><td>To answer you</td></tr>
+      <tr><td>Website visits: pages, device, browser and IP address</td><td>oraclesignals.app, through our hosting providers and the Whop pixel</td><td>To run the site and measure sign-ups</td></tr>
+    </table></div>
+    <p>We don't collect your card numbers, government ID or Kalshi login password.</p>
+    <h2>2. How we use it</h2>
+    <ul><li>To provide the Service: access to your plan's channels, the Bot's trading and reports, and support.</li><li>To keep the Service safe and working: fixing bugs, stopping abuse and enforcing our terms.</li><li>To improve picks, calls and the Bot, using results across members. Shared results are anonymous and never name you.</li><li>To send Service messages in Discord or Telegram, such as trial reminders, plan changes or important updates.</li></ul>
+    <h2>3. How your Kalshi key is protected</h2>
+    <ul><li>The key and authenticator secret are encrypted (AES with HMAC) before they're stored. The encryption key lives only on our server.</li><li>They are decrypted only in memory, to sign requests to Kalshi. The key itself is never sent anywhere, and never written to logs.</li><li>The messages where you send the key are deleted from the chat right away.</li><li><b>/disconnect cancels the Bot's open orders and immediately deletes your key and your Bot history from our server.</b> Positions you hold stay in your Kalshi account. You can also revoke the key on Kalshi at any time.</li><li>The Service's operator can see your Bot's balance, trades and settings, to support you and keep the Bot working safely.</li></ul>
+    <h2>4. Who we share it with</h2>
+    <p>We share data only with the providers that run the Service, and only what each one needs:</p>
+    <ul><li><b>Whop:</b> payments, memberships and referrals.</li><li><b>Discord</b> and <b>Telegram:</b> where the community and the Bot run.</li><li><b>Kalshi:</b> your own key signs your orders. Kalshi sees your account activity under its own privacy policy.</li><li><b>DigitalOcean:</b> our server host, in New York, USA.</li><li><b>Cloudflare:</b> our website's domain and email forwarding. <b>GitHub Pages:</b> hosts the website.</li><li><b>AI providers (Anthropic):</b> help make picks from public game and market data. We don't send them your personal data.</li></ul>
+    <p>We may also share data if the law requires it, to protect our rights or members' safety, or as part of selling or reorganizing the business. <b>We don't sell your personal information or share it for advertising by others.</b></p>
+    <h2>5. Cookies</h2>
+    <p>The website uses:</p>
+    <ul><li><b>the Whop pixel</b>, which uses cookies to see which visits lead to sign-ups;</li><li><b>Cloudflare Web Analytics</b>, which counts page visits without cookies and without building a profile of you;</li><li>the basic cookies our providers need to run the site.</li></ul>
+    <p>You can block or delete cookies in your browser settings, and the site still works.</p>
+    <h2>6. How long we keep it</h2>
+    <ul><li><b>Kalshi key and Bot history:</b> until you /disconnect (which deletes both at once), or until 30 days after your access ends, if you don't come back.</li><li><b>Your plan and settings:</b> while you're a member, then up to 12 months for support and our accounting, unless you ask us to delete them sooner.</li><li><b>Server logs:</b> about 30 days.</li><li><b>Emails:</b> as long as needed to help you.</li></ul>
+    <p>The law may require us to keep some records, such as payment records, longer.</p>
+    <h2>7. Your choices</h2>
+    <ul><li><b>See or get a copy:</b> email <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a>.</li><li><b>Correct or delete:</b> email us. The Bot also has /disconnect for your key.</li><li><b>Stop:</b> cancel your plan on Whop, leave the Discord, and /disconnect the Bot.</li></ul>
+    <p>We'll answer within 30 days. We may need to confirm it's really you, for example from the same Discord or Telegram account.</p>
+    <h2>8. Age</h2>
+    <p>The Service is only for people aged 18 or older. We don't knowingly collect data from anyone under 18. If you believe someone under 18 has given us data, email us and we'll delete it.</p>
+    <h2>9. Members outside the US, including the EU and UK</h2>
+    <p>Our servers are in the United States. If you use the Service from another country, your data is processed in the US, where privacy laws may differ from yours.</p>
+    <p>If you're in the European Union or the UK, the GDPR gives you these rights:</p>
+    <ul><li><b>Why we may use your data:</b> to provide the Service you signed up for (the contract), to keep it safe and working (our legitimate interests), and for the Whop pixel cookies, your consent, which you can withdraw by blocking them.</li><li><b>Your rights:</b> to access, correct, delete, restrict or object to how we use your data, and to get a copy you can take elsewhere. Email <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a>.</li><li><b>Complaints:</b> you can complain to your local data protection authority.</li></ul>
+    <h2>10. Changes</h2>
+    <p>If we change this policy, we'll update the "Last updated" date and announce important changes in Discord.</p>
+    <h2>11. Contact</h2>
+    <p>Oracle Signals, operated by Addison Matthew Magyar · <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></p>
   </main>
   <footer>
-    <div class="links"><a href="./">Home</a><a href="terms.html">Terms</a><a href="refund.html">Refund policy</a></div>
+    <div class="links"><a href="./">Home</a><a href="terms.html">Terms</a><a href="risk.html">Risk</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund policy</a></div>
     © 2026 Oracle Signals. Not affiliated with Kalshi.
   </footer>
 </div>

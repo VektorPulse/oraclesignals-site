@@ -150,3 +150,11 @@ footer a { color: var(--muted); }
 /* until the plans open (Monday Nov 2): the plan buttons show the date instead of a link */
 .btn.soon { background: transparent; color: var(--gold); border: 1px dashed var(--gold-deep); cursor: default; text-align: center; }
 .btn.soon:hover { filter: none; color: var(--gold); }
+
+/* 📜 policy pages: tables and the quoted statements */
+.doc .table { overflow-x: auto; margin: 12px 0; }
+.doc table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+.doc th, .doc td { border: 1px solid rgba(255,255,255,.12); padding: 8px 10px; text-align: left; vertical-align: top; color: #cbd5e1; }
+.doc th { color: #e2e8f0; }
+.doc blockquote { border-left: 3px solid var(--gold); margin: 16px 0; padding: 10px 16px; color: #e2e8f0; background: rgba(255,255,255,.04); }
+.doc ul ul { margin-top: 6px; }
