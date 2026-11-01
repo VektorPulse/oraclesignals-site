@@ -1,5 +1,5 @@
 {
- "updated": "Nov 1, 8:15 AM ET",
+ "updated": "Nov 1, 9:00 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -29,10 +29,10 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 40,
+   "won": 45,
    "lost": 17,
    "push": 0,
-   "pnl": -323
+   "pnl": -190
   },
   {
    "label": "Tennis",
@@ -45,28 +45,36 @@
  ],
  "wins": [
   {
+   "when": "Nov 1, 9:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Cagliari +2.5",
+   "detail": "Cagliari @ Lazio · at 79¢",
+   "pnl": 24.75
+  },
+  {
+   "when": "Nov 1, 9:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Under 3.5 goals",
+   "detail": "Cagliari @ Lazio · at 69¢",
+   "pnl": 41.85
+  },
+  {
+   "when": "Nov 1, 9:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 1.5 goals",
+   "detail": "Cagliari @ Lazio · at 78¢",
+   "pnl": 26.26
+  },
+  {
    "when": "Nov 1, 8:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢",
    "pnl": 9.65
-  },
-  {
-   "when": "Nov 1, 8:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Sevilla @ Getafe · at 68¢",
-   "pnl": 43.84
-  },
-  {
-   "when": "Nov 1, 8:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Getafe +1.5",
-   "detail": "Sevilla @ Getafe · at 85¢",
-   "pnl": 16.42
   },
   {
    "when": "Nov 1, 8:00 AM ET",
@@ -147,14 +155,6 @@
    "title": "Mississippi State +35.5",
    "detail": "Mississippi State @ Texas · at 86¢",
    "pnl": 15.15
-  },
-  {
-   "when": "Oct 31, 2:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Cincinnati or draw",
-   "detail": "Philadelphia @ Cincinnati · at 64¢",
-   "pnl": 52.41
   },
   {
    "when": "Oct 31, 10:00 AM ET",
