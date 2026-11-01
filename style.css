@@ -158,3 +158,6 @@ footer a { color: var(--muted); }
 .doc th { color: #e2e8f0; }
 .doc blockquote { border-left: 3px solid var(--gold); margin: 16px 0; padding: 10px 16px; color: #e2e8f0; background: rgba(255,255,255,.04); }
 .doc ul ul { margin-top: 6px; }
+
+/* 🔮 plan names: the Mystic name, then what the plan is */
+.plan .tag { color: var(--muted); font-size: .9rem; margin: -4px 0 6px; letter-spacing: .02em; }
