@@ -37,10 +37,10 @@
   {
    "label": "Tennis",
    "emoji": "🎾",
-   "won": 7,
+   "won": 8,
    "lost": 4,
    "push": 0,
-   "pnl": -86
+   "pnl": -68
   }
  ],
  "wins": [
@@ -75,6 +75,14 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
    "pnl": 13.9
+  },
+  {
+   "when": "Nov 1, 5:00 AM ET",
+   "emoji": "🎾",
+   "kind": "Tennis",
+   "title": "Machac to win",
+   "detail": "Machac vs Baez · at 84¢",
+   "pnl": 17.73
   },
   {
    "when": "Nov 1, 3:45 AM ET",
@@ -155,14 +163,6 @@
    "title": "Shnaider to win",
    "detail": "Pohánková vs Shnaider · at 71¢",
    "pnl": 38.04
-  },
-  {
-   "when": "Oct 30, 10:00 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Alcaraz to win",
-   "detail": "Alcaraz vs Paul · at 77¢",
-   "pnl": 27.81
   },
   {
    "when": "Oct 29, 8:15 PM ET",
