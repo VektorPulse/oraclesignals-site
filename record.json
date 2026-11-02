@@ -1,9 +1,9 @@
 {
- "updated": "Nov 2, 5:00 PM ET",
+ "updated": "Nov 2, 6:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 360,
+  "won": 363,
   "lost": 36,
   "since": "Oct 8, 2026"
  },
@@ -26,8 +26,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 53,
-   "lost": 19,
+   "won": 56,
+   "lost": 21,
    "push": 0
   },
   {
@@ -39,6 +39,27 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 6:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 2, 6:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 2, 5:30 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
   {
    "when": "Nov 2, 5:00 PM ET",
    "emoji": "₿",
@@ -54,25 +75,25 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 2, 12:30 PM ET",
+   "when": "Nov 2, 2:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 1.5 goals",
-   "detail": "Fiorentina @ Sassuolo · at 83¢"
+   "title": "Under 4.5 goals",
+   "detail": "Parma @ Atalanta · at 80¢"
   },
   {
-   "when": "Nov 2, 12:30 PM ET",
+   "when": "Nov 2, 2:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Fiorentina @ Sassuolo · at 75¢"
+   "title": "Over 2.5 goals",
+   "detail": "Parma @ Atalanta · at 62¢"
   },
   {
-   "when": "Nov 2, 12:30 PM ET",
+   "when": "Nov 2, 2:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Fiorentina or draw",
-   "detail": "Fiorentina @ Sassuolo · at 67¢"
+   "title": "Parma +1.5",
+   "detail": "Parma @ Atalanta · at 61¢"
   },
   {
    "when": "Nov 2, 11:45 AM ET",
@@ -82,32 +103,11 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 2, 9:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 2, 8:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 2, 8:30 AM ET",
    "emoji": "🎾",
    "kind": "Tennis",
    "title": "Bellucci to win",
    "detail": "Sonego vs Bellucci · at 58¢"
-  },
-  {
-   "when": "Nov 2, 7:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 2, 6:10 AM ET",
