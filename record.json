@@ -1,9 +1,9 @@
 {
- "updated": "Nov 2, 8:30 AM ET",
+ "updated": "Nov 2, 9:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 356,
+  "won": 357,
   "lost": 36,
   "since": "Oct 8, 2026"
  },
@@ -33,12 +33,19 @@
   {
    "label": "Tennis",
    "emoji": "🎾",
-   "won": 9,
+   "won": 10,
    "lost": 4,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 9:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
   {
    "when": "Nov 2, 8:30 AM ET",
    "emoji": "₿",
@@ -68,6 +75,13 @@
    "detail": "called at 86¢"
   },
   {
+   "when": "Nov 2, 6:10 AM ET",
+   "emoji": "🎾",
+   "kind": "Tennis",
+   "title": "Jodar to win",
+   "detail": "Jodar vs Tabilo · at 80¢"
+  },
+  {
    "when": "Nov 1, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
@@ -94,13 +108,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 1, 5:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 91¢"
   },
   {
    "when": "Nov 1, 12:00 PM ET",
@@ -143,13 +150,6 @@
    "kind": "College football",
    "title": "Texas −7.5",
    "detail": "Mississippi State @ Texas · at 78¢"
-  },
-  {
-   "when": "Oct 31, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Texas −11.5",
-   "detail": "Mississippi State @ Texas · at 71¢"
   }
  ]
 }
