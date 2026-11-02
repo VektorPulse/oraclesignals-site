@@ -3,16 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Risk Disclosure · Oracle Signals</title>
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="assets/favicon-32.png">
 <link rel="stylesheet" href="style.css">
-<!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel) -->
+<!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel). Not loaded
+     when the browser asks not to be tracked (Global Privacy Control or Do Not Track). -->
 <script>
+if (!(navigator.globalPrivacyControl || navigator.doNotTrack === "1" || window.doNotTrack === "1")) {
 !function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");
 whop.setScope("biz_SU1IiiyXN9Ee8N");
 whop.track("page");
+}
 </script>
+<!-- Cloudflare Web Analytics: page counts without cookies (privacy policy §5) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "65ea6c81eb344fe2aa8e6cfeea8adf7d"}'></script>
 </head>
 <body>
 <div class="wrap">

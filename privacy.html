@@ -3,16 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Privacy · Oracle Signals</title>
 <meta name="theme-color" content="#0f172a">
 <link rel="icon" href="assets/favicon-32.png">
 <link rel="stylesheet" href="style.css">
-<!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel) -->
+<!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel). Not loaded
+     when the browser asks not to be tracked (Global Privacy Control or Do Not Track). -->
 <script>
+if (!(navigator.globalPrivacyControl || navigator.doNotTrack === "1" || window.doNotTrack === "1")) {
 !function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");
 whop.setScope("biz_SU1IiiyXN9Ee8N");
 whop.track("page");
+}
 </script>
+<!-- Cloudflare Web Analytics: page counts without cookies (privacy policy §5) -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "65ea6c81eb344fe2aa8e6cfeea8adf7d"}'></script>
 </head>
 <body>
 <div class="wrap">
@@ -47,7 +54,7 @@ whop.track("page");
     <h2>5. Cookies</h2>
     <p>The website uses:</p>
     <ul><li><b>the Whop pixel</b>, which uses cookies to see which visits lead to sign-ups;</li><li><b>Cloudflare Web Analytics</b>, which counts page visits without cookies and without building a profile of you;</li><li>the basic cookies our providers need to run the site.</li></ul>
-    <p>You can block or delete cookies in your browser settings, and the site still works.</p>
+    <p>You can block or delete cookies in your browser settings, and the site still works. If your browser sends a Global Privacy Control or Do Not Track signal, the website doesn't load the Whop pixel at all.</p>
     <h2>6. How long we keep it</h2>
     <ul><li><b>Kalshi key and Bot history:</b> until you /disconnect (which deletes both at once), or until 30 days after your access ends, if you don't come back.</li><li><b>Your plan and settings:</b> while you're a member, then up to 12 months for support and our accounting, unless you ask us to delete them sooner.</li><li><b>Server logs:</b> about 30 days.</li><li><b>Emails:</b> as long as needed to help you.</li></ul>
     <p>The law may require us to keep some records, such as payment records, longer.</p>
