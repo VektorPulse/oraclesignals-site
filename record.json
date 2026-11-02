@@ -5,18 +5,18 @@
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 352,
-  "lost": 34,
-  "pnl": 450,
+  "lost": 35,
+  "pnl": 350,
   "since": "Oct 8, 2026"
  },
  "sports": [
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 8,
-   "lost": 2,
+   "won": 22,
+   "lost": 3,
    "push": 0,
-   "pnl": 51
+   "pnl": 337
   },
   {
    "label": "College football",
@@ -67,6 +67,30 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
    "pnl": 13.9
+  },
+  {
+   "when": "Nov 1, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Dolphins +17.5",
+   "detail": "Patriots @ Dolphins · at 80¢",
+   "pnl": 23.27
+  },
+  {
+   "when": "Nov 1, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Dolphins +20.5",
+   "detail": "Patriots @ Dolphins · at 85¢",
+   "pnl": 16.42
+  },
+  {
+   "when": "Nov 1, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Dolphins +20.5 + Rashee Rice 25+ receiving yards",
+   "detail": "NE@MIA + KC@DEN · at None¢",
+   "pnl": 39.92
   },
   {
    "when": "Nov 1, 2:45 PM ET",
@@ -147,30 +171,6 @@
    "title": "Texas −11.5",
    "detail": "Mississippi State @ Texas · at 71¢",
    "pnl": 38.04
-  },
-  {
-   "when": "Oct 31, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Mississippi State +35.5",
-   "detail": "Mississippi State @ Texas · at 86¢",
-   "pnl": 15.15
-  },
-  {
-   "when": "Oct 31, 10:00 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Alcaraz to win",
-   "detail": "Alcaraz vs Medvedev · at 67¢",
-   "pnl": 45.88
-  },
-  {
-   "when": "Oct 29, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Under 59.5 points",
-   "detail": "Panthers @ Packers · at 83¢",
-   "pnl": 19.07
   }
  ]
 }
