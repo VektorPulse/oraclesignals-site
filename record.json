@@ -1,9 +1,9 @@
 {
- "updated": "Nov 2, 11:45 AM ET",
+ "updated": "Nov 2, 3:30 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 358,
+  "won": 359,
   "lost": 36,
   "since": "Oct 8, 2026"
  },
@@ -26,8 +26,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 49,
-   "lost": 18,
+   "won": 53,
+   "lost": 19,
    "push": 0
   },
   {
@@ -39,6 +39,34 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 3:30 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 2, 12:30 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 1.5 goals",
+   "detail": "Fiorentina @ Sassuolo · at 83¢"
+  },
+  {
+   "when": "Nov 2, 12:30 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "No draw",
+   "detail": "Fiorentina @ Sassuolo · at 75¢"
+  },
+  {
+   "when": "Nov 2, 12:30 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Fiorentina or draw",
+   "detail": "Fiorentina @ Sassuolo · at 67¢"
+  },
   {
    "when": "Nov 2, 11:45 AM ET",
    "emoji": "₿",
@@ -82,13 +110,6 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 2, 6:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 2, 6:10 AM ET",
    "emoji": "🎾",
    "kind": "Tennis",
@@ -115,27 +136,6 @@
    "kind": "NFL",
    "title": "Tanner McKee under 2 passing TDs",
    "detail": "Eagles @ Commanders · at 75¢"
-  },
-  {
-   "when": "Nov 1, 12:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Genoa or draw",
-   "detail": "Genoa @ Lecce · at 73¢"
-  },
-  {
-   "when": "Nov 1, 12:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Genoa @ Lecce · at 69¢"
-  },
-  {
-   "when": "Nov 1, 12:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Genoa +1.5",
-   "detail": "Genoa @ Lecce · at 91¢"
   },
   {
    "when": "Nov 1, 8:00 AM ET",
