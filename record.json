@@ -1,5 +1,5 @@
 {
- "updated": "Nov 1, 6:45 PM ET",
+ "updated": "Nov 1, 8:20 PM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
@@ -13,10 +13,10 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 22,
+   "won": 27,
    "lost": 3,
    "push": 0,
-   "pnl": 337
+   "pnl": 505
   },
   {
    "label": "College football",
@@ -45,6 +45,30 @@
  ],
  "wins": [
   {
+   "when": "Nov 1, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Stefon Diggs 3+ catches",
+   "detail": "Eagles @ Commanders · at 78¢",
+   "pnl": 26.26
+  },
+  {
+   "when": "Nov 1, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Jayden Daniels 20+ rushing yards",
+   "detail": "Eagles @ Commanders · at 79¢",
+   "pnl": 24.75
+  },
+  {
+   "when": "Nov 1, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Tanner McKee under 2 passing TDs",
+   "detail": "Eagles @ Commanders · at 75¢",
+   "pnl": 31.04
+  },
+  {
    "when": "Nov 1, 6:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -67,30 +91,6 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
    "pnl": 13.9
-  },
-  {
-   "when": "Nov 1, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Dolphins +17.5",
-   "detail": "Patriots @ Dolphins · at 80¢",
-   "pnl": 23.27
-  },
-  {
-   "when": "Nov 1, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Dolphins +20.5",
-   "detail": "Patriots @ Dolphins · at 85¢",
-   "pnl": 16.42
-  },
-  {
-   "when": "Nov 1, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Dolphins +20.5 + Rashee Rice 25+ receiving yards",
-   "detail": "NE@MIA + KC@DEN · at None¢",
-   "pnl": 39.92
   },
   {
    "when": "Nov 1, 2:45 PM ET",
