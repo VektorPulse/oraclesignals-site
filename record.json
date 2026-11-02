@@ -1,12 +1,12 @@
 {
- "updated": "Nov 1, 8:20 PM ET",
+ "updated": "Nov 2, 7:00 AM ET",
  "stake": 100.0,
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 352,
+  "won": 354,
   "lost": 36,
-  "pnl": 250,
+  "pnl": 280,
   "since": "Oct 8, 2026"
  },
  "sports": [
@@ -44,6 +44,22 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 7:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "pnl": 15.07
+  },
+  {
+   "when": "Nov 2, 6:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "pnl": 15.07
+  },
   {
    "when": "Nov 1, 8:20 PM ET",
    "emoji": "🏈",
@@ -125,28 +141,12 @@
    "pnl": 9.2
   },
   {
-   "when": "Nov 1, 8:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢",
-   "pnl": 9.65
-  },
-  {
    "when": "Nov 1, 8:00 AM ET",
    "emoji": "🎾",
    "kind": "Tennis",
    "title": "Alcaraz to win",
    "detail": "Alcaraz vs de Minaur · at 82¢",
    "pnl": 20.43
-  },
-  {
-   "when": "Nov 1, 7:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 92¢",
-   "pnl": 7.53
   },
   {
    "when": "Nov 1, 5:00 AM ET",
