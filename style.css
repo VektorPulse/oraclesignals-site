@@ -76,7 +76,7 @@ h1, h2, h3 { letter-spacing: -.02em; }
 .nav { display: flex; gap: 26px; margin-left: auto; }
 .nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .95rem; }
 .nav a:hover { color: var(--text); }
-.top .btn { padding: 9px 16px; font-size: .9rem; }
+.top .btn { padding: 9px 16px; font-size: .9rem; white-space: nowrap; }
 
 /* hero */
 .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 40px; align-items: center; padding: 72px 0 88px; }
@@ -259,6 +259,14 @@ footer a:hover { color: var(--gold); }
   .doc { padding: 26px 20px 30px; margin-top: 24px; }
   .doc h1 { font-size: 1.9rem; }
   footer { padding: 22px 20px 28px; }
+}
+/* small phones: the name shrinks, and on the narrowest screens only the orb icon stays beside the button */
+@media (max-width: 400px) {
+  .brand { font-size: .78rem; letter-spacing: .04em; gap: 8px; }
+  .top .btn { padding: 8px 10px; font-size: .78rem; }
+}
+@media (max-width: 340px) {
+  .brand span { display: none; }
 }
 
 /* browsers without backdrop-filter: solid panels, so text stays readable */
