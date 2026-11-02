@@ -1,176 +1,155 @@
 {
- "updated": "Nov 2, 7:00 AM ET",
- "stake": 100.0,
+ "updated": "Nov 2, 7:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 354,
+  "won": 355,
   "lost": 36,
-  "pnl": 280,
   "since": "Oct 8, 2026"
  },
+ "coins": [],
  "sports": [
   {
    "label": "NFL",
    "emoji": "🏈",
    "won": 27,
    "lost": 3,
-   "push": 0,
-   "pnl": 505
+   "push": 0
   },
   {
    "label": "College football",
    "emoji": "🎓",
    "won": 39,
    "lost": 6,
-   "push": 0,
-   "pnl": 666
+   "push": 0
   },
   {
    "label": "Soccer",
    "emoji": "⚽",
    "won": 49,
    "lost": 18,
-   "push": 0,
-   "pnl": -183
+   "push": 0
   },
   {
    "label": "Tennis",
    "emoji": "🎾",
    "won": 9,
    "lost": 4,
-   "push": 0,
-   "pnl": -48
+   "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 7:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
   {
    "when": "Nov 2, 7:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢",
-   "pnl": 15.07
+   "detail": "called at 86¢"
   },
   {
    "when": "Nov 2, 6:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢",
-   "pnl": 15.07
+   "detail": "called at 86¢"
   },
   {
    "when": "Nov 1, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
    "title": "Stefon Diggs 3+ catches",
-   "detail": "Eagles @ Commanders · at 78¢",
-   "pnl": 26.26
+   "detail": "Eagles @ Commanders · at 78¢"
   },
   {
    "when": "Nov 1, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
    "title": "Jayden Daniels 20+ rushing yards",
-   "detail": "Eagles @ Commanders · at 79¢",
-   "pnl": 24.75
+   "detail": "Eagles @ Commanders · at 79¢"
   },
   {
    "when": "Nov 1, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
    "title": "Tanner McKee under 2 passing TDs",
-   "detail": "Eagles @ Commanders · at 75¢",
-   "pnl": 31.04
+   "detail": "Eagles @ Commanders · at 75¢"
   },
   {
    "when": "Nov 1, 6:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢",
-   "pnl": 8.23
+   "detail": "called at 92¢"
   },
   {
    "when": "Nov 1, 5:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
-   "detail": "called at 91¢",
-   "pnl": 9.41
+   "detail": "called at 91¢"
   },
   {
    "when": "Nov 1, 5:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 87¢",
-   "pnl": 13.9
-  },
-  {
-   "when": "Nov 1, 2:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 88¢",
-   "pnl": 12.61
+   "detail": "called at 87¢"
   },
   {
    "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Genoa or draw",
-   "detail": "Genoa @ Lecce · at 73¢",
-   "pnl": 34.45
+   "detail": "Genoa @ Lecce · at 73¢"
   },
   {
    "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "No draw",
-   "detail": "Genoa @ Lecce · at 69¢",
-   "pnl": 41.85
+   "detail": "Genoa @ Lecce · at 69¢"
   },
   {
    "when": "Nov 1, 12:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Genoa +1.5",
-   "detail": "Genoa @ Lecce · at 91¢",
-   "pnl": 9.2
+   "detail": "Genoa @ Lecce · at 91¢"
   },
   {
    "when": "Nov 1, 8:00 AM ET",
    "emoji": "🎾",
    "kind": "Tennis",
    "title": "Alcaraz to win",
-   "detail": "Alcaraz vs de Minaur · at 82¢",
-   "pnl": 20.43
+   "detail": "Alcaraz vs de Minaur · at 82¢"
   },
   {
    "when": "Nov 1, 5:00 AM ET",
    "emoji": "🎾",
    "kind": "Tennis",
    "title": "Machac to win",
-   "detail": "Machac vs Baez · at 84¢",
-   "pnl": 17.73
+   "detail": "Machac vs Baez · at 84¢"
   },
   {
    "when": "Oct 31, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
    "title": "Texas −7.5",
-   "detail": "Mississippi State @ Texas · at 78¢",
-   "pnl": 26.26
+   "detail": "Mississippi State @ Texas · at 78¢"
   },
   {
    "when": "Oct 31, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
    "title": "Texas −11.5",
-   "detail": "Mississippi State @ Texas · at 71¢",
-   "pnl": 38.04
+   "detail": "Mississippi State @ Texas · at 71¢"
   }
  ]
 }
