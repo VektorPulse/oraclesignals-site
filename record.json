@@ -26,8 +26,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 56,
-   "lost": 21,
+   "won": 58,
+   "lost": 25,
    "push": 0
   },
   {
@@ -75,18 +75,18 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 2, 2:45 PM ET",
+   "when": "Nov 2, 3:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "No draw",
+   "detail": "Everton @ Newcastle · at 73¢"
+  },
+  {
+   "when": "Nov 2, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Under 4.5 goals",
-   "detail": "Parma @ Atalanta · at 80¢"
-  },
-  {
-   "when": "Nov 2, 2:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 2.5 goals",
-   "detail": "Parma @ Atalanta · at 62¢"
+   "detail": "Everton @ Newcastle · at 83¢"
   },
   {
    "when": "Nov 2, 2:45 PM ET",
