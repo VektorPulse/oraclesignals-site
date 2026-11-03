@@ -1,9 +1,9 @@
 {
- "updated": "Nov 3, 2:00 AM ET",
+ "updated": "Nov 3, 3:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 369,
+  "won": 371,
   "lost": 36,
   "since": "Oct 8, 2026"
  },
@@ -54,6 +54,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 3, 3:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 3, 2:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 3, 2:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -80,13 +94,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 2, 11:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 2, 8:15 PM ET",
@@ -129,13 +136,6 @@
    "kind": "NBA",
    "title": "Under 237.5 points",
    "detail": "Milwaukee @ Minnesota · at 59¢"
-  },
-  {
-   "when": "Nov 2, 7:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 91¢"
   },
   {
    "when": "Nov 2, 7:30 PM ET",
