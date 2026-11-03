@@ -1,5 +1,5 @@
 {
- "updated": "Nov 3, 3:15 AM ET",
+ "updated": "Nov 3, 6:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -7,7 +7,14 @@
   "lost": 36,
   "since": "Oct 8, 2026"
  },
- "coins": [],
+ "coins": [
+  {
+   "label": "DOGE 15-minute calls",
+   "emoji": "🐕",
+   "won": 2,
+   "lost": 1
+  }
+ ],
  "sports": [
   {
    "label": "NFL",
@@ -53,6 +60,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 3, 6:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 3, 6:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
   {
    "when": "Nov 3, 3:15 AM ET",
    "emoji": "₿",
@@ -150,20 +171,6 @@
    "kind": "College basketball",
    "title": "Under 160.5 points",
    "detail": "Mercyhurst @ Marquette · at 82¢"
-  },
-  {
-   "when": "Nov 2, 7:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Under 150.5 points",
-   "detail": "Mercyhurst @ Marquette · at 59¢"
-  },
-  {
-   "when": "Nov 2, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Everton @ Newcastle · at 73¢"
   }
  ]
 }
