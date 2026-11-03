@@ -1,9 +1,9 @@
 {
- "updated": "Nov 2, 7:30 PM ET",
+ "updated": "Nov 2, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 364,
+  "won": 366,
   "lost": 36,
   "since": "Oct 8, 2026"
  },
@@ -36,15 +36,85 @@
    "won": 11,
    "lost": 4,
    "push": 0
+  },
+  {
+   "label": "NBA",
+   "emoji": "🏀",
+   "won": 7,
+   "lost": 2,
+   "push": 0
+  },
+  {
+   "label": "College basketball",
+   "emoji": "🏀",
+   "won": 3,
+   "lost": 0,
+   "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 2, 11:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 2, 11:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
   {
    "when": "Nov 2, 7:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Atlanta +3.5",
+   "detail": "Atlanta @ Indiana · at 72¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Indiana +12.5",
+   "detail": "Atlanta @ Indiana · at 74¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Under 234.5 points",
+   "detail": "Atlanta @ Indiana · at 56¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Marquette −23.5",
+   "detail": "Mercyhurst @ Marquette · at 72¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Under 160.5 points",
+   "detail": "Mercyhurst @ Marquette · at 82¢"
+  },
+  {
+   "when": "Nov 2, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Under 150.5 points",
+   "detail": "Mercyhurst @ Marquette · at 59¢"
   },
   {
    "when": "Nov 2, 6:15 PM ET",
@@ -66,20 +136,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 2, 5:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 2, 3:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 93¢"
   },
   {
    "when": "Nov 2, 3:00 PM ET",
@@ -108,48 +164,6 @@
    "kind": "Tennis",
    "title": "Bellucci to win",
    "detail": "Sonego vs Bellucci · at 58¢"
-  },
-  {
-   "when": "Nov 2, 6:10 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Jodar to win",
-   "detail": "Jodar vs Tabilo · at 80¢"
-  },
-  {
-   "when": "Nov 1, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Stefon Diggs 3+ catches",
-   "detail": "Eagles @ Commanders · at 78¢"
-  },
-  {
-   "when": "Nov 1, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Jayden Daniels 20+ rushing yards",
-   "detail": "Eagles @ Commanders · at 79¢"
-  },
-  {
-   "when": "Nov 1, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Tanner McKee under 2 passing TDs",
-   "detail": "Eagles @ Commanders · at 75¢"
-  },
-  {
-   "when": "Nov 1, 8:00 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Alcaraz to win",
-   "detail": "Alcaraz vs de Minaur · at 82¢"
-  },
-  {
-   "when": "Oct 31, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Texas −7.5",
-   "detail": "Mississippi State @ Texas · at 78¢"
   }
  ]
 }
