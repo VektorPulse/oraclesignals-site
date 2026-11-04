@@ -1,5 +1,5 @@
 {
- "updated": "Nov 3, 11:15 PM ET",
+ "updated": "Nov 4, 12:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 30,
+   "won": 31,
    "lost": 2
   }
  ],
@@ -26,8 +26,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 44,
-   "lost": 6,
+   "won": 47,
+   "lost": 9,
    "push": 0
   },
   {
@@ -54,12 +54,19 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 4,
-   "lost": 1,
+   "won": 8,
+   "lost": 2,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 4, 12:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 3, 11:15 PM ET",
    "emoji": "🐕",
@@ -75,11 +82,46 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 3, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Buffalo +20.5",
+   "detail": "BUFF@MOH · at 84¢"
+  },
+  {
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Miami (OH) +6.5",
+   "detail": "BUFF@MOH · at 82¢"
+  },
+  {
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Ohio to win + Buffalo +20.5",
+   "detail": "OHIO@AKR + BUFF@MOH · at None¢"
+  },
+  {
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Arkansas-Pine Bluff +50.5",
+   "detail": "Arkansas-Pine Bluff @ Arkansas · at 77¢"
+  },
+  {
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 147.5 points",
+   "detail": "Arkansas-Pine Bluff @ Arkansas · at 84¢"
+  },
+  {
+   "when": "Nov 3, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 149.5 points",
+   "detail": "Arkansas-Pine Bluff @ Arkansas · at 84¢"
   },
   {
    "when": "Nov 3, 7:45 PM ET",
@@ -87,34 +129,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 3, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ohio −3.5",
-   "detail": "Ohio @ Akron · at 77¢"
-  },
-  {
-   "when": "Nov 3, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 47.5 points",
-   "detail": "Ohio @ Akron · at 61¢"
-  },
-  {
-   "when": "Nov 3, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Under 62.5 points",
-   "detail": "Ohio @ Akron · at 77¢"
-  },
-  {
-   "when": "Nov 3, 6:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Tennessee −20.5",
-   "detail": "Wofford @ Tennessee · at 69¢"
   },
   {
    "when": "Nov 3, 5:00 PM ET",
@@ -129,20 +143,6 @@
    "kind": "Soccer",
    "title": "Over 2.5 goals",
    "detail": "PSG @ Villarreal · at 73¢"
-  },
-  {
-   "when": "Nov 3, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "PSG or draw",
-   "detail": "PSG @ Villarreal · at 79¢"
-  },
-  {
-   "when": "Nov 3, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "No draw + Stoke +1.5",
-   "detail": "AVL@BAR + STK@BLA · at None¢"
   },
   {
    "when": "Nov 3, 1:45 PM ET",
