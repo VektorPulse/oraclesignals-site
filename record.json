@@ -33,8 +33,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 63,
-   "lost": 25,
+   "won": 69,
+   "lost": 30,
    "push": 0
   },
   {
@@ -89,25 +89,25 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 3, 2:45 PM ET",
+   "when": "Nov 3, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Under 3.5 goals",
-   "detail": "Stoke @ Blackburn · at 75¢"
+   "title": "Over 2.5 goals",
+   "detail": "PSG @ Villarreal · at 73¢"
   },
   {
-   "when": "Nov 3, 2:45 PM ET",
+   "when": "Nov 3, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 1.5 goals",
-   "detail": "Stoke @ Blackburn · at 74¢"
+   "title": "PSG or draw",
+   "detail": "PSG @ Villarreal · at 79¢"
   },
   {
-   "when": "Nov 3, 2:45 PM ET",
+   "when": "Nov 3, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "No draw",
-   "detail": "Stoke @ Blackburn · at 71¢"
+   "title": "No draw + Stoke +1.5",
+   "detail": "AVL@BAR + STK@BLA · at None¢"
   },
   {
    "when": "Nov 3, 1:45 PM ET",
