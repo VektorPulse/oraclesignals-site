@@ -1,9 +1,9 @@
 {
- "updated": "Nov 4, 5:15 PM ET",
+ "updated": "Nov 4, 6:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 383,
+  "won": 384,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 52,
+   "won": 55,
    "lost": 5
   }
  ],
@@ -33,8 +33,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 69,
-   "lost": 30,
+   "won": 72,
+   "lost": 32,
    "push": 0
   },
   {
@@ -61,25 +61,53 @@
  ],
  "wins": [
   {
-   "when": "Nov 4, 5:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 93¢"
+   "when": "Nov 4, 6:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 87¢"
   },
   {
-   "when": "Nov 4, 4:30 PM ET",
+   "when": "Nov 4, 6:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "detail": "called at 87¢"
   },
   {
-   "when": "Nov 4, 3:30 PM ET",
+   "when": "Nov 4, 5:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
-   "detail": "called at 94¢"
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 4, 5:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 4, 2:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "West Ham or draw",
+   "detail": "West Ham @ Cardiff · at 72¢"
+  },
+  {
+   "when": "Nov 4, 2:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 2.5 goals",
+   "detail": "West Ham @ Cardiff · at 71¢"
+  },
+  {
+   "when": "Nov 4, 2:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Both teams to score",
+   "detail": "West Ham @ Cardiff · at 70¢"
   },
   {
    "when": "Nov 4, 2:15 PM ET",
@@ -124,13 +152,6 @@
    "detail": "Aguilar vs Paul · at 79¢"
   },
   {
-   "when": "Nov 4, 3:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
    "when": "Nov 3, 8:00 PM ET",
    "emoji": "🎓",
    "kind": "College football",
@@ -150,27 +171,6 @@
    "kind": "College football",
    "title": "Ohio to win + Buffalo +20.5",
    "detail": "OHIO@AKR + BUFF@MOH · at None¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Arkansas-Pine Bluff +50.5",
-   "detail": "Arkansas-Pine Bluff @ Arkansas · at 77¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 147.5 points",
-   "detail": "Arkansas-Pine Bluff @ Arkansas · at 84¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 149.5 points",
-   "detail": "Arkansas-Pine Bluff @ Arkansas · at 84¢"
   }
  ]
 }
