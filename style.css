@@ -275,3 +275,77 @@ footer a:hover { color: var(--gold); }
     background-color: var(--panel);
   }
 }
+
+/* ===================================================================== 💰 the sales layout (2026-11-04) */
+/* the hero: one big button, the reassurances under it, and the live record as proof */
+.btn.big { padding: 15px 28px; font-size: 1.05rem; }
+.trust { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 16px 0 0; padding: 0; list-style: none;
+         color: var(--soft); font-size: .92rem; }
+.trust li::before { content: "✓"; color: var(--green); font-weight: 900; margin-right: 7px; }
+.proof { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 26px;
+         max-width: 560px; }
+.proof-item { border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px;
+              background: var(--glass); border: 1px solid var(--glass-line); border-top-color: var(--glass-top);
+              box-shadow: var(--glass-shadow); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); }
+.proof-label { color: var(--muted); font-size: .78rem; font-weight: 700; white-space: nowrap; overflow: hidden;
+               text-overflow: ellipsis; }
+.proof-rec { font-size: 1.45rem; font-weight: 900; letter-spacing: -.03em; line-height: 1.2;
+             font-variant-numeric: tabular-nums; }
+.proof-pct { color: var(--green); font-size: .82rem; font-weight: 700; }
+.proof-note { grid-column: 1 / -1; color: var(--muted); font-size: .78rem; }
+
+/* the plans: The Oracle in the middle, raised and lit */
+#plans { padding-top: 24px; }
+.plan.best { transform: translateY(-12px); z-index: 1; }
+.plan .save { color: var(--gold); font-weight: 800; font-size: .85rem; margin: -10px 0 16px; }
+.plans-note { text-align: center; color: var(--soft); margin: 30px auto 0; max-width: 40em; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .plan.best:hover { transform: translateY(-15px); }
+}
+.center { text-align: center; margin-top: 26px; }
+
+/* the closing call to action */
+.cta-band { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 8px 0 28px;
+            padding: 30px 34px; border-radius: var(--radius);
+            background: linear-gradient(120deg, rgba(250, 204, 21, .14), rgba(139, 92, 246, .14)), var(--glass);
+            border: 1px solid rgba(250, 204, 21, .45); border-top-color: rgba(253, 224, 71, .6);
+            box-shadow: var(--glass-shadow); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); }
+.cta-band h2 { margin: 0 0 6px; font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 900; }
+.cta-band p { margin: 0; color: var(--soft); }
+.cta-band .btn { white-space: nowrap; }
+
+/* 📱 the phone bar (phones only): slides up once the hero is gone */
+.phone-bar { display: none; }
+@media (max-width: 760px) {
+  .phone-bar { display: flex; position: fixed; left: 10px; right: 10px; bottom: calc(10px + env(safe-area-inset-bottom));
+               z-index: 20; align-items: center; justify-content: space-between; gap: 10px; padding: 11px 12px 11px 16px;
+               border-radius: 14px; text-decoration: none; color: var(--text); font-size: .9rem;
+               background: rgba(15, 23, 42, .82); border: 1px solid rgba(250, 204, 21, .5);
+               box-shadow: 0 14px 34px -10px rgba(2, 6, 23, .9), 0 0 0 1px rgba(250, 204, 21, .15);
+               -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+               transform: translateY(140%); opacity: 0; transition: transform .25s ease, opacity .25s ease; }
+  .phone-bar.on { transform: none; opacity: 1; }
+  .phone-bar b { color: var(--gold); }
+  .phone-bar .go { font-weight: 800; color: #111827; padding: 8px 12px; border-radius: 10px; white-space: nowrap;
+                   background: linear-gradient(180deg, #fde047, var(--gold) 45%, var(--gold-deep)); }
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .cta-band { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+  .proof-rec { font-size: 1.2rem; }
+  /* the orb: small on phones, so the button and the record fit on the first screen */
+  .hero { padding-top: 18px; }
+  .hero .orb { max-width: 120px; padding: 12px; }
+  .hero h1 { font-size: 2.6rem; margin-bottom: 14px; }
+  .proof-item { padding: 10px 10px; }
+  .trust { font-size: .86rem; }
+  .btn.big { display: block; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { .phone-bar { transition: none; } }
+
+/* below 1100px the plans wrap: The Oracle comes first, then the bundles, then the singles */
+@media (max-width: 1100px) {
+  .plan.best { transform: none; }
+  .p-all { order: 1; } .p-both { order: 2; } .p-calls { order: 3; } .p-picks { order: 4; } .p-bot { order: 5; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .proof-item, .cta-band { background-color: var(--panel); }
+}

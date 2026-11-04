@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Oracle Signals · BTC calls, sports picks and the Oracle bot</title>
-<meta name="description" content="Live Bitcoin 15-minute calls, sports picks priced against Kalshi, and the Oracle Telegram bot. Every call graded in public. 3 days free.">
+<meta name="description" content="Live Bitcoin and DOGE 15-minute calls, sports picks priced against Kalshi, and the Oracle Telegram bot. Every call graded in public. 3 days free.">
 <meta property="og:title" content="Oracle Signals">
 <meta property="og:description" content="BTC calls · sports picks · the Oracle bot. Every call graded in public. 3 days free.">
 <meta property="og:image" content="https://oraclesignals.app/assets/og.png">
@@ -34,38 +34,51 @@ whop.track("page");
 <div class="wrap">
   <header class="top">
     <a class="brand" href="./"><img src="assets/icon-180.png" alt=""><span><b>ORACLE</b> SIGNALS</span></a>
-    <nav class="nav"><a href="#what">What you get</a><a href="#plans">Plans</a><a href="#faq">FAQ</a></nav>
+    <nav class="nav"><a href="#plans">Plans</a><a href="#results">Record</a><a href="#what">What you get</a><a href="#faq">FAQ</a></nav>
     <a class="btn" href="#plans">Start 3 days free</a>
   </header>
 
-  <div class="hero">
+  <div class="hero" id="top">
     <div>
       <h1><span class="gold">Oracle</span>Signals</h1>
-      <p class="lead">Live Bitcoin 15-minute calls, sports picks priced against Kalshi, and a Telegram bot that can
-        follow the calls on your own account. Every call and pick is graded in public, wins and losses.</p>
-      <ul class="tags"><li>₿ BTC 15-minute calls</li><li>🪙 Gold · 🐕 DOGE (in final testing)</li><li>🏈 NFL · 🎓 College · ⚽ Soccer · 🎾 Tennis</li>
-        <li>🤖 Telegram bot</li></ul>
-      <a class="btn" href="#plans">Start 3 days free</a><a class="btn ghost" href="#what">See what's inside</a>
+      <p class="lead">Live Bitcoin and DOGE 15-minute calls, sports picks priced against Kalshi, and a Telegram bot that
+        can follow the calls on your own account. <b>Every call and pick is graded in public, wins and losses.</b></p>
+      <a class="btn big" href="#plans">See plans · 3 days free</a>
+      <ul class="trust"><li>3 days free</li><li>Cancel any time in Whop</li><li>Secure checkout by Whop</li></ul>
+      <div class="proof" id="proof" hidden></div>
     </div>
     <img class="orb" src="assets/orb.png" alt="The Oracle Signals crystal ball">
   </div>
 
-  <section id="what">
-    <h2>What you get</h2>
-    <p class="sub">Measured, not hyped. Everything is posted before the result is known, then graded for everyone to see.</p>
-    <div class="grid">
-      <div class="card"><span class="icon">📡</span><h3>BTC calls, plus Gold and DOGE</h3>
-        <p>The coach watches Kalshi's Bitcoin 15-minute markets and calls a side only when its rules line up. A
-          heads-up before likely calls, a live board, and a daily record with every win and loss. Gold and DOGE
-          calls are in their final live tests and join the day they pass.</p></div>
-      <div class="card"><span class="icon">🏟️</span><h3>Sports picks</h3>
-        <p>NFL, college football, soccer and tennis picks, each priced against Kalshi and the sharp sportsbooks,
-          posted hours before the start, then graded against the result and the closing line.</p></div>
-      <div class="card"><span class="icon">🤖</span><h3>The Oracle bot</h3>
-        <p>A Telegram bot that runs on <i>your own</i> Kalshi account. Practice with pretend money first; when you're
-          ready, auto mode places the coach's calls for you (BTC, and each coin that passes its test), with your own
-          limits and a daily stop.</p></div>
+  <section id="plans">
+    <h2>Pick your plan</h2>
+    <p class="sub">Every plan starts with <b>3 days free</b>. Cancel in Whop before it ends and you pay nothing.
+      Payments are handled by Whop; we never see your card.</p>
+    <div class="plans">
+      <div class="plan p-picks"><h3>🏟️ Prophecy</h3><div class="tag">Sports Picks</div><div class="price">$19<small>/mo</small></div>
+        <div class="trial">3 days free</div>
+        <ul><li>Every sports pick channel: NFL, college football, NBA, college basketball, soccer, tennis</li><li>Pick alerts you choose</li><li>Lobby and chat</li></ul>
+        <a class="btn" href="https://whop.com/oraclesignals/sports-picks-72-3c51/">Start free trial</a></div>
+      <div class="plan p-calls"><h3>📡 Omen</h3><div class="tag">BTC + DOGE Calls</div><div class="price">$29<small>/mo</small></div>
+        <div class="trial">3 days free</div>
+        <ul><li>BTC and DOGE 15-minute calls and heads-ups</li><li>Gold calls if it passes its test</li><li>The live board and daily record</li><li>Lobby and chat</li></ul>
+        <a class="btn" href="https://whop.com/oraclesignals/calls-51/">Start free trial</a></div>
+      <div class="plan best p-all"><span class="badge">BEST VALUE · EVERYTHING</span><h3>⭐ The Oracle</h3><div class="tag">Picks + Calls + the Bot</div>
+        <div class="price">$49<small>/mo</small></div><div class="trial">3 days free</div>
+        <div class="save">Save $19 a month vs buying separately</div>
+        <ul><li>The whole Discord: every call and every pick</li><li>The Oracle Telegram bot on your own Kalshi account</li><li>Practice mode first, your own limits</li><li>Try all of it free for 3 days</li></ul>
+        <a class="btn" href="https://whop.com/oraclesignals/everything-80-07d2/">Start free trial</a></div>
+      <div class="plan p-both"><h3>🔮 Foresight</h3><div class="tag">Picks + Calls</div><div class="price">$39<small>/mo</small></div>
+        <div class="trial">3 days free</div>
+        <ul><li>The whole Discord</li><li>Everything in Prophecy and Omen</li><li>Save $9 a month</li></ul>
+        <a class="btn" href="https://whop.com/oraclesignals/picks-calls/">Start free trial</a></div>
+      <div class="plan p-bot"><h3>🤖 Automaton</h3><div class="tag">The Oracle Bot</div><div class="price">$29<small>/mo</small></div>
+        <div class="trial">3 days free</div>
+        <ul><li>The Oracle Telegram bot</li><li>Runs on your own Kalshi account</li><li>Practice mode first</li></ul>
+        <a class="btn" href="https://whop.com/oraclesignals/the-oracle-bot/">Start free trial</a></div>
     </div>
+    <p class="plans-note">Not sure? Start with <b>⭐ The Oracle</b>: the free 3 days show you everything, and you can
+      cancel in Whop before they end.</p>
   </section>
 
   <section id="results" hidden>
@@ -78,33 +91,24 @@ whop.track("page");
         <button type="button" id="next" aria-label="Next">›</button></div></div>
     <div class="carousel" id="wins" tabindex="0" aria-label="Recent wins"></div>
     <p class="note">The record above includes every loss. Past results don't guarantee future ones.</p>
+    <div class="center"><a class="btn" href="#plans">Start 3 days free</a></div>
   </section>
 
-  <section id="plans">
-    <h2>Plans</h2>
-    <p class="sub">Every plan starts with <b>3 days free</b>. Cancel any time before it ends and you pay nothing.
-      Payments are handled by Whop; we never see your card.</p>
-    <div class="plans">
-      <div class="plan"><h3>🏟️ Prophecy</h3><div class="tag">Sports Picks</div><div class="price">$19<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>All sports pick channels</li><li>Pick alerts you choose</li><li>Lobby and chat</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/sports-picks-72-3c51/">Start free trial</a></div>
-      <div class="plan"><h3>📡 Omen</h3><div class="tag">BTC Calls</div><div class="price">$29<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>BTC 15-minute calls and heads-ups</li><li>Gold and DOGE calls as they pass their tests</li><li>The live board and daily record</li><li>Lobby and chat</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/calls-51/">Start free trial</a></div>
-      <div class="plan"><h3>🔮 Foresight</h3><div class="tag">Picks + Calls</div><div class="price">$39<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>The whole Discord</li><li>Everything in Prophecy and Omen</li><li>Save $9 a month</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/picks-calls/">Start free trial</a></div>
-      <div class="plan"><h3>🤖 Automaton</h3><div class="tag">The Oracle Bot</div><div class="price">$29<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>The Oracle Telegram bot</li><li>Runs on your own Kalshi account</li><li>Practice mode first</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/the-oracle-bot/">Start free trial</a></div>
-      <div class="plan best"><span class="badge">BEST VALUE</span><h3>⭐ The Oracle</h3><div class="tag">Everything</div>
-        <div class="price">$49<small>/mo</small></div><div class="trial">3 days free</div>
-        <ul><li>The whole Discord</li><li>The Oracle Telegram bot</li><li>Save $19 a month</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/everything-80-07d2/">Start free trial</a></div>
+  <section id="what">
+    <h2>What you get</h2>
+    <p class="sub">Measured, not hyped. Everything is posted before the result is known, then graded for everyone to see.</p>
+    <div class="grid">
+      <div class="card"><span class="icon">📡</span><h3>BTC and DOGE calls</h3>
+        <p>The coach watches Kalshi's 15-minute crypto markets and calls a side only when its rules line up. A
+          heads-up before likely calls, a live board, and a daily record with every win and loss. Gold is in its live
+          test and joins the day it passes.</p></div>
+      <div class="card"><span class="icon">🏟️</span><h3>Sports picks</h3>
+        <p>NFL, college football, NBA and college basketball (🧪 on trial), soccer and tennis. Each pick is priced
+          against Kalshi and the sharp sportsbooks, posted hours before the start, then graded against the result and
+          the closing line.</p></div>
+      <div class="card"><span class="icon">🤖</span><h3>The Oracle bot</h3>
+        <p>A Telegram bot that runs on <i>your own</i> Kalshi account. Practice with pretend money first; when you're
+          ready, auto mode places the coach's calls for you, with your own limits and a daily stop.</p></div>
     </div>
   </section>
 
@@ -120,6 +124,13 @@ whop.track("page");
 
   <section id="faq">
     <h2>Questions</h2>
+    <details><summary>Which plan should I pick?</summary>
+      <p>If you're not sure, start with ⭐ The Oracle: it has every call, every pick and the bot, so the free 3 days
+        show you all of it. Only want one thing? Omen is the crypto calls, Prophecy the sports picks, Automaton the
+        bot.</p></details>
+    <details><summary>What happens after the 3 days?</summary>
+      <p>Your plan renews monthly at its price unless you cancel in Whop before the trial ends. Cancel during the
+        trial and you pay nothing. See the <a href="refund.html">refund policy</a>.</p></details>
     <details><summary>Is this financial advice?</summary>
       <p>No. Oracle Signals shares calls, picks and tools for education and entertainment. You decide what to
         trade or bet, and you can lose money.</p></details>
@@ -137,6 +148,12 @@ whop.track("page");
         results don't promise future ones.</p></details>
   </section>
 
+  <div class="cta-band">
+    <div><h2>Try everything free for 3 days</h2>
+      <p>Every call, every pick and the bot. Cancel in Whop before the trial ends and you pay nothing.</p></div>
+    <a class="btn big" href="#plans">See plans</a>
+  </div>
+
   <div class="risk"><b>Risk:</b> prediction markets and sports betting can lose money, and past results don't
     guarantee future ones. Nothing here is financial, investment or betting advice. You must be 18 or older and
     follow the rules where you live.</div>
@@ -147,8 +164,13 @@ whop.track("page");
     © 2026 Oracle Signals. Not affiliated with Kalshi.
   </footer>
 </div>
+
+<!-- 📱 phones: one tap to the plans from anywhere, hidden at the top and while the plans are on screen -->
+<a class="phone-bar" id="phone-bar" href="#plans" aria-hidden="true" tabindex="-1">
+  <span><b>3 days free</b> · then from $19/mo</span><span class="go">See plans →</span></a>
+
 <script>
-// The record (record.json, refreshed hourly by the server). Without it the section simply stays hidden.
+// The record (record.json, refreshed hourly by the server). Without it the record and the hero's proof stay hidden.
 (async () => {
   let d;
   try {
@@ -158,14 +180,30 @@ whop.track("page");
   } catch (e) { return; }
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls;
     if (text !== undefined) n.textContent = text; return n; };
+  const pct = s => Math.round(100 * s.won / (s.won + s.lost));
+  const all = [d.btc, ...(d.coins || []), ...(d.sports || [])].filter(s => s && (s.won + s.lost));
   const stats = document.getElementById("stats");
-  for (const s of [d.btc, ...(d.coins || []), ...(d.sports || [])]) {
-    if (!s || !(s.won + s.lost)) continue;
+  for (const s of all) {
     const box = el("div", "stat");
     box.append(el("div", "stat-label", `${s.emoji} ${s.label}`),
                el("div", "stat-rec", `${s.won}–${s.lost}${s.push ? "–" + s.push : ""}`),
-               el("div", "stat-pct", `${Math.round(100 * s.won / (s.won + s.lost))}% won`));
+               el("div", "stat-pct", `${pct(s)}% won`));
     stats.append(box);
+  }
+  // the hero's proof: the three longest records, each as wins–losses and the hit rate, with every loss counted
+  const proof = document.getElementById("proof");
+  const top = [...all].sort((a, b) => (b.won + b.lost) - (a.won + a.lost)).slice(0, 3);
+  if (top.length) {
+    for (const s of top) {
+      const p = el("div", "proof-item");
+      const short = {"College football": "College FB", "College basketball": "College hoops"}[s.label]
+        || s.label.replace(" 15-minute calls", " calls");
+      p.append(el("span", "proof-label", `${s.emoji} ${short}`),
+               el("b", "proof-rec", `${s.won}–${s.lost}`), el("span", "proof-pct", `${pct(s)}% won`));
+      proof.append(p);
+    }
+    proof.append(el("div", "proof-note", `Every graded call and pick${d.btc && d.btc.since ? ` since ${d.btc.since}` : ""}, losses included. Past results don't guarantee future ones.`));
+    proof.hidden = false;
   }
   if (d.btc && d.btc.since) document.getElementById("updated").textContent = `BTC calls since ${d.btc.since}.`;
   const row = document.getElementById("wins");
@@ -190,6 +228,24 @@ whop.track("page");
       row.scrollTo({left: end ? 0 : row.scrollLeft + step(), behavior: "smooth"});
     }, 3500);
   }
+})();
+
+// 📱 the phone bar: shown once the hero has scrolled away, hidden again while the plans are on screen
+(() => {
+  const bar = document.getElementById("phone-bar"), hero = document.getElementById("top"),
+        plans = document.querySelector("#plans .plans");
+  if (!bar || !hero || !plans) return;
+  const update = () => {
+    const h = hero.getBoundingClientRect(), p = plans.getBoundingClientRect();
+    const show = h.bottom < 0 && !(p.top < innerHeight && p.bottom > 0);
+    if (show === bar.classList.contains("on")) return;
+    bar.classList.toggle("on", show);
+    bar.setAttribute("aria-hidden", show ? "false" : "true");
+    bar.tabIndex = show ? 0 : -1;
+  };
+  addEventListener("scroll", update, {passive: true});
+  addEventListener("resize", update);
+  update();
 })();
 </script>
 </body>
