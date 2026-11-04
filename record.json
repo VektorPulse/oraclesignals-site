@@ -1,17 +1,17 @@
 {
- "updated": "Nov 3, 10:15 PM ET",
+ "updated": "Nov 3, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 376,
-  "lost": 37,
+  "lost": 38,
   "since": "Oct 8, 2026"
  },
  "coins": [
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 28,
+   "won": 30,
    "lost": 2
   }
  ],
@@ -26,7 +26,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 39,
+   "won": 44,
    "lost": 6,
    "push": 0
   },
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 3, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 3, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
    "when": "Nov 3, 10:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -68,25 +82,32 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 3, 10:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 3, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 3, 7:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 3, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Ohio −3.5",
+   "detail": "Ohio @ Akron · at 77¢"
+  },
+  {
+   "when": "Nov 3, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 47.5 points",
+   "detail": "Ohio @ Akron · at 61¢"
+  },
+  {
+   "when": "Nov 3, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Under 62.5 points",
+   "detail": "Ohio @ Akron · at 77¢"
   },
   {
    "when": "Nov 3, 6:00 PM ET",
@@ -138,13 +159,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 3, 9:30 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Fritz to win",
-   "detail": "Fritz vs Bonzi · at 80¢"
-  },
-  {
    "when": "Nov 3, 9:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -157,20 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 2, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Over 37.5 points",
-   "detail": "Bears @ Seahawks · at 76¢"
-  },
-  {
-   "when": "Nov 2, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Bears +14.5",
-   "detail": "Bears @ Seahawks · at 84¢"
   }
  ]
 }
