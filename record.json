@@ -1,9 +1,9 @@
 {
- "updated": "Nov 4, 7:15 AM ET",
+ "updated": "Nov 4, 8:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 379,
+  "won": 380,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 39,
+   "won": 41,
    "lost": 3
   }
  ],
@@ -61,6 +61,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 4, 8:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 4, 8:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 4, 7:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
    "when": "Nov 4, 7:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -73,20 +94,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 4, 5:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 4, 5:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
   },
   {
    "when": "Nov 4, 3:15 AM ET",
@@ -164,13 +171,6 @@
    "kind": "Soccer",
    "title": "Over 2.5 goals",
    "detail": "PSG @ Villarreal · at 73¢"
-  },
-  {
-   "when": "Nov 3, 1:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 95¢"
   }
  ]
 }
