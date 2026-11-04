@@ -1,9 +1,9 @@
 {
- "updated": "Nov 4, 8:15 AM ET",
+ "updated": "Nov 4, 10:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 380,
+  "won": 381,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 41,
+   "won": 43,
    "lost": 3
   }
  ],
@@ -40,7 +40,7 @@
   {
    "label": "Tennis",
    "emoji": "🎾",
-   "won": 12,
+   "won": 13,
    "lost": 5,
    "push": 0
   },
@@ -61,18 +61,32 @@
  ],
  "wins": [
   {
+   "when": "Nov 4, 10:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 4, 9:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 4, 9:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 4, 8:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 4, 8:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 4, 7:30 AM ET",
@@ -89,11 +103,11 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 4, 6:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
+   "when": "Nov 4, 6:30 AM ET",
+   "emoji": "🎾",
+   "kind": "Tennis",
+   "title": "Paul to win",
+   "detail": "Aguilar vs Paul · at 79¢"
   },
   {
    "when": "Nov 4, 3:15 AM ET",
@@ -157,20 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 3, 5:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 3, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 2.5 goals",
-   "detail": "PSG @ Villarreal · at 73¢"
   }
  ]
 }
