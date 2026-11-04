@@ -1,5 +1,5 @@
 {
- "updated": "Nov 3, 9:00 PM ET",
+ "updated": "Nov 3, 10:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 25,
+   "won": 28,
    "lost": 2
   }
  ],
@@ -54,24 +54,31 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 3,
-   "lost": 0,
+   "won": 4,
+   "lost": 1,
    "push": 0
   }
  ],
  "wins": [
   {
-   "when": "Nov 3, 9:00 PM ET",
+   "when": "Nov 3, 10:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 3, 10:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 3, 8:00 PM ET",
+   "when": "Nov 3, 9:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
+   "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
   },
   {
@@ -82,11 +89,11 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 3, 7:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 3, 6:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Tennessee −20.5",
+   "detail": "Wofford @ Tennessee · at 69¢"
   },
   {
    "when": "Nov 3, 5:00 PM ET",
@@ -164,13 +171,6 @@
    "kind": "NFL",
    "title": "Bears +14.5",
    "detail": "Bears @ Seahawks · at 84¢"
-  },
-  {
-   "when": "Nov 2, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Caleb Williams 175+ passing yards",
-   "detail": "Bears @ Seahawks · at 79¢"
   }
  ]
 }
