@@ -1,9 +1,9 @@
 {
- "updated": "Nov 5, 2:45 AM ET",
+ "updated": "Nov 5, 5:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 392,
+  "won": 393,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -28,7 +28,7 @@
    "emoji": "🎓",
    "won": 50,
    "lost": 10,
-   "push": 1
+   "push": 0
   },
   {
    "label": "Soccer",
@@ -47,9 +47,9 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 17,
-   "lost": 10,
-   "push": 1
+   "won": 18,
+   "lost": 11,
+   "push": 0
   },
   {
    "label": "College basketball",
@@ -60,6 +60,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 5, 5:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 5, 2:45 AM ET",
    "emoji": "₿",
@@ -117,20 +124,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 4, 8:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 4, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Cleveland +8.5",
-   "detail": "Cleveland @ Oklahoma City · at 69¢"
-  },
-  {
    "when": "Nov 4, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
@@ -143,6 +136,13 @@
    "kind": "NBA",
    "title": "Over 214.5 points",
    "detail": "Cleveland @ Oklahoma City · at 78¢"
+  },
+  {
+   "when": "Nov 4, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 216.5 points",
+   "detail": "Cleveland @ Oklahoma City · at 75¢"
   },
   {
    "when": "Nov 4, 7:00 PM ET",
