@@ -1,5 +1,5 @@
 {
- "updated": "Nov 5, 2:45 PM ET",
+ "updated": "Nov 5, 4:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 76,
+   "won": 77,
    "lost": 8
   }
  ],
@@ -33,7 +33,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 77,
+   "won": 78,
    "lost": 34,
    "push": 0
   },
@@ -61,11 +61,25 @@
  ],
  "wins": [
   {
+   "when": "Nov 5, 4:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 5, 2:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 5, 12:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Under 4.5 goals",
+   "detail": "Ferencvaros @ Milan · at 78¢"
   },
   {
    "when": "Nov 5, 12:15 PM ET",
@@ -80,13 +94,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 5, 11:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 5, 10:15 AM ET",
@@ -164,13 +171,6 @@
    "kind": "College football",
    "title": "Under 61.5 points",
    "detail": "Ball State @ Massachusetts · at 79¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 152.5 points",
-   "detail": "Fairleigh Dickinson @ Butler · at 58¢"
   }
  ]
 }
