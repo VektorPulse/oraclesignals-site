@@ -1,9 +1,9 @@
 {
- "updated": "Nov 4, 11:15 PM ET",
+ "updated": "Nov 5, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 390,
+  "won": 391,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 61,
+   "won": 63,
    "lost": 5
   }
  ],
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 14,
-   "lost": 9,
+   "won": 17,
+   "lost": 10,
    "push": 1
   },
   {
@@ -60,6 +60,27 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 5, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 5, 12:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 4, 11:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
   {
    "when": "Nov 4, 11:15 PM ET",
    "emoji": "₿",
@@ -89,20 +110,6 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 4, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 4, 9:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
    "when": "Nov 4, 8:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -117,11 +124,25 @@
    "detail": "called at 92¢"
   },
   {
-   "when": "Nov 4, 7:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 88¢"
+   "when": "Nov 4, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Cleveland +8.5",
+   "detail": "Cleveland @ Oklahoma City · at 69¢"
+  },
+  {
+   "when": "Nov 4, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Cleveland +10.5",
+   "detail": "Cleveland @ Oklahoma City · at 75¢"
+  },
+  {
+   "when": "Nov 4, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 214.5 points",
+   "detail": "Cleveland @ Oklahoma City · at 78¢"
   },
   {
    "when": "Nov 4, 7:00 PM ET",
@@ -147,30 +168,9 @@
   {
    "when": "Nov 4, 7:00 PM ET",
    "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Atlanta to win",
-   "detail": "Atlanta @ Washington · at 57¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 224.5 points",
-   "detail": "Atlanta @ Washington · at 68¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🏀",
    "kind": "College basketball",
    "title": "Over 152.5 points",
    "detail": "Fairleigh Dickinson @ Butler · at 58¢"
-  },
-  {
-   "when": "Nov 4, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Como or draw",
-   "detail": "Como @ Lens · at 74¢"
   }
  ]
 }
