@@ -1,9 +1,9 @@
 {
- "updated": "Nov 4, 9:45 PM ET",
+ "updated": "Nov 4, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 387,
+  "won": 390,
   "lost": 38,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 60,
+   "won": 61,
    "lost": 5
   }
  ],
@@ -26,9 +26,9 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 47,
-   "lost": 9,
-   "push": 0
+   "won": 50,
+   "lost": 10,
+   "push": 1
   },
   {
    "label": "Soccer",
@@ -47,19 +47,47 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 12,
-   "lost": 8,
-   "push": 0
+   "won": 14,
+   "lost": 9,
+   "push": 1
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 8,
+   "won": 9,
    "lost": 2,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 4, 11:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 4, 11:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 4, 10:30 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 4, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 4, 9:45 PM ET",
    "emoji": "🐕",
@@ -82,13 +110,6 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 4, 8:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
    "when": "Nov 4, 8:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -103,11 +124,46 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 4, 6:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 87¢"
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Massachusetts to win",
+   "detail": "Ball State @ Massachusetts · at 60¢"
+  },
+  {
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Massachusetts +2.5",
+   "detail": "Ball State @ Massachusetts · at 64¢"
+  },
+  {
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Under 61.5 points",
+   "detail": "Ball State @ Massachusetts · at 79¢"
+  },
+  {
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Atlanta to win",
+   "detail": "Atlanta @ Washington · at 57¢"
+  },
+  {
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 224.5 points",
+   "detail": "Atlanta @ Washington · at 68¢"
+  },
+  {
+   "when": "Nov 4, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 152.5 points",
+   "detail": "Fairleigh Dickinson @ Butler · at 58¢"
   },
   {
    "when": "Nov 4, 3:00 PM ET",
@@ -115,62 +171,6 @@
    "kind": "Soccer",
    "title": "Como or draw",
    "detail": "Como @ Lens · at 74¢"
-  },
-  {
-   "when": "Nov 4, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Both teams to score",
-   "detail": "Como @ Lens · at 64¢"
-  },
-  {
-   "when": "Nov 4, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 2.5 goals",
-   "detail": "Como @ Lens · at 62¢"
-  },
-  {
-   "when": "Nov 4, 2:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 4, 1:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 4, 6:30 AM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Paul to win",
-   "detail": "Aguilar vs Paul · at 79¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Buffalo +20.5",
-   "detail": "BUFF@MOH · at 84¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Miami (OH) +6.5",
-   "detail": "BUFF@MOH · at 82¢"
-  },
-  {
-   "when": "Nov 3, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ohio to win + Buffalo +20.5",
-   "detail": "OHIO@AKR + BUFF@MOH · at None¢"
   }
  ]
 }
