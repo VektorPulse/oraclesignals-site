@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com https://api.oraclesignals.app; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Oracle Signals · BTC calls, sports picks and the Oracle bot</title>
 <meta name="description" content="Live Bitcoin and DOGE 15-minute calls, sports picks priced against Kalshi, and the Oracle Telegram bot. Every call graded in public. 3 days free.">
@@ -831,51 +831,19 @@ footer { padding-block: 60px 40px; color: var(--muted); font-size: 13.5px; }
   </div>
 </div>
 
-<!-- member page (demo) -->
-<section class="member" id="member" aria-label="Your account (demo)">
+<!-- the member's account (filled from api.oraclesignals.app/me) -->
+<section class="member" id="member" aria-label="Your account">
   <div class="wrap">
-    <span class="demo-flag">Demo · sample data</span>
+    <span class="demo-flag" id="m-flag" hidden></span>
     <div class="m-head">
-      <h2>Good evening, <em>Alex.</em></h2>
-      <button class="btn btn-ghost" id="member-x">Back to the site</button>
-    </div>
-    <div class="m-grid">
-      <div class="m-card glass m-plan">
-        <h4>Your plan</h4>
-        <div class="pn">⭐ The Oracle</div>
-        <span class="status"><span class="pulse"></span>Active · renews Nov 21</span>
-        <div class="m-rows">
-          <div><span>Price</span><b class="num">$49 / month</b></div>
-          <div><span>Member since</span><b>Oct 24, 2026</b></div>
-          <div><span>Includes</span><b>Calls, picks, the bot</b></div>
-        </div>
-        <a class="btn btn-ghost" href="https://whop.com/" rel="noopener">Manage billing on Whop ↗</a>
-      </div>
-      <div class="m-card glass m-ref">
-        <h4>Referrals</h4>
-        <div class="m-big num">3</div>
-        <div class="m-sub">paying friends · you earn 20% of what they pay, every month</div>
-        <div class="m-rows"><div><span>Contest rank</span><b>#4</b></div></div>
-      </div>
-      <div class="m-card glass m-bot">
-        <h4>Telegram bot</h4>
-        <div class="pn" style="font-size:22px">🤖 Connected</div>
-        <span class="status">Practice mode</span>
-        <div class="m-rows"><div><span>Daily stop</span><b class="num">$25</b></div><div><span>Per trade</span><b class="num">$10</b></div></div>
-      </div>
-      <div class="m-card glass m-rec">
-        <h4>Your record · calls you took ✅</h4>
-        <div style="display:flex;gap:30px;flex-wrap:wrap;margin-top:10px">
-          <div><div class="m-big num">27–3</div><div class="m-sub">calls and picks you tapped ✅ on</div></div>
-          <div><div class="m-big num" style="color:var(--gold-hi)">90%</div><div class="m-sub">won</div></div>
-        </div>
-        <svg class="chart" id="m-chart" viewBox="0 0 600 170" preserveAspectRatio="none" aria-hidden="true"></svg>
-      </div>
-      <div class="m-card glass m-pings">
-        <h4>Ping me for</h4>
-        <div id="pings"></div>
+      <h2 id="m-hello">Your <em>account.</em></h2>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-ghost" id="member-x">Back to the site</button>
+        <button class="btn btn-ghost" id="m-out">Sign out</button>
       </div>
     </div>
+    <div class="m-grid" id="m-grid"></div>
+    <p class="fine" id="m-fine">Your own results only. Past results don't guarantee future ones. Practice results use pretend money and are not real results.</p>
   </div>
 </section>
 
@@ -895,7 +863,7 @@ footer { padding-block: 60px 40px; color: var(--muted); font-size: 13.5px; }
 <div class="preview-bar glass" id="preview-bar">
   <span>Preview</span>
   <button id="pv-update">Show update pop-up</button>
-  <button id="pv-member">Member demo</button>
+  <button id="pv-member">My account</button>
 </div>
 
 <script>
@@ -1361,43 +1329,145 @@ function closeSheet() { sheetOn = false; sheet.classList.remove("on"); scrim.cla
 $("#signin-open").addEventListener("click", openSheet);
 $("#sheet-x").addEventListener("click", closeSheet);
 scrim.addEventListener("click", closeSheet);
-const WHOP_HOME = "https://whop.com/oraclesignals/";
-if (!PREVIEW) { // the live site: until our own member page ships, signing in means your Whop account
-  $("#sheet-title").innerHTML = "Welcome <em>back.</em>";
-  $("#sheet .sheet-body > p").textContent = "Your plan, billing and receipts live in your Whop account. Your own member page here is on the way.";
-  $("#sheet .perks").replaceChildren(...["Manage or cancel your plan", "Receipts and billing", "Your Discord and bot access"].map(t => el("div", "", t)));
-  $("#sheet .connecting").lastChild.textContent = "Opening Whop…";
-}
+const API = "https://api.oraclesignals.app";
+const ME_SAMPLE = /*ME*/null; // the preview's account data (real, from a local run); the live site asks the API
+let ME = null;
+function goSignIn() { location.href = `${API}/auth/whop/login?next=${encodeURIComponent("/#account")}`; }
 whop.addEventListener("click", () => {
   glowT = 1.6; sheet.classList.add("busy");
-  // the preview opens the demo member page after a short "Opening Whop" beat; the live site goes to Whop
-  setTimeout(() => { if (PREVIEW) { closeSheet(); openMember(); } else location.href = WHOP_HOME; }, PREVIEW ? 1400 : 500);
+  setTimeout(() => { if (PREVIEW) { closeSheet(); if (!ME) ME = ME_SAMPLE; openMember(); } else goSignIn(); }, PREVIEW ? 1200 : 400);
 });
 
-/* ---------------- member page (demo) ---------------- */
-const member = $("#member");
-function openMember() { member.classList.add("on"); document.body.style.overflow = "hidden"; drawChart(); if (location.hash !== "#member") history.replaceState(null, "", "#member"); }
-function closeMember() { member.classList.remove("on"); document.body.style.overflow = ""; if (location.hash === "#member") history.replaceState(null, "", "#top"); }
+/* ---------------- the member's account ---------------- */
+const member = $("#member"), grid = $("#m-grid");
+function openMember() {
+  if (!ME || !ME.signed_in) { openSheet(); return; }
+  render(ME); member.classList.add("on"); document.body.style.overflow = "hidden";
+  if (location.hash !== "#account") history.replaceState(null, "", "#account");
+}
+function closeMember() { member.classList.remove("on"); document.body.style.overflow = ""; if (location.hash === "#account") history.replaceState(null, "", "#top"); }
 $("#member-x").addEventListener("click", closeMember);
-function drawChart() {
-  const svg = $("#m-chart"); if (svg.childElementCount) return;
-  const res = "WWWLWWWWWWWLWWWWWWWWWWLWWWWWWW".split(""); let v = 0; const pts = res.map((r, j) => { v += r === "W" ? 1 : -1; return [j, v]; });
-  const max = Math.max(...pts.map(p => p[1])), min = Math.min(0, ...pts.map(p => p[1]));
-  const X = j => 10 + j * (580 / (pts.length - 1)), Y = y => 160 - (y - min) / (max - min || 1) * 140;
+$("#m-out").addEventListener("click", async () => {
+  if (!PREVIEW) { try { await fetch(`${API}/auth/logout`, { method: "POST", credentials: "include" }); } catch (e) {} }
+  ME = null; closeMember(); setSignedIn(false);
+});
+const card = (cls, title) => { const c = el("div", `m-card glass ${cls}`); c.append(el("h4", "", title)); grid.append(c); return c; };
+const rowsOf = pairs => { const r = el("div", "m-rows"); for (const [k, v] of pairs) { const d = el("div"); d.append(el("span", "", k), el("b", "num", v)); r.append(d); } return r; };
+const usd = v => `${v < 0 ? "−" : "+"}$${Math.abs(v).toFixed(2)}`;
+const svgEl = () => { const s = document.createElementNS("http://www.w3.org/2000/svg", "svg"); s.setAttribute("class", "chart"); s.setAttribute("viewBox", "0 0 600 170"); s.setAttribute("preserveAspectRatio", "none"); s.setAttribute("aria-hidden", "true"); return s; };
+function hello(name) {
+  const h = new Date().getHours(), part = h < 12 ? "morning" : h < 18 ? "afternoon" : "evening";
+  const t = $("#m-hello"); t.textContent = `Good ${part}, `; t.append(el("em", "", `${name || "member"}.`));
+}
+function lineChart(svg, pts) {
+  svg.replaceChildren();
+  if (pts.length < 2) pts = [[0, 0], ...pts];
+  const ys = pts.map(p => p[1]), max = Math.max(0, ...ys), min = Math.min(0, ...ys);
+  const X = j => 10 + j * (580 / Math.max(1, pts.length - 1)), Y = y => 160 - (y - min) / ((max - min) || 1) * 140;
   const ns = "http://www.w3.org/2000/svg", mk = (t, a) => { const n = document.createElementNS(ns, t); for (const k in a) n.setAttribute(k, a[k]); svg.append(n); return n; };
   for (let g = 0; g < 4; g++) mk("line", { x1: 10, x2: 590, y1: 20 + g * 46, y2: 20 + g * 46, stroke: "rgba(237,233,224,.07)" });
-  const line = pts.map((p, j) => `${j ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join("");
-  const defs = mk("defs", {}); const lg = document.createElementNS(ns, "linearGradient"); lg.id = "mg"; lg.setAttribute("x1", 0); lg.setAttribute("x2", 0); lg.setAttribute("y1", 0); lg.setAttribute("y2", 1);
-  for (const [o, c] of [[0, "rgba(216,180,106,.35)"], [1, "rgba(216,180,106,0)"]]) { const s = document.createElementNS(ns, "stop"); s.setAttribute("offset", o); s.setAttribute("stop-color", c); lg.append(s); } defs.append(lg);
-  mk("path", { d: `${line}L${X(pts.length - 1)},160L10,160Z`, fill: "url(#mg)" });
-  mk("path", { d: line, fill: "none", stroke: "#d8b46a", "stroke-width": 2.2 });
-  pts.forEach((p, j) => { if (res[j] === "L") mk("circle", { cx: X(p[0]), cy: Y(p[1]), r: 3.5, fill: "#e0735f" }); });
-  const e = pts[pts.length - 1]; mk("circle", { cx: X(e[0]), cy: Y(e[1]), r: 5, fill: "#f2dca6" });
+  mk("line", { x1: 10, x2: 590, y1: Y(0), y2: Y(0), stroke: "rgba(237,233,224,.22)", "stroke-dasharray": "4 5" });
+  const line = pts.map((p, j) => `${j ? "L" : "M"}${X(j).toFixed(1)},${Y(p[1]).toFixed(1)}`).join("");
+  const id = "g" + Math.random().toString(36).slice(2, 7);
+  const defs = mk("defs", {}), lg = document.createElementNS(ns, "linearGradient");
+  lg.id = id; lg.setAttribute("x1", 0); lg.setAttribute("x2", 0); lg.setAttribute("y1", 0); lg.setAttribute("y2", 1);
+  for (const [o, c] of [[0, "rgba(216,180,106,.35)"], [1, "rgba(216,180,106,0)"]]) { const st = document.createElementNS(ns, "stop"); st.setAttribute("offset", o); st.setAttribute("stop-color", c); lg.append(st); }
+  defs.append(lg);
+  mk("path", { d: `${line}L${X(pts.length - 1)},${Y(min)}L10,${Y(min)}Z`, fill: `url(#${id})` });
+  mk("path", { d: line, fill: "none", stroke: "#d8b46a", "stroke-width": 2.4 });
+  const e = pts[pts.length - 1];
+  mk("circle", { cx: X(pts.length - 1), cy: Y(e[1]), r: 5, fill: e[1] < 0 ? "#e0735f" : "#f2dca6" });
 }
-const PINGS = [["📡 BTC calls", true], ["🐕 DOGE calls", true], ["🏈 NFL picks", true], ["🏀 NBA picks", false], ["⚽ Soccer picks", false], ["🎾 Tennis picks", false]];
-const pg = $("#pings");
-for (const [name, on] of PINGS) { const r = el("div", "toggle-row"); r.append(el("span", "", name)); const b = el("button", "switch"); b.setAttribute("role", "switch"); b.setAttribute("aria-checked", on); b.setAttribute("aria-label", name);
-  b.addEventListener("click", () => b.setAttribute("aria-checked", b.getAttribute("aria-checked") !== "true")); r.append(b); pg.append(r); }
+function render(me) {
+  grid.replaceChildren(); hello(me.user && me.user.username);
+  const flag = $("#m-flag"); flag.hidden = !PREVIEW; flag.textContent = "Preview · real data, not live yet";
+  // 1 · the plan
+  const sub = me.subscription, plan = sub && sub.plans && sub.plans[0];
+  const c1 = card("m-plan", "Your plan");
+  if (plan) {
+    c1.append(el("div", "pn", plan.plan));
+    const st = el("span", "status");
+    if (plan.live) st.append(el("span", "pulse"));
+    st.append(document.createTextNode(plan.status));
+    if (!plan.live) st.style.cssText = "color:var(--loss);background:rgba(224,115,95,.1)";
+    c1.append(st);
+    const pairs = [];
+    if (plan.renews) pairs.push(["Renews", plan.renews]);
+    if (plan.ends) pairs.push([plan.live ? "Access until" : "Ended", plan.ends]);
+    if (plan.price) pairs.push(["Next charge", plan.price]);
+    if (sub.plans.length > 1) pairs.push(["Other plans", String(sub.plans.length - 1)]);
+    c1.append(rowsOf(pairs));
+    const a = el("a", "btn btn-ghost", plan.live ? "Manage billing on Whop ↗" : "Renew on Whop ↗"); a.href = plan.manage; a.rel = "noopener"; c1.append(a);
+  } else {
+    c1.append(el("div", "pn", sub ? "No plan yet" : "Couldn't reach Whop"),
+              el("div", "m-sub", sub ? "Start a 3-day free trial to unlock calls, picks and the bot." : "Your plan will show here again in a moment."));
+    const a = el("a", "btn btn-gold", "See plans"); a.href = "#plans"; a.addEventListener("click", closeMember); c1.append(a);
+  }
+  // 2 · referrals
+  const c2 = card("m-ref", "Referrals"), ref = me.referrals || { active: 0 };
+  c2.append(el("div", "m-big num", String(ref.active || 0)), el("div", "m-sub", "paying friends right now · you earn 20% of what they pay, every month"));
+  if (ref.contest_rank) c2.append(rowsOf([["Contest rank", `#${ref.contest_rank}`]]));
+  // 3 · the bot
+  const c3 = card("m-bot", "Telegram bot"), bot = me.bot;
+  if (bot) {
+    c3.append(el("div", "pn", "🤖 Connected"), el("span", "status", `${bot.mode} mode`));
+    const r = bot.results || {};
+    c3.append(rowsOf([["Live trades", String(r.live ? r.live.trades : 0)], ["Practice trades", String(r.paper ? r.paper.trades : 0)]]));
+  } else {
+    c3.append(el("div", "pn", "Not linked"),
+              el("div", "m-sub", me.linked && me.linked.discord ? "On a bot plan? Tap 🎟 in 💎│get-access on Discord to get your bot link."
+                                                                : "Link your Discord on Whop to see your bot and your record here."));
+  }
+  // 4 · results: the bot's own trades in dollars, else the ✅ record in wins and losses
+  const c4 = card("m-rec", "Your results");
+  const res = bot && bot.results ? bot.results : {};
+  if (res.live || res.paper) {
+    const tabs = el("div", "seg"), body = el("div"); tabs.style.marginTop = "12px"; c4.append(tabs, body);
+    const draw = key => {
+      const x = res[key]; body.replaceChildren();
+      const top = el("div"); top.style.cssText = "display:flex;gap:30px;flex-wrap:wrap;margin-top:12px";
+      const t1 = el("div"); t1.append(el("div", "m-big num", usd(x.total)), el("div", "m-sub", x.label));
+      t1.firstChild.style.color = x.total < 0 ? "var(--loss)" : "var(--gold-hi)";
+      const t2 = el("div"); t2.append(el("div", "m-big num", x.trades ? `${Math.round(100 * x.wins / x.trades)}%` : "–"), el("div", "m-sub", `of ${x.trades} trades won`));
+      top.append(t1, t2); body.append(top);
+      const svg = svgEl(); body.append(svg);
+      let run = 0; lineChart(svg, x.days.map(([t, p]) => [t, run += p]));
+      body.append(el("div", "m-sub", "Running profit and loss by day, last 60 days, as Kalshi settled it"));
+    };
+    for (const key of ["live", "paper"].filter(k => res[k])) {
+      const b = el("button", "", key === "live" ? "Live" : "Practice"); b.type = "button";
+      b.addEventListener("click", () => { tabs.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); draw(key); });
+      tabs.append(b);
+    }
+    tabs.firstChild.setAttribute("aria-pressed", "true"); draw(res.live ? "live" : "paper");
+  } else if (me.taps && (me.taps.wins + me.taps.losses)) {
+    const tp = me.taps, n = tp.wins + tp.losses;
+    const top = el("div"); top.style.cssText = "display:flex;gap:30px;flex-wrap:wrap;margin-top:12px";
+    const t1 = el("div"); t1.append(el("div", "m-big num", `${tp.wins}–${tp.losses}`), el("div", "m-sub", "calls and picks you marked ✅"));
+    const t2 = el("div"); t2.append(el("div", "m-big num", `${Math.round(100 * tp.wins / n)}%`), el("div", "m-sub", "won"));
+    t2.firstChild.style.color = "var(--gold-hi)"; top.append(t1, t2); c4.append(top);
+    const svg = svgEl(); c4.append(svg);
+    let run = 0; lineChart(svg, tp.weeks.map(([w, a, b]) => [w, run += a - b]));
+    c4.append(el("div", "m-sub", "Wins minus losses, week by week. No dollars: these are calls you marked, not trades we can see."));
+  } else {
+    c4.append(el("div", "pn", "Nothing yet"), el("div", "m-sub", "Tap ✅ under the calls and picks you take in Discord, and your record builds here once they're graded."));
+  }
+  // 5 · pings
+  const c5 = card("m-pings", "Pings you get"), pings = me.pings;
+  if (pings && Object.keys(pings).length) {
+    for (const [name, on] of Object.entries(pings)) {
+      const r = el("div", "toggle-row"), b = el("span", "switch");
+      b.setAttribute("aria-checked", on); b.setAttribute("aria-label", `${name}: ${on ? "on" : "off"}`); r.append(el("span", "", name), b); c5.append(r);
+    }
+    c5.append(el("div", "m-sub", "Change them with the 🔔 buttons in Discord."));
+  } else c5.append(el("div", "m-sub", "Your Discord pings show here once your Discord is linked on Whop."));
+}
+function setSignedIn(on) { $("#signin-open").lastChild.textContent = on ? " Account" : " Sign in"; }
+$("#signin-open").addEventListener("click", e => { if (ME && ME.signed_in) { e.stopImmediatePropagation(); openMember(); } }, true);
+async function loadMe() {
+  if (PREVIEW) { ME = null; return; }
+  try { const r = await fetch(`${API}/me`, { credentials: "include", cache: "no-store" }); ME = r.ok ? await r.json() : null; } catch (e) { ME = null; }
+}
 
 /* ---------------- the update pop-up: status.json says when the site is being updated ---------------- */
 const up = $("#update"); let upTimer = null, upShown = false, upClosedFor = null;
@@ -1422,9 +1492,16 @@ checkStatus(); setInterval(checkStatus, 60000);
 
 /* ---------------- keys, hash and the preview bar ---------------- */
 addEventListener("keydown", e => { if (e.key !== "Escape") return; if (sheetOn) closeSheet(); else if (member.classList.contains("on")) closeMember(); else if (upShown) hideUpdate(); });
-function route() { if (location.hash === "#member" && PREVIEW) openMember(); if (location.hash === "#maintenance") showUpdate(); if (location.hash === "#signin") openSheet(); }
-addEventListener("hashchange", route); route();
-if (PREVIEW) { $("#pv-update").addEventListener("click", () => showUpdate()); $("#pv-member").addEventListener("click", openMember); }
+function route() {
+  const h = location.hash;
+  if (h === "#account" || h === "#member") openMember();
+  if (h === "#maintenance") showUpdate();
+  if (h === "#signin") openSheet();
+  if (h === "#signin-failed") { openSheet(); $("#sheet .sheet-body > p").textContent = "That sign-in didn't finish. Try again, or browse without signing in."; }
+}
+addEventListener("hashchange", route);
+loadMe().then(() => { setSignedIn(!!(ME && ME.signed_in)); route(); });
+if (PREVIEW) { $("#pv-update").addEventListener("click", () => showUpdate()); $("#pv-member").addEventListener("click", () => { if (!ME) ME = ME_SAMPLE; openMember(); }); }
 else $("#preview-bar").hidden = true;
 })();
 </script>
