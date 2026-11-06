@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://t.whop.tw https://static.cloudflareinsights.com; connect-src 'self' https://t.whop.tw https://cloudflareinsights.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Risk Disclosure · Oracle Signals</title>
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#07080a">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-32.png?v=2">
 <link rel="apple-touch-icon" href="assets/icon-180.png?v=2">
-<link rel="stylesheet" href="style.css">
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="legal.css?v=2">
 <!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel). Not loaded
      when the browser asks not to be tracked (Global Privacy Control or Do Not Track). -->
 <script>
@@ -23,33 +24,74 @@ whop.track("page");
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "65ea6c81eb344fe2aa8e6cfeea8adf7d"}'></script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="./"><img src="assets/icon-180.png" alt=""><span><b>ORACLE</b> SIGNALS</span></a>
-  </header>
-  <main class="doc">
-    <h1>Risk Disclosure</h1>
+<div class="veil" aria-hidden="true"></div>
+
+<header class="nav-shell">
+  <div class="wrap">
+    <nav class="nav glass" aria-label="Main">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span><b>Oracle</b><span>Signals</span></a>
+      <div class="nav-links"><a href="terms.html">Terms</a><a href="risk.html" aria-current="page">Risk</a><a href="refund.html">Refund policy</a><a href="privacy.html">Privacy</a></div>
+      <a class="btn" href="./">← Back to the site</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="head">
+    <div class="eyebrow">Legal · Risk</div>
+    <h1>Risk <em>Disclosure</em></h1>
     <p class="date"><b>Effective date:</b> November 2, 2026 · <b>Last updated:</b> November 2, 2026</p>
-    <h2>Read this first</h2>
-    <ul><li><b>You can lose 100% of the money you put into a Kalshi contract or a sports bet.</b> Only use money you can afford to lose completely.</li><li><b>Our picks, calls and bot are not financial, investment or betting advice.</b> They are general information, the same for every member. You decide every trade.</li><li><b>Past results don't predict future results.</b> A winning record can turn into a losing one at any time.</li><li><b>Nothing we offer is guaranteed or risk-free.</b> We don't promise any profit or income.</li></ul>
-    <h2>Event contracts (Kalshi)</h2>
-    <ul><li>A Kalshi contract pays $1 if its outcome happens and $0 if it doesn't. If you buy at 90¢ and lose, you lose the whole 90¢.</li><li>Favourites lose often enough to matter. One loss at a high price can wipe out many small wins: at 90¢ a loss costs about as much as 9 wins.</li><li>Kalshi charges fees. Prices move quickly, and some markets are thin, so you may not get the price in a call or pick.</li><li>Kalshi can pause, change or settle markets under its own rules, and its decisions are final for your account.</li></ul>
-    <h2>Sports picks</h2>
-    <ul><li>Games are uncertain. Injuries, lineups, weather and late news can change a game after we post a pick.</li><li>Each pick has a price limit ("buy at X¢ or less"). Above that price, the pick no longer has the value we saw. Skip it.</li><li>Our record is short. Sports picks have been posted since late October 2026, so the results so far say little about the future.</li></ul>
-    <h2>The bot (automatic trading in your own account)</h2>
-    <ul><li>In live mode, the bot places real orders in your Kalshi account, using the settings you choose. Real money is at risk.</li><li>Software fails. Bugs, server or internet outages, Kalshi or Telegram downtime and delays can cause missed trades, late trades, trades at bad prices or positions left open.</li><li>Your limits (trade size, daily stops) reduce the damage from a bad day, but they don't remove it.</li><li>Practice (paper) mode is simulated. It doesn't place real orders, so its results can be better than live trading would have been.</li><li>You can pause the bot with /pause and delete your key with /disconnect at any time. Watch your account.</li></ul>
-    <h2>Results, tests and testimonials</h2>
-    <ul><li>The results we show for picks and calls are graded from what we actually posted, wins and losses included.</li><li>Some of what we share comes from tests on past data (backtests) or from practice mode. Those results are hypothetical:</li></ul>
-    <blockquote><b>These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.</b></blockquote>
-    <ul><li>Wins that members share in Discord are their own experience. They may not be typical of what other members get, and they're no guarantee of future results.</li></ul>
-    <h2>Your responsibility</h2>
-    <ul><li>Check that Kalshi, sports betting and any other platform you use are legal for you (you must be 18+), and follow their rules.</li><li>You are responsible for your own decisions, losses and taxes.</li><li>If trading or betting stops being fun, or you're chasing losses, stop. In the US, call or text <b><a href="tel:18004262537">1-800-GAMBLER</a></b> for free, confidential help.</li></ul>
-    <p>Questions: <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></p>
-  </main>
-  <footer>
-    <div class="links"><a href="./">Home</a><a href="terms.html">Terms</a><a href="risk.html">Risk</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund policy</a></div>
-    © 2026 Oracle Signals. Not affiliated with Kalshi.
-  </footer>
-</div>
+  </div>
+  <div class="layout">
+    <nav class="toc" aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+      <li><a href="#event-contracts-kalshi">Event contracts (Kalshi)</a></li>
+      <li><a href="#sports-picks">Sports picks</a></li>
+      <li><a href="#the-bot-automatic-trading-in-your-own-account">The bot (automatic trading in your own account)</a></li>
+      <li><a href="#results-tests-and-testimonials">Results, tests and testimonials</a></li>
+      <li><a href="#your-responsibility">Your responsibility</a></li>
+      </ol>
+    </nav>
+    <div>
+      <article class="doc glass">
+<!-- policy:start -->
+<div class="tldr">
+<h2 id="read-this-first">Read this first</h2>
+<ul><li><b>You can lose 100% of the money you put into a Kalshi contract or a sports bet.</b> Only use money you can afford to lose completely.</li><li><b>Our picks, calls and bot are not financial, investment or betting advice.</b> They are general information, the same for every member. You decide every trade.</li><li><b>Past results don't predict future results.</b> A winning record can turn into a losing one at any time.</li><li><b>Nothing we offer is guaranteed or risk-free.</b> We don't promise any profit or income.</li></ul>
+</div><!-- /tldr -->
+<h2 id="event-contracts-kalshi">Event contracts (Kalshi)</h2>
+<ul><li>A Kalshi contract pays $1 if its outcome happens and $0 if it doesn't. If you buy at 90¢ and lose, you lose the whole 90¢.</li><li>Favourites lose often enough to matter. One loss at a high price can wipe out many small wins: at 90¢ a loss costs about as much as 9 wins.</li><li>Kalshi charges fees. Prices move quickly, and some markets are thin, so you may not get the price in a call or pick.</li><li>Kalshi can pause, change or settle markets under its own rules, and its decisions are final for your account.</li></ul>
+<h2 id="sports-picks">Sports picks</h2>
+<ul><li>Games are uncertain. Injuries, lineups, weather and late news can change a game after we post a pick.</li><li>Each pick has a price limit ("buy at X¢ or less"). Above that price, the pick no longer has the value we saw. Skip it.</li><li>Our record is short. Sports picks have been posted since late October 2026, so the results so far say little about the future.</li></ul>
+<h2 id="the-bot-automatic-trading-in-your-own-account">The bot (automatic trading in your own account)</h2>
+<ul><li>In live mode, the bot places real orders in your Kalshi account, using the settings you choose. Real money is at risk.</li><li>Software fails. Bugs, server or internet outages, Kalshi or Telegram downtime and delays can cause missed trades, late trades, trades at bad prices or positions left open.</li><li>Your limits (trade size, daily stops) reduce the damage from a bad day, but they don't remove it.</li><li>Practice (paper) mode is simulated. It doesn't place real orders, so its results can be better than live trading would have been.</li><li>You can pause the bot with /pause and delete your key with /disconnect at any time. Watch your account.</li></ul>
+<h2 id="results-tests-and-testimonials">Results, tests and testimonials</h2>
+<ul><li>The results we show for picks and calls are graded from what we actually posted, wins and losses included.</li><li>Some of what we share comes from tests on past data (backtests) or from practice mode. Those results are hypothetical:</li></ul>
+<blockquote><b>These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.</b></blockquote>
+<ul><li>Wins that members share in Discord are their own experience. They may not be typical of what other members get, and they're no guarantee of future results.</li></ul>
+<h2 id="your-responsibility">Your responsibility</h2>
+<ul><li>Check that Kalshi, sports betting and any other platform you use are legal for you (you must be 18+), and follow their rules.</li><li>You are responsible for your own decisions, losses and taxes.</li><li>If trading or betting stops being fun, or you're chasing losses, stop. In the US, call or text <b><a href="tel:18004262537">1-800-GAMBLER</a></b> for free, confidential help.</li></ul>
+<p>Questions: <a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></p>
+<!-- policy:end -->
+      </article>
+      <div class="others">
+      <a class="glass" href="terms.html"><span class="go" aria-hidden="true">→</span>Terms of Service<small>The rules for using the Discord, the bot and the site</small></a>
+      <a class="glass" href="refund.html"><span class="go" aria-hidden="true">→</span>Refunds<small>The free trial, cancelling and refunds</small></a>
+      <a class="glass" href="privacy.html"><span class="go" aria-hidden="true">→</span>Privacy Policy<small>What we collect, why, and how to delete it</small></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <p><b>Risk:</b> prediction markets and sports betting can lose money, and past results don't guarantee future ones. Nothing here is financial, investment or betting advice. You must be 18 or older and follow the rules where you live.</p>
+      <div class="foot-links"><a href="./">Home</a><a href="terms.html">Terms</a><a href="risk.html" aria-current="page">Risk</a><a href="refund.html">Refund policy</a><a href="privacy.html">Privacy</a></div>
+    </div>
+    <div class="copy"><span>© 2026 Oracle Signals. Not affiliated with Kalshi.</span><span class="mail">hello@oraclesignals.app</span></div>
+  </div>
+</footer>
 </body>
 </html>
