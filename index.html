@@ -14,10 +14,10 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://oraclesignals.app/assets/og.png">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#07080a">
 <link rel="icon" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/icon-180.png">
-<link rel="stylesheet" href="style.css">
+<link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Whop pixel: page views and purchases for the Whop dashboard (docs.whop.com/developer/ads/pixel). Not loaded
      when the browser asks not to be tracked (Global Privacy Control or Do Not Track). -->
 <script>
@@ -29,224 +29,1405 @@ whop.track("page");
 </script>
 <!-- Cloudflare Web Analytics: page counts without cookies (privacy policy §5) -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "65ea6c81eb344fe2aa8e6cfeea8adf7d"}'></script>
+<style>
+@font-face { font-family: "Geist"; font-style: normal; font-weight: 400 600; font-display: swap;
+  src: url("assets/fonts/geist.woff2") format("woff2"); }
+@font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/instrument-serif.woff2") format("woff2"); }
+@font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/instrument-serif-italic.woff2") format("woff2"); }
+/* Layout: a fixed field of gold particles reshapes itself behind the page as you scroll (orb, market lines, signal,
+   call card, check, record grid, halo); glass panels sit over it so the artwork glows through. One gold accent. */
+:root {
+  --bg: #07080a;
+  --bg-2: #0d0e11;
+  --ink: #ede9e0;
+  --soft: #bdb8ad;
+  --muted: #85817a;
+  --line: rgba(237, 233, 224, .085);
+  --line-hi: rgba(237, 233, 224, .16);
+  --gold: #d8b46a;
+  --gold-hi: #f2dca6;
+  --gold-dim: rgba(216, 180, 106, .14);
+  --win: #62c59a;
+  --loss: #e0735f;
+  --glass: linear-gradient(180deg, rgba(255, 255, 255, .065), rgba(255, 255, 255, .018));
+  --glass-solid: rgba(16, 17, 21, .62);
+  --blur: blur(18px) saturate(140%);
+  --shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 40px 90px -50px rgba(0, 0, 0, .9);
+  --display: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Geist", ui-sans-serif, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --r: 18px;
+  --r-sm: 12px;
+  --wrap: 1200px;
+  --ease: cubic-bezier(.05, .6, .4, .9);
+  color-scheme: dark;
+}
+@property --ang { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+a { color: inherit; }
+img { max-width: 100%; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-weight: 500; margin: 0; text-wrap: balance; letter-spacing: -.02em; }
+h2 { font-size: clamp(34px, 4.6vw, 60px); line-height: 1.02; }
+h2 em, h1 em { font-family: var(--display); font-style: italic; font-weight: 400; letter-spacing: -.01em; color: var(--gold-hi); }
+p { margin: 0; }
+.eyebrow { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+.lede { color: var(--soft); font-size: 18px; max-width: 58ch; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---------- the particle field ---------- */
+#field { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+.veil { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(1200px 700px at 70% 30%, rgba(216, 180, 106, .07), transparent 60%),
+              radial-gradient(900px 600px at 10% 90%, rgba(120, 140, 170, .05), transparent 60%); }
+main, header, footer { position: relative; z-index: 1; }
+
+/* ---------- glass ---------- */
+.glass { background: var(--glass), var(--glass-solid); border: 1px solid var(--line); box-shadow: var(--shadow);
+  -webkit-backdrop-filter: var(--blur); backdrop-filter: var(--blur); border-radius: var(--r); }
+
+/* ---------- buttons ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 48px; padding: 0 22px;
+  border-radius: 999px; font: 500 15px/1 var(--sans); text-decoration: none; cursor: pointer; border: 1px solid transparent;
+  transition: transform .18s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease; white-space: nowrap; }
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(1px) scale(.99); }
+.btn-gold { background: linear-gradient(180deg, var(--gold-hi), var(--gold)); color: #1a1408; box-shadow: 0 10px 30px -12px rgba(216, 180, 106, .6), inset 0 1px 0 rgba(255, 255, 255, .5); }
+.btn-gold:hover { box-shadow: 0 16px 40px -14px rgba(216, 180, 106, .75), inset 0 1px 0 rgba(255, 255, 255, .55); }
+.btn-ghost { background: rgba(255, 255, 255, .03); color: var(--ink); border-color: var(--line-hi); }
+.btn-ghost:hover { background: rgba(255, 255, 255, .07); border-color: rgba(237, 233, 224, .28); }
+.arrow { transition: transform .25s ease; }
+.btn:hover .arrow { transform: translateX(3px); }
+
+/* ---------- nav ---------- */
+.nav-shell { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 14px); left: 0; right: 0; z-index: 50; pointer-events: none; }
+.nav { pointer-events: auto; display: flex; align-items: center; gap: 20px; height: 60px; padding: 0 10px 0 18px; border-radius: 999px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 500; letter-spacing: -.01em; }
+.brand-mark { width: 26px; height: 26px; border-radius: 50%; position: relative;
+  background: radial-gradient(circle at 35% 30%, var(--gold-hi), var(--gold) 38%, #6b5226 75%, #2a2010);
+  box-shadow: 0 0 18px rgba(216, 180, 106, .45), inset 0 -3px 6px rgba(0, 0, 0, .4); }
+.brand b { font-weight: 500; }
+.brand span { color: var(--gold-hi); font-family: var(--display); font-style: italic; font-size: 19px; margin-left: 1px; }
+.nav-links { display: flex; gap: 4px; margin-left: auto; }
+.nav-links a { text-decoration: none; color: var(--soft); font-size: 14px; padding: 8px 12px; border-radius: 999px; transition: color .2s, background .2s; }
+.nav-links a:hover { color: var(--ink); background: rgba(255, 255, 255, .05); }
+.signin { height: 40px; padding: 0 16px 0 6px; font-size: 14px; gap: 8px; }
+.signin .dot { width: 28px; height: 28px; border-radius: 50%; background: rgba(216, 180, 106, .12); display: grid; place-items: center; border: 1px solid rgba(216, 180, 106, .3); }
+.signin .dot svg { width: 14px; height: 14px; }
+@media (max-width: 860px) { .nav-links { display: none; } .signin { margin-left: auto; } }
+
+/* ---------- hero ---------- */
+.hero { min-height: 100svh; display: flex; align-items: center; padding-block: 120px 60px; }
+.hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+.hero h1 { font-size: clamp(44px, 6.6vw, 92px); line-height: .98; letter-spacing: -.035em; }
+.hero .lede { margin-top: 24px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.fact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; font-size: 13px; color: var(--soft);
+  border: 1px solid var(--line); background: rgba(255, 255, 255, .025); }
+.chip b { color: var(--ink); font-weight: 500; }
+.pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--win); box-shadow: 0 0 0 0 rgba(98, 197, 154, .6); animation: pulse 2s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 8px rgba(98, 197, 154, 0); } 100% { box-shadow: 0 0 0 0 rgba(98, 197, 154, 0); } }
+
+/* the product stack */
+.stack { position: relative; height: 580px; perspective: 1400px; }
+.stack-inner { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .6s var(--ease); }
+.pcard { position: absolute; width: 340px; padding: 18px; border-radius: 20px; transition: transform .7s var(--ease), box-shadow .4s; }
+.pcard .tag { position: absolute; top: 14px; right: 14px; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.pc-1 { top: 30px; left: 8%; transform: translateZ(60px) rotate(-3deg); z-index: 3; }
+.pc-2 { top: 230px; left: 34%; transform: translateZ(20px) rotate(2.5deg); z-index: 2; }
+.pc-3 { top: 330px; left: 0; width: 300px; transform: translateZ(0) rotate(-1.5deg); z-index: 1; }
+.stack:hover .pc-1 { transform: translateZ(90px) translate(-18px, -14px) rotate(-5deg); }
+.stack:hover .pc-2 { transform: translateZ(40px) translate(28px, 10px) rotate(4deg); }
+.stack:hover .pc-3 { transform: translateZ(10px) translate(-22px, 22px) rotate(-3deg); }
+.call-head { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--soft); }
+.coin { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 600; font-size: 14px; color: #1a1408;
+  background: radial-gradient(circle at 35% 30%, var(--gold-hi), var(--gold) 55%, #8a6a2e); }
+.call-title { font-size: 26px; font-weight: 500; letter-spacing: -.02em; margin-top: 14px; }
+.call-title .up { color: var(--win); }
+.call-title .down { color: var(--loss); }
+.kv { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
+.kv div { padding: 10px; border-radius: 12px; background: rgba(255, 255, 255, .035); border: 1px solid var(--line); }
+.kv small { display: block; font-size: 11px; color: var(--muted); }
+.kv b { font-weight: 500; font-size: 16px; }
+.meter { margin-top: 16px; height: 6px; border-radius: 99px; background: rgba(255, 255, 255, .06); overflow: hidden; }
+.meter i { display: block; height: 100%; width: 66%; background: linear-gradient(90deg, var(--gold), var(--gold-hi)); border-radius: 99px; }
+.meter-row { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.pick-line { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; }
+.pick-line b { font-size: 20px; font-weight: 500; }
+.bar2 { display: flex; gap: 6px; margin-top: 14px; }
+.bar2 span { flex: 1; padding: 9px 10px; border-radius: 10px; font-size: 13px; border: 1px solid var(--line); background: rgba(255, 255, 255, .03); }
+.bar2 span.on { border-color: rgba(216, 180, 106, .5); background: var(--gold-dim); color: var(--gold-hi); }
+.tg { font-size: 13.5px; color: var(--soft); }
+.tg .bubble { background: rgba(255, 255, 255, .05); border: 1px solid var(--line); border-radius: 14px 14px 14px 4px; padding: 12px 14px; margin-top: 10px; color: var(--ink); }
+.tg .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+.tg .btns span { text-align: center; padding: 8px; border-radius: 10px; background: rgba(255, 255, 255, .04); border: 1px solid var(--line); font-size: 12.5px; }
+
+.pc-1 { top: 10px; left: 4%; } .pc-2 { top: 250px; left: 36%; } .pc-3 { top: 392px; left: 0; }
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .stack { height: auto; max-width: 460px; width: 100%; margin: 0 auto; perspective: none; }
+  .stack-inner { position: relative; display: grid; gap: 14px; transform: none !important; }
+  .pcard, .stack:hover .pcard { position: relative; inset: auto; width: 100%; transform: none !important; }
+}
+
+/* ---------- marquee ---------- */
+.marquee { border-block: 1px solid var(--line); overflow: hidden; padding-block: 18px; background: rgba(7, 8, 10, .5);
+  -webkit-mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.marquee-track { display: flex; gap: 48px; width: max-content; animation: slide 38s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee span { font-family: var(--display); font-style: italic; font-size: 30px; color: var(--soft); white-space: nowrap; display: flex; align-items: center; gap: 48px; }
+.marquee span::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: .7; }
+@keyframes slide { to { transform: translateX(-50%); } }
+
+/* ---------- section rhythm ---------- */
+.section { padding-block: 140px; }
+.section-head { display: grid; gap: 18px; margin-bottom: 56px; max-width: 760px; }
+
+/* ---------- the scroll story ---------- */
+.story { position: relative; height: 420vh; }
+.story-pin { position: sticky; top: 0; height: 100vh; height: 100svh; display: flex; align-items: center; }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; width: 100%; }
+.chapters { position: relative; min-height: 340px; }
+.chapter { position: absolute; inset: 0; opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s var(--ease); pointer-events: none; }
+.chapter.on { opacity: 1; transform: none; pointer-events: auto; }
+.chapter h3 { font-size: clamp(30px, 3.6vw, 46px); line-height: 1.05; margin-top: 14px; }
+.chapter h3 em { font-family: var(--display); font-style: italic; font-weight: 400; color: var(--gold-hi); }
+.chapter p { color: var(--soft); margin-top: 18px; max-width: 46ch; font-size: 17px; }
+.steps { display: flex; gap: 8px; margin-top: 34px; }
+.steps i { height: 3px; flex: 0 0 44px; border-radius: 9px; background: rgba(255, 255, 255, .1); overflow: hidden; position: relative; }
+.steps i b { position: absolute; inset: 0; width: 0; background: var(--gold); }
+.device { position: relative; height: 380px; padding: 24px; overflow: hidden; }
+.screen { position: absolute; inset: 24px; opacity: 0; transform: scale(.97); transition: opacity .55s ease, transform .6s var(--ease); }
+.screen.on { opacity: 1; transform: none; }
+.mkt-q { font-size: 15px; color: var(--soft); }
+.mkt-q b { display: block; color: var(--ink); font-size: 22px; font-weight: 500; margin-top: 6px; letter-spacing: -.01em; }
+.book { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 22px; }
+.book div { padding: 16px; border-radius: 14px; border: 1px solid var(--line); background: rgba(255, 255, 255, .03); }
+.book small { color: var(--muted); font-size: 12px; }
+.book b { display: block; font-size: 34px; font-weight: 500; letter-spacing: -.02em; margin-top: 4px; }
+.spark { margin-top: 18px; width: 100%; height: 120px; }
+.rules { display: grid; gap: 10px; margin-top: 20px; }
+.rule { display: grid; grid-template-columns: 24px 1fr auto; gap: 12px; align-items: center; padding: 14px 16px; border-radius: 14px; border: 1px solid var(--line); background: rgba(255, 255, 255, .03); font-size: 15px; }
+.rule .ok { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: rgba(98, 197, 154, .15); color: var(--win); font-size: 12px; }
+.rule small { color: var(--muted); }
+.big-call { text-align: left; }
+.big-call .call-title { font-size: 40px; }
+.stamp { position: absolute; right: 18px; top: 50%; transform: translateY(-50%) rotate(-12deg) scale(1.4); opacity: 0; padding: 10px 20px; border: 3px solid var(--win);
+  color: var(--win); border-radius: 12px; font-weight: 600; letter-spacing: .14em; font-size: 26px; transition: transform .5s cubic-bezier(.2, 1.6, .4, 1), opacity .3s; }
+.screen.on .stamp { opacity: 1; transform: translateY(-50%) rotate(-12deg) scale(1); transition-delay: .25s; }
+.graded-note { margin-top: 18px; color: var(--muted); font-size: 13px; }
+@media (max-width: 900px) {
+  .story { height: auto; }
+  .story-pin { position: relative; height: auto; display: block; padding-block: 100px 40px; }
+  .story-grid { grid-template-columns: 1fr; gap: 0; }
+  .chapters { min-height: 0; display: grid; gap: 18px; }
+  .chapter { position: relative; opacity: 1; transform: none; pointer-events: auto; }
+  .chapter-visual { display: block !important; margin-top: 18px; }
+  .story-device, .steps { display: none; }
+}
+.chapter-visual { display: none; }
+.chapter-visual .device { height: auto; min-height: 0; }
+.chapter-visual .screen { position: relative; inset: auto; opacity: 1; transform: none; }
+.chapter + .chapter { margin-top: 0; }
+
+/* ---------- record ---------- */
+.record-top { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.record-top .headline-stat { grid-column: span 2; grid-row: span 2; }
+.tiles { display: contents; }
+.headline-stat { padding: 34px; position: relative; overflow: hidden; }
+.headline-stat .big { font-size: clamp(64px, 9vw, 128px); line-height: .9; letter-spacing: -.045em; font-weight: 500; margin-top: 18px; }
+.headline-stat .big .dash { color: var(--muted); margin: 0 .06em; }
+.headline-stat .big .l { color: var(--soft); }
+.rate { display: flex; align-items: center; gap: 14px; margin-top: 22px; color: var(--soft); }
+.ring { width: 56px; height: 56px; }
+.tile { padding: 18px; border-radius: 16px; transition: transform .25s ease, border-color .25s ease; }
+.tile:hover { transform: translateY(-2px); border-color: var(--line-hi); }
+.tile .lbl { font-size: 13px; color: var(--soft); }
+.tile .rec { font-size: 28px; font-weight: 500; margin-top: 6px; letter-spacing: -.02em; }
+.tile .pct { font-size: 12.5px; color: var(--muted); }
+.tile .bar { height: 3px; background: rgba(255, 255, 255, .07); border-radius: 9px; margin-top: 12px; overflow: hidden; }
+.tile .bar i { display: block; height: 100%; background: var(--gold); border-radius: 9px; }
+.wins-head { display: flex; justify-content: space-between; align-items: end; margin-top: 56px; gap: 20px; flex-wrap: wrap; }
+.wins-head h3 { font-size: 24px; }
+.wins-ctrl { display: flex; gap: 8px; }
+.icon-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-hi); background: rgba(255, 255, 255, .03); color: var(--ink); cursor: pointer; display: grid; place-items: center; transition: background .2s, transform .15s; }
+.icon-btn:hover { background: rgba(255, 255, 255, .08); }
+.icon-btn:active { transform: scale(.95); }
+.wins { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-block: 20px 8px; scrollbar-width: none; }
+.wins::-webkit-scrollbar { display: none; }
+.win { flex: 0 0 270px; scroll-snap-align: start; padding: 18px; border-radius: 16px; }
+.win .wk { font-size: 12px; color: var(--muted); }
+.win .wt { font-size: 17px; font-weight: 500; margin-top: 10px; line-height: 1.3; min-height: 44px; }
+.win .wd { font-size: 13px; color: var(--soft); margin-top: 6px; }
+.win .ws { margin-top: 14px; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--win); padding: 5px 10px; border-radius: 99px; background: rgba(98, 197, 154, .1); }
+.fine { color: var(--muted); font-size: 13px; margin-top: 18px; max-width: 80ch; }
+@media (max-width: 900px) { .record-top { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .tile .rec { font-size: 24px; } .headline-stat { padding: 24px; } }
+
+/* ---------- members see: the call simulator and the bot console ---------- */
+.see { display: grid; grid-template-columns: 1.2fr .8fr; gap: 20px; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.panel-head b { font-weight: 500; }
+.panel-head small { color: var(--muted); font-size: 12.5px; }
+.seg { display: inline-flex; padding: 3px; border-radius: 999px; background: rgba(255, 255, 255, .04); border: 1px solid var(--line); }
+.seg button { font: 500 13px var(--sans); color: var(--soft); background: none; border: 0; padding: 7px 12px; border-radius: 999px; cursor: pointer; transition: background .25s, color .25s; }
+.seg button[aria-pressed="true"] { background: linear-gradient(180deg, var(--gold-hi), var(--gold)); color: #1a1408; }
+.seg button:not([aria-pressed="true"]):hover { color: var(--ink); }
+.sim-body { padding: 18px; }
+.sim-top { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
+.sim-q { font-size: 14px; color: var(--soft); }
+.sim-q b { display: block; font-size: 20px; color: var(--ink); font-weight: 500; letter-spacing: -.01em; }
+.sim-now { text-align: right; }
+.sim-now b { display: block; font-size: 34px; font-weight: 500; letter-spacing: -.03em; line-height: 1; }
+.sim-now small { color: var(--muted); font-size: 12.5px; }
+.sim-chart { position: relative; margin-top: 14px; height: 250px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: rgba(0, 0, 0, .25); cursor: crosshair; touch-action: pan-y; }
+.sim-chart canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.sim-stamp { position: absolute; right: 16px; top: 16px; padding: 8px 16px; border: 3px solid currentColor; border-radius: 10px; font-weight: 600; letter-spacing: .14em; font-size: 22px;
+  transform: rotate(-10deg) scale(1.5); opacity: 0; transition: transform .45s cubic-bezier(.2, 1.6, .4, 1), opacity .25s; pointer-events: none; }
+.sim-stamp.on { opacity: 1; transform: rotate(-10deg) scale(1); }
+.sim-stamp.hit { color: var(--win); }
+.sim-stamp.miss { color: var(--loss); }
+.sim-events { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+.ev { padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, .025); font-size: 13px; color: var(--muted);
+  transition: border-color .3s, background .3s, color .3s, transform .35s var(--ease); }
+.ev b { display: block; font-weight: 500; font-size: 13.5px; }
+.ev.on { color: var(--soft); border-color: rgba(216, 180, 106, .45); background: var(--gold-dim); transform: translateY(-2px); }
+.ev.on b { color: var(--ink); }
+.ev.on.bad { border-color: rgba(224, 115, 95, .5); background: rgba(224, 115, 95, .1); }
+.sim-ctrl { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+.play { width: 44px; height: 44px; flex: none; border-radius: 50%; border: 0; cursor: pointer; display: grid; place-items: center;
+  background: linear-gradient(180deg, var(--gold-hi), var(--gold)); color: #1a1408; box-shadow: 0 8px 24px -10px rgba(216, 180, 106, .7); transition: transform .15s; }
+.play:active { transform: scale(.94); }
+.scrub { flex: 1; min-width: 0; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 9px; cursor: pointer;
+  background: linear-gradient(90deg, var(--gold) var(--fill, 0%), rgba(255, 255, 255, .1) var(--fill, 0%)); }
+.scrub::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--gold-hi); box-shadow: 0 0 0 5px rgba(216, 180, 106, .18); }
+.scrub::-moz-range-thumb { width: 18px; height: 18px; border: 0; border-radius: 50%; background: var(--gold-hi); box-shadow: 0 0 0 5px rgba(216, 180, 106, .18); }
+.sim-ctrl .num { font-size: 13px; color: var(--muted); min-width: 64px; text-align: right; }
+
+.console-body { padding: 18px; display: grid; gap: 16px; }
+.field-row { display: grid; gap: 8px; }
+.field-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--soft); }
+.field-row label b { color: var(--ink); font-weight: 500; }
+.range { -webkit-appearance: none; appearance: none; width: 100%; height: 4px; border-radius: 9px; cursor: pointer;
+  background: linear-gradient(90deg, var(--gold) var(--fill, 50%), rgba(255, 255, 255, .1) var(--fill, 50%)); }
+.range::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); border: 4px solid var(--gold); }
+.range::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--ink); border: 4px solid var(--gold); }
+.feed { height: 230px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; padding: 12px; border-radius: 14px; border: 1px solid var(--line); background: rgba(0, 0, 0, .28);
+  scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, .15) transparent; }
+.bub { max-width: 92%; font-size: 13.5px; padding: 10px 12px; border-radius: 14px 14px 14px 4px; background: rgba(255, 255, 255, .055); border: 1px solid var(--line);
+  animation: bub .4s var(--ease) both; }
+.bub.sys { align-self: center; max-width: 100%; border-radius: 99px; font-size: 12px; color: var(--muted); background: none; border-style: dashed; }
+.bub.good { border-color: rgba(98, 197, 154, .45); }
+.bub.bad { border-color: rgba(224, 115, 95, .5); }
+.bub .caret { display: inline-block; width: 7px; height: 14px; background: var(--gold); vertical-align: -2px; margin-left: 2px; animation: blink 1s steps(1) infinite; }
+@keyframes bub { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+@keyframes blink { 50% { opacity: 0; } }
+.day { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.day div { padding: 10px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255, 255, 255, .025); }
+.day small { display: block; font-size: 11.5px; color: var(--muted); }
+.day b { font-weight: 500; font-size: 16px; }
+.stopbar { height: 4px; border-radius: 9px; background: rgba(255, 255, 255, .07); overflow: hidden; margin-top: 6px; }
+.stopbar i { display: block; height: 100%; width: 0; background: var(--loss); transition: width .6s var(--ease); }
+.console-body .btn { width: 100%; }
+.console-body .btn[disabled] { opacity: .5; cursor: not-allowed; transform: none; }
+@media (max-width: 900px) { .see { grid-template-columns: 1fr; } .sim-chart { height: 210px; } }
+@media (max-width: 520px) { .sim-events { grid-template-columns: 1fr; } .sim-now b { font-size: 28px; } }
+
+/* ---------- plans ---------- */
+.plans { display: flex; gap: 12px; height: 520px; }
+.plan { position: relative; flex: 1 1 0; min-width: 0; border-radius: 22px; padding: 26px 22px; cursor: pointer; overflow: hidden; isolation: isolate;
+  display: flex; flex-direction: column; transition: flex .7s var(--ease), transform .25s ease, border-color .3s; outline: none; }
+.plan:hover { transform: translateY(-2px); }
+.plan.open { flex: 2.7 1 0; cursor: default; border-color: rgba(216, 180, 106, .28); }
+.plan::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity .3s;
+  background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 30%), rgba(216, 180, 106, .13), transparent 60%); }
+.plan:hover::before, .plan.open::before { opacity: 1; }
+.plan.featured::after { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; z-index: 2; pointer-events: none;
+  background: conic-gradient(from var(--ang), transparent 0deg, transparent 250deg, var(--gold-hi) 320deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
+  animation: spin 5s linear infinite; }
+@keyframes spin { to { --ang: 360deg; } }
+.plan .emo { font-size: 26px; }
+.plan .pname { font-size: 22px; font-weight: 500; margin-top: 14px; letter-spacing: -.02em; white-space: nowrap; }
+.plan .pwhat { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+.plan .price { margin-top: auto; display: flex; align-items: baseline; gap: 4px; }
+.plan .price b { font-size: 40px; font-weight: 500; letter-spacing: -.03em; }
+.plan .price small { color: var(--muted); }
+.plan .trial { font-size: 12.5px; color: var(--gold); margin-top: 4px; }
+.plan .badge { position: absolute; top: 22px; right: 20px; font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; padding: 5px 10px; border-radius: 99px;
+  color: #1a1408; background: linear-gradient(180deg, var(--gold-hi), var(--gold)); white-space: nowrap; }
+.plan .more { display: grid; gap: 10px; margin-top: 24px; opacity: 0; transform: translateY(10px); transition: opacity .35s ease, transform .5s var(--ease); max-height: 0; overflow: hidden; }
+.plan.open .more { opacity: 1; transform: none; max-height: 400px; transition-delay: .18s; }
+.plan .more li { list-style: none; display: grid; grid-template-columns: 20px 1fr; gap: 8px; font-size: 14.5px; color: var(--soft); }
+.plan .more li::before { content: ""; width: 16px; height: 16px; margin-top: 3px; border-radius: 50%; background: var(--gold-dim) center / 10px no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.2l2.2 2.2 4.8-4.8' fill='none' stroke='%23f2dca6' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+.plan ul { margin: 0; padding: 0; display: grid; gap: 10px; }
+.plan .save { font-size: 13px; color: var(--gold-hi); }
+.plan .cta { margin-top: 22px; width: 100%; }
+.plan:not(.open) .cta { display: none; }
+.plan .hint { font-size: 12px; color: var(--muted); margin-top: 14px; }
+.plan.open .hint { display: none; }
+.plans-note { margin-top: 22px; color: var(--soft); font-size: 15px; }
+.plans-note b { color: var(--ink); font-weight: 500; }
+@media (max-width: 980px) {
+  .plans { flex-direction: column; height: auto; }
+  .plan { flex: none !important; }
+  .plan.featured { order: -1; }
+  .plan .price { margin-top: 18px; }
+}
+
+/* ---------- how ---------- */
+.how { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; counter-reset: s; }
+.how li { list-style: none; padding: 22px; border-radius: 18px; counter-increment: s; position: relative; }
+.how li::before { content: counter(s); font-family: var(--display); font-style: italic; font-size: 44px; color: var(--gold); line-height: 1; display: block; margin-bottom: 18px; }
+.how b { font-weight: 500; display: block; font-size: 17px; }
+.how span { color: var(--soft); font-size: 14.5px; display: block; margin-top: 6px; }
+@media (max-width: 900px) { .how { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .how { grid-template-columns: 1fr; } }
+
+/* ---------- faq ---------- */
+.faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; font-size: 18px; font-weight: 500; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary i { width: 28px; height: 28px; flex: none; border-radius: 50%; border: 1px solid var(--line-hi); position: relative; transition: transform .35s var(--ease), background .2s; }
+.faq summary i::before, .faq summary i::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1.5px; background: var(--ink); transform: translate(-50%, -50%); }
+.faq summary i::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform .35s var(--ease); }
+.faq details[open] summary i { background: var(--gold-dim); }
+.faq details[open] summary i::after { transform: translate(-50%, -50%) rotate(0deg); }
+.faq summary:hover { color: var(--gold-hi); }
+.faq .ans { color: var(--soft); padding: 0 0 24px; max-width: 64ch; }
+.faq .ans a { color: var(--gold-hi); }
+@media (max-width: 900px) { .faq-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+/* ---------- close + footer ---------- */
+.close { text-align: center; padding: 80px 30px; border-radius: 28px; position: relative; overflow: hidden; }
+.close h2 { font-size: clamp(38px, 5.4vw, 72px); }
+.close p { color: var(--soft); margin: 18px auto 0; max-width: 52ch; }
+.close .btn { margin-top: 30px; }
+footer { padding-block: 60px 40px; color: var(--muted); font-size: 13.5px; }
+.foot { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; border-top: 1px solid var(--line); padding-top: 40px; }
+.foot p { max-width: 62ch; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: end; align-content: start; }
+.foot-links a { text-decoration: none; color: var(--soft); }
+.foot-links a:hover { color: var(--ink); }
+.copy { margin-top: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.mail { user-select: all; color: var(--soft); }
+@media (max-width: 760px) { .foot { grid-template-columns: 1fr; } .foot-links { justify-content: start; } }
+
+/* ---------- overlays: sign in, member demo, update pop-up ---------- */
+.scrim { position: fixed; inset: 0; z-index: 80; background: rgba(4, 5, 7, .55); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+.scrim.on { opacity: 1; pointer-events: auto; }
+.sheet { position: fixed; z-index: 90; top: calc(env(safe-area-inset-top, 0px) + 86px); right: max(20px, env(safe-area-inset-right, 0px)); width: min(400px, calc(100vw - 40px));
+  padding: 0; overflow: hidden; opacity: 0; transform: translateY(-10px) scale(.98); transform-origin: top right; pointer-events: none;
+  transition: opacity .35s ease, transform .45s var(--ease); }
+.sheet.on { opacity: 1; transform: none; pointer-events: auto; }
+.sheet-art { position: relative; height: 190px; border-bottom: 1px solid var(--line); overflow: hidden; }
+.sheet-art canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.sheet-body { padding: 24px; }
+.sheet h3 { font-size: 26px; }
+.sheet h3 em { font-family: var(--display); font-style: italic; font-weight: 400; color: var(--gold-hi); }
+.sheet p { color: var(--soft); margin-top: 8px; font-size: 14.5px; }
+.sheet .btn { width: 100%; margin-top: 20px; }
+.sheet .whop-btn { position: relative; overflow: hidden; }
+.whop-btn .shine { position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .55) 50%, transparent 70%); transform: translateX(-120%); }
+.whop-btn:hover .shine { transform: translateX(120%); transition: transform .9s ease; }
+.perks { display: grid; gap: 8px; margin-top: 18px; font-size: 13.5px; color: var(--soft); }
+.perks div { display: flex; gap: 10px; align-items: center; }
+.perks div::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex: none; }
+.sheet .small { font-size: 12.5px; color: var(--muted); margin-top: 16px; }
+.x { position: absolute; top: 12px; right: 12px; z-index: 2; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line-hi); background: rgba(7, 8, 10, .5); color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+.x:hover { background: rgba(255, 255, 255, .08); }
+.connecting { display: none; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; height: 48px; color: var(--soft); font-size: 14px; }
+.sheet.busy .whop-btn { display: none; }
+.sheet.busy .connecting { display: flex; }
+.spinner { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(216, 180, 106, .25); border-top-color: var(--gold); animation: rot .8s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+
+.member { position: fixed; inset: 0; z-index: 85; overflow-y: auto; background: rgba(7, 8, 10, .82); -webkit-backdrop-filter: blur(22px); backdrop-filter: blur(22px);
+  opacity: 0; pointer-events: none; transition: opacity .4s ease; padding-block: calc(env(safe-area-inset-top, 0px) + 100px) 60px; }
+.member.on { opacity: 1; pointer-events: auto; }
+.demo-flag { display: inline-flex; gap: 8px; align-items: center; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-hi); padding: 6px 12px; border-radius: 99px; border: 1px dashed rgba(216, 180, 106, .5); }
+.m-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-top: 18px; }
+.m-head h2 { font-size: clamp(34px, 4.4vw, 54px); }
+.m-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; margin-top: 34px; }
+.m-card { padding: 22px; border-radius: 20px; min-width: 0; }
+.m-card h4 { margin: 0; font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.m-plan { grid-column: span 5; }
+.m-ref { grid-column: span 3; }
+.m-bot { grid-column: span 4; }
+.m-rec { grid-column: span 7; }
+.m-pings { grid-column: span 5; }
+.m-plan .pn { font-size: 30px; font-weight: 500; margin-top: 12px; letter-spacing: -.02em; }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--win); padding: 4px 10px; border-radius: 99px; background: rgba(98, 197, 154, .1); margin-top: 10px; }
+.m-rows { display: grid; gap: 10px; margin-top: 18px; font-size: 14.5px; }
+.m-rows div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.m-rows span { color: var(--muted); }
+.m-card .btn { margin-top: 18px; height: 42px; font-size: 14px; }
+.m-big { font-size: 44px; font-weight: 500; letter-spacing: -.03em; margin-top: 10px; }
+.m-sub { color: var(--muted); font-size: 13.5px; }
+.chart { width: 100%; height: 170px; margin-top: 16px; }
+.toggle-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.switch { width: 44px; height: 26px; border-radius: 99px; background: rgba(255, 255, 255, .1); border: 1px solid var(--line-hi); position: relative; cursor: pointer; transition: background .25s; flex: none; }
+.switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); transition: transform .3s var(--ease); }
+.switch[aria-checked="true"] { background: linear-gradient(180deg, var(--gold-hi), var(--gold)); }
+.switch[aria-checked="true"]::after { transform: translateX(18px); background: #1a1408; }
+@media (max-width: 980px) { .m-plan, .m-ref, .m-bot, .m-rec, .m-pings { grid-column: span 12; } }
+
+.update { position: fixed; z-index: 95; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 22px); width: min(560px, calc(100vw - 32px));
+  transform: translate(-50%, 140%); transition: transform .7s cubic-bezier(.2, 1.3, .4, 1); padding: 20px 20px 20px 22px; display: grid; grid-template-columns: 64px 1fr; gap: 18px; }
+.update.on { transform: translate(-50%, 0); }
+.mini-orb { width: 64px; height: 64px; border-radius: 50%; position: relative; background: radial-gradient(circle at 35% 30%, var(--gold-hi), var(--gold) 40%, #5a4420 80%);
+  box-shadow: 0 0 34px rgba(216, 180, 106, .45); animation: bob 3s ease-in-out infinite; }
+.mini-orb::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 1px dashed rgba(242, 220, 166, .5); animation: rot 9s linear infinite; }
+.mini-orb i { position: absolute; width: 18px; height: 6px; border-radius: 9px; background: rgba(255, 255, 255, .7); top: 16px; left: 14px; transform: rotate(-30deg); filter: blur(1px);
+  animation: polish 1.6s ease-in-out infinite; }
+@keyframes bob { 50% { transform: translateY(-4px); } }
+@keyframes polish { 50% { transform: translate(18px, 14px) rotate(-30deg); opacity: .4; } }
+.update h3 { font-size: 19px; }
+.update p { color: var(--soft); font-size: 14.5px; margin-top: 6px; }
+.update .row { display: flex; align-items: center; gap: 14px; margin-top: 14px; flex-wrap: wrap; }
+.update .btn { height: 40px; font-size: 14px; }
+.update .eta { font-size: 13px; color: var(--muted); }
+.update .eta b { color: var(--gold-hi); font-weight: 500; }
+
+.preview-bar { position: fixed; z-index: 70; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+  display: flex; gap: 6px; padding: 6px; border-radius: 999px; font-size: 12.5px; align-items: center; }
+.preview-bar span { color: var(--muted); padding: 0 8px 0 10px; }
+.preview-bar button { font: 500 12.5px var(--sans); color: var(--ink); background: rgba(255, 255, 255, .05); border: 1px solid var(--line-hi); border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+.preview-bar button:hover { background: rgba(255, 255, 255, .1); }
+@media (max-width: 520px) { .preview-bar span { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001s !important; animation-iteration-count: 1 !important; transition-duration: .001s !important; scroll-behavior: auto !important; }
+}
+</style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="./"><img src="assets/icon-180.png" alt=""><span><b>ORACLE</b> SIGNALS</span></a>
-    <nav class="nav"><a href="#plans">Plans</a><a href="#results">Record</a><a href="#what">What you get</a><a href="#faq">FAQ</a></nav>
-    <a class="btn" href="#plans">Start 3 days free</a>
-  </header>
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
 
-  <div class="hero" id="top">
-    <div>
-      <h1><span class="gold">Oracle</span>Signals</h1>
-      <p class="lead">Live Bitcoin and DOGE 15-minute calls, sports picks priced against Kalshi, and a Telegram bot that
-        can follow the calls on your own account. <b>Every call and pick is graded in public, wins and losses.</b></p>
-      <a class="btn big" href="#plans">See plans · 3 days free</a>
-      <ul class="trust"><li>3 days free</li><li>Cancel any time in Whop</li><li>Secure checkout by Whop</li></ul>
-      <div class="proof" id="proof" hidden></div>
+<header class="nav-shell">
+  <div class="wrap">
+    <nav class="nav glass" aria-label="Main">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><b>Oracle</b><span>Signals</span></a>
+      <div class="nav-links">
+        <a href="#story">How it works</a>
+        <a href="#record">Record</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <button class="btn btn-ghost signin" id="signin-open" aria-haspopup="dialog">
+        <span class="dot" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5.5" r="3" stroke="#f2dca6" stroke-width="1.4"/><path d="M2.5 14c.8-2.8 3-4.2 5.5-4.2s4.7 1.4 5.5 4.2" stroke="#f2dca6" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+        Sign in
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 1. hero: the product, front and centre -->
+  <section class="hero" id="top" data-stage="0">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Kalshi calls · sports picks · your own bot</div>
+        <h1 style="margin-top:20px">Prediction-market calls, <em>graded in public.</em></h1>
+        <p class="lede">BTC and DOGE 15-minute calls, sports picks priced against Kalshi and the sharp books, and a Telegram bot that trades your own account. Posted before the result, graded after, losses included.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#plans">Start your 3-day free trial <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#record">See the record</a>
+        </div>
+        <div class="fact">
+          <span class="chip"><span class="pulse" aria-hidden="true"></span>Next BTC window closes in <b class="num" id="countdown">--:--</b></span>
+          <span class="chip" id="hero-rec">📡 BTC calls <b class="num" id="hero-rec-n">398–40</b> since Oct 8</span>
+        </div>
+      </div>
+
+      <div class="stack" id="stack" aria-label="Example posts">
+        <div class="stack-inner" id="stack-inner">
+          <article class="pcard glass pc-1">
+            <span class="tag">Example call</span>
+            <div class="call-head"><span class="coin">₿</span><div><b style="color:var(--ink);font-weight:500">BTC · 15-minute</b><br>📡│btc-calls</div></div>
+            <div class="call-title">BTC <span class="up">UP</span> by 3:15 PM</div>
+            <div class="kv">
+              <div><small>Buy</small><b>YES</b></div>
+              <div><small>Limit</small><b class="num">88¢</b></div>
+              <div><small>Left</small><b class="num">10 min</b></div>
+            </div>
+            <div class="meter"><i></i></div>
+            <div class="meter-row"><span>Window</span><span class="num">5 of 15 min gone</span></div>
+          </article>
+          <article class="pcard glass pc-2">
+            <span class="tag">Example pick</span>
+            <div class="call-head"><span class="coin" style="font-size:15px">🏈</span><div><b style="color:var(--ink);font-weight:500">NFL · 🎯 likely</b><br>Jaguars @ Ravens</div></div>
+            <div class="pick-line"><b>Under 25.5 rec. yards</b><span class="num" style="color:var(--gold-hi)">71¢</span></div>
+            <div class="bar2"><span class="on">Fair 75¢</span><span>Limit 71¢</span><span>Kickoff 8:15</span></div>
+          </article>
+          <article class="pcard glass pc-3 tg">
+            <span class="tag">Telegram bot</span>
+            <b style="color:var(--ink);font-weight:500">🤖 The Oracle</b> · practice mode
+            <div class="bubble">Bought YES on BTC UP at 88¢ × 10. Your daily stop: $25.</div>
+            <div class="btns"><span>📊 Positions</span><span>⏸ Pause</span></div>
+          </article>
+        </div>
+      </div>
     </div>
-    <img class="orb" src="assets/orb.png" alt="The Oracle Signals crystal ball">
+  </section>
+
+  <div class="marquee" aria-label="What we cover">
+    <div class="marquee-track" id="marquee"></div>
   </div>
 
-  <section id="plans">
-    <h2>Pick your plan</h2>
-    <p class="sub">Every plan starts with <b>3 days free</b>. Cancel in Whop before it ends and you pay nothing.
-      Payments are handled by Whop; we never see your card.</p>
-    <div class="plans">
-      <div class="plan p-picks"><h3>🏟️ Prophecy</h3><div class="tag">Sports Picks</div><div class="price">$19<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>Every sports pick channel: NFL, college football, NBA, college basketball, soccer, tennis</li><li>Pick alerts you choose</li><li>Lobby and chat</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/sports-picks-72-3c51/">Start free trial</a></div>
-      <div class="plan p-calls"><h3>📡 Omen</h3><div class="tag">BTC + DOGE Calls</div><div class="price">$29<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>BTC and DOGE 15-minute calls and heads-ups</li><li>Gold calls if it passes its test</li><li>The live board and daily record</li><li>Lobby and chat</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/calls-51/">Start free trial</a></div>
-      <div class="plan best p-all"><span class="badge">BEST VALUE · EVERYTHING</span><h3>⭐ The Oracle</h3><div class="tag">Picks + Calls + the Bot</div>
-        <div class="price">$49<small>/mo</small></div><div class="trial">3 days free</div>
-        <div class="save">Save $19 a month vs buying separately</div>
-        <ul><li>The whole Discord: every call and every pick</li><li>The Oracle Telegram bot on your own Kalshi account</li><li>Practice mode first, your own limits</li><li>Try all of it free for 3 days</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/everything-80-07d2/">Start free trial</a></div>
-      <div class="plan p-both"><h3>🔮 Foresight</h3><div class="tag">Picks + Calls</div><div class="price">$39<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>The whole Discord</li><li>Everything in Prophecy and Omen</li><li>Save $9 a month</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/picks-calls/">Start free trial</a></div>
-      <div class="plan p-bot"><h3>🤖 Automaton</h3><div class="tag">The Oracle Bot</div><div class="price">$29<small>/mo</small></div>
-        <div class="trial">3 days free</div>
-        <ul><li>The Oracle Telegram bot</li><li>Runs on your own Kalshi account</li><li>Practice mode first</li></ul>
-        <a class="btn" href="https://whop.com/oraclesignals/the-oracle-bot/">Start free trial</a></div>
-    </div>
-    <p class="plans-note">Not sure? Start with <b>⭐ The Oracle</b>: the free 3 days show you everything, and you can
-      cancel in Whop before they end.</p>
-  </section>
+  <!-- 2. the scroll story: the artwork changes chapter by chapter -->
+  <section class="story" id="story">
+    <div class="story-pin">
+      <div class="wrap story-grid">
+        <div>
+          <div class="eyebrow">How a call is made</div>
+          <div class="chapters" id="chapters">
+            <div class="chapter on" data-ch="0">
+              <h3>It watches every <em>15-minute market.</em></h3>
+              <p>Kalshi lists a BTC and a DOGE market every quarter hour: will the price be higher when the window closes? The coach reads every one of them, around the clock.</p>
+              <div class="chapter-visual"></div>
+            </div>
+            <div class="chapter" data-ch="1">
+              <h3>It waits until <em>its rules line up.</em></h3>
+              <p>A call needs the favourite priced in its tested band with about 10 minutes left. Most windows never qualify, and no call is the right answer then.</p>
+              <div class="chapter-visual"></div>
+            </div>
+            <div class="chapter" data-ch="2">
+              <h3>It posts the call <em>before the result.</em></h3>
+              <p>The side, the price to pay and the time left go to Discord, with a heads-up first, so members can place it themselves or let the bot do it.</p>
+              <div class="chapter-visual"></div>
+            </div>
+            <div class="chapter" data-ch="3">
+              <h3>Then Kalshi grades it, <em>win or loss.</em></h3>
+              <p>Every call gets its stamp on the record. Losses stay on it too, so the record you see is the whole record.</p>
+              <div class="chapter-visual"></div>
+            </div>
+          </div>
+          <div class="steps" id="steps"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
+        </div>
 
-  <section id="results" hidden>
-    <h2>The record</h2>
-    <p class="sub">Every call and pick since launch, wins and losses. Calls and picks aren't trades we placed: see the <a href="risk.html">Risk Disclosure</a>.
-      <span id="updated"></span></p>
-    <div class="stats" id="stats"></div>
-    <div class="carousel-head"><h3>Recent wins</h3>
-      <div class="arrows"><button type="button" id="prev" aria-label="Previous">‹</button>
-        <button type="button" id="next" aria-label="Next">›</button></div></div>
-    <div class="carousel" id="wins" tabindex="0" aria-label="Recent wins"></div>
-    <p class="note">The record above includes every loss. Past results don't guarantee future ones.</p>
-    <div class="center"><a class="btn" href="#plans">Start 3 days free</a></div>
-  </section>
-
-  <section id="what">
-    <h2>What you get</h2>
-    <p class="sub">Measured, not hyped. Everything is posted before the result is known, then graded for everyone to see.</p>
-    <div class="grid">
-      <div class="card"><span class="icon">📡</span><h3>BTC and DOGE calls</h3>
-        <p>The coach watches Kalshi's 15-minute crypto markets and calls a side only when its rules line up. A
-          heads-up before likely calls, a live board, and a daily record with every win and loss. Gold is in its live
-          test and joins the day it passes.</p></div>
-      <div class="card"><span class="icon">🏟️</span><h3>Sports picks</h3>
-        <p>NFL, college football, NBA and college basketball (🧪 on trial), soccer and tennis. Each pick is priced
-          against Kalshi and the sharp sportsbooks, posted hours before the start, then graded against the result and
-          the closing line.</p></div>
-      <div class="card"><span class="icon">🤖</span><h3>The Oracle bot</h3>
-        <p>A Telegram bot that runs on <i>your own</i> Kalshi account. Practice with pretend money first; when you're
-          ready, auto mode places the coach's calls for you, with your own limits and a daily stop.</p></div>
-    </div>
-  </section>
-
-  <section id="how">
-    <h2>How it works</h2>
-    <div class="steps">
-      <div class="card"><h3>Pick a plan</h3><p>Start the 3-day free trial on Whop.</p></div>
-      <div class="card"><h3>Connect Discord</h3><p>Whop adds you to the server and opens your plan's channels.</p></div>
-      <div class="card"><h3>Automaton or The Oracle: claim the bot</h3><p>Tap 🎟 in 💎│get-access and the bot link comes to your DMs.</p></div>
-      <div class="card"><h3>Stay or cancel</h3><p>Keep going after 3 days, or cancel in Whop before then and pay nothing.</p></div>
+        <div class="story-device">
+          <div class="device glass" id="device">
+            <div class="screen on" data-sc="0">
+              <div class="mkt-q">Kalshi · BTC 15-minute<b>BTC above $101,250 at 3:15 PM?</b></div>
+              <div class="book">
+                <div><small>YES</small><b class="num" id="yes">62¢</b></div>
+                <div><small>NO</small><b class="num" id="no">39¢</b></div>
+              </div>
+              <svg class="spark" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true"><path id="spark" d="" fill="none" stroke="#d8b46a" stroke-width="2"/></svg>
+            </div>
+            <div class="screen" data-sc="1">
+              <div class="mkt-q">The coach's check<b>BTC UP · 3:15 PM window</b></div>
+              <div class="rules">
+                <div class="rule"><span class="ok">✓</span>Favourite in its band<small class="num">88¢</small></div>
+                <div class="rule"><span class="ok">✓</span>Minutes left<small class="num">10:00</small></div>
+                <div class="rule"><span class="ok">✓</span>Not a skipped hour<small>clear</small></div>
+              </div>
+            </div>
+            <div class="screen big-call" data-sc="2">
+              <div class="call-head"><span class="coin">₿</span><div><b style="color:var(--ink);font-weight:500">📡 New call</b><br>posted 3:05 PM ET</div></div>
+              <div class="call-title">BTC <span class="up">UP</span> by 3:15 PM</div>
+              <div class="kv"><div><small>Buy</small><b>YES</b></div><div><small>Limit</small><b class="num">88¢</b></div><div><small>Left</small><b class="num">10 min</b></div></div>
+              <p class="graded-note">Example call. A heads-up goes out first, then the call.</p>
+            </div>
+            <div class="screen big-call" data-sc="3">
+              <div class="call-head"><span class="coin">₿</span><div><b style="color:var(--ink);font-weight:500">📡 Graded</b><br>3:15 PM ET</div></div>
+              <div class="call-title">BTC <span class="up">UP</span> by 3:15 PM</div>
+              <div class="kv"><div><small>Paid</small><b class="num">88¢</b></div><div><small>Settled</small><b class="num">$1.00</b></div><div><small>Result</small><b style="color:var(--win)">Won</b></div></div>
+              <span class="stamp">HIT</span>
+              <p class="graded-note">Example. A loss gets a MISS stamp, and it stays on the record.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="faq">
-    <h2>Questions</h2>
-    <details><summary>Which plan should I pick?</summary>
-      <p>If you're not sure, start with ⭐ The Oracle: it has every call, every pick and the bot, so the free 3 days
-        show you all of it. Only want one thing? Omen is the crypto calls, Prophecy the sports picks, Automaton the
-        bot.</p></details>
-    <details><summary>What happens after the 3 days?</summary>
-      <p>Your plan renews monthly at its price unless you cancel in Whop before the trial ends. Cancel during the
-        trial and you pay nothing. See the <a href="refund.html">refund policy</a>.</p></details>
-    <details><summary>Is this financial advice?</summary>
-      <p>No. Oracle Signals shares calls, picks and tools for education and entertainment. You decide what to
-        trade or bet, and you can lose money.</p></details>
-    <details><summary>Do I need a Kalshi account?</summary>
-      <p>Only to trade the calls or use the bot with real money. Kalshi is a US exchange regulated by the CFTC; you
-        open and fund your own account there. Oracle Signals is not affiliated with Kalshi.</p></details>
-    <details><summary>Can the bot touch my money?</summary>
-      <p>It places trades on your Kalshi account only within the limits you set, and it never withdraws money. Your
-        Kalshi key is stored encrypted, and you can disconnect at any time, which deletes it.</p></details>
-    <details><summary>How do I cancel?</summary>
-      <p>In your Whop account, under your membership. Access lasts to the end of the period you paid for. See the
-        <a href="refund.html">refund policy</a>.</p></details>
-    <details><summary>How good are the results?</summary>
-      <p>Every call and pick is graded in public in the Discord, with a daily and weekly record, losses included. Past
-        results don't promise future ones.</p></details>
+  <!-- 3. the record -->
+  <section class="section" id="record" data-stage="5">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The record</div>
+        <h2>Every graded call and pick, <em>losses included.</em></h2>
+      </div>
+      <div class="record-top">
+        <div class="headline-stat glass">
+          <div class="eyebrow" style="color:var(--soft)">📡 BTC 15-minute calls · since <span id="since">Oct 8, 2026</span></div>
+          <div class="big num"><span class="w" data-count="398">398</span><span class="dash">–</span><span class="l" data-count="40">40</span></div>
+          <div class="rate">
+            <svg class="ring" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="5"/><circle id="ring" cx="28" cy="28" r="24" fill="none" stroke="#d8b46a" stroke-width="5" stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="150.8" transform="rotate(-90 28 28)" style="transition:stroke-dashoffset 1.4s cubic-bezier(.05,.6,.4,.9)"/></svg>
+            <div><b class="num" id="btc-pct" style="color:var(--ink);font-weight:500;font-size:20px">91%</b><br>won, wins and losses counted</div>
+          </div>
+        </div>
+        <div class="tiles" id="tiles"></div>
+      </div>
+
+      <div class="wins-head">
+        <h3>Recent wins</h3>
+        <div class="wins-ctrl">
+          <button class="icon-btn" id="prev" aria-label="Earlier wins">←</button>
+          <button class="icon-btn" id="next" aria-label="Later wins">→</button>
+        </div>
+      </div>
+      <div class="wins" id="wins"></div>
+      <p class="fine">Record as of <span id="updated">Nov 6, 2:00 AM ET</span>, refreshed every hour. Wins, losses and prices only: no dollar figures for trades nobody placed. Past results don't guarantee future ones.</p>
+    </div>
   </section>
 
-  <div class="cta-band">
-    <div><h2>Try everything free for 3 days</h2>
-      <p>Every call, every pick and the bot. Cancel in Whop before the trial ends and you pay nothing.</p></div>
-    <a class="btn big" href="#plans">See plans</a>
+  <!-- 4. what members see -->
+  <section class="section" id="see" data-stage="5">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Try it yourself</div>
+        <h2>Play a window through. <em>Then set your limits.</em></h2>
+        <p class="lede">Watch a 15-minute market go from the heads-up to the call to the grade, misses included. Then pick the size and daily stop the bot would trade with, and send it a few calls.</p>
+      </div>
+      <div class="see">
+        <div class="glass" style="overflow:hidden" id="sim">
+          <div class="panel-head">
+            <div><b>Play a 15-minute window</b><br><small>Drag, tap play, or hover the chart</small></div>
+            <div class="seg" role="group" aria-label="Pick a window">
+              <button type="button" data-sc="up" aria-pressed="true">UP call</button>
+              <button type="button" data-sc="down" aria-pressed="false">DOWN call</button>
+              <button type="button" data-sc="miss" aria-pressed="false">A miss</button>
+            </div>
+          </div>
+          <div class="sim-body">
+            <div class="sim-top">
+              <div class="sim-q">Kalshi · BTC 15-minute<b id="sim-q">BTC UP by 3:15 PM?</b></div>
+              <div class="sim-now"><b class="num" id="sim-px">52¢</b><small id="sim-left">15:00 left</small></div>
+            </div>
+            <div class="sim-chart" id="sim-chart"><canvas id="sim-cv"></canvas><span class="sim-stamp" id="sim-stamp">HIT</span></div>
+            <div class="sim-events">
+              <div class="ev" id="ev0"><b>👀 Heads-up</b>a call may come</div>
+              <div class="ev" id="ev1"><b>📡 The call</b><span id="ev1-t">buy YES at 88¢</span></div>
+              <div class="ev" id="ev2"><b id="ev2-b">Graded</b><span id="ev2-t">at the close</span></div>
+            </div>
+            <div class="sim-ctrl">
+              <button class="play" id="sim-play" type="button" aria-label="Play">▶</button>
+              <input class="scrub" id="sim-scrub" type="range" min="0" max="900" step="1" value="0" aria-label="Time in the window">
+              <span class="num" id="sim-clock">3:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass" style="overflow:hidden" id="bot">
+          <div class="panel-head">
+            <div><b>🤖 Set up the bot</b><br><small>Your limits, then send it a call</small></div>
+            <div class="seg" role="group" aria-label="Mode">
+              <button type="button" data-mode="practice" aria-pressed="true">Practice</button>
+              <button type="button" data-mode="live" aria-pressed="false">Live</button>
+            </div>
+          </div>
+          <div class="console-body">
+            <div class="field-row">
+              <label for="bot-size">Per trade <b class="num" id="bot-size-v">$10</b></label>
+              <input class="range" id="bot-size" type="range" min="5" max="100" step="5" value="10">
+            </div>
+            <div class="field-row">
+              <label for="bot-stop">Daily stop <b class="num" id="bot-stop-v">$25</b></label>
+              <input class="range" id="bot-stop" type="range" min="10" max="250" step="5" value="25">
+            </div>
+            <div class="feed" id="feed" aria-live="polite"></div>
+            <div class="day">
+              <div><small>Trades today</small><b class="num" id="d-n">0</b></div>
+              <div><small>Result today</small><b class="num" id="d-pl">$0.00</b></div>
+              <div><small>Room to the stop</small><b class="num" id="d-room">$25.00</b><span class="stopbar"><i id="d-bar"></i></span></div>
+            </div>
+            <button class="btn btn-gold" id="bot-go" type="button">Send the next call <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+      <p class="fine">Examples to show how it works: made-up windows and calls, not records of real trades. Amounts are before Kalshi's fees.</p>
+    </div>
+  </section>
+
+  <!-- 5. plans -->
+  <section class="section" id="plans" data-stage="6">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Plans</div>
+        <h2>Pick your plan. <em>The first 3 days are free.</em></h2>
+        <p class="lede">Cancel in Whop before the trial ends and you pay nothing. Payments are handled by Whop; we never see your card.</p>
+      </div>
+      <div class="plans" id="plan-row"></div>
+      <p class="plans-note">Not sure? Start with <b>⭐ The Oracle</b>: the free 3 days show you everything, and you can cancel in Whop before they end.</p>
+    </div>
+  </section>
+
+  <!-- 6. how joining works -->
+  <section class="section" style="padding-top:40px" data-stage="6">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Getting in</div><h2>Four steps, <em>about two minutes.</em></h2></div>
+      <ol class="how" style="padding:0;margin:0">
+        <li class="glass"><b>Pick a plan</b><span>Start the 3-day free trial on Whop.</span></li>
+        <li class="glass"><b>Connect Discord</b><span>Whop adds you to the server and opens your plan's channels.</span></li>
+        <li class="glass"><b>Claim the bot</b><span>On Automaton or The Oracle, tap 🎟 in 💎│get-access and the bot link comes to your DMs.</span></li>
+        <li class="glass"><b>Stay or cancel</b><span>Keep going after 3 days, or cancel in Whop before then and pay nothing.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section class="section" id="faq" data-stage="6">
+    <div class="wrap faq-grid">
+      <div class="section-head" style="margin:0"><div class="eyebrow">Questions</div><h2>Before you <em>start.</em></h2></div>
+      <div class="faq" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- 8. close -->
+  <section class="section" style="padding-top:20px" data-stage="7">
+    <div class="wrap">
+      <div class="close glass">
+        <h2>Try everything <em>free for 3 days.</em></h2>
+        <p>Every call, every pick and the bot. Cancel in Whop before the trial ends and you pay nothing.</p>
+        <a class="btn btn-gold" href="#plans">See plans <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <p><b style="color:var(--soft);font-weight:500">Risk:</b> prediction markets and sports betting can lose money, and past results don't guarantee future ones. Nothing here is financial, investment or betting advice. You must be 18 or older and follow the rules where you live.</p>
+      <div class="foot-links">
+        <a href="terms.html">Terms</a>
+        <a href="risk.html">Risk</a>
+        <a href="refund.html">Refund policy</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 Oracle Signals. Not affiliated with Kalshi.</span><span class="mail">hello@oraclesignals.app</span></div>
   </div>
+</footer>
 
-  <div class="risk"><b>Risk:</b> prediction markets and sports betting can lose money, and past results don't
-    guarantee future ones. Nothing here is financial, investment or betting advice. You must be 18 or older and
-    follow the rules where you live.</div>
-
-  <footer>
-    <div class="links"><a href="terms.html">Terms</a><a href="risk.html">Risk</a><a href="refund.html">Refund policy</a>
-      <a href="privacy.html">Privacy</a><a href="mailto:hello@oraclesignals.app">hello@oraclesignals.app</a></div>
-    © 2026 Oracle Signals. Not affiliated with Kalshi.
-  </footer>
+<!-- sign in -->
+<div class="scrim" id="scrim"></div>
+<div class="sheet glass" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <button class="x" id="sheet-x" aria-label="Close">✕</button>
+  <div class="sheet-art"><canvas id="sheet-art"></canvas></div>
+  <div class="sheet-body">
+    <h3 id="sheet-title">Welcome <em>back.</em></h3>
+    <p>Sign in with the Whop account you joined with. You can browse everything without it.</p>
+    <button class="btn btn-gold whop-btn" id="whop-btn"><span class="shine"></span>Continue with Whop <span class="arrow" aria-hidden="true">→</span></button>
+    <div class="connecting"><span class="spinner"></span>Opening Whop…</div>
+    <div class="perks"><div>Your plan, renewal and billing</div><div>Your record and referrals</div><div>Which picks ping you</div></div>
+    <p class="small">We never see your Whop password. Whop only tells us which plan you're on.</p>
+  </div>
 </div>
 
-<!-- 📱 phones: one tap to the plans from anywhere, hidden at the top and while the plans are on screen -->
-<a class="phone-bar" id="phone-bar" href="#plans" aria-hidden="true" tabindex="-1">
-  <span><b>3 days free</b> · then from $19/mo</span><span class="go">See plans →</span></a>
+<!-- member page (demo) -->
+<section class="member" id="member" aria-label="Your account (demo)">
+  <div class="wrap">
+    <span class="demo-flag">Demo · sample data</span>
+    <div class="m-head">
+      <h2>Good evening, <em>Alex.</em></h2>
+      <button class="btn btn-ghost" id="member-x">Back to the site</button>
+    </div>
+    <div class="m-grid">
+      <div class="m-card glass m-plan">
+        <h4>Your plan</h4>
+        <div class="pn">⭐ The Oracle</div>
+        <span class="status"><span class="pulse"></span>Active · renews Nov 21</span>
+        <div class="m-rows">
+          <div><span>Price</span><b class="num">$49 / month</b></div>
+          <div><span>Member since</span><b>Oct 24, 2026</b></div>
+          <div><span>Includes</span><b>Calls, picks, the bot</b></div>
+        </div>
+        <a class="btn btn-ghost" href="https://whop.com/" rel="noopener">Manage billing on Whop ↗</a>
+      </div>
+      <div class="m-card glass m-ref">
+        <h4>Referrals</h4>
+        <div class="m-big num">3</div>
+        <div class="m-sub">paying friends · you earn 20% of what they pay, every month</div>
+        <div class="m-rows"><div><span>Contest rank</span><b>#4</b></div></div>
+      </div>
+      <div class="m-card glass m-bot">
+        <h4>Telegram bot</h4>
+        <div class="pn" style="font-size:22px">🤖 Connected</div>
+        <span class="status">Practice mode</span>
+        <div class="m-rows"><div><span>Daily stop</span><b class="num">$25</b></div><div><span>Per trade</span><b class="num">$10</b></div></div>
+      </div>
+      <div class="m-card glass m-rec">
+        <h4>Your record · calls you took ✅</h4>
+        <div style="display:flex;gap:30px;flex-wrap:wrap;margin-top:10px">
+          <div><div class="m-big num">27–3</div><div class="m-sub">calls and picks you tapped ✅ on</div></div>
+          <div><div class="m-big num" style="color:var(--gold-hi)">90%</div><div class="m-sub">won</div></div>
+        </div>
+        <svg class="chart" id="m-chart" viewBox="0 0 600 170" preserveAspectRatio="none" aria-hidden="true"></svg>
+      </div>
+      <div class="m-card glass m-pings">
+        <h4>Ping me for</h4>
+        <div id="pings"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- the update pop-up -->
+<div class="update glass" id="update" role="status" aria-live="polite">
+  <div class="mini-orb" aria-hidden="true"><i></i></div>
+  <div>
+    <h3 id="up-title">The Oracle is polishing its crystal ball 🔮</h3>
+    <p id="up-msg">We're shipping an update to the site. Your plan, picks, calls and the bot all keep running as normal.</p>
+    <div class="row">
+      <button class="btn btn-gold" id="up-ok">Keep browsing</button>
+      <span class="eta">Back to full shine in <b class="num" id="up-eta">~10:00</b></span>
+    </div>
+  </div>
+</div>
+
+<div class="preview-bar glass" id="preview-bar">
+  <span>Preview</span>
+  <button id="pv-update">Show update pop-up</button>
+  <button id="pv-member">Member demo</button>
+</div>
 
 <script>
-// The record (record.json, refreshed hourly by the server). Without it the record and the hero's proof stay hidden.
-(async () => {
-  let d;
-  try {
-    const r = await fetch("record.json", {cache: "no-store"});
-    if (!r.ok) return;
-    d = await r.json();
-  } catch (e) { return; }
-  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls;
-    if (text !== undefined) n.textContent = text; return n; };
-  const pct = s => Math.round(100 * s.won / (s.won + s.lost));
-  const all = [d.btc, ...(d.coins || []), ...(d.sports || [])].filter(s => s && (s.won + s.lost));
-  const stats = document.getElementById("stats");
-  for (const s of all) {
-    const box = el("div", "stat");
-    box.append(el("div", "stat-label", `${s.emoji} ${s.label}`),
-               el("div", "stat-rec", `${s.won}–${s.lost}${s.push ? "–" + s.push : ""}`),
-               el("div", "stat-pct", `${pct(s)}% won`));
-    stats.append(box);
+(() => {
+"use strict";
+const PREVIEW = false; // the preview build: sample record inline, the demo login, the preview bar
+const RECORD = null;
+const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+
+/* ---------------- the particle field ---------------- */
+const cv = $("#field"), cx = cv.getContext("2d");
+const small = () => innerWidth < 900;
+let W = 0, H = 0, DPR = 1, N = 0, P = [];
+const ptr = { x: 0, y: 0, tx: 0, ty: 0 };
+function size() {
+  DPR = Math.min(devicePixelRatio || 1, 1.6);
+  W = innerWidth; H = innerHeight;
+  cv.width = W * DPR; cv.height = H * DPR;
+  const n = small() ? 650 : 1500;
+  if (n !== N) { N = n; P = Array.from({ length: N }, (_, i) => ({ s: Math.random(), k: i / N, hot: Math.random() < .09 })); }
+}
+// shapes: each returns a point [x, y, z] in unit space for particle i (k in 0..1, s random) at time t
+const TAU = Math.PI * 2, GA = Math.PI * (3 - Math.sqrt(5));
+const SHAPES = [
+  // 0 the orb
+  (i, k, s, t) => { const y = 1 - 2 * k, r = Math.sqrt(1 - y * y), a = i * GA; return [Math.cos(a) * r, y, Math.sin(a) * r]; },
+  // 1 market lines: five price lines drifting
+  (i, k, s, t) => { const line = i % 5, x = (k * 5 % 1) * 3.4 - 1.7; const base = (line - 2) * .32;
+    return [x, base + .1 * Math.sin(x * 2.6 + t * .7 + line * 1.3) + .05 * Math.sin(x * 7 + line), (line - 2) * .12]; },
+  // 2 the signal: the lines narrow into one rising line that ends in a bright point
+  (i, k, s, t) => { const u = k, x = u * 3 - 1.5; const spread = (1 - u) ** 2 * .55; const j = (s - .5) * 2;
+    return [x, -.55 + 1.1 * u ** 1.5 + j * spread + .02 * Math.sin(t * 2 + u * 20), j * spread * .5]; },
+  // 3 the call card: a rounded rectangle with text rows inside
+  (i, k, s, t) => { const w = 1.5, h = .95; if (k < .55) { const u = k / .55, per = 2 * (w + h); let d = u * per, x, y;
+      if (d < w) { x = -w / 2 + d; y = h / 2; } else if ((d -= w) < h) { x = w / 2; y = h / 2 - d; } else if ((d -= h) < w) { x = w / 2 - d; y = -h / 2; } else { d -= w; x = -w / 2; y = -h / 2 + d; }
+      return [x, y, 0]; }
+    const r = Math.floor(((k - .55) / .45) * 4), u = ((k - .55) / .45 * 4) % 1, len = [1.1, .7, .9, .5][r];
+    return [-w / 2 + .18 + u * len, h / 2 - .22 - r * .19, 0]; },
+  // 4 graded: a ring with a check mark
+  (i, k, s, t) => { if (k < .62) { const a = k / .62 * TAU; return [Math.cos(a) * .85, Math.sin(a) * .85, 0]; }
+    const u = (k - .62) / .38; if (u < .35) { const v = u / .35; return [-.42 + v * .28, .02 - v * .3, 0]; } const v = (u - .35) / .65; return [-.14 + v * .62, -.28 + v * .62, 0]; },
+  // 5 the record: a tilted grid of graded windows
+  (i, k, s, t) => { const cols = 50, c = i % cols, r = Math.floor(i / cols) % 30; return [(c / (cols - 1)) * 3.4 - 1.7, -.75 + (r / 29) * 1.5, 0]; },
+  // 6 the halo behind the plans
+  (i, k, s, t) => { const a = k * TAU * 1, b = s * TAU; const R = 1.05, r = .22; return [(R + r * Math.cos(b)) * Math.cos(a), r * Math.sin(b), (R + r * Math.cos(b)) * Math.sin(a)]; },
+  // 7 a small orb again at the close
+  (i, k, s, t) => { const y = 1 - 2 * k, rr = Math.sqrt(1 - y * y), a = i * GA; return [Math.cos(a) * rr * .7, y * .7, Math.sin(a) * rr * .7]; },
+];
+// where each stage sits on screen: [cx, cy, scale, alpha, spin, tiltX]
+const LOOK_WIDE = [[.73, .5, .34, 1, 1, .2], [.72, .5, .42, .7, .05, .5], [.72, .5, .4, .8, .05, .35], [.72, .5, .4, .85, 0, .25],
+  [.72, .5, .36, .9, 0, .2], [.5, .55, .5, .35, .02, 1.05], [.5, .5, .62, .5, 1, .5], [.5, .55, .34, .8, 1, .2]];
+const LOOK_SMALL = [[.5, .3, .42, .55, 1, .2], [.5, .5, .5, .35, .05, .5], [.5, .5, .5, .4, .05, .35], [.5, .5, .5, .4, 0, .25],
+  [.5, .5, .45, .45, 0, .2], [.5, .5, .55, .25, .02, 1.05], [.5, .5, .7, .3, 1, .5], [.5, .5, .4, .5, 1, .2]];
+let stage = 0, stageTarget = 0, spinAcc = 0;
+const ease = x => x < .5 ? 4 * x * x * x : 1 - (-2 * x + 2) ** 3 / 2;
+const lerp = (a, b, t) => a + (b - a) * t;
+
+// scroll anchors: [document y, stage]
+let anchors = [];
+function measure() {
+  anchors = [];
+  const add = (y, s) => anchors.push([y, s]);
+  const hero = $("#top"); add(hero.offsetTop + hero.offsetHeight * .45, 0);
+  const st = $("#story");
+  if (!small()) { const run = st.offsetHeight - innerHeight; [0.06, .34, .62, .9].forEach((f, j) => add(st.offsetTop + run * f + innerHeight / 2, 1 + j)); }
+  else { [...st.querySelectorAll(".chapter")].forEach((c, j) => add(st.offsetTop + c.offsetTop + c.offsetHeight / 2, 1 + j)); }
+  document.querySelectorAll("[data-stage]").forEach(s => { const v = +s.dataset.stage; if (v >= 5) add(s.offsetTop + s.offsetHeight / 2, v); });
+  anchors.sort((a, b) => a[0] - b[0]);
+}
+function stageAt(y) {
+  if (y <= anchors[0][0]) return anchors[0][1];
+  for (let j = 1; j < anchors.length; j++) { const [y1, s1] = anchors[j], [y0, s0] = anchors[j - 1];
+    if (y <= y1) { const f = (y - y0) / Math.max(1, y1 - y0); return s0 + (s1 - s0) * f; } }
+  return anchors[anchors.length - 1][1];
+}
+let last = performance.now(), running = true;
+function frame(now) {
+  if (!running) return;
+  const dt = Math.min(.05, (now - last) / 1000); last = now;
+  const t = REDUCED ? 0 : now / 1000;
+  stageTarget = stageAt(scrollY + innerHeight / 2);
+  stage = REDUCED ? stageTarget : lerp(stage, stageTarget, Math.min(1, dt * 6));
+  ptr.x = lerp(ptr.x, ptr.tx, .05); ptr.y = lerp(ptr.y, ptr.ty, .05);
+  const a = Math.max(0, Math.min(SHAPES.length - 1, Math.floor(stage))), b = Math.min(SHAPES.length - 1, a + 1), f = ease(stage - a);
+  const L = small() ? LOOK_SMALL : LOOK_WIDE, la = L[a], lb = L[b];
+  const ccx = lerp(la[0], lb[0], f) * W, ccy = lerp(la[1], lb[1], f) * H, R = lerp(la[2], lb[2], f) * Math.min(W * 1.15, H * 1.25),
+        alpha = lerp(la[3], lb[3], f), spin = lerp(la[4], lb[4], f), tilt = lerp(la[5], lb[5], f);
+  spinAcc += dt * .22 * spin * (REDUCED ? 0 : 1);
+  const yaw = spinAcc + ptr.x * .35, pitch = tilt * .35 + ptr.y * .2;
+  const cy1 = Math.cos(yaw), sy1 = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
+  cx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  cx.clearRect(0, 0, W, H);
+  cx.globalCompositeOperation = "lighter";
+  const A = SHAPES[a], B = SHAPES[b];
+  for (let i = 0; i < N; i++) {
+    const p = P[i], pa = A(i, p.k, p.s, t), pb = a === b ? pa : B(i, p.k, p.s, t);
+    // each particle travels on its own delay so the change reads as a flow, not a cut
+    const ff = Math.max(0, Math.min(1, (f - p.s * .25) / .75));
+    let x = lerp(pa[0], pb[0], ff), y = lerp(pa[1], pb[1], ff), z = lerp(pa[2], pb[2], ff);
+    x += .012 * Math.sin(t * 1.1 + p.s * 40); y += .012 * Math.cos(t * .9 + p.s * 30);
+    const x1 = x * cy1 - z * sy1, z1 = x * sy1 + z * cy1;
+    const y2 = y * cp - z1 * sp, z2 = y * sp + z1 * cp;
+    const per = 2.8 / (2.8 + z2);
+    const sx = ccx + x1 * per * R, sy = ccy - y2 * per * R;
+    if (sx < -10 || sx > W + 10 || sy < -10 || sy > H + 10) continue;
+    const depth = Math.max(0, Math.min(1, (per - .72) / .6));
+    const tw = .75 + .25 * Math.sin(t * 2 + p.s * 60);
+    cx.globalAlpha = alpha * (.18 + .7 * depth) * tw;
+    cx.fillStyle = p.hot ? "#fff1cf" : "#d8b46a";
+    const d = (p.hot ? 1.9 : 1.2) * (.7 + per * .5);
+    cx.fillRect(sx - d / 2, sy - d / 2, d, d);
   }
-  // the hero's proof: the three longest records, each as wins–losses and the hit rate, with every loss counted
-  const proof = document.getElementById("proof");
-  const top = [...all].sort((a, b) => (b.won + b.lost) - (a.won + a.lost)).slice(0, 3);
-  if (top.length) {
-    for (const s of top) {
-      const p = el("div", "proof-item");
-      const short = {"College football": "College FB", "College basketball": "College hoops"}[s.label]
-        || s.label.replace(" 15-minute calls", " calls");
-      p.append(el("span", "proof-label", `${s.emoji} ${short}`),
-               el("b", "proof-rec", `${s.won}–${s.lost}`), el("span", "proof-pct", `${pct(s)}% won`));
-      proof.append(p);
-    }
-    proof.append(el("div", "proof-note", `Every graded call and pick${d.btc && d.btc.since ? ` since ${d.btc.since}` : ""}, losses included. Past results don't guarantee future ones.`));
-    proof.hidden = false;
+  cx.globalAlpha = 1;
+  requestAnimationFrame(frame);
+}
+size(); measure();
+addEventListener("resize", () => { size(); measure(); });
+addEventListener("load", measure);
+addEventListener("pointermove", e => { ptr.tx = (e.clientX / innerWidth - .5) * 2; ptr.ty = (e.clientY / innerHeight - .5) * 2; }, { passive: true });
+document.addEventListener("visibilitychange", () => { running = !document.hidden; if (running) { last = performance.now(); requestAnimationFrame(frame); } });
+requestAnimationFrame(frame);
+
+/* ---------------- hero: the product stack tilts with the pointer, the countdown is real ---------------- */
+const stack = $("#stack"), inner = $("#stack-inner");
+stack.addEventListener("pointermove", e => { if (REDUCED) return; const r = stack.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+  inner.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 8}deg)`; });
+stack.addEventListener("pointerleave", () => { inner.style.transform = ""; });
+function tick() {
+  const now = new Date(), s = (15 - now.getMinutes() % 15) * 60 - now.getSeconds();
+  $("#countdown").textContent = `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+}
+tick(); setInterval(tick, 1000);
+
+/* ---------------- marquee ---------------- */
+const COVER = ["BTC calls", "DOGE calls", "NFL", "College football", "NBA", "College basketball", "Soccer", "Tennis", "The Oracle bot"];
+const mq = $("#marquee");
+for (const pass of [0, 1]) for (const c of COVER) { const s = el("span", "", c); if (pass) s.setAttribute("aria-hidden", "true"); mq.append(s); }
+
+/* ---------------- the story: chapters, device screens, a live-looking spark line ---------------- */
+const chapters = [...document.querySelectorAll(".chapter")], screens = [...document.querySelectorAll("#device .screen")];
+const bars = [...document.querySelectorAll("#steps b")];
+let chNow = -1;
+function story() {
+  if (small()) return;
+  const st = $("#story"), run = st.offsetHeight - innerHeight, p = Math.max(0, Math.min(.9999, (scrollY - st.offsetTop) / run));
+  const ch = Math.floor(p * 4);
+  bars.forEach((b, j) => { b.style.width = `${Math.max(0, Math.min(1, p * 4 - j)) * 100}%`; });
+  if (ch !== chNow) { chNow = ch; chapters.forEach((c, j) => c.classList.toggle("on", j === ch)); screens.forEach((s, j) => s.classList.toggle("on", j === ch)); }
+}
+addEventListener("scroll", story, { passive: true }); story();
+let px = [], yes = 62;
+function spark() {
+  px.push(60 - (yes - 50) * 3 + (Math.random() - .5) * 6); if (px.length > 41) px.shift();
+  $("#spark").setAttribute("d", px.map((v, j) => `${j ? "L" : "M"}${j * 10},${Math.max(4, Math.min(116, v)).toFixed(1)}`).join(""));
+}
+for (let j = 0; j < 41; j++) { yes += Math.round((Math.random() - .45) * 2); yes = Math.max(55, Math.min(72, yes)); spark(); }
+// phones: each chapter carries a copy of its screen (taken once the spark line is drawn), in place of the pinned device
+chapters.forEach((c, j) => { const holder = c.querySelector(".chapter-visual"); const d = el("div", "device glass"); const sc = screens[j].cloneNode(true);
+  sc.classList.add("on"); sc.querySelectorAll("[id]").forEach(n => n.removeAttribute("id")); d.append(sc); holder.append(d); });
+if (!REDUCED) setInterval(() => { yes += Math.round((Math.random() - .45) * 2); yes = Math.max(55, Math.min(72, yes));
+  $("#yes").textContent = `${yes}¢`; $("#no").textContent = `${101 - yes}¢`; spark(); }, 1400);
+
+/* ---------------- the record ---------------- */
+async function loadRecord() {
+  if (PREVIEW && RECORD) return RECORD;
+  try { const r = await fetch("record.json", { cache: "no-store" }); if (r.ok) return await r.json(); } catch (e) {}
+  return null;
+}
+const pct = s => Math.round(100 * s.won / Math.max(1, s.won + s.lost));
+loadRecord().then(d => {
+  if (!d) return;
+  const btc = d.btc;
+  if (btc) {
+    $("#hero-rec-n").textContent = `${btc.won}–${btc.lost}`;
+    const w = $(".headline-stat .w"), l = $(".headline-stat .l");
+    w.dataset.count = btc.won; w.textContent = btc.won; l.dataset.count = btc.lost; l.textContent = btc.lost;
+    $("#btc-pct").textContent = `${pct(btc)}%`;
+    $("#ring").dataset.p = pct(btc);
+    $("#ring").style.strokeDashoffset = String(150.8 * (1 - pct(btc) / 100)); // rests at its value even if the observer never fires
+    if (btc.since) $("#since").textContent = btc.since;
   }
-  if (d.btc && d.btc.since) document.getElementById("updated").textContent = `BTC calls since ${d.btc.since}.`;
-  const row = document.getElementById("wins");
+  if (d.updated) $("#updated").textContent = d.updated;
+  const tiles = $("#tiles");
+  const sp = (d.sports || []).filter(s => s.won + s.lost);
+  const all = sp.length > 1 ? [{ emoji: "🏟️", label: "All sports picks", won: sp.reduce((a, s) => a + s.won, 0), lost: sp.reduce((a, s) => a + s.lost, 0) }] : [];
+  for (const s of [...(d.coins || []), ...all, ...sp].filter(s => s.won + s.lost)) {
+    const t = el("div", "tile glass");
+    t.append(el("div", "lbl", `${s.emoji} ${s.label.replace(" 15-minute calls", " calls")}`), el("div", "rec num", `${s.won}–${s.lost}`), el("div", "pct", `${pct(s)}% won`));
+    const bar = el("div", "bar"), i = el("i"); i.style.width = `${pct(s)}%`; bar.append(i); t.append(bar); tiles.append(t);
+  }
+  const row = $("#wins");
   for (const w of d.wins || []) {
-    const c = el("article", "win");
-    c.append(el("div", "win-top", `${w.emoji} ${w.kind}`), el("div", "win-title", w.title),
-             el("div", "win-detail", w.detail), el("div", "win-pnl", "✅ Won"),
-             el("div", "win-when", w.when));
+    const c = el("article", "win glass");
+    c.append(el("div", "wk", `${w.emoji} ${w.kind} · ${w.when}`), el("div", "wt", w.title),
+             el("div", "wd", String(w.detail || "").replace(/ · at None¢/, "")), el("span", "ws", "✅ Won"));
     row.append(c);
   }
-  document.getElementById("results").hidden = false;
-  const step = () => (row.querySelector(".win")?.offsetWidth || 260) + 16;
-  document.getElementById("prev").onclick = () => row.scrollBy({left: -step(), behavior: "smooth"});
-  document.getElementById("next").onclick = () => row.scrollBy({left: step(), behavior: "smooth"});
-  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let paused = false;
-    for (const ev of ["mouseenter", "focusin", "touchstart"]) row.addEventListener(ev, () => paused = true);
-    for (const ev of ["mouseleave", "focusout"]) row.addEventListener(ev, () => paused = false);
-    setInterval(() => {
-      if (paused || document.hidden) return;
-      const end = row.scrollLeft + row.clientWidth >= row.scrollWidth - 4;
-      row.scrollTo({left: end ? 0 : row.scrollLeft + step(), behavior: "smooth"});
-    }, 3500);
-  }
-})();
+  const step = () => (row.querySelector(".win")?.offsetWidth || 270) + 14;
+  $("#prev").onclick = () => row.scrollBy({ left: -step(), behavior: "smooth" });
+  $("#next").onclick = () => row.scrollBy({ left: step(), behavior: "smooth" });
+  measure();
+});
+// the numbers roll up the first time the record is on screen (they rest at their real values)
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; io.unobserve(e.target);
+  const ring = $("#ring"); ring.style.strokeDashoffset = String(150.8 * (1 - (+ring.dataset.p || 91) / 100));
+  if (REDUCED) return;
+  e.target.querySelectorAll("[data-count]").forEach(n => { const end = +n.dataset.count, t0 = performance.now();
+    const go = now => { const f = Math.min(1, (now - t0) / 1300); n.textContent = Math.round(end * ease(f)); if (f < 1) requestAnimationFrame(go); }; requestAnimationFrame(go); });
+}), { threshold: .35 });
+io.observe($(".headline-stat"));
 
-// 📱 the phone bar: shown once the hero has scrolled away, hidden again while the plans are on screen
-(() => {
-  const bar = document.getElementById("phone-bar"), hero = document.getElementById("top"),
-        plans = document.querySelector("#plans .plans");
-  if (!bar || !hero || !plans) return;
-  const update = () => {
-    const h = hero.getBoundingClientRect(), p = plans.getBoundingClientRect();
-    const show = h.bottom < 0 && !(p.top < innerHeight && p.bottom > 0);
-    if (show === bar.classList.contains("on")) return;
-    bar.classList.toggle("on", show);
-    bar.setAttribute("aria-hidden", show ? "false" : "true");
-    bar.tabIndex = show ? 0 : -1;
-  };
-  addEventListener("scroll", update, {passive: true});
-  addEventListener("resize", update);
-  update();
+/* ---------------- the call simulator: a 15-minute window you can play, scrub and hover ---------------- */
+const SIM = {
+  up:   { q: "BTC UP by 3:15 PM?", side: "YES on UP", win: true },
+  down: { q: "BTC DOWN by 3:15 PM?", side: "YES on DOWN", win: true },
+  miss: { q: "BTC UP by 3:15 PM?", side: "YES on UP", win: false },
+};
+const HEADS = 120, CALL = 300, END = 900, STEP = 5;
+function rng(seed) { return () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }; }
+function path(kind) {
+  const r = rng({ up: 7, down: 19, miss: 31 }[kind]), out = [];
+  let v = 52;
+  for (let t = 0; t <= END; t += STEP) {
+    let target;
+    if (t <= HEADS) target = 52 + (86 - 52) * (t / HEADS) ** 1.2;
+    else if (t <= CALL) target = 86 + 2 * ((t - HEADS) / (CALL - HEADS));
+    else if (kind !== "miss") target = 88 + 10 * ((t - CALL) / (END - CALL - 30)) ** 1.4;
+    else target = t < 560 ? 88 - 4 * ((t - CALL) / 260) : 84 - 80 * ((t - 560) / (END - 590)) ** 1.1;
+    v += (target - v) * .35 + (r() - .5) * (t > CALL ? 2.2 : 3.2);
+    out.push(Math.max(1, Math.min(99, v)));
+  }
+  out[out.length - 1] = kind === "miss" ? 0 : 100;
+  return out;
+}
+const simEl = $("#sim"), scv = $("#sim-cv"), sctx = scv.getContext("2d"), scrub = $("#sim-scrub"), playBtn = $("#sim-play");
+let simKind = "up", simData = path("up"), simT = 0, simPlaying = false, simHover = null, simAuto = true, simLast = 0, simSeen = false;
+const fmtLeft = t => { const s = Math.max(0, END - Math.round(t)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")} left`; };
+const fmtClock = t => { const m = Math.floor(t / 60); return `3:${String(m).padStart(2, "0")} PM`; };
+const pxAt = t => { const f = Math.min(simData.length - 1, t / STEP), i = Math.floor(f), j = Math.min(simData.length - 1, i + 1); return simData[i] + (simData[j] - simData[i]) * (f - i); };
+function simDraw() {
+  const w = scv.clientWidth, h = scv.clientHeight, d = Math.min(devicePixelRatio || 1, 2);
+  if (scv.width !== Math.round(w * d)) { scv.width = Math.round(w * d); scv.height = Math.round(h * d); }
+  const c = sctx; c.setTransform(d, 0, 0, d, 0, 0); c.clearRect(0, 0, w, h);
+  const padL = 10, padR = 44, padT = 14, padB = 22;
+  const X = t => padL + (t / END) * (w - padL - padR), Y = v => padT + (1 - v / 100) * (h - padT - padB);
+  // the tested band and the 10-minutes-left line
+  c.fillStyle = "rgba(216,180,106,.07)"; c.fillRect(padL, Y(95), w - padL - padR, Y(86) - Y(95));
+  c.strokeStyle = "rgba(237,233,224,.06)"; c.lineWidth = 1;
+  for (const v of [0, 25, 50, 75, 100]) { c.beginPath(); c.moveTo(padL, Y(v)); c.lineTo(w - padR, Y(v)); c.stroke(); }
+  c.fillStyle = "rgba(237,233,224,.38)"; c.font = "11px Geist, system-ui, sans-serif"; c.textAlign = "left";
+  for (const v of [0, 50, 100]) c.fillText(`${v}¢`, w - padR + 8, Y(v) + 4);
+  c.fillStyle = "rgba(242,220,166,.55)"; c.fillText("tested band", padL + 6, Y(95) - 5);
+  c.setLineDash([3, 4]); c.strokeStyle = "rgba(242,220,166,.35)"; c.beginPath(); c.moveTo(X(CALL), padT); c.lineTo(X(CALL), h - padB); c.stroke(); c.setLineDash([]);
+  c.fillStyle = "rgba(237,233,224,.38)"; c.textAlign = "center"; c.fillText("10 min left", X(CALL), h - 6);
+  // the line so far, with a glow and a fill under it
+  const n = Math.max(1, Math.floor(simT / STEP));
+  const g = c.createLinearGradient(0, padT, 0, h - padB); g.addColorStop(0, "rgba(216,180,106,.28)"); g.addColorStop(1, "rgba(216,180,106,0)");
+  c.beginPath(); c.moveTo(X(0), Y(simData[0]));
+  for (let i = 1; i <= n; i++) c.lineTo(X(i * STEP), Y(simData[i]));
+  c.lineTo(X(simT), Y(pxAt(simT)));
+  const lastX = X(simT), lastY = Y(pxAt(simT));
+  c.save(); c.lineTo(lastX, h - padB); c.lineTo(X(0), h - padB); c.closePath(); c.fillStyle = g; c.fill(); c.restore();
+  c.beginPath(); c.moveTo(X(0), Y(simData[0]));
+  for (let i = 1; i <= n; i++) c.lineTo(X(i * STEP), Y(simData[i]));
+  c.lineTo(lastX, lastY);
+  c.lineWidth = 2.2; c.strokeStyle = "#e7c886"; c.shadowColor = "rgba(216,180,106,.8)"; c.shadowBlur = 14; c.stroke(); c.shadowBlur = 0;
+  // event pins
+  const pin = (t, col) => { if (simT < t) return; c.beginPath(); c.arc(X(t), Y(pxAt(t)), 4.5, 0, TAU); c.fillStyle = col; c.fill(); };
+  pin(HEADS, "#f2dca6"); pin(CALL, "#f2dca6");
+  // the leading point pulses
+  const pulse = 6 + 3 * Math.sin(performance.now() / 220);
+  c.beginPath(); c.arc(lastX, lastY, pulse, 0, TAU); c.fillStyle = "rgba(242,220,166,.18)"; c.fill();
+  c.beginPath(); c.arc(lastX, lastY, 3.5, 0, TAU); c.fillStyle = "#fff1cf"; c.fill();
+  // hover read-out
+  if (simHover !== null && simHover <= simT) {
+    const hx = X(simHover), hy = Y(pxAt(simHover));
+    c.strokeStyle = "rgba(237,233,224,.25)"; c.beginPath(); c.moveTo(hx, padT); c.lineTo(hx, h - padB); c.stroke();
+    c.beginPath(); c.arc(hx, hy, 4, 0, TAU); c.fillStyle = "#fff1cf"; c.fill();
+    const label = `${Math.round(pxAt(simHover))}¢ · ${fmtLeft(simHover)}`;
+    c.font = "12px Geist, system-ui, sans-serif"; const tw = c.measureText(label).width + 16, bx = Math.min(w - padR - tw, Math.max(padL, hx - tw / 2));
+    c.fillStyle = "rgba(13,14,17,.9)"; c.strokeStyle = "rgba(237,233,224,.16)"; c.beginPath(); c.roundRect(bx, padT, tw, 24, 8); c.fill(); c.stroke();
+    c.fillStyle = "#ede9e0"; c.textAlign = "left"; c.fillText(label, bx + 8, padT + 16);
+  }
+}
+function simState() {
+  const sc = SIM[simKind], px = pxAt(simT), done = simT >= END;
+  $("#sim-q").textContent = sc.q;
+  $("#sim-px").textContent = done ? (sc.win ? "$1.00" : "$0.00") : `${Math.round(px)}¢`;
+  $("#sim-left").textContent = done ? "settled" : fmtLeft(simT);
+  $("#sim-clock").textContent = fmtClock(simT);
+  scrub.value = Math.round(simT); scrub.style.setProperty("--fill", `${simT / END * 100}%`);
+  $("#ev0").classList.toggle("on", simT >= HEADS);
+  $("#ev1").classList.toggle("on", simT >= CALL);
+  $("#ev1-t").textContent = `buy ${sc.side} at 88¢`;
+  const ev2 = $("#ev2"); ev2.classList.toggle("on", done); ev2.classList.toggle("bad", done && !sc.win);
+  $("#ev2-b").textContent = done ? (sc.win ? "✅ HIT" : "❌ MISS") : "Graded";
+  $("#ev2-t").textContent = done ? (sc.win ? "paid $1.00 a contract" : "it stays on the record") : "at the close";
+  const st = $("#sim-stamp"); st.textContent = sc.win ? "HIT" : "MISS"; st.className = `sim-stamp ${sc.win ? "hit" : "miss"}${done ? " on" : ""}`;
+  playBtn.textContent = simPlaying ? "❚❚" : (done ? "↺" : "▶"); playBtn.setAttribute("aria-label", simPlaying ? "Pause" : "Play");
+}
+function simPick(kind) { simKind = kind; simData = path(kind); simT = 0; simEl.querySelectorAll("[data-sc]").forEach(b => b.setAttribute("aria-pressed", b.dataset.sc === kind)); simState(); }
+function simLoop(now) {
+  const dt = Math.min(.05, (now - (simLast || now)) / 1000); simLast = now;
+  if (simPlaying) {
+    simT = Math.min(END, simT + dt * END / 11);
+    if (simT >= END) { simPlaying = false;
+      if (simAuto) setTimeout(() => { if (!simAuto) return; const order = ["up", "down", "miss"]; simPick(order[(order.indexOf(simKind) + 1) % 3]); simPlaying = true; }, 2600); }
+    simState();
+  }
+  if (simSeen) simDraw();
+  requestAnimationFrame(simLoop);
+}
+simEl.querySelectorAll("[data-sc]").forEach(b => b.addEventListener("click", () => { simAuto = false; simPick(b.dataset.sc); simPlaying = !REDUCED; }));
+playBtn.addEventListener("click", () => { simAuto = false; if (simT >= END) simT = 0; simPlaying = !simPlaying; simState(); });
+scrub.addEventListener("input", () => { simAuto = false; simPlaying = false; simT = +scrub.value; simState(); });
+const chartEl = $("#sim-chart");
+chartEl.addEventListener("pointermove", e => { const r = chartEl.getBoundingClientRect(); const f = (e.clientX - r.left - 10) / (r.width - 54); simHover = Math.max(0, Math.min(END, f * END)); });
+chartEl.addEventListener("pointerleave", () => { simHover = null; });
+new IntersectionObserver(es => es.forEach(e => { simSeen = e.isIntersecting; if (e.isIntersecting && simAuto && simT === 0 && !REDUCED) simPlaying = true; }), { threshold: .4 }).observe(simEl);
+if (REDUCED) simT = END;
+simState(); simSeen = true; simDraw(); simSeen = false; requestAnimationFrame(simLoop);
+
+/* ---------------- the bot console: set the limits, send it calls, watch the daily dayStop ---------------- */
+const bot = $("#bot"), feed = $("#feed"), tradeSize = $("#bot-size"), dayStop = $("#bot-stop"), go = $("#bot-go");
+let mode = "practice", dayN = 0, dayPL = 0, sent = 0, busy = false;
+const money = v => `${v < 0 ? "−" : ""}$${Math.abs(v).toFixed(2)}`;
+const CALLS = [["BTC UP by 3:15 PM", 88, true], ["DOGE DOWN by 3:30 PM", 87, true], ["BTC DOWN by 3:45 PM", 90, false], ["BTC UP by 4:00 PM", 86, true], ["DOGE UP by 4:15 PM", 91, true], ["BTC UP by 4:30 PM", 89, false]];
+function fillRange(r) { r.style.setProperty("--fill", `${(r.value - r.min) / (r.max - r.min) * 100}%`); }
+function dayView() {
+  const s = +dayStop.value, room = Math.max(0, s + Math.min(0, dayPL));
+  $("#d-n").textContent = dayN; const pl = $("#d-pl"); pl.textContent = money(dayPL); pl.style.color = dayPL > 0 ? "var(--win)" : dayPL < 0 ? "var(--loss)" : "";
+  $("#d-room").textContent = money(room); $("#d-bar").style.width = `${Math.min(100, Math.max(0, -dayPL) / s * 100)}%`;
+}
+function say(text, cls = "", type = !REDUCED) {
+  return new Promise(res => {
+    const b = el("div", `bub ${cls}`); feed.append(b); feed.scrollTop = feed.scrollHeight;
+    if (!type) { b.textContent = text; return res(); }
+    let i = 0; const caret = el("span", "caret");
+    const step = () => { b.textContent = text.slice(0, i); b.append(caret); feed.scrollTop = feed.scrollHeight;
+      if (i++ < text.length) setTimeout(step, 14); else { caret.remove(); res(); } };
+    step();
+  });
+}
+const wait = ms => new Promise(r => setTimeout(r, REDUCED ? 0 : ms));
+function syncLabels() {
+  fillRange(tradeSize); fillRange(dayStop);
+  $("#bot-size-v").textContent = `$${tradeSize.value}`; $("#bot-stop-v").textContent = `$${dayStop.value}`; dayView();
+  if (dayPL > -dayStop.value && go.disabled && !busy) { go.disabled = false; go.firstChild.textContent = "Send the next call "; }
+}
+tradeSize.addEventListener("input", syncLabels); dayStop.addEventListener("input", syncLabels);
+bot.querySelectorAll("[data-mode]").forEach(b => b.addEventListener("click", () => {
+  mode = b.dataset.mode; bot.querySelectorAll("[data-mode]").forEach(x => x.setAttribute("aria-pressed", x === b));
+  say(mode === "practice" ? "🧪 Practice mode: same calls, pretend money." : "🟢 Live mode: I'd place these on your own Kalshi account, inside your limits.", "sys", false);
+}));
+go.addEventListener("click", async () => {
+  if (busy) return;
+  if (go.dataset.reset) { delete go.dataset.reset; dayN = 0; dayPL = 0; feed.textContent = ""; go.firstChild.textContent = "Send the next call "; await say("☀️ New day. Your limits carry over.", "sys", false); dayView(); return; }
+  busy = true; go.disabled = true;
+  const [name, price, win] = CALLS[sent++ % CALLS.length], n = Math.max(1, Math.floor(+tradeSize.value / (price / 100))), cost = n * price / 100;
+  await say(`📡 New call: ${name}, buy YES at ${price}¢`);
+  await wait(350);
+  await say(`🤖 ${mode === "practice" ? "Practice: " : ""}bought ${n} contract${n > 1 ? "s" : ""} at ${price}¢ (${money(cost)}). Pays $1.00 each if it wins.`);
+  dayN++; dayView();
+  await wait(900);
+  const pl = win ? n - cost : -cost; dayPL += pl;
+  await say(win ? `✅ HIT · paid ${money(n)} for a ${money(pl)} result.` : `❌ MISS · ${money(pl)}. It goes on the record like every win.`, win ? "good" : "bad");
+  dayView(); busy = false;
+  if (dayPL <= -+dayStop.value) { await say(`⛔ Daily stop of $${dayStop.value} reached. I'm done until tomorrow.`, "sys", false); go.dataset.reset = "1"; go.firstChild.textContent = "Start a new day "; }
+  go.disabled = false;
+});
+syncLabels();
+say("🤖 Hi! Set your per-trade size and daily stop, then send me a call.", "", false);
+
+/* ---------------- plans: an expanding row, a light round the featured plan, a spotlight that follows the pointer ---------------- */
+const PLANS = [
+  { id: "prophecy", emo: "🏟️", name: "Prophecy", what: "Sports picks", price: 19, url: "https://whop.com/oraclesignals/sports-picks-72-3c51/",
+    feat: ["Every sports pick channel: NFL, college football, NBA, college basketball, soccer, tennis", "Pick alerts you choose", "Lobby and chat"] },
+  { id: "omen", emo: "📡", name: "Omen", what: "BTC + DOGE calls", price: 29, url: "https://whop.com/oraclesignals/calls-51/",
+    feat: ["BTC and DOGE 15-minute calls and heads-ups", "Gold calls if it passes its test", "The live board and daily record", "Lobby and chat"] },
+  { id: "oracle", emo: "⭐", name: "The Oracle", what: "Picks + Calls + the Bot", price: 49, url: "https://whop.com/oraclesignals/everything-80-07d2/", featured: true,
+    save: "Save $19 a month vs buying separately",
+    feat: ["The whole Discord: every call and every pick", "The Oracle Telegram bot on your own Kalshi account", "Practice mode first, your own limits", "Try all of it free for 3 days"] },
+  { id: "foresight", emo: "🔮", name: "Foresight", what: "Picks + Calls", price: 39, url: "https://whop.com/oraclesignals/picks-calls/", save: "Save $9 a month",
+    feat: ["The whole Discord", "Everything in Prophecy and Omen"] },
+  { id: "automaton", emo: "🤖", name: "Automaton", what: "The Oracle Bot", price: 29, url: "https://whop.com/oraclesignals/the-oracle-bot/",
+    feat: ["The Oracle Telegram bot", "Runs on your own Kalshi account", "Practice mode first"] },
+];
+const planRow = $("#plan-row");
+const fine = matchMedia("(hover: hover) and (pointer: fine)");
+function openPlan(card) { planRow.querySelectorAll(".plan").forEach(p => { p.classList.toggle("open", p === card); p.setAttribute("aria-expanded", p === card); }); }
+for (const p of PLANS) {
+  const c = el("article", `plan glass${p.featured ? " featured open" : ""}`);
+  c.tabIndex = 0; c.setAttribute("role", "button"); c.setAttribute("aria-expanded", !!p.featured); c.setAttribute("aria-label", `${p.name}, $${p.price} a month`);
+  if (p.featured) c.append(el("span", "badge", "Best value"));
+  c.append(el("div", "emo", p.emo), el("div", "pname", p.name), el("div", "pwhat", p.what));
+  const more = el("div", "more"), ul = el("ul");
+  for (const f of p.feat) ul.append(el("li", "", f));
+  more.append(ul); if (p.save) more.append(el("div", "save", p.save));
+  c.append(more);
+  const price = el("div", "price"); price.append(el("b", "num", `$${p.price}`), el("small", "", "/mo")); c.append(price);
+  c.append(el("div", "trial", "3 days free"));
+  const a = el("a", "btn btn-gold cta", "Start free trial "); a.href = p.url; a.rel = "noopener"; a.append(el("span", "arrow", "→")); c.append(a);
+  c.append(el("div", "hint", fine.matches ? "Hover to see what's inside" : "Tap to see what's inside"));
+  c.addEventListener("pointerenter", () => { if (fine.matches && innerWidth > 980) openPlan(c); });
+  c.addEventListener("click", e => { if (!e.target.closest("a")) openPlan(c); });
+  c.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && e.target === c) { e.preventDefault(); openPlan(c); } });
+  c.addEventListener("focusin", () => openPlan(c));
+  c.addEventListener("pointermove", e => { const r = c.getBoundingClientRect(); c.style.setProperty("--mx", `${e.clientX - r.left}px`); c.style.setProperty("--my", `${e.clientY - r.top}px`); });
+  planRow.append(c);
+}
+
+/* ---------------- FAQ ---------------- */
+const FAQ = [
+  ["Which plan should I pick?", "If you're not sure, start with ⭐ The Oracle: it has every call, every pick and the bot, so the free 3 days show you all of it. Only want one thing? Omen is the crypto calls, Prophecy the sports picks, Automaton the bot."],
+  ["What happens after the 3 days?", "Your plan renews monthly at its price unless you cancel in Whop before the trial ends. Cancel during the trial and you pay nothing. See the <a href='refund.html'>refund policy</a>."],
+  ["Is this financial advice?", "No. Oracle Signals shares calls, picks and tools for education and entertainment. You decide what to trade or bet, and you can lose money."],
+  ["Do I need a Kalshi account?", "Only to trade the calls or use the bot with real money. Kalshi is a US exchange regulated by the CFTC; you open and fund your own account there. Oracle Signals is not affiliated with Kalshi."],
+  ["Can the bot touch my money?", "It places trades on your Kalshi account only within the limits you set, and it never withdraws money. Your Kalshi key is stored encrypted, and you can disconnect at any time, which deletes it."],
+  ["How do I cancel?", "In your Whop account, under your membership. Access lasts to the end of the period you paid for. See the <a href='refund.html'>refund policy</a>."],
+  ["How good are the results?", "Every call and pick is graded in public in the Discord, with a daily and weekly record, losses included. Past results don't promise future ones."],
+];
+const fl = $("#faq-list");
+FAQ.forEach(([q, a], j) => { const d = el("details"); if (!j) d.open = true; const s = el("summary", "", q); s.append(el("i")); const p = el("div", "ans"); p.innerHTML = a; d.append(s, p); fl.append(d); });
+
+/* ---------------- sign in: a sheet with its own reactive orb ---------------- */
+const sheet = $("#sheet"), scrim = $("#scrim"), sc = $("#sheet-art"), sx = sc.getContext("2d");
+let sheetOn = false, glow = 0, glowT = 0, sp = { x: .5, y: .5 };
+const SP = Array.from({ length: 420 }, (_, i) => ({ s: Math.random(), k: i / 420 }));
+function sheetArt(now) {
+  if (!sheetOn) return;
+  const w = sc.clientWidth, h = sc.clientHeight, d = Math.min(devicePixelRatio || 1, 2);
+  if (sc.width !== w * d) { sc.width = w * d; sc.height = h * d; }
+  sx.setTransform(d, 0, 0, d, 0, 0); sx.clearRect(0, 0, w, h); sx.globalCompositeOperation = "lighter";
+  glow = lerp(glow, glowT, .08); const t = REDUCED ? 0 : now / 1000;
+  const yaw = t * .4 + (sp.x - .5) * 1.4, pitch = (sp.y - .5) * .9, R = h * (.36 + glow * .06);
+  const ccx = w * (.5 + (sp.x - .5) * .12), ccy = h * (.5 + (sp.y - .5) * .1);
+  for (let i = 0; i < SP.length; i++) {
+    const p = SP[i], y = 1 - 2 * p.k, r = Math.sqrt(1 - y * y), a = i * GA;
+    let x = Math.cos(a) * r, z = Math.sin(a) * r, yy = y;
+    const x1 = x * Math.cos(yaw) - z * Math.sin(yaw), z1 = x * Math.sin(yaw) + z * Math.cos(yaw);
+    const y2 = yy * Math.cos(pitch) - z1 * Math.sin(pitch), z2 = yy * Math.sin(pitch) + z1 * Math.cos(pitch);
+    const per = 2.6 / (2.6 + z2), depth = Math.max(0, Math.min(1, (per - .72) / .6));
+    sx.globalAlpha = (.2 + .75 * depth) * (.7 + glow * .5);
+    sx.fillStyle = depth > .8 && glow > .3 ? "#fff1cf" : "#d8b46a";
+    const sz = 1.4 + per * .8 + glow * .6;
+    sx.fillRect(ccx + x1 * per * R - sz / 2, ccy - y2 * per * R - sz / 2, sz, sz);
+  }
+  const g = sx.createRadialGradient(ccx, ccy, 0, ccx, ccy, R * 1.6); g.addColorStop(0, `rgba(216,180,106,${.12 + glow * .18})`); g.addColorStop(1, "rgba(216,180,106,0)");
+  sx.globalAlpha = 1; sx.fillStyle = g; sx.fillRect(0, 0, w, h);
+  requestAnimationFrame(sheetArt);
+}
+sc.parentElement.addEventListener("pointermove", e => { const r = sc.getBoundingClientRect(); sp.x = (e.clientX - r.left) / r.width; sp.y = (e.clientY - r.top) / r.height; });
+const whop = $("#whop-btn");
+whop.addEventListener("pointerenter", () => glowT = 1); whop.addEventListener("pointerleave", () => glowT = 0);
+whop.addEventListener("focus", () => glowT = 1); whop.addEventListener("blur", () => glowT = 0);
+let lastFocus = null;
+function openSheet() { lastFocus = document.activeElement; sheetOn = true; sheet.classList.remove("busy"); sheet.classList.add("on"); scrim.classList.add("on"); requestAnimationFrame(sheetArt); setTimeout(() => whop.focus(), 50); }
+function closeSheet() { sheetOn = false; sheet.classList.remove("on"); scrim.classList.remove("on"); if (lastFocus) lastFocus.focus(); }
+$("#signin-open").addEventListener("click", openSheet);
+$("#sheet-x").addEventListener("click", closeSheet);
+scrim.addEventListener("click", closeSheet);
+const WHOP_HOME = "https://whop.com/oraclesignals/";
+if (!PREVIEW) { // the live site: until our own member page ships, signing in means your Whop account
+  $("#sheet-title").innerHTML = "Welcome <em>back.</em>";
+  $("#sheet .sheet-body > p").textContent = "Your plan, billing and receipts live in your Whop account. Your own member page here is on the way.";
+  $("#sheet .perks").replaceChildren(...["Manage or cancel your plan", "Receipts and billing", "Your Discord and bot access"].map(t => el("div", "", t)));
+  $("#sheet .connecting").lastChild.textContent = "Opening Whop…";
+}
+whop.addEventListener("click", () => {
+  glowT = 1.6; sheet.classList.add("busy");
+  // the preview opens the demo member page after a short "Opening Whop" beat; the live site goes to Whop
+  setTimeout(() => { if (PREVIEW) { closeSheet(); openMember(); } else location.href = WHOP_HOME; }, PREVIEW ? 1400 : 500);
+});
+
+/* ---------------- member page (demo) ---------------- */
+const member = $("#member");
+function openMember() { member.classList.add("on"); document.body.style.overflow = "hidden"; drawChart(); if (location.hash !== "#member") history.replaceState(null, "", "#member"); }
+function closeMember() { member.classList.remove("on"); document.body.style.overflow = ""; if (location.hash === "#member") history.replaceState(null, "", "#top"); }
+$("#member-x").addEventListener("click", closeMember);
+function drawChart() {
+  const svg = $("#m-chart"); if (svg.childElementCount) return;
+  const res = "WWWLWWWWWWWLWWWWWWWWWWLWWWWWWW".split(""); let v = 0; const pts = res.map((r, j) => { v += r === "W" ? 1 : -1; return [j, v]; });
+  const max = Math.max(...pts.map(p => p[1])), min = Math.min(0, ...pts.map(p => p[1]));
+  const X = j => 10 + j * (580 / (pts.length - 1)), Y = y => 160 - (y - min) / (max - min || 1) * 140;
+  const ns = "http://www.w3.org/2000/svg", mk = (t, a) => { const n = document.createElementNS(ns, t); for (const k in a) n.setAttribute(k, a[k]); svg.append(n); return n; };
+  for (let g = 0; g < 4; g++) mk("line", { x1: 10, x2: 590, y1: 20 + g * 46, y2: 20 + g * 46, stroke: "rgba(237,233,224,.07)" });
+  const line = pts.map((p, j) => `${j ? "L" : "M"}${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`).join("");
+  const defs = mk("defs", {}); const lg = document.createElementNS(ns, "linearGradient"); lg.id = "mg"; lg.setAttribute("x1", 0); lg.setAttribute("x2", 0); lg.setAttribute("y1", 0); lg.setAttribute("y2", 1);
+  for (const [o, c] of [[0, "rgba(216,180,106,.35)"], [1, "rgba(216,180,106,0)"]]) { const s = document.createElementNS(ns, "stop"); s.setAttribute("offset", o); s.setAttribute("stop-color", c); lg.append(s); } defs.append(lg);
+  mk("path", { d: `${line}L${X(pts.length - 1)},160L10,160Z`, fill: "url(#mg)" });
+  mk("path", { d: line, fill: "none", stroke: "#d8b46a", "stroke-width": 2.2 });
+  pts.forEach((p, j) => { if (res[j] === "L") mk("circle", { cx: X(p[0]), cy: Y(p[1]), r: 3.5, fill: "#e0735f" }); });
+  const e = pts[pts.length - 1]; mk("circle", { cx: X(e[0]), cy: Y(e[1]), r: 5, fill: "#f2dca6" });
+}
+const PINGS = [["📡 BTC calls", true], ["🐕 DOGE calls", true], ["🏈 NFL picks", true], ["🏀 NBA picks", false], ["⚽ Soccer picks", false], ["🎾 Tennis picks", false]];
+const pg = $("#pings");
+for (const [name, on] of PINGS) { const r = el("div", "toggle-row"); r.append(el("span", "", name)); const b = el("button", "switch"); b.setAttribute("role", "switch"); b.setAttribute("aria-checked", on); b.setAttribute("aria-label", name);
+  b.addEventListener("click", () => b.setAttribute("aria-checked", b.getAttribute("aria-checked") !== "true")); r.append(b); pg.append(r); }
+
+/* ---------------- the update pop-up: status.json says when the site is being updated ---------------- */
+const up = $("#update"); let upTimer = null, upShown = false, upClosedFor = null;
+function showUpdate(cfg = {}) {
+  if (cfg.title) $("#up-title").textContent = cfg.title;
+  if (cfg.message) $("#up-msg").textContent = cfg.message;
+  const end = cfg.back_by ? Date.parse(cfg.back_by) : Date.now() + 10 * 60 * 1000;
+  clearInterval(upTimer);
+  const t = () => { const s = Math.max(0, Math.round((end - Date.now()) / 1000));
+    $("#up-eta").textContent = s ? `~${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}` : "any moment now"; };
+  t(); upTimer = setInterval(t, 1000);
+  up.classList.add("on"); upShown = true;
+}
+function hideUpdate() { up.classList.remove("on"); upShown = false; clearInterval(upTimer); }
+$("#up-ok").addEventListener("click", () => { upClosedFor = $("#up-title").textContent; hideUpdate(); });
+async function checkStatus() {
+  if (PREVIEW) return;
+  try { const r = await fetch("status.json", { cache: "no-store" }); if (!r.ok) return; const s = await r.json();
+    if (s.maintenance && !upShown && upClosedFor !== (s.title || "")) showUpdate(s); else if (!s.maintenance && upShown) hideUpdate(); } catch (e) {}
+}
+checkStatus(); setInterval(checkStatus, 60000);
+
+/* ---------------- keys, hash and the preview bar ---------------- */
+addEventListener("keydown", e => { if (e.key !== "Escape") return; if (sheetOn) closeSheet(); else if (member.classList.contains("on")) closeMember(); else if (upShown) hideUpdate(); });
+function route() { if (location.hash === "#member" && PREVIEW) openMember(); if (location.hash === "#maintenance") showUpdate(); if (location.hash === "#signin") openSheet(); }
+addEventListener("hashchange", route); route();
+if (PREVIEW) { $("#pv-update").addEventListener("click", () => showUpdate()); $("#pv-member").addEventListener("click", openMember); }
+else $("#preview-bar").hidden = true;
 })();
 </script>
+
 </body>
 </html>
