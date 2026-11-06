@@ -1,5 +1,5 @@
 {
- "updated": "Nov 5, 8:45 PM ET",
+ "updated": "Nov 6, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 88,
+   "won": 90,
    "lost": 9
   }
  ],
@@ -19,15 +19,15 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 31,
-   "lost": 4,
+   "won": 34,
+   "lost": 5,
    "push": 0
   },
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 50,
-   "lost": 10,
+   "won": 53,
+   "lost": 11,
    "push": 0
   },
   {
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 6, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 5, 11:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 5, 8:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -68,18 +82,46 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 5, 8:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
+   "when": "Nov 5, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Brian Thomas Jr. under 25 receiving yards",
+   "detail": "Jaguars @ Ravens · at 71¢"
+  },
+  {
+   "when": "Nov 5, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Trevor Lawrence under 20 rushing yards",
+   "detail": "Jaguars @ Ravens · at 69¢"
+  },
+  {
+   "when": "Nov 5, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Rashod Bateman under 25 receiving yards",
+   "detail": "Jaguars @ Ravens · at 69¢"
   },
   {
    "when": "Nov 5, 8:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "James Madison −3.5",
+   "detail": "James Madison @ Southern Miss · at 75¢"
+  },
+  {
+   "when": "Nov 5, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "James Madison −7.5",
+   "detail": "James Madison @ Southern Miss · at 65¢"
+  },
+  {
+   "when": "Nov 5, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Florida Atlantic +14.5",
+   "detail": "UTSA @ Florida Atlantic · at 69¢"
   },
   {
    "when": "Nov 5, 12:45 PM ET",
@@ -129,48 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 4, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Cleveland +10.5",
-   "detail": "Cleveland @ Oklahoma City · at 75¢"
-  },
-  {
-   "when": "Nov 4, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 214.5 points",
-   "detail": "Cleveland @ Oklahoma City · at 78¢"
-  },
-  {
-   "when": "Nov 4, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 216.5 points",
-   "detail": "Cleveland @ Oklahoma City · at 75¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Massachusetts to win",
-   "detail": "Ball State @ Massachusetts · at 60¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Massachusetts +2.5",
-   "detail": "Ball State @ Massachusetts · at 64¢"
-  },
-  {
-   "when": "Nov 4, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Under 61.5 points",
-   "detail": "Ball State @ Massachusetts · at 79¢"
   }
  ]
 }
