@@ -1,5 +1,5 @@
 {
- "updated": "Nov 6, 12:15 AM ET",
+ "updated": "Nov 6, 1:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 90,
+   "won": 92,
    "lost": 9
   }
  ],
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 18,
-   "lost": 11,
+   "won": 20,
+   "lost": 12,
    "push": 0
   },
   {
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 6, 1:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 6, 12:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 6, 12:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -68,18 +82,18 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 5, 11:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 5, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Jamal Cain under 10 points",
+   "detail": "Orlando @ Phoenix · at 79¢"
   },
   {
-   "when": "Nov 5, 8:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
+   "when": "Nov 5, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Oso Ighodaro under 10 points",
+   "detail": "Orlando @ Phoenix · at 74¢"
   },
   {
    "when": "Nov 5, 8:15 PM ET",
@@ -115,20 +129,6 @@
    "kind": "College football",
    "title": "James Madison −7.5",
    "detail": "James Madison @ Southern Miss · at 65¢"
-  },
-  {
-   "when": "Nov 5, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Florida Atlantic +14.5",
-   "detail": "UTSA @ Florida Atlantic · at 69¢"
-  },
-  {
-   "when": "Nov 5, 12:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Under 4.5 goals",
-   "detail": "Ferencvaros @ Milan · at 78¢"
   },
   {
    "when": "Nov 5, 12:15 PM ET",
