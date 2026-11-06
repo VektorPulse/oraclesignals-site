@@ -483,6 +483,35 @@ footer { padding-block: 60px 40px; color: var(--muted); font-size: 13.5px; }
 .switch[aria-checked="true"] { background: linear-gradient(180deg, var(--gold-hi), var(--gold)); }
 .switch[aria-checked="true"]::after { transform: translateX(18px); background: #1a1408; }
 @media (max-width: 980px) { .m-plan, .m-ref, .m-bot, .m-rec, .m-pings { grid-column: span 12; } }
+/* 👑 the owner view on the account page */
+.m-kpis { grid-column: span 12; }
+.kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 14px; }
+.kpis div { padding: 14px; border-radius: 14px; border: 1px solid var(--line); background: rgba(255, 255, 255, .03); }
+.kpis small { display: block; color: var(--muted); font-size: 12.5px; }
+.kpis b { display: block; font-size: 28px; font-weight: 500; letter-spacing: -.02em; margin-top: 4px; }
+.m-plans { grid-column: span 7; } .m-trials { grid-column: span 5; }
+.m-rec2, .m-bots, .m-eng { grid-column: span 4; }
+.m-refs, .m-health { grid-column: span 6; } .m-look { grid-column: span 12; }
+.tbl { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+.tbl th { text-align: right; color: var(--muted); font-weight: 500; font-size: 12px; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.tbl td { text-align: right; padding: 9px 8px; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.tbl th:first-child, .tbl td:first-child { text-align: left; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chips span { font-size: 13px; padding: 6px 10px; border-radius: 99px; border: 1px solid var(--line); }
+.chips .ok { color: var(--win); border-color: rgba(98, 197, 154, .35); } .chips .bad { color: var(--loss); border-color: rgba(224, 115, 95, .45); }
+.look { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.look input { flex: 1; min-width: 200px; height: 46px; border-radius: 999px; border: 1px solid var(--line-hi); background: rgba(255, 255, 255, .04);
+  color: var(--ink); padding: 0 18px; font: 15px var(--sans); }
+.look input:focus { outline: 2px solid var(--gold); outline-offset: 2px; }
+.hits { display: grid; gap: 8px; margin-top: 14px; }
+.hits button { display: flex; justify-content: space-between; gap: 12px; width: 100%; text-align: left; padding: 12px 14px; border-radius: 12px;
+  border: 1px solid var(--line); background: rgba(255, 255, 255, .03); color: var(--ink); font: 14.5px var(--sans); cursor: pointer; }
+.hits button:hover { border-color: var(--line-hi); background: rgba(255, 255, 255, .06); }
+.hits small { color: var(--muted); }
+.viewing { grid-column: span 12; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 14px 18px; border-radius: 14px; border: 1px dashed rgba(216, 180, 106, .5); color: var(--gold-hi); }
+@media (max-width: 980px) { .m-plans, .m-trials, .m-rec2, .m-bots, .m-eng, .m-refs, .m-health { grid-column: span 12; } .kpis { grid-template-columns: repeat(2, 1fr); } }
+
 
 .update { position: fixed; z-index: 95; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 22px); width: min(560px, calc(100vw - 32px));
   transform: translate(-50%, 140%); transition: transform .7s cubic-bezier(.2, 1.3, .4, 1); padding: 20px 20px 20px 22px; display: grid; grid-template-columns: 64px 1fr; gap: 18px; }
@@ -1378,8 +1407,77 @@ function lineChart(svg, pts) {
   const e = pts[pts.length - 1];
   mk("circle", { cx: X(pts.length - 1), cy: Y(e[1]), r: 5, fill: e[1] < 0 ? "#e0735f" : "#f2dca6" });
 }
-function render(me) {
+
+/* ---------------- 👑 the owner view ---------------- */
+const money0 = v => `$${Math.round(v).toLocaleString("en-US")}`;
+const ago = ts => { const d = Math.round((ts * 1000 - Date.now()) / 3600000); return d <= 24 ? `in ${Math.max(1, d)} h` : `in ${Math.round(d / 24)} days`; };
+let OWNER = null;
+function renderOwner(a) {
+  const mem = a.members;
+  const k = card("m-kpis", "👑 Owner view");
+  if (mem) {
+    const box = el("div", "kpis");
+    for (const [label, value] of [["Members", String(mem.members)], ["Monthly revenue", money0(mem.mrr)], ["Trials worth", money0(mem.trial_mrr) + "/mo"],
+                                  ["New this week", String(mem.new_week)], ["Cancelled this week", String(mem.cancelled_week)]]) {
+      const d = el("div"); d.append(el("small", "", label), el("b", "num", value)); box.append(d);
+    }
+    k.append(box);
+    const pl = card("m-plans", "Plans");
+    const t = el("table", "tbl"), hd = el("tr");
+    for (const h of ["Plan", "Active", "Trial", "Cancelling", "Late", "Ended"]) hd.append(el("th", "", h));
+    t.append(hd);
+    for (const r of mem.plans) { const tr = el("tr"); for (const v of [r.plan, r.active, r.trial, r.cancelling, r.past_due, r.ended]) tr.append(el("td", "", String(v))); t.append(tr); }
+    pl.append(t);
+    const tr = card("m-trials", "Trials ending in 3 days");
+    if (mem.trials_ending.length) for (const x of mem.trials_ending) tr.append(rowsOf([[`${x.name} · ${x.plan}`, ago(x.ends)]]));
+    else tr.append(el("div", "m-sub", "None in the next 3 days."));
+  } else k.append(el("div", "m-sub", "Whop's member list couldn't be read just now; the rest is below."));
+  const rc = card("m-rec2", "The record");
+  if (a.record) { rc.append(rowsOf(a.record.rows.map(r => [r.label, `${r.won}–${r.lost}`]))); if (a.record.updated) rc.append(el("div", "m-sub", `as of ${a.record.updated}`)); }
+  const b = card("m-bots", "Telegram bot users");
+  if (a.bot) b.append(el("div", "m-big num", String(a.bot.active)), rowsOf([["Live", String(a.bot.live)], ["Practice", String(a.bot.practice)], ["Left or paused", String(a.bot.other)]]));
+  const e = card("m-eng", "Engagement"), g = a.engagement || {};
+  e.append(rowsOf([["Signed in on the site", String(g.signed_in || 0)], ["✅ taps collected", String(g.taps || 0)], ["Members tapping ✅", String(g.tappers || 0)]]));
+  const rf = card("m-refs", "Top referrers");
+  if (a.referrers && a.referrers.length) rf.append(rowsOf(a.referrers.map(r => [r.name, `${r.active} paying`])));
+  else rf.append(el("div", "m-sub", "No paying referrals yet."));
+  const h = card("m-health", "Services");
+  const chips = el("div", "chips");
+  for (const [name, st] of Object.entries(a.health || {})) chips.append(el("span", st === "active" ? "ok" : "bad", `${st === "active" ? "●" : "○"} ${name}`));
+  h.append(chips);
+  const lk = card("m-look", "Look up a member");
+  const form = el("div", "look"), input = el("input"), go = el("button", "btn btn-gold", "Search"), hits = el("div", "hits");
+  input.id = "m-look-q"; input.placeholder = "Discord or Telegram name, Whop username, user_… or mem_…"; input.setAttribute("aria-label", "Member to look up");
+  form.append(input, go); lk.append(form, hits);
+  const search = async () => {
+    const q = input.value.trim(); hits.replaceChildren(); if (q.length < 2) return;
+    let res = [];
+    if (PREVIEW) res = (ME_SAMPLE.lookup || []).filter(r => r.name.toLowerCase().includes(q.toLowerCase()));
+    else { try { const r = await fetch(`${API}/admin/lookup?q=${encodeURIComponent(q)}`, { credentials: "include" }); res = r.ok ? (await r.json()).results : []; } catch (err) { res = []; } }
+    if (!res.length) { hits.append(el("div", "m-sub", "No member matches that.")); return; }
+    for (const m of res) {
+      const bt = el("button"); bt.type = "button"; bt.append(el("span", "", m.name), el("small", "", `${m.plan || "no plan"} · ${m.status}`)); hits.append(bt);
+      if (!m.user_id) { bt.disabled = true; continue; }
+      bt.addEventListener("click", async () => {
+        let view = null;
+        if (PREVIEW) view = (ME_SAMPLE.members || {})[m.user_id] || null;
+        else { try { const r = await fetch(`${API}/admin/member?user=${encodeURIComponent(m.user_id)}`, { credentials: "include" }); view = r.ok ? await r.json() : null; } catch (err) { view = null; } }
+        if (view) { render(view, m.name); member.scrollTo({ top: 0, behavior: "smooth" }); }
+      });
+    }
+  };
+  go.addEventListener("click", search); input.addEventListener("keydown", ev => { if (ev.key === "Enter") search(); });
+}
+function render(me, viewing) {
   grid.replaceChildren(); hello(me.user && me.user.username);
+  { const f = $("#m-flag"); f.hidden = !PREVIEW; f.textContent = "Preview · real data, not live yet"; }
+  if (me.admin) OWNER = me;
+  if (viewing) {  // 👑 the owner looking at a member's page: theirs exactly, with a way back
+    const v = el("div", "viewing"); v.append(el("span", "", `👑 Viewing ${viewing}'s account, as they see it`));
+    const back = el("button", "btn btn-ghost", "Back to owner view"); back.addEventListener("click", () => render(OWNER)); v.append(back); grid.append(v);
+    $("#m-hello").textContent = `${viewing}'s `; $("#m-hello").append(el("em", "", "account."));
+  } else if (me.admin) renderOwner(me.admin);
+  if (me.admin && !viewing && !(me.subscription && me.subscription.plans && me.subscription.plans.length)) return;  // the owner has no plan of their own
   const flag = $("#m-flag"); flag.hidden = !PREVIEW; flag.textContent = "Preview · real data, not live yet";
   // 1 · the plan
   const sub = me.subscription, plan = sub && sub.plans && sub.plans[0];
