@@ -65,6 +65,7 @@ whop.track("page");
 }
 @property --ang { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; } /* hidden means hidden, even on an element whose class sets display (the preview host adds this; the live site needs it too) */
 html { scroll-behavior: smooth; }
 body {
   margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55;
@@ -889,7 +890,7 @@ footer { padding-block: 60px 40px; color: var(--muted); font-size: 13.5px; }
   </div>
 </div>
 
-<div class="preview-bar glass" id="preview-bar">
+<div class="preview-bar glass" id="preview-bar" hidden>
   <span>Preview</span>
   <button id="pv-update">Show update pop-up</button>
   <button id="pv-member">My account</button>
