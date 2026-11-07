@@ -1,9 +1,9 @@
 {
- "updated": "Nov 6, 10:15 PM ET",
+ "updated": "Nov 6, 10:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 402,
+  "won": 403,
   "lost": 41,
   "since": "Oct 8, 2026"
  },
@@ -26,7 +26,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 53,
+   "won": 54,
    "lost": 11,
    "push": 0
   },
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 23,
-   "lost": 13,
+   "won": 24,
+   "lost": 14,
    "push": 0
   },
   {
@@ -60,6 +60,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 6, 10:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
   {
    "when": "Nov 6, 10:15 PM ET",
    "emoji": "🐕",
@@ -80,6 +87,20 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 6, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "South Florida −6.5 — NO",
+   "detail": "South Florida @ East Carolina · at 72¢"
+  },
+  {
+   "when": "Nov 6, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Washington −3.5 — NO",
+   "detail": "Washington @ Atlanta · at 79¢"
   },
   {
    "when": "Nov 6, 3:00 PM ET",
@@ -141,13 +162,6 @@
    "when": "Nov 5, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Draymond Green under 2 threes",
-   "detail": "Miami @ Golden State · at 77¢"
-  },
-  {
-   "when": "Nov 5, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
    "title": "Will Richard under 4 rebounds",
    "detail": "Miami @ Golden State · at 76¢"
   },
@@ -157,20 +171,6 @@
    "kind": "NBA",
    "title": "Jamal Cain under 10 points + Draymond Green under 2 threes",
    "detail": "ORL@PHX + MIA@GSW · at None¢"
-  },
-  {
-   "when": "Nov 5, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Brian Thomas Jr. under 25 receiving yards",
-   "detail": "Jaguars @ Ravens · at 71¢"
-  },
-  {
-   "when": "Nov 5, 12:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 88¢"
   }
  ]
 }
