@@ -1,5 +1,5 @@
 {
- "updated": "Nov 7, 1:00 AM ET",
+ "updated": "Nov 7, 2:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 117,
+   "won": 118,
    "lost": 9
   }
  ],
@@ -26,7 +26,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 56,
+   "won": 57,
    "lost": 11,
    "push": 0
   },
@@ -61,6 +61,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 7, 2:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 7, 1:00 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -83,10 +90,10 @@
   },
   {
    "when": "Nov 6, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "TCU to win — NO",
+   "detail": "TCU @ Arizona · at 71¢"
   },
   {
    "when": "Nov 6, 8:00 PM ET",
@@ -122,13 +129,6 @@
    "kind": "NBA",
    "title": "Jeremiah Fears 10+ points — YES + Jaime Jaquez Jr. 10+ points — YES",
    "detail": "MIN@NOP + TOR@MIL · at None¢"
-  },
-  {
-   "when": "Nov 6, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "South Florida −6.5 — NO",
-   "detail": "South Florida @ East Carolina · at 72¢"
   },
   {
    "when": "Nov 6, 3:00 PM ET",
