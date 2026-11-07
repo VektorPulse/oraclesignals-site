@@ -1,5 +1,5 @@
 {
- "updated": "Nov 7, 4:00 PM ET",
+ "updated": "Nov 7, 5:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 137,
+   "won": 138,
    "lost": 10
   }
  ],
@@ -26,8 +26,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 66,
-   "lost": 13,
+   "won": 69,
+   "lost": 14,
    "push": 0
   },
   {
@@ -61,6 +61,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 7, 5:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
    "when": "Nov 7, 4:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -82,32 +89,25 @@
    "detail": "called at 86¢"
   },
   {
+   "when": "Nov 7, 1:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Coastal Carolina −20.5 — NO",
+   "detail": "Old Dominion @ Coastal Carolina · at 82¢"
+  },
+  {
    "when": "Nov 7, 12:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 7, 12:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "Over 56.5 points — NO",
-   "detail": "Duke @ NC State · at 60¢"
+   "title": "Auburn −20.5 — NO",
+   "detail": "Arkansas @ Auburn · at 73¢"
   },
   {
-   "when": "Nov 7, 12:00 PM ET",
+   "when": "Nov 7, 12:45 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "Syracuse −2.5 — NO",
-   "detail": "Clemson @ Syracuse · at 60¢"
-  },
-  {
-   "when": "Nov 7, 12:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 56.5 points — NO",
-   "detail": "Florida State @ Boston College · at 60¢"
+   "title": "Over 69.5 points — NO",
+   "detail": "Arkansas @ Auburn · at 84¢"
   },
   {
    "when": "Nov 7, 11:00 AM ET",
