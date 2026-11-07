@@ -1,9 +1,9 @@
 {
- "updated": "Nov 7, 9:45 AM ET",
+ "updated": "Nov 7, 11:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 403,
+  "won": 405,
   "lost": 41,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 129,
+   "won": 131,
    "lost": 9
   }
  ],
@@ -33,8 +33,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 81,
-   "lost": 35,
+   "won": 83,
+   "lost": 36,
    "push": 0
   },
   {
@@ -61,6 +61,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 7, 11:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 7, 10:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 7, 10:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 7, 10:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 7, 9:45 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -68,18 +96,18 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 7, 9:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 93¢"
+   "when": "Nov 7, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Draw — NO",
+   "detail": "Stoke @ Portsmouth · at 71¢"
   },
   {
-   "when": "Nov 7, 8:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
+   "when": "Nov 7, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 1.5 goals — YES",
+   "detail": "Wolves @ Wrexham · at 76¢"
   },
   {
    "when": "Nov 6, 10:45 PM ET",
@@ -124,20 +152,6 @@
    "detail": "Minnesota @ New Orleans · at 79¢"
   },
   {
-   "when": "Nov 6, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jeremiah Fears 10+ points — YES + Jaime Jaquez Jr. 10+ points — YES",
-   "detail": "MIN@NOP + TOR@MIL · at None¢"
-  },
-  {
-   "when": "Nov 6, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Sevilla or draw",
-   "detail": "Alavés @ Sevilla · at 80¢"
-  },
-  {
    "when": "Nov 6, 1:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -157,20 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 6, 4:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 6, 1:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 86¢"
   }
  ]
 }
