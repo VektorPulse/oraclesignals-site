@@ -1,5 +1,5 @@
 {
- "updated": "Nov 7, 12:15 PM ET",
+ "updated": "Nov 7, 12:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 134,
+   "won": 135,
    "lost": 9
   }
  ],
@@ -33,7 +33,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 83,
+   "won": 85,
    "lost": 36,
    "push": 0
   },
@@ -61,6 +61,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 7, 12:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
    "when": "Nov 7, 12:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -73,13 +80,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 7, 11:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 7, 11:00 AM ET",
@@ -96,11 +96,18 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 7, 7:30 AM ET",
+   "when": "Nov 7, 9:00 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Draw — NO",
-   "detail": "Stoke @ Portsmouth · at 71¢"
+   "title": "Over 4.5 goals — NO",
+   "detail": "Frosinone @ Cagliari · at 77¢"
+  },
+  {
+   "when": "Nov 7, 9:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Lecce @ Torino · at 71¢"
   },
   {
    "when": "Nov 7, 7:30 AM ET",
@@ -143,13 +150,6 @@
    "kind": "NBA",
    "title": "Saddiq Bey 10+ points — YES",
    "detail": "Minnesota @ New Orleans · at 71¢"
-  },
-  {
-   "when": "Nov 6, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jeremiah Fears 10+ points — YES",
-   "detail": "Minnesota @ New Orleans · at 79¢"
   },
   {
    "when": "Nov 6, 1:45 PM ET",
