@@ -54,7 +54,7 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 9,
+   "won": 14,
    "lost": 2,
    "push": 0
   }
@@ -87,6 +87,27 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 7, 2:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 151.5 points — YES",
+   "detail": "Lamar @ Abilene Christian · at 71¢"
+  },
+  {
+   "when": "Nov 7, 2:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 149.5 points — YES",
+   "detail": "Lamar @ Abilene Christian · at 76¢"
+  },
+  {
+   "when": "Nov 7, 2:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 170.5 points — NO + Cal State Fullerton −7.5 — NO",
+   "detail": "TOL@MRSH + CSF@SDAK · at None¢"
   },
   {
    "when": "Nov 7, 1:00 PM ET",
@@ -131,32 +152,11 @@
    "detail": "Frosinone @ Cagliari · at 77¢"
   },
   {
-   "when": "Nov 7, 9:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Lecce @ Torino · at 71¢"
-  },
-  {
-   "when": "Nov 7, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 1.5 goals — YES",
-   "detail": "Wolves @ Wrexham · at 76¢"
-  },
-  {
    "when": "Nov 6, 10:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 6, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Saddiq Bey 10+ points — YES",
-   "detail": "Minnesota @ New Orleans · at 71¢"
   },
   {
    "when": "Nov 6, 1:45 PM ET",
