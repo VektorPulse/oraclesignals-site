@@ -1,9 +1,9 @@
 {
- "updated": "Nov 7, 2:45 PM ET",
+ "updated": "Nov 7, 4:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 405,
+  "won": 406,
   "lost": 41,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 136,
+   "won": 137,
    "lost": 10
   }
  ],
@@ -26,8 +26,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 57,
-   "lost": 11,
+   "won": 66,
+   "lost": 13,
    "push": 0
   },
   {
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 7, 4:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 7, 3:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
    "when": "Nov 7, 2:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -75,11 +89,25 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 7, 12:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
+   "when": "Nov 7, 12:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 56.5 points — NO",
+   "detail": "Duke @ NC State · at 60¢"
+  },
+  {
+   "when": "Nov 7, 12:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Syracuse −2.5 — NO",
+   "detail": "Clemson @ Syracuse · at 60¢"
+  },
+  {
+   "when": "Nov 7, 12:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 56.5 points — NO",
+   "detail": "Florida State @ Boston College · at 60¢"
   },
   {
    "when": "Nov 7, 11:00 AM ET",
@@ -124,27 +152,6 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 6, 10:15 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "TCU to win — NO",
-   "detail": "TCU @ Arizona · at 71¢"
-  },
-  {
-   "when": "Nov 6, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Nebraska −9.5 — NO",
-   "detail": "Nebraska @ Illinois · at 65¢"
-  },
-  {
-   "when": "Nov 6, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Nebraska −7.5 — NO",
-   "detail": "Nebraska @ Illinois · at 62¢"
-  },
-  {
    "when": "Nov 6, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
@@ -164,13 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 6, 7:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
   }
  ]
 }
