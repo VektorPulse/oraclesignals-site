@@ -26,7 +26,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 54,
+   "won": 56,
    "lost": 11,
    "push": 0
   },
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 24,
-   "lost": 14,
+   "won": 34,
+   "lost": 21,
    "push": 0
   },
   {
@@ -89,6 +89,41 @@
    "detail": "called at 85¢"
   },
   {
+   "when": "Nov 6, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Nebraska −9.5 — NO",
+   "detail": "Nebraska @ Illinois · at 65¢"
+  },
+  {
+   "when": "Nov 6, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Nebraska −7.5 — NO",
+   "detail": "Nebraska @ Illinois · at 62¢"
+  },
+  {
+   "when": "Nov 6, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Saddiq Bey 10+ points — YES",
+   "detail": "Minnesota @ New Orleans · at 71¢"
+  },
+  {
+   "when": "Nov 6, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Jeremiah Fears 10+ points — YES",
+   "detail": "Minnesota @ New Orleans · at 79¢"
+  },
+  {
+   "when": "Nov 6, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Jeremiah Fears 10+ points — YES + Jaime Jaquez Jr. 10+ points — YES",
+   "detail": "MIN@NOP + TOR@MIL · at None¢"
+  },
+  {
    "when": "Nov 6, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
@@ -96,32 +131,11 @@
    "detail": "South Florida @ East Carolina · at 72¢"
   },
   {
-   "when": "Nov 6, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Washington −3.5 — NO",
-   "detail": "Washington @ Atlanta · at 79¢"
-  },
-  {
    "when": "Nov 6, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Sevilla or draw",
    "detail": "Alavés @ Sevilla · at 80¢"
-  },
-  {
-   "when": "Nov 6, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Udinese +1.5 + Sevilla or draw",
-   "detail": "UDI@VEN + ALA@SEV · at None¢"
-  },
-  {
-   "when": "Nov 6, 2:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Udinese +1.5",
-   "detail": "Udinese @ Venezia · at 80¢"
   },
   {
    "when": "Nov 6, 1:45 PM ET",
@@ -157,20 +171,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 5, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Will Richard under 4 rebounds",
-   "detail": "Miami @ Golden State · at 76¢"
-  },
-  {
-   "when": "Nov 5, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jamal Cain under 10 points + Draymond Green under 2 threes",
-   "detail": "ORL@PHX + MIA@GSW · at None¢"
   }
  ]
 }
