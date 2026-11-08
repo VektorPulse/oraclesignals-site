@@ -1,5 +1,5 @@
 {
- "updated": "Nov 7, 5:15 PM ET",
+ "updated": "Nov 7, 7:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 138,
+   "won": 140,
    "lost": 10
   }
  ],
@@ -54,12 +54,26 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 14,
+   "won": 16,
    "lost": 2,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 7, 7:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 7, 6:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 7, 5:15 PM ET",
    "emoji": "🐕",
@@ -75,32 +89,18 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 7, 3:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 7, 2:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 7, 2:00 PM ET",
+   "when": "Nov 7, 3:00 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Over 151.5 points — YES",
-   "detail": "Lamar @ Abilene Christian · at 71¢"
+   "title": "Montana State −7.5 — YES",
+   "detail": "Long Beach State @ Montana State · at 62¢"
   },
   {
-   "when": "Nov 7, 2:00 PM ET",
+   "when": "Nov 7, 3:00 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Over 149.5 points — YES",
-   "detail": "Lamar @ Abilene Christian · at 76¢"
+   "title": "Memphis −1.5 — NO",
+   "detail": "VCU @ Memphis · at 61¢"
   },
   {
    "when": "Nov 7, 2:00 PM ET",
