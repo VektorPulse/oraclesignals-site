@@ -54,7 +54,7 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 16,
+   "won": 17,
    "lost": 2,
    "push": 0
   }
@@ -80,6 +80,13 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 8, 1:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Arkansas −1.5 — NO",
+   "detail": "Arkansas @ Virginia · at 63¢"
   },
   {
    "when": "Nov 8, 12:00 PM ET",
@@ -164,13 +171,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 7, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Marcus Smart 10+ points — NO",
-   "detail": "Houston @ Phoenix · at 75¢"
   }
  ]
 }
