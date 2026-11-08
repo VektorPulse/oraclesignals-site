@@ -1,5 +1,5 @@
 {
- "updated": "Nov 8, 12:00 PM ET",
+ "updated": "Nov 8, 1:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 163,
+   "won": 164,
    "lost": 13
   }
  ],
@@ -33,7 +33,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 87,
+   "won": 88,
    "lost": 38,
    "push": 0
   },
@@ -61,6 +61,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 8, 1:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 8, 12:00 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -75,11 +82,11 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 8, 10:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
+   "when": "Nov 8, 10:15 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Draw — NO",
+   "detail": "Rayo @ Real Sociedad · at 77¢"
   },
   {
    "when": "Nov 8, 9:45 AM ET",
@@ -157,13 +164,6 @@
    "kind": "NBA",
    "title": "Marcus Smart 10+ points — NO",
    "detail": "Houston @ Phoenix · at 75¢"
-  },
-  {
-   "when": "Nov 7, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Alperen Sengun 10+ assists — NO",
-   "detail": "Houston @ Phoenix · at 85¢"
   },
   {
    "when": "Nov 7, 4:00 PM ET",
