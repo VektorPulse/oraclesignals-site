@@ -1,9 +1,9 @@
 {
- "updated": "Nov 7, 11:15 PM ET",
+ "updated": "Nov 8, 12:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 407,
+  "won": 408,
   "lost": 41,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 146,
+   "won": 147,
    "lost": 11
   }
  ],
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 34,
-   "lost": 21,
+   "won": 38,
+   "lost": 24,
    "push": 0
   },
   {
@@ -60,6 +60,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 8, 12:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 8, 12:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
   {
    "when": "Nov 7, 11:15 PM ET",
    "emoji": "🐕",
@@ -82,11 +96,25 @@
    "detail": "called at 91¢"
   },
   {
-   "when": "Nov 7, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 95¢"
+   "when": "Nov 7, 8:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Stephen Curry 6+ threes — NO",
+   "detail": "Orlando @ Golden State · at 72¢"
+  },
+  {
+   "when": "Nov 7, 8:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Jase Richardson 10+ points — NO",
+   "detail": "Orlando @ Golden State · at 70¢"
+  },
+  {
+   "when": "Nov 7, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Landry Shamet 15+ points — NO",
+   "detail": "New York @ Cleveland · at 81¢"
   },
   {
    "when": "Nov 7, 4:00 PM ET",
@@ -124,20 +152,6 @@
    "detail": "Old Dominion @ Coastal Carolina · at 82¢"
   },
   {
-   "when": "Nov 7, 12:45 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Auburn −20.5 — NO",
-   "detail": "Arkansas @ Auburn · at 73¢"
-  },
-  {
-   "when": "Nov 7, 12:45 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 69.5 points — NO",
-   "detail": "Arkansas @ Auburn · at 84¢"
-  },
-  {
    "when": "Nov 7, 11:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -152,25 +166,11 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 7, 9:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 4.5 goals — NO",
-   "detail": "Frosinone @ Cagliari · at 77¢"
-  },
-  {
    "when": "Nov 6, 10:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 6, 1:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 89¢"
   }
  ]
 }
