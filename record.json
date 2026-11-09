@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 5:15 AM ET",
+ "updated": "Nov 9, 6:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 417,
+  "won": 418,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 181,
+   "won": 182,
    "lost": 18
   }
  ],
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 9, 6:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 9, 5:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
    "when": "Nov 9, 5:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -73,13 +87,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 9, 4:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 9, 3:30 AM ET",
@@ -157,13 +164,6 @@
    "kind": "NFL",
    "title": "Justin Herbert 2+ INTs thrown — NO + Gardner Minshew II 2+ passing TDs — NO",
    "detail": "HOU@LAC + ARI@SEA · at None¢"
-  },
-  {
-   "when": "Nov 8, 4:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 8, 1:00 PM ET",
