@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 6:15 AM ET",
+ "updated": "Nov 9, 6:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 418,
+  "won": 419,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -60,6 +60,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 9, 6:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 9, 6:15 AM ET",
    "emoji": "🐕",
@@ -129,13 +136,6 @@
    "kind": "NBA",
    "title": "Klay Thompson 10+ points — YES",
    "detail": "Miami @ Sacramento · at 67¢"
-  },
-  {
-   "when": "Nov 8, 8:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 88¢"
   },
   {
    "when": "Nov 8, 7:00 PM ET",
