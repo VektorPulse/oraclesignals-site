@@ -1,5 +1,5 @@
 {
- "updated": "Nov 8, 10:00 PM ET",
+ "updated": "Nov 8, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 170,
+   "won": 172,
    "lost": 15
   }
  ],
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 44,
-   "lost": 26,
+   "won": 47,
+   "lost": 28,
    "push": 0
   },
   {
@@ -60,6 +60,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 8, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 8, 11:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
   {
    "when": "Nov 8, 10:00 PM ET",
    "emoji": "🐕",
@@ -82,32 +96,25 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 8, 8:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
+   "when": "Nov 8, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Terrence Shannon Jr. 2+ rebounds — YES",
+   "detail": "Utah @ Minnesota · at 76¢"
   },
   {
    "when": "Nov 8, 7:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 8, 6:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Matisse Thybulle 10+ points — NO",
-   "detail": "Los Angeles @ Detroit · at 77¢"
+   "title": "Darryn Peterson 10+ points — YES",
+   "detail": "Utah @ Minnesota · at 79¢"
   },
   {
-   "when": "Nov 8, 6:00 PM ET",
+   "when": "Nov 8, 7:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Austin Reaves 2+ threes — YES",
-   "detail": "Los Angeles @ Detroit · at 65¢"
+   "title": "Terrence Shannon Jr. 2+ rebounds — YES + Matisse Thybulle 10+ points — NO",
+   "detail": "UTA@MIN + LAL@DET · at None¢"
   },
   {
    "when": "Nov 8, 4:25 PM ET",
@@ -143,13 +150,6 @@
    "kind": "College basketball",
    "title": "Arkansas −1.5 — NO",
    "detail": "Arkansas @ Virginia · at 63¢"
-  },
-  {
-   "when": "Nov 8, 10:15 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Draw — NO",
-   "detail": "Rayo @ Real Sociedad · at 77¢"
   },
   {
    "when": "Nov 8, 9:45 AM ET",
