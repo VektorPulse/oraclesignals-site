@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 2:15 PM ET",
+ "updated": "Nov 9, 3:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 427,
+  "won": 428,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,14 +11,14 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 2,
+   "won": 3,
    "lost": 2
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 192,
-   "lost": 18
+   "won": 194,
+   "lost": 19
   }
  ],
  "sports": [
@@ -67,18 +67,39 @@
  ],
  "wins": [
   {
+   "when": "Nov 9, 3:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 9, 3:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 9, 2:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 9, 2:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
    "when": "Nov 9, 2:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 9, 1:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 9, 1:15 PM ET",
@@ -93,13 +114,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 9, 1:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 9, 11:45 AM ET",
@@ -137,13 +151,6 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 9, 8:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 8, 9:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Reggie Virgil 30+ receiving yds — NO",
    "detail": "Cardinals @ Seahawks · at 75¢"
-  },
-  {
-   "when": "Nov 8, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Elijah Higgins 3+ catches — NO",
-   "detail": "Cardinals @ Seahawks · at 69¢"
   }
  ]
 }
