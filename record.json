@@ -1,9 +1,9 @@
 {
- "updated": "Nov 8, 11:15 PM ET",
+ "updated": "Nov 9, 1:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 414,
+  "won": 415,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,8 +11,8 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 172,
-   "lost": 16
+   "won": 175,
+   "lost": 17
   }
  ],
  "sports": [
@@ -47,8 +47,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 47,
-   "lost": 28,
+   "won": 49,
+   "lost": 32,
    "push": 0
   },
   {
@@ -61,21 +61,28 @@
  ],
  "wins": [
   {
-   "when": "Nov 8, 11:15 PM ET",
+   "when": "Nov 9, 1:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 8, 11:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 8, 10:00 PM ET",
+   "when": "Nov 9, 12:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 9, 12:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 9, 12:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
@@ -89,25 +96,25 @@
    "detail": "called at 86¢"
   },
   {
+   "when": "Nov 8, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Davion Mitchell 2+ rebounds — YES",
+   "detail": "Miami @ Sacramento · at 69¢"
+  },
+  {
+   "when": "Nov 8, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Klay Thompson 10+ points — YES",
+   "detail": "Miami @ Sacramento · at 67¢"
+  },
+  {
    "when": "Nov 8, 8:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 8, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Terrence Shannon Jr. 2+ rebounds — YES",
-   "detail": "Utah @ Minnesota · at 76¢"
-  },
-  {
-   "when": "Nov 8, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Darryn Peterson 10+ points — YES",
-   "detail": "Utah @ Minnesota · at 79¢"
   },
   {
    "when": "Nov 8, 7:00 PM ET",
@@ -164,13 +171,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 8, 3:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 91¢"
   }
  ]
 }
