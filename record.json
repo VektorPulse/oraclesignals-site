@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 3:15 AM ET",
+ "updated": "Nov 9, 4:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 416,
+  "won": 417,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 178,
+   "won": 179,
    "lost": 18
   }
  ],
@@ -61,6 +61,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 9, 4:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 9, 3:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
    "when": "Nov 9, 3:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -73,13 +87,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 9, 1:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
   },
   {
    "when": "Nov 9, 1:30 AM ET",
@@ -164,13 +171,6 @@
    "kind": "College basketball",
    "title": "Arkansas −1.5 — NO",
    "detail": "Arkansas @ Virginia · at 63¢"
-  },
-  {
-   "when": "Nov 8, 9:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢"
   }
  ]
 }
