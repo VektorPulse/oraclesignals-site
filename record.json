@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 11:45 AM ET",
+ "updated": "Nov 9, 1:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 426,
+  "won": 427,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 1,
+   "won": 2,
    "lost": 0
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 189,
+   "won": 190,
    "lost": 18
   }
  ],
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 9, 1:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 9, 1:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 9, 1:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 9, 11:45 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -109,13 +130,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 9, 9:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
    "when": "Nov 9, 9:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -128,13 +142,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 9, 8:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 8, 9:00 PM ET",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Elijah Higgins 3+ catches — NO",
    "detail": "Cardinals @ Seahawks · at 69¢"
-  },
-  {
-   "when": "Nov 8, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Justin Herbert 2+ INTs thrown — NO + Gardner Minshew II 2+ passing TDs — NO",
-   "detail": "HOU@LAC + ARI@SEA · at None¢"
   }
  ]
 }
