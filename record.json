@@ -12,7 +12,7 @@
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
    "won": 172,
-   "lost": 15
+   "lost": 16
   }
  ],
  "sports": [
@@ -20,7 +20,7 @@
    "label": "NFL",
    "emoji": "🏈",
    "won": 48,
-   "lost": 8,
+   "lost": 11,
    "push": 0
   },
   {
