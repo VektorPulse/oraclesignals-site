@@ -1,9 +1,9 @@
 {
- "updated": "Nov 10, 12:15 AM ET",
+ "updated": "Nov 10, 2:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 433,
+  "won": 434,
   "lost": 43,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 21,
+   "won": 22,
    "lost": 5
   },
   {
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 54,
-   "lost": 35,
+   "won": 56,
+   "lost": 37,
    "push": 0
   },
   {
@@ -66,6 +66,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 10, 2:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 10, 1:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 10, 12:15 AM ET",
    "emoji": "🐕",
@@ -95,13 +109,6 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 9, 11:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
    "when": "Nov 9, 11:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -123,6 +130,20 @@
    "detail": "called at 88¢"
   },
   {
+   "when": "Nov 9, 10:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Georges Niang 2+ rebounds — YES",
+   "detail": "New Orleans @ Golden State · at 79¢"
+  },
+  {
+   "when": "Nov 9, 10:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Karlo Matković 10+ points — NO",
+   "detail": "New Orleans @ Golden State · at 69¢"
+  },
+  {
    "when": "Nov 9, 9:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
@@ -135,20 +156,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 9, 8:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Marcus Smart 10+ points — NO",
-   "detail": "Denver @ Houston · at 74¢"
-  },
-  {
-   "when": "Nov 9, 8:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Fred VanVleet 6+ assists — NO",
-   "detail": "Denver @ Houston · at 61¢"
   },
   {
    "when": "Nov 9, 8:15 PM ET",
@@ -170,13 +177,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 9, 3:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   }
  ]
 }
