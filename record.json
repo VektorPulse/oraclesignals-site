@@ -4,7 +4,7 @@
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 433,
-  "lost": 42,
+  "lost": 43,
   "since": "Oct 8, 2026"
  },
  "coins": [
@@ -12,7 +12,7 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 21,
-   "lost": 4
+   "lost": 5
   },
   {
    "label": "DOGE 15-minute calls",
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 53,
-   "lost": 34,
+   "won": 54,
+   "lost": 35,
    "push": 0
   },
   {
@@ -123,6 +123,13 @@
    "detail": "called at 88¢"
   },
   {
+   "when": "Nov 9, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 239.5 points — NO",
+   "detail": "San Antonio @ Phoenix · at 77¢"
+  },
+  {
    "when": "Nov 9, 8:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -149,13 +156,6 @@
    "kind": "NFL",
    "title": "Tai Felton 10+ receiving yds — NO",
    "detail": "Bills @ Vikings · at 67¢"
-  },
-  {
-   "when": "Nov 9, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Ray Davis 10+ rushing yds — NO",
-   "detail": "Bills @ Vikings · at 66¢"
   },
   {
    "when": "Nov 9, 6:15 PM ET",
