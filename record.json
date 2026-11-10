@@ -1,5 +1,5 @@
 {
- "updated": "Nov 9, 9:15 PM ET",
+ "updated": "Nov 9, 10:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 12,
+   "won": 15,
    "lost": 2
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 203,
+   "won": 205,
    "lost": 20
   }
  ],
@@ -60,18 +60,46 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 17,
-   "lost": 2,
+   "won": 20,
+   "lost": 3,
    "push": 0
   }
  ],
  "wins": [
   {
-   "when": "Nov 9, 9:15 PM ET",
+   "when": "Nov 9, 10:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 9, 10:00 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 9, 9:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 9, 9:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 9, 9:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
   },
   {
    "when": "Nov 9, 8:45 PM ET",
@@ -82,38 +110,24 @@
   },
   {
    "when": "Nov 9, 8:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 9, 8:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 9, 8:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
+   "when": "Nov 9, 6:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 164.5 points — NO",
+   "detail": "Howard @ Pennsylvania · at 68¢"
   },
   {
-   "when": "Nov 9, 8:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 9, 7:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
+   "when": "Nov 9, 6:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Indiana −8.5 — NO",
+   "detail": "Syracuse @ Indiana · at 61¢"
   },
   {
    "when": "Nov 9, 6:15 PM ET",
@@ -121,6 +135,13 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 9, 6:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 172.5 points — NO",
+   "detail": "Marshall @ Ohio State · at 75¢"
   },
   {
    "when": "Nov 9, 5:00 PM ET",
@@ -156,27 +177,6 @@
    "kind": "NBA",
    "title": "Davion Mitchell 2+ rebounds — YES",
    "detail": "Miami @ Sacramento · at 69¢"
-  },
-  {
-   "when": "Nov 8, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Klay Thompson 10+ points — YES",
-   "detail": "Miami @ Sacramento · at 67¢"
-  },
-  {
-   "when": "Nov 8, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Terrence Shannon Jr. 2+ rebounds — YES + Matisse Thybulle 10+ points — NO",
-   "detail": "UTA@MIN + LAL@DET · at None¢"
-  },
-  {
-   "when": "Nov 8, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Reggie Virgil 30+ receiving yds — NO",
-   "detail": "Cardinals @ Seahawks · at 75¢"
   }
  ]
 }
