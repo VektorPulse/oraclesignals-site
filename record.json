@@ -1,5 +1,5 @@
 {
- "updated": "Nov 9, 11:15 PM ET",
+ "updated": "Nov 10, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 18,
-   "lost": 3
+   "won": 21,
+   "lost": 4
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 206,
+   "won": 208,
    "lost": 22
   }
  ],
@@ -25,7 +25,7 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 48,
+   "won": 51,
    "lost": 11,
    "push": 0
   },
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 51,
+   "won": 53,
    "lost": 34,
    "push": 0
   },
@@ -67,17 +67,45 @@
  ],
  "wins": [
   {
+   "when": "Nov 10, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 10, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 9, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 9, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 9, 11:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 9, 11:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 9, 11:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
    "detail": "called at 88¢"
   },
   {
@@ -95,34 +123,6 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 9, 10:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 9, 10:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 9, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 9, 9:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
    "when": "Nov 9, 8:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -130,32 +130,32 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 9, 7:30 PM ET",
+   "when": "Nov 9, 8:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Jerami Grant 2+ rebounds — YES",
-   "detail": "Memphis @ Toronto · at 68¢"
+   "title": "Marcus Smart 10+ points — NO",
+   "detail": "Denver @ Houston · at 74¢"
   },
   {
-   "when": "Nov 9, 7:30 PM ET",
+   "when": "Nov 9, 8:30 PM ET",
    "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 149.5 points — YES",
-   "detail": "Jackson State @ Mississippi State · at 72¢"
+   "kind": "NBA",
+   "title": "Fred VanVleet 6+ assists — NO",
+   "detail": "Denver @ Houston · at 61¢"
   },
   {
-   "when": "Nov 9, 7:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "UConn −26.5 — YES + Mississippi State −12.5 — YES",
-   "detail": "WAG@CONN + JKST@MSST · at None¢"
+   "when": "Nov 9, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Tai Felton 10+ receiving yds — NO",
+   "detail": "Bills @ Vikings · at 67¢"
   },
   {
-   "when": "Nov 9, 7:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "UConn −26.5 — YES + Mississippi State −12.5 — YES + Over 149.5 points — YES",
-   "detail": "WAG@CONN + JKST@MSST + FGCU@UGA · at None¢"
+   "when": "Nov 9, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Ray Davis 10+ rushing yds — NO",
+   "detail": "Bills @ Vikings · at 66¢"
   },
   {
    "when": "Nov 9, 6:15 PM ET",
