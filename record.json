@@ -1,9 +1,9 @@
 {
- "updated": "Nov 9, 10:15 PM ET",
+ "updated": "Nov 9, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 431,
+  "won": 433,
   "lost": 42,
   "since": "Oct 8, 2026"
  },
@@ -11,14 +11,14 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 15,
-   "lost": 2
+   "won": 18,
+   "lost": 3
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 205,
-   "lost": 20
+   "won": 206,
+   "lost": 22
   }
  ],
  "sports": [
@@ -53,32 +53,60 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 49,
-   "lost": 32,
+   "won": 51,
+   "lost": 34,
    "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 20,
-   "lost": 3,
+   "won": 37,
+   "lost": 6,
    "push": 0
   }
  ],
  "wins": [
   {
-   "when": "Nov 9, 10:15 PM ET",
+   "when": "Nov 9, 11:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 9, 11:00 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 9, 10:00 PM ET",
+   "when": "Nov 9, 11:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 9, 10:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 9, 10:45 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 9, 10:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 91¢"
   },
   {
    "when": "Nov 9, 9:45 PM ET",
@@ -86,13 +114,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 9, 9:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 85¢"
   },
   {
    "when": "Nov 9, 9:30 PM ET",
@@ -109,25 +130,32 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 9, 8:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢"
+   "when": "Nov 9, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Jerami Grant 2+ rebounds — YES",
+   "detail": "Memphis @ Toronto · at 68¢"
   },
   {
-   "when": "Nov 9, 6:30 PM ET",
+   "when": "Nov 9, 7:30 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Over 164.5 points — NO",
-   "detail": "Howard @ Pennsylvania · at 68¢"
+   "title": "Over 149.5 points — YES",
+   "detail": "Jackson State @ Mississippi State · at 72¢"
   },
   {
-   "when": "Nov 9, 6:30 PM ET",
+   "when": "Nov 9, 7:30 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Indiana −8.5 — NO",
-   "detail": "Syracuse @ Indiana · at 61¢"
+   "title": "UConn −26.5 — YES + Mississippi State −12.5 — YES",
+   "detail": "WAG@CONN + JKST@MSST · at None¢"
+  },
+  {
+   "when": "Nov 9, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "UConn −26.5 — YES + Mississippi State −12.5 — YES + Over 149.5 points — YES",
+   "detail": "WAG@CONN + JKST@MSST + FGCU@UGA · at None¢"
   },
   {
    "when": "Nov 9, 6:15 PM ET",
@@ -135,13 +163,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 9, 6:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 172.5 points — NO",
-   "detail": "Marshall @ Ohio State · at 75¢"
   },
   {
    "when": "Nov 9, 5:00 PM ET",
@@ -156,27 +177,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 9, 1:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 9, 11:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 8, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Davion Mitchell 2+ rebounds — YES",
-   "detail": "Miami @ Sacramento · at 69¢"
   }
  ]
 }
