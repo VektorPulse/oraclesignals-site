@@ -1,9 +1,9 @@
 {
- "updated": "Nov 10, 3:15 AM ET",
+ "updated": "Nov 10, 3:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 435,
+  "won": 436,
   "lost": 43,
   "since": "Oct 8, 2026"
  },
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 10, 3:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 10, 3:15 AM ET",
    "emoji": "🪙",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Tai Felton 10+ receiving yds — NO",
    "detail": "Bills @ Vikings · at 67¢"
-  },
-  {
-   "when": "Nov 9, 6:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 93¢"
   }
  ]
 }
