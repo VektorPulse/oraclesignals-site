@@ -1,9 +1,9 @@
 {
- "updated": "Nov 11, 12:00 PM ET",
+ "updated": "Nov 11, 1:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 452,
+  "won": 453,
   "lost": 44,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 64,
+   "won": 65,
    "lost": 9
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 260,
+   "won": 263,
    "lost": 24
   }
  ],
@@ -67,25 +67,39 @@
  ],
  "wins": [
   {
-   "when": "Nov 11, 12:00 PM ET",
+   "when": "Nov 11, 1:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 11, 1:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 11, 1:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 11, 12:30 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 11, 12:30 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 11, 11:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 11, 11:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
+   "detail": "called at 87¢"
   },
   {
    "when": "Nov 11, 11:00 AM ET",
@@ -100,13 +114,6 @@
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 11, 8:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢"
   },
   {
    "when": "Nov 11, 7:30 AM ET",
@@ -142,13 +149,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 11, 1:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 10, 11:00 PM ET",
