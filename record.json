@@ -1,5 +1,5 @@
 {
- "updated": "Nov 11, 1:15 AM ET",
+ "updated": "Nov 11, 2:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 47,
+   "won": 49,
    "lost": 9
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 244,
+   "won": 245,
    "lost": 23
   }
  ],
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 62,
+   "won": 66,
    "lost": 37,
    "push": 0
   },
@@ -66,6 +66,27 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 11, 2:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 11, 2:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 11, 2:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 11, 1:15 AM ET",
    "emoji": "🐕",
@@ -89,52 +110,31 @@
   },
   {
    "when": "Nov 11, 12:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 11, 12:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 11, 12:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 10, 11:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 10, 9:00 PM ET",
+   "when": "Nov 10, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Klay Thompson 10+ points — YES",
-   "detail": "Miami @ Utah · at 75¢"
+   "title": "Zach LaVine 4+ rebounds — NO",
+   "detail": "Orlando @ Sacramento · at 61¢"
   },
   {
-   "when": "Nov 10, 9:00 PM ET",
+   "when": "Nov 10, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Andrew Wiggins 15+ points — NO",
-   "detail": "Miami @ Utah · at 85¢"
+   "title": "Franz Wagner 10+ assists — NO",
+   "detail": "Orlando @ Sacramento · at 67¢"
   },
   {
-   "when": "Nov 10, 9:00 PM ET",
+   "when": "Nov 10, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Andrew Wiggins 15+ points — NO + LA −7.5 — NO",
-   "detail": "MIA@UTA + LAC@PHX · at None¢"
+   "title": "Jase Richardson 4+ assists — NO",
+   "detail": "Orlando @ Sacramento · at 63¢"
   },
   {
    "when": "Nov 10, 8:00 PM ET",
