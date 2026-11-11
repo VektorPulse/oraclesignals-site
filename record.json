@@ -1,9 +1,9 @@
 {
- "updated": "Nov 11, 12:00 AM ET",
+ "updated": "Nov 11, 1:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 446,
+  "won": 447,
   "lost": 44,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 45,
+   "won": 47,
    "lost": 9
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 242,
+   "won": 244,
    "lost": 23
   }
  ],
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 56,
+   "won": 62,
    "lost": 37,
    "push": 0
   },
@@ -67,18 +67,46 @@
  ],
  "wins": [
   {
+   "when": "Nov 11, 1:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 11, 1:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 11, 1:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 11, 12:30 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 11, 12:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
    "when": "Nov 11, 12:00 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 10, 11:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 10, 11:15 PM ET",
@@ -88,25 +116,25 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 10, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 93¢"
+   "when": "Nov 10, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Klay Thompson 10+ points — YES",
+   "detail": "Miami @ Utah · at 75¢"
   },
   {
-   "when": "Nov 10, 10:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
+   "when": "Nov 10, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Andrew Wiggins 15+ points — NO",
+   "detail": "Miami @ Utah · at 85¢"
   },
   {
-   "when": "Nov 10, 10:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
+   "when": "Nov 10, 9:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Andrew Wiggins 15+ points — NO + LA −7.5 — NO",
+   "detail": "MIA@UTA + LAC@PHX · at None¢"
   },
   {
    "when": "Nov 10, 8:00 PM ET",
@@ -114,27 +142,6 @@
    "kind": "College football",
    "title": "Ohio −6.5 — NO",
    "detail": "OHIO@MOH · at 67¢"
-  },
-  {
-   "when": "Nov 10, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ohio −5.5 — NO",
-   "detail": "OHIO@MOH · at 65¢"
-  },
-  {
-   "when": "Nov 10, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Villanova −33.5 — NO",
-   "detail": "La Salle @ Villanova · at 81¢"
-  },
-  {
-   "when": "Nov 10, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 132.5 points — YES",
-   "detail": "Virginia Tech @ Iowa · at 75¢"
   },
   {
    "when": "Nov 10, 3:00 PM ET",
@@ -170,13 +177,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 10, 9:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 86¢"
   }
  ]
 }
