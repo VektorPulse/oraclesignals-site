@@ -1,5 +1,5 @@
 {
- "updated": "Nov 10, 10:15 PM ET",
+ "updated": "Nov 10, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 43,
-   "lost": 8
+   "lost": 9
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 241,
+   "won": 242,
    "lost": 23
   }
  ],
@@ -60,12 +60,19 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 37,
-   "lost": 6,
+   "won": 41,
+   "lost": 9,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 10, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 10, 10:15 PM ET",
    "emoji": "🐕",
@@ -88,13 +95,6 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 10, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 10, 9:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -107,6 +107,27 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 10, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Villanova −33.5 — NO",
+   "detail": "La Salle @ Villanova · at 81¢"
+  },
+  {
+   "when": "Nov 10, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 132.5 points — YES",
+   "detail": "Virginia Tech @ Iowa · at 75¢"
+  },
+  {
+   "when": "Nov 10, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 151.5 points — YES",
+   "detail": "Detroit Mercy @ Xavier · at 66¢"
   },
   {
    "when": "Nov 10, 3:00 PM ET",
@@ -156,27 +177,6 @@
    "kind": "NBA",
    "title": "Georges Niang 2+ rebounds — YES",
    "detail": "New Orleans @ Golden State · at 79¢"
-  },
-  {
-   "when": "Nov 9, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Karlo Matković 10+ points — NO",
-   "detail": "New Orleans @ Golden State · at 69¢"
-  },
-  {
-   "when": "Nov 9, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 239.5 points — NO",
-   "detail": "San Antonio @ Phoenix · at 77¢"
-  },
-  {
-   "when": "Nov 9, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Tai Felton 10+ receiving yds — NO",
-   "detail": "Bills @ Vikings · at 67¢"
   }
  ]
 }
