@@ -1,9 +1,9 @@
 {
- "updated": "Nov 12, 12:45 AM ET",
+ "updated": "Nov 12, 2:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 463,
+  "won": 464,
   "lost": 44,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 75,
+   "won": 77,
    "lost": 13
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 278,
+   "won": 280,
    "lost": 26
   }
  ],
@@ -67,6 +67,41 @@
  ],
  "wins": [
   {
+   "when": "Nov 12, 2:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 12, 2:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 12, 2:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 12, 1:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 12, 1:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 12, 12:45 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -96,24 +131,10 @@
   },
   {
    "when": "Nov 11, 11:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 11, 11:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 11, 11:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 95¢"
   },
   {
    "when": "Nov 11, 9:30 PM ET",
@@ -121,20 +142,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 11, 9:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 11, 8:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 93¢"
   },
   {
    "when": "Nov 11, 8:00 PM ET",
@@ -170,13 +177,6 @@
    "kind": "College football",
    "title": "Toledo −27.5 — NO",
    "detail": "Massachusetts @ Toledo · at 80¢"
-  },
-  {
-   "when": "Nov 11, 6:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢"
   }
  ]
 }
