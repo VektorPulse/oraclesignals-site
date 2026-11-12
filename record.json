@@ -1,9 +1,9 @@
 {
- "updated": "Nov 12, 3:00 AM ET",
+ "updated": "Nov 12, 6:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 464,
+  "won": 465,
   "lost": 44,
   "since": "Oct 8, 2026"
  },
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 77,
-   "lost": 13
+   "lost": 14
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 281,
+   "won": 283,
    "lost": 26
   }
  ],
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 12, 6:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 12, 5:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 12, 5:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
    "when": "Nov 12, 3:00 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -78,13 +99,6 @@
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 12, 2:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
    "detail": "called at 89¢"
   },
   {
@@ -100,13 +114,6 @@
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 12, 1:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 12, 12:45 AM ET",
@@ -163,13 +170,6 @@
    "kind": "NBA",
    "title": "Jake LaRavia 10+ points — NO + Payton Pritchard 6+ assists — NO",
    "detail": "LAL@MIL + BOS@TOR · at None¢"
-  },
-  {
-   "when": "Nov 11, 7:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 11, 7:30 PM ET",
