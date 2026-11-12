@@ -1,5 +1,5 @@
 {
- "updated": "Nov 12, 12:15 PM ET",
+ "updated": "Nov 12, 12:30 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 86,
+   "won": 87,
    "lost": 14
   },
   {
@@ -67,6 +67,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 12, 12:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 12, 12:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -107,13 +114,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 12, 10:45 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 88¢"
   },
   {
    "when": "Nov 12, 6:45 AM ET",
