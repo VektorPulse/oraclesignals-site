@@ -1,9 +1,9 @@
 {
- "updated": "Nov 11, 9:00 PM ET",
+ "updated": "Nov 11, 9:30 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 459,
+  "won": 460,
   "lost": 44,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 70,
+   "won": 71,
    "lost": 11
   },
   {
@@ -61,11 +61,25 @@
    "label": "College basketball",
    "emoji": "🏀",
    "won": 41,
-   "lost": 9,
+   "lost": 10,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 11, 9:30 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 11, 9:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
   {
    "when": "Nov 11, 9:00 PM ET",
    "emoji": "🐕",
@@ -130,25 +144,11 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 11, 4:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
    "when": "Nov 11, 4:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 11, 2:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 10, 11:00 PM ET",
