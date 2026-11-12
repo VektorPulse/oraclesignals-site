@@ -1,5 +1,5 @@
 {
- "updated": "Nov 11, 9:30 PM ET",
+ "updated": "Nov 11, 11:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,8 +11,8 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 71,
-   "lost": 11
+   "won": 73,
+   "lost": 12
   },
   {
    "label": "DOGE 15-minute calls",
@@ -32,7 +32,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 71,
+   "won": 75,
    "lost": 14,
    "push": 0
   },
@@ -53,19 +53,33 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 68,
-   "lost": 40,
+   "won": 73,
+   "lost": 42,
    "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 41,
-   "lost": 10,
+   "won": 48,
+   "lost": 14,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 11, 11:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 11, 10:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 11, 9:30 PM ET",
    "emoji": "₿",
@@ -88,24 +102,10 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 11, 8:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
    "when": "Nov 11, 8:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 11, 8:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
    "detail": "called at 93¢"
   },
   {
@@ -121,6 +121,34 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 11, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Toledo −27.5 — NO",
+   "detail": "Massachusetts @ Toledo · at 80¢"
+  },
+  {
+   "when": "Nov 11, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Toledo −10.5 — YES",
+   "detail": "Massachusetts @ Toledo · at 58¢"
+  },
+  {
+   "when": "Nov 11, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 65.5 points — NO",
+   "detail": "Massachusetts @ Toledo · at 82¢"
+  },
+  {
+   "when": "Nov 11, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Sam Houston −8.5 — NO",
+   "detail": "Pepperdine @ Sam Houston · at 79¢"
   },
   {
    "when": "Nov 11, 6:45 PM ET",
@@ -149,34 +177,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 10, 11:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jared McCain 10+ points — YES",
-   "detail": "Oklahoma City @ Portland · at 66¢"
-  },
-  {
-   "when": "Nov 10, 11:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Kenrich Williams 10+ points — NO",
-   "detail": "Oklahoma City @ Portland · at 65¢"
-  },
-  {
-   "when": "Nov 10, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jase Richardson 4+ assists — NO",
-   "detail": "Orlando @ Sacramento · at 63¢"
-  },
-  {
-   "when": "Nov 10, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ohio −6.5 — NO",
-   "detail": "OHIO@MOH · at 67¢"
   }
  ]
 }
