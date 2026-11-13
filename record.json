@@ -1,5 +1,5 @@
 {
- "updated": "Nov 12, 9:15 PM ET",
+ "updated": "Nov 12, 10:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 300,
+   "won": 302,
    "lost": 31
   }
  ],
@@ -60,12 +60,26 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 48,
+   "won": 49,
    "lost": 14,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 12, 10:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 12, 9:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
   {
    "when": "Nov 12, 9:15 PM ET",
    "emoji": "🐕",
@@ -88,13 +102,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 12, 8:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
    "when": "Nov 12, 8:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -102,18 +109,18 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 12, 7:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
    "when": "Nov 12, 6:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 12, 6:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Bradley −14.5 — NO",
+   "detail": "Bradley @ Coppin State · at 62¢"
   },
   {
    "when": "Nov 12, 4:00 PM ET",
@@ -170,13 +177,6 @@
    "kind": "NBA",
    "title": "Jake LaRavia 10+ points — NO + Payton Pritchard 6+ assists — NO",
    "detail": "LAL@MIL + BOS@TOR · at None¢"
-  },
-  {
-   "when": "Nov 11, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Toledo −27.5 — NO",
-   "detail": "Massachusetts @ Toledo · at 80¢"
   }
  ]
 }
