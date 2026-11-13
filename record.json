@@ -1,5 +1,5 @@
 {
- "updated": "Nov 12, 11:15 PM ET",
+ "updated": "Nov 13, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,28 +11,28 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 96,
+   "won": 97,
    "lost": 15
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
    "won": 304,
-   "lost": 31
+   "lost": 32
   }
  ],
  "sports": [
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 51,
+   "won": 55,
    "lost": 11,
    "push": 0
   },
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 75,
+   "won": 76,
    "lost": 14,
    "push": 0
   },
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 87,
-   "lost": 49,
+   "won": 92,
+   "lost": 50,
    "push": 0
   },
   {
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 13, 12:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
   {
    "when": "Nov 12, 11:15 PM ET",
    "emoji": "🪙",
@@ -110,10 +117,24 @@
   },
   {
    "when": "Nov 12, 8:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 89¢"
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Devin Singletary 15+ receiving yds — NO",
+   "detail": "Commanders @ Giants · at 68¢"
+  },
+  {
+   "when": "Nov 12, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Van Jefferson 10+ receiving yds — NO",
+   "detail": "Commanders @ Giants · at 61¢"
+  },
+  {
+   "when": "Nov 12, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Darnell Mooney 30+ receiving yds — NO",
+   "detail": "Commanders @ Giants · at 75¢"
   },
   {
    "when": "Nov 12, 8:00 PM ET",
@@ -123,32 +144,11 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 12, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Trae Young 2+ rebounds — YES",
-   "detail": "Detroit @ Washington · at 76¢"
-  },
-  {
-   "when": "Nov 12, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Daniss Jenkins 10+ points — YES",
-   "detail": "Detroit @ Washington · at 80¢"
-  },
-  {
-   "when": "Nov 12, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Kevin Huerter 15+ points — NO",
-   "detail": "Detroit @ Washington · at 82¢"
-  },
-  {
-   "when": "Nov 12, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Purdue Fort Wayne −2.5 — NO",
-   "detail": "Western Michigan @ Purdue Fort Wayne · at 68¢"
+   "when": "Nov 12, 8:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Memphis −13.5 — NO",
+   "detail": "Memphis @ South Florida · at 73¢"
   },
   {
    "when": "Nov 12, 6:30 PM ET",
