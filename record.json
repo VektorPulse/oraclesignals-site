@@ -1,5 +1,5 @@
 {
- "updated": "Nov 13, 11:00 PM ET",
+ "updated": "Nov 13, 11:30 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,8 +17,8 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 336,
-   "lost": 35
+   "won": 337,
+   "lost": 36
   }
  ],
  "sports": [
@@ -53,19 +53,26 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 96,
-   "lost": 52,
+   "won": 108,
+   "lost": 55,
    "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 62,
-   "lost": 19,
+   "won": 68,
+   "lost": 23,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 13, 11:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
   {
    "when": "Nov 13, 11:00 PM ET",
    "emoji": "🐕",
@@ -81,53 +88,46 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 13, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 13, 7:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 150.5 points — YES",
-   "detail": "South Dakota @ Drake · at 76¢"
-  },
-  {
-   "when": "Nov 13, 7:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Southeast Missouri State −1.5 — NO",
-   "detail": "Southeast Missouri State @ Middle Tennessee · at 72¢"
-  },
-  {
-   "when": "Nov 13, 7:00 PM ET",
+   "when": "Nov 13, 8:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Mikal Bridges 4+ rebounds — NO",
-   "detail": "New York @ Indiana · at 71¢"
+   "title": "Reed Sheppard 15+ points — NO",
+   "detail": "Utah @ Houston · at 70¢"
   },
   {
-   "when": "Nov 13, 7:00 PM ET",
+   "when": "Nov 13, 8:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Obi Toppin 15+ points — NO",
-   "detail": "New York @ Indiana · at 81¢"
+   "title": "Milwaukee −3.5 — NO + Isaiah Collier 10+ points — NO",
+   "detail": "MIL@ORL + UTA@HOU · at None¢"
   },
   {
-   "when": "Nov 13, 7:00 PM ET",
+   "when": "Nov 13, 8:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Milwaukee −3.5 — NO",
-   "detail": "Milwaukee @ Orlando · at 83¢"
+   "title": "Milwaukee −3.5 — NO + Isaiah Collier 10+ points — NO + Obi Toppin 15+ points — NO",
+   "detail": "MIL@ORL + UTA@HOU + NYK@IND · at None¢"
   },
   {
-   "when": "Nov 13, 7:00 PM ET",
+   "when": "Nov 13, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Over 174.5 points — NO",
-   "detail": "Georgia @ North Carolina · at 76¢"
+   "title": "UCF −33.5 — NO",
+   "detail": "Georgia Southern @ UCF · at 79¢"
+  },
+  {
+   "when": "Nov 13, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 156.5 points — YES",
+   "detail": "Cal Poly @ Idaho · at 77¢"
+  },
+  {
+   "when": "Nov 13, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "TCU −31.5 — NO",
+   "detail": "Milwaukee @ TCU · at 73¢"
   },
   {
    "when": "Nov 13, 5:00 PM ET",
