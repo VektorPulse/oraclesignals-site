@@ -1,5 +1,5 @@
 {
- "updated": "Nov 14, 1:00 AM ET",
+ "updated": "Nov 14, 1:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 338,
+   "won": 340,
    "lost": 36
   }
  ],
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 108,
-   "lost": 56,
+   "won": 112,
+   "lost": 59,
    "push": 0
   },
   {
@@ -67,6 +67,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 14, 1:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 14, 1:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
    "when": "Nov 14, 1:00 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -74,39 +88,25 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 13, 11:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 13, 11:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 13, 8:30 PM ET",
+   "when": "Nov 13, 10:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Reed Sheppard 15+ points — NO",
-   "detail": "Utah @ Houston · at 70¢"
+   "title": "LA −2.5 — NO",
+   "detail": "Oklahoma City @ LA · at 77¢"
   },
   {
-   "when": "Nov 13, 8:30 PM ET",
+   "when": "Nov 13, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Milwaukee −3.5 — NO + Isaiah Collier 10+ points — NO",
-   "detail": "MIL@ORL + UTA@HOU · at None¢"
+   "title": "Jrue Holiday 15+ points — NO",
+   "detail": "Portland @ Sacramento · at 61¢"
   },
   {
-   "when": "Nov 13, 8:30 PM ET",
+   "when": "Nov 13, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Milwaukee −3.5 — NO + Isaiah Collier 10+ points — NO + Obi Toppin 15+ points — NO",
-   "detail": "MIL@ORL + UTA@HOU + NYK@IND · at None¢"
+   "title": "Donovan Clingan 2+ threes — NO",
+   "detail": "Portland @ Sacramento · at 71¢"
   },
   {
    "when": "Nov 13, 8:00 PM ET",
