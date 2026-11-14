@@ -32,8 +32,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 76,
-   "lost": 14,
+   "won": 83,
+   "lost": 20,
    "push": 0
   },
   {
@@ -109,6 +109,27 @@
    "detail": "called at 90¢"
   },
   {
+   "when": "Nov 14, 12:45 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Alabama −20.5 — NO",
+   "detail": "Alabama @ Vanderbilt · at 65¢"
+  },
+  {
+   "when": "Nov 14, 12:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Cincinnati −1.5 — NO",
+   "detail": "Cincinnati @ Iowa State · at 60¢"
+  },
+  {
+   "when": "Nov 14, 12:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Wisconsin −20.5 — NO",
+   "detail": "Wisconsin @ Maryland · at 77¢"
+  },
+  {
    "when": "Nov 14, 11:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -156,27 +177,6 @@
    "kind": "College basketball",
    "title": "UCF −33.5 — NO",
    "detail": "Georgia Southern @ UCF · at 79¢"
-  },
-  {
-   "when": "Nov 13, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 156.5 points — YES",
-   "detail": "Cal Poly @ Idaho · at 77¢"
-  },
-  {
-   "when": "Nov 13, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "TCU −31.5 — NO",
-   "detail": "Milwaukee @ TCU · at 73¢"
-  },
-  {
-   "when": "Nov 13, 5:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
   }
  ]
 }
