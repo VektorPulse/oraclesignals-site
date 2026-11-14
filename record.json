@@ -1,5 +1,5 @@
 {
- "updated": "Nov 13, 10:15 PM ET",
+ "updated": "Nov 13, 11:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 334,
+   "won": 336,
    "lost": 35
   }
  ],
@@ -53,19 +53,33 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 92,
-   "lost": 50,
+   "won": 96,
+   "lost": 52,
    "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 51,
-   "lost": 15,
+   "won": 62,
+   "lost": 19,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 13, 11:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 13, 10:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 13, 10:15 PM ET",
    "emoji": "🐕",
@@ -74,18 +88,46 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 13, 10:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 93¢"
+   "when": "Nov 13, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 150.5 points — YES",
+   "detail": "South Dakota @ Drake · at 76¢"
   },
   {
-   "when": "Nov 13, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢"
+   "when": "Nov 13, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Southeast Missouri State −1.5 — NO",
+   "detail": "Southeast Missouri State @ Middle Tennessee · at 72¢"
+  },
+  {
+   "when": "Nov 13, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Mikal Bridges 4+ rebounds — NO",
+   "detail": "New York @ Indiana · at 71¢"
+  },
+  {
+   "when": "Nov 13, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Obi Toppin 15+ points — NO",
+   "detail": "New York @ Indiana · at 81¢"
+  },
+  {
+   "when": "Nov 13, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Milwaukee −3.5 — NO",
+   "detail": "Milwaukee @ Orlando · at 83¢"
+  },
+  {
+   "when": "Nov 13, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 174.5 points — NO",
+   "detail": "Georgia @ North Carolina · at 76¢"
   },
   {
    "when": "Nov 13, 5:00 PM ET",
@@ -93,20 +135,6 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 13, 3:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 13, 2:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 13, 11:15 AM ET",
@@ -149,34 +177,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 12, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Devin Singletary 15+ receiving yds — NO",
-   "detail": "Commanders @ Giants · at 68¢"
-  },
-  {
-   "when": "Nov 12, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Van Jefferson 10+ receiving yds — NO",
-   "detail": "Commanders @ Giants · at 61¢"
-  },
-  {
-   "when": "Nov 12, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Darnell Mooney 30+ receiving yds — NO",
-   "detail": "Commanders @ Giants · at 75¢"
-  },
-  {
-   "when": "Nov 12, 8:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Memphis −13.5 — NO",
-   "detail": "Memphis @ South Florida · at 73¢"
   }
  ]
 }
