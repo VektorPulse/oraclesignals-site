@@ -1,9 +1,9 @@
 {
- "updated": "Nov 14, 11:00 PM ET",
+ "updated": "Nov 15, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 491,
+  "won": 492,
   "lost": 46,
   "since": "Oct 8, 2026"
  },
@@ -17,8 +17,8 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 365,
-   "lost": 41
+   "won": 366,
+   "lost": 42
   }
  ],
  "sports": [
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 118,
-   "lost": 61,
+   "won": 126,
+   "lost": 63,
    "push": 0
   },
   {
@@ -66,6 +66,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 15, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 15, 12:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
   {
    "when": "Nov 14, 11:00 PM ET",
    "emoji": "₿",
@@ -88,13 +102,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 14, 8:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 14, 8:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -102,25 +109,25 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 14, 7:30 PM ET",
+   "when": "Nov 14, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "P.J. Washington 10+ points — YES",
-   "detail": "Dallas @ Cleveland · at 71¢"
+   "title": "Naji Marshall 15+ points — NO + Terrence Shannon Jr. 2+ rebounds — YES",
+   "detail": "DAL@CLE + CHI@MIN · at None¢"
   },
   {
-   "when": "Nov 14, 7:30 PM ET",
+   "when": "Nov 14, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Zaccharie Risacher 4+ rebounds — NO",
-   "detail": "Dallas @ Cleveland · at 58¢"
+   "title": "Naji Marshall 15+ points — NO + Terrence Shannon Jr. 2+ rebounds — YES + Daniss Jenkins 10+ points — YES",
+   "detail": "DAL@CLE + CHI@MIN + DET@MIA · at None¢"
   },
   {
-   "when": "Nov 14, 7:30 PM ET",
+   "when": "Nov 14, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Naji Marshall 15+ points — NO",
-   "detail": "Dallas @ Cleveland · at 76¢"
+   "title": "Daniss Jenkins 10+ points — YES + DeMar DeRozan 15+ points — NO",
+   "detail": "DET@MIA + DEN@NOP · at None¢"
   },
   {
    "when": "Nov 14, 7:00 PM ET",
@@ -142,13 +149,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 14, 2:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 14, 1:00 PM ET",
