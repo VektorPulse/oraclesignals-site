@@ -1,9 +1,9 @@
 {
- "updated": "Nov 15, 10:15 AM ET",
+ "updated": "Nov 15, 1:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 497,
+  "won": 499,
   "lost": 46,
   "since": "Oct 8, 2026"
  },
@@ -18,15 +18,15 @@
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
    "won": 382,
-   "lost": 45
+   "lost": 46
   }
  ],
  "sports": [
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 55,
-   "lost": 11,
+   "won": 56,
+   "lost": 12,
    "push": 0
   },
   {
@@ -67,6 +67,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 15, 1:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 15, 12:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
    "when": "Nov 15, 10:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -79,6 +93,13 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 15, 9:30 AM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Isaac TeSlaa 30+ receiving yds — NO",
+   "detail": "Patriots @ Lions · at 73¢"
   },
   {
    "when": "Nov 15, 9:15 AM ET",
@@ -113,20 +134,6 @@
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 15, 1:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 15, 12:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
    "detail": "called at 86¢"
   },
   {
@@ -170,13 +177,6 @@
    "kind": "College football",
    "title": "Alabama −20.5 — NO",
    "detail": "Alabama @ Vanderbilt · at 65¢"
-  },
-  {
-   "when": "Nov 13, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "UCF −33.5 — NO",
-   "detail": "Georgia Southern @ UCF · at 79¢"
   }
  ]
 }
