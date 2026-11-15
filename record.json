@@ -1,9 +1,9 @@
 {
- "updated": "Nov 14, 9:30 PM ET",
+ "updated": "Nov 14, 11:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 490,
+  "won": 491,
   "lost": 46,
   "since": "Oct 8, 2026"
  },
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 364,
+   "won": 365,
    "lost": 41
   }
  ],
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 112,
-   "lost": 59,
+   "won": 118,
+   "lost": 61,
    "push": 0
   },
   {
@@ -66,6 +66,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 14, 11:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 14, 11:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
   {
    "when": "Nov 14, 9:30 PM ET",
    "emoji": "🐕",
@@ -88,11 +102,25 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 14, 8:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢"
+   "when": "Nov 14, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "P.J. Washington 10+ points — YES",
+   "detail": "Dallas @ Cleveland · at 71¢"
+  },
+  {
+   "when": "Nov 14, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Zaccharie Risacher 4+ rebounds — NO",
+   "detail": "Dallas @ Cleveland · at 58¢"
+  },
+  {
+   "when": "Nov 14, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Naji Marshall 15+ points — NO",
+   "detail": "Dallas @ Cleveland · at 76¢"
   },
   {
    "when": "Nov 14, 7:00 PM ET",
@@ -123,13 +151,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 14, 1:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 14, 1:00 PM ET",
    "emoji": "🎓",
    "kind": "College football",
@@ -149,27 +170,6 @@
    "kind": "College football",
    "title": "Alabama −20.5 — NO",
    "detail": "Alabama @ Vanderbilt · at 65¢"
-  },
-  {
-   "when": "Nov 13, 10:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "LA −2.5 — NO",
-   "detail": "Oklahoma City @ LA · at 77¢"
-  },
-  {
-   "when": "Nov 13, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Jrue Holiday 15+ points — NO",
-   "detail": "Portland @ Sacramento · at 61¢"
-  },
-  {
-   "when": "Nov 13, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Donovan Clingan 2+ threes — NO",
-   "detail": "Portland @ Sacramento · at 71¢"
   },
   {
    "when": "Nov 13, 8:00 PM ET",
