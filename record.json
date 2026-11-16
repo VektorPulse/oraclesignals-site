@@ -1,5 +1,5 @@
 {
- "updated": "Nov 15, 7:15 PM ET",
+ "updated": "Nov 15, 7:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 112,
+   "won": 113,
    "lost": 20
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 394,
+   "won": 396,
    "lost": 49
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 56,
-   "lost": 12,
+   "won": 62,
+   "lost": 17,
    "push": 0
   },
   {
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 128,
+   "won": 133,
    "lost": 64,
    "push": 0
   },
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 15, 7:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 15, 7:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 15, 7:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 15, 7:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -74,25 +95,53 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 15, 6:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 15, 5:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
    "when": "Nov 15, 5:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 15, 4:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Charlotte −8.5 — NO",
+   "detail": "Charlotte @ LA · at 75¢"
+  },
+  {
+   "when": "Nov 15, 4:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Charlotte −6.5 — NO",
+   "detail": "Charlotte @ LA · at 70¢"
+  },
+  {
+   "when": "Nov 15, 4:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Charlotte −5.5 — NO",
+   "detail": "Charlotte @ LA · at 67¢"
+  },
+  {
+   "when": "Nov 15, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Kyle Juszczyk 15+ receiving yds — NO",
+   "detail": "49ers @ Cowboys · at 69¢"
+  },
+  {
+   "when": "Nov 15, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Dak Prescott 15+ rushing yds — NO",
+   "detail": "49ers @ Cowboys · at 68¢"
+  },
+  {
+   "when": "Nov 15, 4:05 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Tyler Allgeier 20+ receiving yds — NO",
+   "detail": "Rams @ Cardinals · at 75¢"
   },
   {
    "when": "Nov 15, 3:45 PM ET",
@@ -116,41 +165,6 @@
    "detail": "called at 91¢"
   },
   {
-   "when": "Nov 15, 1:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ole Miss −13.5 — NO",
-   "detail": "Ole Miss @ Oklahoma · at 84¢"
-  },
-  {
-   "when": "Nov 15, 1:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ole Miss −5.5 — NO",
-   "detail": "Ole Miss @ Oklahoma · at 70¢"
-  },
-  {
-   "when": "Nov 15, 1:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ole Miss −3.5 — NO",
-   "detail": "Ole Miss @ Oklahoma · at 66¢"
-  },
-  {
-   "when": "Nov 15, 1:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Kentavious Caldwell-Pope 2+ rebounds — YES",
-   "detail": "Indiana @ Philadelphia · at 72¢"
-  },
-  {
-   "when": "Nov 15, 1:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Dean Wade 5+ points — YES",
-   "detail": "Indiana @ Philadelphia · at 62¢"
-  },
-  {
    "when": "Nov 15, 12:45 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -158,25 +172,11 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 15, 9:30 AM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Isaac TeSlaa 30+ receiving yds — NO",
-   "detail": "Patriots @ Lions · at 73¢"
-  },
-  {
    "when": "Nov 15, 9:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 14, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Daniss Jenkins 10+ points — YES + DeMar DeRozan 15+ points — NO",
-   "detail": "DET@MIA + DEN@NOP · at None¢"
   }
  ]
 }
