@@ -1,9 +1,9 @@
 {
- "updated": "Nov 16, 6:00 AM ET",
+ "updated": "Nov 16, 7:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 505,
+  "won": 508,
   "lost": 48,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 124,
+   "won": 126,
    "lost": 23
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 415,
+   "won": 416,
    "lost": 50
   }
  ],
@@ -67,6 +67,48 @@
  ],
  "wins": [
   {
+   "when": "Nov 16, 7:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 16, 7:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 16, 7:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 16, 7:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 16, 7:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 16, 6:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
    "when": "Nov 16, 6:00 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -81,32 +123,11 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 16, 5:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
    "when": "Nov 16, 5:00 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 16, 4:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 16, 4:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 16, 2:45 AM ET",
@@ -156,27 +177,6 @@
    "kind": "NBA",
    "title": "Kyshawn George 10+ points — YES",
    "detail": "Houston @ Washington · at 80¢"
-  },
-  {
-   "when": "Nov 15, 5:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 15, 3:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 15, 3:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   }
  ]
 }
