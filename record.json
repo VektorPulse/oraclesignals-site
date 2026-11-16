@@ -1,5 +1,5 @@
 {
- "updated": "Nov 15, 9:15 PM ET",
+ "updated": "Nov 15, 10:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 113,
+   "won": 115,
    "lost": 20
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 399,
+   "won": 400,
    "lost": 49
   }
  ],
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 133,
+   "won": 134,
    "lost": 68,
    "push": 0
   },
@@ -66,6 +66,27 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 15, 10:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 15, 10:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 15, 9:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 15, 9:15 PM ET",
    "emoji": "🐕",
@@ -81,13 +102,6 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 15, 8:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
    "when": "Nov 15, 7:45 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -95,18 +109,18 @@
    "detail": "called at 87¢"
   },
   {
+   "when": "Nov 15, 6:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Toronto −6.5 — NO",
+   "detail": "New York @ Toronto · at 79¢"
+  },
+  {
    "when": "Nov 15, 5:00 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 15, 4:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Charlotte −8.5 — NO",
-   "detail": "Charlotte @ LA · at 75¢"
   },
   {
    "when": "Nov 15, 4:30 PM ET",
@@ -128,20 +142,6 @@
    "kind": "NFL",
    "title": "Kyle Juszczyk 15+ receiving yds — NO",
    "detail": "49ers @ Cowboys · at 69¢"
-  },
-  {
-   "when": "Nov 15, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Dak Prescott 15+ rushing yds — NO",
-   "detail": "49ers @ Cowboys · at 68¢"
-  },
-  {
-   "when": "Nov 15, 4:05 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Tyler Allgeier 20+ receiving yds — NO",
-   "detail": "Rams @ Cardinals · at 75¢"
   },
   {
    "when": "Nov 15, 3:45 PM ET",
