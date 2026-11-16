@@ -1,5 +1,5 @@
 {
- "updated": "Nov 15, 11:15 PM ET",
+ "updated": "Nov 16, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 116,
+   "won": 118,
    "lost": 21
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 403,
+   "won": 405,
    "lost": 49
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 62,
-   "lost": 17,
+   "won": 63,
+   "lost": 19,
    "push": 0
   },
   {
@@ -67,6 +67,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 16, 12:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 16, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 15, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 15, 11:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
    "when": "Nov 15, 11:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -81,32 +109,11 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 15, 10:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 15, 10:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 15, 10:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 15, 10:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 15, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Joe Burrow 15+ rushing yds — NO",
+   "detail": "Steelers @ Bengals · at 75¢"
   },
   {
    "when": "Nov 15, 7:00 PM ET",
@@ -135,13 +142,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 15, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Kyle Juszczyk 15+ receiving yds — NO",
-   "detail": "49ers @ Cowboys · at 69¢"
   },
   {
    "when": "Nov 15, 3:45 PM ET",
