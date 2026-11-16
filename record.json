@@ -1,5 +1,5 @@
 {
- "updated": "Nov 15, 10:15 PM ET",
+ "updated": "Nov 15, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 115,
-   "lost": 20
+   "won": 116,
+   "lost": 21
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 400,
+   "won": 403,
    "lost": 49
   }
  ],
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 134,
-   "lost": 68,
+   "won": 137,
+   "lost": 69,
    "push": 0
   },
   {
@@ -66,6 +66,34 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 15, 11:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 15, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 15, 10:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 15, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
   {
    "when": "Nov 15, 10:15 PM ET",
    "emoji": "🪙",
@@ -81,39 +109,25 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 15, 9:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 15, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 15, 8:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 15, 7:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 15, 6:00 PM ET",
+   "when": "Nov 15, 7:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Toronto −6.5 — NO",
-   "detail": "New York @ Toronto · at 79¢"
+   "title": "Reed Sheppard 10+ points — YES",
+   "detail": "Houston @ Washington · at 73¢"
+  },
+  {
+   "when": "Nov 15, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Reed Sheppard 2+ threes — YES",
+   "detail": "Houston @ Washington · at 71¢"
+  },
+  {
+   "when": "Nov 15, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Kyshawn George 10+ points — YES",
+   "detail": "Houston @ Washington · at 80¢"
   },
   {
    "when": "Nov 15, 5:00 PM ET",
@@ -121,20 +135,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 15, 4:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Charlotte −6.5 — NO",
-   "detail": "Charlotte @ LA · at 70¢"
-  },
-  {
-   "when": "Nov 15, 4:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Charlotte −5.5 — NO",
-   "detail": "Charlotte @ LA · at 67¢"
   },
   {
    "when": "Nov 15, 4:25 PM ET",
