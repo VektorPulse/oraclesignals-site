@@ -1,9 +1,9 @@
 {
- "updated": "Nov 17, 3:15 AM ET",
+ "updated": "Nov 17, 4:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 520,
+  "won": 522,
   "lost": 48,
   "since": "Oct 8, 2026"
  },
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 150,
-   "lost": 25
+   "lost": 27
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 441,
+   "won": 442,
    "lost": 54
   }
  ],
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 17, 4:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 17, 3:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 17, 3:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
    "when": "Nov 17, 3:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -109,13 +130,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 17, 1:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
    "when": "Nov 17, 12:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -156,20 +170,6 @@
    "kind": "NFL",
    "title": "Keaton Mitchell 20+ rushing yds — NO",
    "detail": "Chargers @ Ravens · at 69¢"
-  },
-  {
-   "when": "Nov 16, 7:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 16, 7:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 87¢"
   },
   {
    "when": "Nov 15, 7:00 PM ET",
