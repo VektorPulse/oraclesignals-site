@@ -1,9 +1,9 @@
 {
- "updated": "Nov 16, 11:15 PM ET",
+ "updated": "Nov 17, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 517,
+  "won": 518,
   "lost": 48,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 147,
+   "won": 148,
    "lost": 25
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 436,
+   "won": 437,
    "lost": 54
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 63,
-   "lost": 19,
+   "won": 66,
+   "lost": 20,
    "push": 0
   },
   {
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 17, 12:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 17, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 17, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
    "when": "Nov 16, 11:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -89,24 +110,10 @@
   },
   {
    "when": "Nov 16, 10:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 16, 10:30 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 16, 10:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 16, 9:00 PM ET",
@@ -114,6 +121,27 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 16, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Jacoby Brissett 10+ rushing yds — NO",
+   "detail": "Chargers @ Ravens · at 66¢"
+  },
+  {
+   "when": "Nov 16, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Justin Herbert 2+ passing TDs — NO",
+   "detail": "Chargers @ Ravens · at 72¢"
+  },
+  {
+   "when": "Nov 16, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Keaton Mitchell 20+ rushing yds — NO",
+   "detail": "Chargers @ Ravens · at 69¢"
   },
   {
    "when": "Nov 16, 7:15 PM ET",
@@ -144,39 +172,11 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 16, 10:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 15, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Joe Burrow 15+ rushing yds — NO",
-   "detail": "Steelers @ Bengals · at 75¢"
-  },
-  {
    "when": "Nov 15, 7:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
    "title": "Reed Sheppard 10+ points — YES",
    "detail": "Houston @ Washington · at 73¢"
-  },
-  {
-   "when": "Nov 15, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Reed Sheppard 2+ threes — YES",
-   "detail": "Houston @ Washington · at 71¢"
-  },
-  {
-   "when": "Nov 15, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Kyshawn George 10+ points — YES",
-   "detail": "Houston @ Washington · at 80¢"
   }
  ]
 }
