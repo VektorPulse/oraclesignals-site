@@ -1,9 +1,9 @@
 {
- "updated": "Nov 18, 9:15 AM ET",
+ "updated": "Nov 18, 10:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 536,
+  "won": 538,
   "lost": 49,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 191,
+   "won": 193,
    "lost": 31
   },
   {
@@ -67,6 +67,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 18, 10:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 18, 9:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 18, 9:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 18, 9:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
    "when": "Nov 18, 9:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -79,20 +107,6 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 18, 8:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 18, 7:45 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 18, 7:30 AM ET",
@@ -135,20 +149,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 18, 12:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 17, 11:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 91¢"
   },
   {
    "when": "Nov 17, 7:00 PM ET",
