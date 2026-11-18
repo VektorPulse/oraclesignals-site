@@ -1,5 +1,5 @@
 {
- "updated": "Nov 17, 10:15 PM ET",
+ "updated": "Nov 17, 10:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,8 +17,8 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 467,
-   "lost": 56
+   "won": 469,
+   "lost": 57
   }
  ],
  "sports": [
@@ -32,7 +32,7 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 88,
+   "won": 89,
    "lost": 20,
    "push": 0
   },
@@ -67,25 +67,25 @@
  ],
  "wins": [
   {
+   "when": "Nov 17, 10:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 17, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
    "when": "Nov 17, 10:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 17, 10:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 17, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
   },
   {
    "when": "Nov 17, 9:15 PM ET",
@@ -114,6 +114,13 @@
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 17, 7:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Ohio −14.5 — NO",
+   "detail": "Ball State @ Ohio · at 59¢"
   },
   {
    "when": "Nov 17, 6:30 PM ET",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Keaton Mitchell 20+ rushing yds — NO",
    "detail": "Chargers @ Ravens · at 69¢"
-  },
-  {
-   "when": "Nov 15, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Reed Sheppard 10+ points — YES",
-   "detail": "Houston @ Washington · at 73¢"
   }
  ]
 }
