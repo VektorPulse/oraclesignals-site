@@ -1,5 +1,5 @@
 {
- "updated": "Nov 18, 10:00 AM ET",
+ "updated": "Nov 18, 11:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 193,
+   "won": 196,
    "lost": 31
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 476,
+   "won": 477,
    "lost": 58
   }
  ],
@@ -67,11 +67,32 @@
  ],
  "wins": [
   {
-   "when": "Nov 18, 10:00 AM ET",
+   "when": "Nov 18, 11:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 18, 11:00 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 18, 10:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 18, 10:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
   },
   {
    "when": "Nov 18, 9:45 AM ET",
@@ -79,13 +100,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 18, 9:45 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 18, 9:30 AM ET",
@@ -100,13 +114,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 18, 8:45 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
   },
   {
    "when": "Nov 18, 7:30 AM ET",
@@ -128,13 +135,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 18, 5:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 18, 3:15 AM ET",
