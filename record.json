@@ -1,9 +1,9 @@
 {
- "updated": "Nov 18, 2:15 AM ET",
+ "updated": "Nov 18, 3:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 532,
+  "won": 534,
   "lost": 49,
   "since": "Oct 8, 2026"
  },
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 180,
+   "won": 182,
    "lost": 30
   },
   {
@@ -67,6 +67,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 18, 3:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 18, 3:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 18, 2:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 18, 2:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 18, 2:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -81,25 +109,11 @@
    "detail": "called at 95¢"
   },
   {
-   "when": "Nov 18, 1:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
    "when": "Nov 18, 12:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 18, 12:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 17, 11:45 PM ET",
@@ -142,20 +156,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 17, 6:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 17, 4:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 87¢"
   },
   {
    "when": "Nov 16, 8:15 PM ET",
