@@ -1,5 +1,5 @@
 {
- "updated": "Nov 18, 10:15 PM ET",
+ "updated": "Nov 18, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 213,
+   "won": 214,
    "lost": 31
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 489,
+   "won": 491,
    "lost": 62
   }
  ],
@@ -32,8 +32,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 89,
-   "lost": 20,
+   "won": 90,
+   "lost": 21,
    "push": 0
   },
   {
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 18, 11:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 18, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 18, 11:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 18, 10:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -88,25 +109,11 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 18, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 18, 9:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 18, 6:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
+   "when": "Nov 18, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Central Michigan −2.5 — NO",
+   "detail": "Central Michigan @ Buffalo · at 62¢"
   },
   {
    "when": "Nov 18, 12:30 PM ET",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Justin Herbert 2+ passing TDs — NO",
    "detail": "Chargers @ Ravens · at 72¢"
-  },
-  {
-   "when": "Nov 16, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Keaton Mitchell 20+ rushing yds — NO",
-   "detail": "Chargers @ Ravens · at 69¢"
   }
  ]
 }
