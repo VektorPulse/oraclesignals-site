@@ -1,10 +1,10 @@
 {
- "updated": "Nov 19, 3:15 PM ET",
+ "updated": "Nov 19, 4:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 550,
-  "lost": 52,
+  "lost": 53,
   "since": "Oct 8, 2026"
  },
  "coins": [
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 504,
+   "won": 505,
    "lost": 65
   }
  ],
@@ -67,6 +67,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 19, 4:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 19, 3:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -93,13 +100,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 19, 2:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 95¢"
   },
   {
    "when": "Nov 19, 2:00 PM ET",
