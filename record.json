@@ -1,5 +1,5 @@
 {
- "updated": "Nov 19, 11:15 PM ET",
+ "updated": "Nov 19, 11:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 232,
-   "lost": 35
+   "lost": 36
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 516,
+   "won": 517,
    "lost": 65
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 66,
-   "lost": 20,
+   "won": 68,
+   "lost": 21,
    "push": 0
   },
   {
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 137,
-   "lost": 69,
+   "won": 149,
+   "lost": 71,
    "push": 0
   },
   {
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 19, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 95¢"
+  },
   {
    "when": "Nov 19, 11:15 PM ET",
    "emoji": "🐕",
@@ -88,13 +95,6 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 19, 10:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 19, 9:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -102,25 +102,39 @@
    "detail": "called at 91¢"
   },
   {
-   "when": "Nov 19, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 60.5 points — NO",
-   "detail": "Rice @ Temple · at 72¢"
+   "when": "Nov 19, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Daniel Jones 2+ INTs thrown — NO",
+   "detail": "Colts @ Texans · at 76¢"
   },
   {
-   "when": "Nov 19, 7:30 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Orlando −1.5 — NO",
-   "detail": "Cincinnati @ Orlando · at 79¢"
+   "when": "Nov 19, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Daniel Jones 15+ rushing yds — NO",
+   "detail": "Colts @ Texans · at 71¢"
   },
   {
-   "when": "Nov 19, 7:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 88¢"
+   "when": "Nov 19, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Minnesota −8.5 — NO",
+   "detail": "New York @ Minnesota · at 75¢"
+  },
+  {
+   "when": "Nov 19, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Keaton Wagler 5+ points — YES",
+   "detail": "LA @ San Antonio · at 89¢"
+  },
+  {
+   "when": "Nov 19, 8:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 243.5 points — NO",
+   "detail": "LA @ San Antonio · at 86¢"
   },
   {
    "when": "Nov 19, 2:45 PM ET",
@@ -163,20 +177,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 18, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Central Michigan −2.5 — NO",
-   "detail": "Central Michigan @ Buffalo · at 62¢"
-  },
-  {
-   "when": "Nov 17, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Ohio −14.5 — NO",
-   "detail": "Ball State @ Ohio · at 59¢"
   }
  ]
 }
