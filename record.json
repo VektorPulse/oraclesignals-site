@@ -1,5 +1,5 @@
 {
- "updated": "Nov 19, 10:15 PM ET",
+ "updated": "Nov 19, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 231,
+   "won": 232,
    "lost": 35
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 513,
+   "won": 516,
    "lost": 65
   }
  ],
@@ -32,14 +32,14 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 90,
-   "lost": 21,
+   "won": 91,
+   "lost": 22,
    "push": 0
   },
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 88,
+   "won": 89,
    "lost": 38,
    "push": 0
   },
@@ -67,11 +67,32 @@
  ],
  "wins": [
   {
-   "when": "Nov 19, 10:15 PM ET",
+   "when": "Nov 19, 11:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 19, 10:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 19, 10:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 19, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
   },
   {
    "when": "Nov 19, 9:15 PM ET",
@@ -81,31 +102,24 @@
    "detail": "called at 91¢"
   },
   {
-   "when": "Nov 19, 9:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
+   "when": "Nov 19, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 60.5 points — NO",
+   "detail": "Rice @ Temple · at 72¢"
   },
   {
-   "when": "Nov 19, 8:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
+   "when": "Nov 19, 7:30 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Orlando −1.5 — NO",
+   "detail": "Cincinnati @ Orlando · at 79¢"
   },
   {
    "when": "Nov 19, 7:30 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 19, 7:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
    "detail": "called at 88¢"
   },
   {
@@ -163,20 +177,6 @@
    "kind": "College football",
    "title": "Ohio −14.5 — NO",
    "detail": "Ball State @ Ohio · at 59¢"
-  },
-  {
-   "when": "Nov 16, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Jacoby Brissett 10+ rushing yds — NO",
-   "detail": "Chargers @ Ravens · at 66¢"
-  },
-  {
-   "when": "Nov 16, 8:15 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Justin Herbert 2+ passing TDs — NO",
-   "detail": "Chargers @ Ravens · at 72¢"
   }
  ]
 }
