@@ -1,9 +1,9 @@
 {
- "updated": "Nov 20, 1:00 AM ET",
+ "updated": "Nov 20, 2:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 551,
+  "won": 553,
   "lost": 53,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 232,
+   "won": 235,
    "lost": 36
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 517,
+   "won": 518,
    "lost": 65
   }
  ],
@@ -39,8 +39,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 89,
-   "lost": 38,
+   "won": 91,
+   "lost": 39,
    "push": 0
   },
   {
@@ -67,6 +67,48 @@
  ],
  "wins": [
   {
+   "when": "Nov 20, 2:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 20, 2:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 20, 2:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 20, 2:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 20, 2:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 20, 1:30 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
    "when": "Nov 20, 1:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -88,25 +130,18 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 19, 10:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
+   "when": "Nov 19, 10:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Salt Lake −1.5 — NO",
+   "detail": "Salt Lake @ Seattle · at 89¢"
   },
   {
-   "when": "Nov 19, 10:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 19, 9:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 91¢"
+   "when": "Nov 19, 10:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 4.5 goals — NO",
+   "detail": "Salt Lake @ Seattle · at 80¢"
   },
   {
    "when": "Nov 19, 8:15 PM ET",
@@ -121,27 +156,6 @@
    "kind": "NFL",
    "title": "Daniel Jones 15+ rushing yds — NO",
    "detail": "Colts @ Texans · at 71¢"
-  },
-  {
-   "when": "Nov 19, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Minnesota −8.5 — NO",
-   "detail": "New York @ Minnesota · at 75¢"
-  },
-  {
-   "when": "Nov 19, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Keaton Wagler 5+ points — YES",
-   "detail": "LA @ San Antonio · at 89¢"
-  },
-  {
-   "when": "Nov 19, 8:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 243.5 points — NO",
-   "detail": "LA @ San Antonio · at 86¢"
   },
   {
    "when": "Nov 19, 2:45 PM ET",
@@ -163,20 +177,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 19, 12:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 19, 10:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   }
  ]
 }
