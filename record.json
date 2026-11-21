@@ -1,9 +1,9 @@
 {
- "updated": "Nov 21, 12:45 AM ET",
+ "updated": "Nov 21, 2:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 567,
+  "won": 569,
   "lost": 53,
   "since": "Oct 8, 2026"
  },
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 542,
+   "won": 543,
    "lost": 70
   }
  ],
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 151,
-   "lost": 71,
+   "won": 155,
+   "lost": 74,
    "push": 0
   },
   {
@@ -66,6 +66,27 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 21, 2:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 21, 1:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 21, 1:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 91¢"
+  },
   {
    "when": "Nov 21, 12:45 AM ET",
    "emoji": "🐕",
@@ -88,13 +109,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 20, 11:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
    "when": "Nov 20, 10:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -102,18 +116,25 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 20, 9:30 PM ET",
+   "when": "Nov 20, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Over 206.5 points — YES",
-   "detail": "Phoenix @ Utah · at 89¢"
+   "title": "Darius Acuff Jr. 35+ points — NO",
+   "detail": "Sacramento @ Los Angeles · at 89¢"
   },
   {
-   "when": "Nov 20, 9:30 PM ET",
+   "when": "Nov 20, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
-   "title": "Over 242.5 points — NO",
-   "detail": "Phoenix @ Utah · at 85¢"
+   "title": "Sandro Mamukelashvili 5+ points — YES",
+   "detail": "Sacramento @ Los Angeles · at 86¢"
+  },
+  {
+   "when": "Nov 20, 10:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 246.5 points — NO",
+   "detail": "Sacramento @ Los Angeles · at 85¢"
   },
   {
    "when": "Nov 20, 6:00 PM ET",
@@ -137,25 +158,11 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 20, 3:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
    "when": "Nov 20, 2:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 20, 2:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 20, 1:15 PM ET",
@@ -170,13 +177,6 @@
    "kind": "Soccer",
    "title": "Salt Lake −1.5 — NO",
    "detail": "Salt Lake @ Seattle · at 89¢"
-  },
-  {
-   "when": "Nov 19, 10:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 4.5 goals — NO",
-   "detail": "Salt Lake @ Seattle · at 80¢"
   }
  ]
 }
