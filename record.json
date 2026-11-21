@@ -1,5 +1,5 @@
 {
- "updated": "Nov 20, 10:15 PM ET",
+ "updated": "Nov 20, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 538,
+   "won": 540,
    "lost": 70
   }
  ],
@@ -67,6 +67,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 20, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 20, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
    "when": "Nov 20, 10:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -79,20 +93,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 20, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 20, 8:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 20, 6:00 PM ET",
