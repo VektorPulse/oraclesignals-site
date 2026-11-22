@@ -1,9 +1,9 @@
 {
- "updated": "Nov 22, 5:15 AM ET",
+ "updated": "Nov 22, 5:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 575,
+  "won": 576,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 22, 5:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
   {
    "when": "Nov 22, 5:15 AM ET",
    "emoji": "₿",
@@ -170,13 +177,6 @@
    "kind": "Tennis",
    "title": "Zverev to win — YES",
    "detail": "Medvedev vs Zverev · at 62¢"
-  },
-  {
-   "when": "Nov 21, 3:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
   }
  ]
 }
