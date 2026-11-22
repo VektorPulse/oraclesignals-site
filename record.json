@@ -1,5 +1,5 @@
 {
- "updated": "Nov 22, 1:15 AM ET",
+ "updated": "Nov 22, 2:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 569,
+   "won": 570,
    "lost": 73
   }
  ],
@@ -32,8 +32,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 92,
-   "lost": 24,
+   "won": 94,
+   "lost": 25,
    "push": 0
   },
   {
@@ -53,8 +53,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 157,
-   "lost": 77,
+   "won": 159,
+   "lost": 79,
    "push": 0
   },
   {
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 22, 2:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 22, 1:15 AM ET",
    "emoji": "₿",
@@ -95,18 +102,39 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 22, 12:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 22, 12:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 21, 10:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 237.5 points — NO",
+   "detail": "Boston @ Sacramento · at 88¢"
+  },
+  {
+   "when": "Nov 21, 10:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Sacramento −1.5 — NO",
+   "detail": "Boston @ Sacramento · at 89¢"
+  },
+  {
+   "when": "Nov 21, 9:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 75.5 points — NO",
+   "detail": "San Diego State @ Boise State · at 82¢"
+  },
+  {
+   "when": "Nov 21, 9:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Over 75.5 points — NO + UTSA −16.5 — NO",
+   "detail": "SDSU@BSU + UTSA@UAB · at None¢"
   },
   {
    "when": "Nov 21, 8:00 PM ET",
@@ -130,20 +158,6 @@
    "detail": "Medvedev vs Zverev · at 62¢"
   },
   {
-   "when": "Nov 21, 1:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Milwaukee −3.5 — NO",
-   "detail": "Milwaukee @ Philadelphia · at 89¢"
-  },
-  {
-   "when": "Nov 21, 1:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "VJ Edgecombe 10+ rebounds — NO",
-   "detail": "Milwaukee @ Philadelphia · at 87¢"
-  },
-  {
    "when": "Nov 21, 3:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -163,20 +177,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 20, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 246.5 points — NO",
-   "detail": "Sacramento @ Los Angeles · at 85¢"
-  },
-  {
-   "when": "Nov 20, 3:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 93¢"
   }
  ]
 }
