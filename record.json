@@ -1,5 +1,5 @@
 {
- "updated": "Nov 22, 8:15 PM ET",
+ "updated": "Nov 22, 9:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 254,
+   "won": 257,
    "lost": 42
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 590,
+   "won": 591,
    "lost": 74
   }
  ],
@@ -67,6 +67,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 22, 9:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 22, 9:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 22, 8:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 22, 8:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 22, 8:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -81,25 +109,11 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 22, 7:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
    "when": "Nov 22, 6:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 22, 6:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 22, 4:25 PM ET",
@@ -142,20 +156,6 @@
    "kind": "NBA",
    "title": "Paul Reed 12+ rebounds — NO",
    "detail": "Detroit @ Atlanta · at 90¢"
-  },
-  {
-   "when": "Nov 22, 3:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Atlanta −12.5 — NO",
-   "detail": "Detroit @ Atlanta · at 86¢"
-  },
-  {
-   "when": "Nov 22, 12:00 PM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Zverev −1.5 games — NO",
-   "detail": "Alcaraz vs Zverev · at 75¢"
   },
   {
    "when": "Nov 22, 11:00 AM ET",
