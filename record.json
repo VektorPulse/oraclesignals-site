@@ -1,9 +1,9 @@
 {
- "updated": "Nov 22, 11:15 PM ET",
+ "updated": "Nov 22, 11:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 582,
+  "won": 583,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 75,
-   "lost": 27,
+   "won": 76,
+   "lost": 30,
    "push": 0
   },
   {
@@ -53,7 +53,7 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 161,
+   "won": 165,
    "lost": 79,
    "push": 0
   },
@@ -66,6 +66,13 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 22, 11:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
   {
    "when": "Nov 22, 11:15 PM ET",
    "emoji": "🪙",
@@ -102,6 +109,34 @@
    "detail": "called at 89¢"
   },
   {
+   "when": "Nov 22, 8:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Golden State −6.5 — NO",
+   "detail": "Boston @ Golden State · at 87¢"
+  },
+  {
+   "when": "Nov 22, 8:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Boston −23.5 — NO",
+   "detail": "Boston @ Golden State · at 87¢"
+  },
+  {
+   "when": "Nov 22, 8:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 229.5 points — NO",
+   "detail": "Boston @ Golden State · at 87¢"
+  },
+  {
+   "when": "Nov 22, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Kirk Cousins 2+ INTs thrown — NO",
+   "detail": "Vikings @ 49ers · at 77¢"
+  },
+  {
    "when": "Nov 22, 8:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -114,34 +149,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 22, 6:30 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 5.5 goals — NO",
-   "detail": "Charlotte @ Chicago · at 85¢"
-  },
-  {
-   "when": "Nov 22, 6:30 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 4.5 goals — NO",
-   "detail": "Charlotte @ Chicago · at 70¢"
-  },
-  {
-   "when": "Nov 22, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Brian Thomas Jr. 25+ receiving yds — NO",
-   "detail": "Jaguars @ Giants · at 70¢"
-  },
-  {
-   "when": "Nov 22, 4:25 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Trevor Lawrence 20+ rushing yds — NO",
-   "detail": "Jaguars @ Giants · at 73¢"
   },
   {
    "when": "Nov 22, 4:00 PM ET",
@@ -170,13 +177,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 22, 9:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
   }
  ]
 }
