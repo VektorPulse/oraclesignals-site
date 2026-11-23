@@ -1,9 +1,9 @@
 {
- "updated": "Nov 22, 7:00 PM ET",
+ "updated": "Nov 22, 8:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 581,
+  "won": 582,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 254,
-   "lost": 41
+   "lost": 42
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 589,
+   "won": 590,
    "lost": 74
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 68,
-   "lost": 21,
+   "won": 75,
+   "lost": 27,
    "push": 0
   },
   {
@@ -67,6 +67,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 22, 8:15 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 22, 8:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 22, 7:00 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -88,11 +102,25 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 22, 5:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
+   "when": "Nov 22, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Brian Thomas Jr. 25+ receiving yds — NO",
+   "detail": "Jaguars @ Giants · at 70¢"
+  },
+  {
+   "when": "Nov 22, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Trevor Lawrence 20+ rushing yds — NO",
+   "detail": "Jaguars @ Giants · at 73¢"
+  },
+  {
+   "when": "Nov 22, 4:25 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Nate Boerkircher 25+ receiving yds — NO",
+   "detail": "Jaguars @ Giants · at 76¢"
   },
   {
    "when": "Nov 22, 4:00 PM ET",
@@ -130,13 +158,6 @@
    "detail": "Alcaraz vs Zverev · at 75¢"
   },
   {
-   "when": "Nov 22, 12:00 PM ET",
-   "emoji": "🎾",
-   "kind": "Tennis",
-   "title": "Zverev to win — NO",
-   "detail": "Alcaraz vs Zverev · at 67¢"
-  },
-  {
    "when": "Nov 22, 11:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -156,27 +177,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 22, 5:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 21, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Sacramento −1.5 — NO",
-   "detail": "Boston @ Sacramento · at 89¢"
-  },
-  {
-   "when": "Nov 21, 9:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 75.5 points — NO",
-   "detail": "San Diego State @ Boise State · at 82¢"
   }
  ]
 }
