@@ -1,9 +1,9 @@
 {
- "updated": "Nov 23, 6:15 AM ET",
+ "updated": "Nov 23, 7:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 587,
+  "won": 588,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 268,
+   "won": 270,
    "lost": 43
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 595,
+   "won": 596,
    "lost": 76
   }
  ],
@@ -67,6 +67,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 23, 7:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 23, 6:45 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 23, 6:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 23, 6:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
    "when": "Nov 23, 6:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -88,13 +116,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 23, 5:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
    "when": "Nov 23, 3:45 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -107,20 +128,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 23, 3:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 23, 2:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
   },
   {
    "when": "Nov 23, 1:45 AM ET",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Kirk Cousins 2+ INTs thrown — NO",
    "detail": "Vikings @ 49ers · at 77¢"
-  },
-  {
-   "when": "Nov 22, 8:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
   }
  ]
 }
