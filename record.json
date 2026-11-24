@@ -1,9 +1,9 @@
 {
- "updated": "Nov 24, 3:15 AM ET",
+ "updated": "Nov 24, 4:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 598,
+  "won": 599,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -17,8 +17,8 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 630,
-   "lost": 79
+   "won": 632,
+   "lost": 80
   }
  ],
  "sports": [
@@ -60,12 +60,33 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 72,
+   "won": 73,
    "lost": 26,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 4:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 24, 4:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 24, 4:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 24, 3:15 AM ET",
    "emoji": "🐕",
@@ -95,13 +116,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 24, 1:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
    "when": "Nov 24, 1:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -109,18 +123,18 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 24, 1:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
    "when": "Nov 24, 12:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 23, 11:59 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 149.5 points — YES",
+   "detail": "San José State @ UC San Diego · at 66¢"
   },
   {
    "when": "Nov 23, 11:30 PM ET",
@@ -144,13 +158,6 @@
    "detail": "called at 89¢"
   },
   {
-   "when": "Nov 23, 9:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 137.5 points — YES",
-   "detail": "Loyola Chicago @ Seattle U · at 57¢"
-  },
-  {
    "when": "Nov 23, 9:15 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -170,13 +177,6 @@
    "kind": "NFL",
    "title": "Samaje Perine anytime TD — NO",
    "detail": "Bengals @ Commanders · at 73¢"
-  },
-  {
-   "when": "Nov 23, 6:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 94¢"
   }
  ]
 }
