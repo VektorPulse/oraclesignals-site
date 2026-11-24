@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 1:30 AM ET",
+ "updated": "Nov 24, 3:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 295,
+   "won": 297,
    "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 629,
+   "won": 630,
    "lost": 79
   }
  ],
@@ -60,12 +60,33 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 71,
+   "won": 72,
    "lost": 26,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 3:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 24, 3:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 24, 2:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
   {
    "when": "Nov 24, 1:30 AM ET",
    "emoji": "🪙",
@@ -89,31 +110,10 @@
   },
   {
    "when": "Nov 24, 1:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 24, 1:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 24, 12:45 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 24, 12:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 93¢"
   },
   {
    "when": "Nov 24, 12:15 AM ET",
@@ -121,6 +121,13 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 23, 11:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 151.5 points — YES",
+   "detail": "Colorado State @ Arizona · at 69¢"
   },
   {
    "when": "Nov 23, 10:00 PM ET",
@@ -135,13 +142,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 23, 9:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 147.5 points — YES",
-   "detail": "UNC Greensboro @ Pepperdine · at 66¢"
   },
   {
    "when": "Nov 23, 9:30 PM ET",
