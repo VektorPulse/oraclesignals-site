@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 4:15 PM ET",
+ "updated": "Nov 24, 5:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 316,
+   "won": 318,
    "lost": 47
   },
   {
@@ -66,12 +66,26 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 75,
-   "lost": 29,
+   "won": 76,
+   "lost": 31,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 5:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 24, 4:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
   {
    "when": "Nov 24, 4:15 PM ET",
    "emoji": "🪙",
@@ -81,24 +95,10 @@
   },
   {
    "when": "Nov 24, 4:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 24, 4:00 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 24, 3:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 24, 2:45 PM ET",
@@ -122,6 +122,13 @@
    "detail": "called at 90¢"
   },
   {
+   "when": "Nov 24, 1:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 162.5 points — NO",
+   "detail": "Oklahoma @ Pittsburgh · at 83¢"
+  },
+  {
    "when": "Nov 24, 1:00 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -134,13 +141,6 @@
    "kind": "Soccer",
    "title": "Bodo/Glimt −2.5 — NO",
    "detail": "LASK Linz @ Bodo/Glimt · at 74¢"
-  },
-  {
-   "when": "Nov 24, 12:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 4.5 goals — NO",
-   "detail": "LASK Linz @ Bodo/Glimt · at 64¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
