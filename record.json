@@ -1,9 +1,9 @@
 {
- "updated": "Nov 23, 10:30 PM ET",
+ "updated": "Nov 24, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 596,
+  "won": 597,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 288,
+   "won": 291,
    "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 621,
+   "won": 625,
    "lost": 79
   }
  ],
@@ -25,8 +25,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 76,
-   "lost": 30,
+   "won": 77,
+   "lost": 32,
    "push": 0
   },
   {
@@ -40,7 +40,7 @@
    "label": "Soccer",
    "emoji": "⚽",
    "won": 99,
-   "lost": 40,
+   "lost": 41,
    "push": 0
   },
   {
@@ -67,32 +67,53 @@
  ],
  "wins": [
   {
-   "when": "Nov 23, 10:30 PM ET",
+   "when": "Nov 24, 12:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 24, 12:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 24, 12:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
-   "detail": "called at 90¢"
+   "detail": "called at 93¢"
   },
   {
-   "when": "Nov 23, 10:15 PM ET",
+   "when": "Nov 24, 12:00 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 94¢"
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 91¢"
   },
   {
-   "when": "Nov 23, 10:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 23, 10:00 PM ET",
+   "when": "Nov 24, 12:00 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 91¢"
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 23, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 23, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
   },
   {
    "when": "Nov 23, 9:30 PM ET",
@@ -100,13 +121,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 23, 9:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
   },
   {
    "when": "Nov 23, 9:15 PM ET",
@@ -123,11 +137,11 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 23, 8:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 23, 8:15 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Samaje Perine anytime TD — NO",
+   "detail": "Bengals @ Commanders · at 73¢"
   },
   {
    "when": "Nov 23, 6:45 PM ET",
@@ -163,20 +177,6 @@
    "kind": "Soccer",
    "title": "Elche −1.5 — NO + Draw — NO",
    "detail": "ELC@LEV + FIO@MON · at None¢"
-  },
-  {
-   "when": "Nov 23, 11:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 22, 8:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Golden State −6.5 — NO",
-   "detail": "Boston @ Golden State · at 87¢"
   }
  ]
 }
