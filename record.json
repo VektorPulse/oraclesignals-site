@@ -1,9 +1,9 @@
 {
- "updated": "Nov 23, 6:15 PM ET",
+ "updated": "Nov 23, 6:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 592,
+  "won": 593,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -11,8 +11,8 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 283,
-   "lost": 45
+   "won": 284,
+   "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
@@ -39,7 +39,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 95,
+   "won": 99,
    "lost": 40,
    "push": 0
   },
@@ -66,6 +66,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 23, 6:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 23, 6:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
   {
    "when": "Nov 23, 6:15 PM ET",
    "emoji": "₿",
@@ -109,25 +123,25 @@
    "detail": "called at 95¢"
   },
   {
-   "when": "Nov 23, 3:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 23, 2:45 PM ET",
+   "when": "Nov 23, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Draw — NO",
-   "detail": "Fiorentina @ Monza · at 75¢"
+   "title": "Levante −1.5 — NO",
+   "detail": "Elche @ Levante · at 78¢"
   },
   {
-   "when": "Nov 23, 2:45 PM ET",
+   "when": "Nov 23, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 2.5 goals — YES",
-   "detail": "Fiorentina @ Monza · at 62¢"
+   "title": "Over 3.5 goals — NO",
+   "detail": "Elche @ Levante · at 66¢"
+  },
+  {
+   "when": "Nov 23, 3:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Elche −1.5 — NO + Draw — NO",
+   "detail": "ELC@LEV + FIO@MON · at None¢"
   },
   {
    "when": "Nov 23, 11:15 AM ET",
@@ -158,24 +172,10 @@
    "detail": "called at 86¢"
   },
   {
-   "when": "Nov 23, 3:45 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
    "when": "Nov 22, 8:30 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
    "title": "Golden State −6.5 — NO",
-   "detail": "Boston @ Golden State · at 87¢"
-  },
-  {
-   "when": "Nov 22, 8:30 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Boston −23.5 — NO",
    "detail": "Boston @ Golden State · at 87¢"
   }
  ]
