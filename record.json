@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 1:15 PM ET",
+ "updated": "Nov 24, 2:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 311,
+   "won": 312,
    "lost": 46
   },
   {
@@ -23,7 +23,7 @@
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 3,
+   "won": 5,
    "lost": 2
   }
  ],
@@ -66,12 +66,33 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 73,
+   "won": 74,
    "lost": 26,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 2:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 2:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 24, 2:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
   {
    "when": "Nov 24, 1:15 PM ET",
    "emoji": "🪙",
@@ -94,32 +115,11 @@
    "detail": "called at 91¢"
   },
   {
-   "when": "Nov 24, 12:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
    "when": "Nov 24, 11:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 24, 11:00 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 24, 10:45 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
@@ -141,6 +141,13 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 10:00 AM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 141.5 points — YES",
+   "detail": "Wright State @ St. Bonaventure · at 63¢"
   },
   {
    "when": "Nov 24, 9:15 AM ET",
@@ -176,13 +183,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 23, 11:59 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 149.5 points — YES",
-   "detail": "San José State @ UC San Diego · at 66¢"
   }
  ]
 }
