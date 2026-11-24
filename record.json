@@ -1,9 +1,9 @@
 {
- "updated": "Nov 24, 12:15 AM ET",
+ "updated": "Nov 24, 1:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 597,
+  "won": 598,
   "lost": 55,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 291,
+   "won": 294,
    "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 625,
+   "won": 628,
    "lost": 79
   }
  ],
@@ -60,12 +60,61 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 68,
-   "lost": 23,
+   "won": 70,
+   "lost": 24,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 1:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 24, 1:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 1:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 12:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 24, 12:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 24, 12:30 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 24, 12:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
   {
    "when": "Nov 24, 12:15 AM ET",
    "emoji": "₿",
@@ -74,53 +123,25 @@
    "detail": "called at 92¢"
   },
   {
-   "when": "Nov 24, 12:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 24, 12:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 24, 12:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 24, 12:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 23, 11:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 23, 11:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
    "when": "Nov 23, 9:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 23, 9:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 147.5 points — YES",
+   "detail": "UNC Greensboro @ Pepperdine · at 66¢"
+  },
+  {
+   "when": "Nov 23, 9:30 PM ET",
+   "emoji": "🏀",
+   "kind": "College basketball",
+   "title": "Over 137.5 points — YES",
+   "detail": "Loyola Chicago @ Seattle U · at 57¢"
   },
   {
    "when": "Nov 23, 9:15 PM ET",
@@ -151,32 +172,11 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 23, 6:15 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
    "when": "Nov 23, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
    "title": "Levante −1.5 — NO",
    "detail": "Elche @ Levante · at 78¢"
-  },
-  {
-   "when": "Nov 23, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Elche @ Levante · at 66¢"
-  },
-  {
-   "when": "Nov 23, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Elche −1.5 — NO + Draw — NO",
-   "detail": "ELC@LEV + FIO@MON · at None¢"
   }
  ]
 }
