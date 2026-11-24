@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 12:15 PM ET",
+ "updated": "Nov 24, 1:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 309,
+   "won": 311,
    "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
    "won": 639,
-   "lost": 84
+   "lost": 85
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 2,
+   "won": 3,
    "lost": 2
   }
  ],
@@ -73,6 +73,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 24, 1:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 24, 1:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 1:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
    "when": "Nov 24, 12:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -80,25 +101,11 @@
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 24, 12:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
    "when": "Nov 24, 11:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 24, 11:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 85¢"
   },
   {
    "when": "Nov 24, 11:00 AM ET",
@@ -176,13 +183,6 @@
    "kind": "College basketball",
    "title": "Over 149.5 points — YES",
    "detail": "San José State @ UC San Diego · at 66¢"
-  },
-  {
-   "when": "Nov 23, 11:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 151.5 points — YES",
-   "detail": "Colorado State @ Arizona · at 69¢"
   }
  ]
 }
