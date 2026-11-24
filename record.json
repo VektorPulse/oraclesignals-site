@@ -1,9 +1,9 @@
 {
- "updated": "Nov 24, 7:30 AM ET",
+ "updated": "Nov 24, 9:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 601,
+  "won": 602,
   "lost": 56,
   "since": "Oct 8, 2026"
  },
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 302,
+   "won": 303,
    "lost": 46
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 635,
+   "won": 636,
    "lost": 82
   }
  ],
@@ -67,6 +67,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 24, 9:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 24, 9:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 24, 8:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
    "when": "Nov 24, 7:30 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -102,25 +123,11 @@
    "detail": "called at 95¢"
   },
   {
-   "when": "Nov 24, 6:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
    "when": "Nov 24, 5:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 24, 5:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
   },
   {
    "when": "Nov 24, 4:15 AM ET",
@@ -163,13 +170,6 @@
    "kind": "College basketball",
    "title": "Over 138.5 points — YES",
    "detail": "Alabama State @ California · at 62¢"
-  },
-  {
-   "when": "Nov 23, 9:30 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 23, 8:15 PM ET",
