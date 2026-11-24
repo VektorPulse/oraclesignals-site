@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 2:15 PM ET",
+ "updated": "Nov 24, 2:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -12,12 +12,12 @@
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
    "won": 312,
-   "lost": 46
+   "lost": 47
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 639,
+   "won": 640,
    "lost": 85
   },
   {
@@ -67,11 +67,18 @@
    "label": "College basketball",
    "emoji": "🏀",
    "won": 74,
-   "lost": 26,
+   "lost": 28,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 2:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 93¢"
+  },
   {
    "when": "Nov 24, 2:15 PM ET",
    "emoji": "🪙",
@@ -134,13 +141,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 24, 10:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 24, 10:00 AM ET",
