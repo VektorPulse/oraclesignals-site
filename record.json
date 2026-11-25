@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 11:15 AM ET",
+ "updated": "Nov 25, 12:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -23,7 +23,7 @@
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 23,
+   "won": 24,
    "lost": 2
   }
  ],
@@ -72,6 +72,14 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 25, 12:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
   {
    "when": "Nov 25, 11:15 AM ET",
    "emoji": "🪙",
@@ -137,14 +145,6 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 8:30 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 92¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 25, 5:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -203,6 +203,13 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 12:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
    "when": "Nov 25, 11:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -257,13 +264,6 @@
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 84¢"
-  },
-  {
-   "when": "Nov 25, 8:30 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 92¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
