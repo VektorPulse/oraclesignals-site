@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 11:15 PM ET",
+ "updated": "Nov 25, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 327,
+   "won": 331,
    "lost": 49
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 648,
+   "won": 650,
    "lost": 87
   },
   {
@@ -60,25 +60,57 @@
    "label": "NBA",
    "emoji": "🏀",
    "won": 166,
-   "lost": 79,
+   "lost": 80,
    "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 96,
-   "lost": 49,
+   "won": 100,
+   "lost": 51,
    "push": 0
   }
  ],
  "calls": [
   {
-   "when": "Nov 24, 11:15 PM ET",
+   "when": "Nov 25, 12:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢",
-   "result": "lost"
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 91¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 24, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 24, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢",
+   "result": "won"
   },
   {
    "when": "Nov 24, 11:00 PM ET",
@@ -98,26 +130,10 @@
   },
   {
    "when": "Nov 24, 10:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 94¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 24, 10:30 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas DOWN in 15 minutes",
    "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 24, 10:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 95¢",
    "result": "won"
   },
   {
@@ -129,27 +145,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 24, 10:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 24, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 24, 7:30 PM ET",
+   "when": "Nov 24, 8:00 PM ET",
    "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 175.5 points — NO",
-   "detail": "West Georgia @ Tennessee Tech · at 76¢",
+   "kind": "NBA",
+   "title": "Over 226.5 points — NO",
+   "detail": "Boston @ Washington · at 69¢",
    "result": "lost"
   },
   {
@@ -203,6 +203,41 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 12:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 25, 12:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 25, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 24, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 24, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
    "when": "Nov 24, 11:00 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -225,52 +260,17 @@
   },
   {
    "when": "Nov 24, 10:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 24, 10:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 24, 10:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 24, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 24, 7:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Over 36.5 points — YES",
-   "detail": "MOH@WMU · at 75¢"
-  },
-  {
-   "when": "Nov 24, 7:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 218.5 points — NO",
-   "detail": "Detroit @ Orlando · at 64¢"
-  },
-  {
-   "when": "Nov 24, 7:00 PM ET",
+   "when": "Nov 24, 8:00 PM ET",
    "emoji": "🏀",
    "kind": "College basketball",
-   "title": "Over 133.5 points — YES",
-   "detail": "Binghamton @ Lehigh · at 61¢"
+   "title": "Over 165.5 points — NO",
+   "detail": "Bucknell @ Cornell · at 74¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
