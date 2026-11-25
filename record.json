@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 8:15 AM ET",
+ "updated": "Nov 25, 9:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 343,
+   "won": 344,
    "lost": 49
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 657,
+   "won": 658,
    "lost": 89
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 20,
+   "won": 22,
    "lost": 2
   }
  ],
@@ -73,6 +73,38 @@
  ],
  "calls": [
   {
+   "when": "Nov 25, 9:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 9:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 8:45 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 8:30 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 92¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 25, 8:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -86,14 +118,6 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 90¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 7:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢",
    "result": "won"
   },
   {
@@ -121,35 +145,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 6:30 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 93¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 5:45 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 25, 5:15 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 89¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 25, 4:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 88¢",
    "result": "lost"
   },
   {
@@ -203,6 +203,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 9:15 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 25, 9:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 25, 8:45 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 25, 8:30 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
    "when": "Nov 25, 8:15 AM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -218,13 +246,6 @@
   },
   {
    "when": "Nov 25, 7:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 25, 7:15 AM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas DOWN in 15 minutes",
@@ -236,20 +257,6 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 25, 6:30 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 25, 5:45 AM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
@@ -278,13 +285,6 @@
    "kind": "NBA",
    "title": "Over 243.5 points — NO",
    "detail": "Dallas @ Denver · at 71¢"
-  },
-  {
-   "when": "Nov 24, 9:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 157.5 points — YES",
-   "detail": "Grand Canyon @ Saint Louis · at 69¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
