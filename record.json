@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 2:15 PM ET",
+ "updated": "Nov 25, 4:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 349,
+   "won": 350,
    "lost": 50
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 665,
+   "won": 668,
    "lost": 90
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 26,
+   "won": 28,
    "lost": 3
   }
  ],
@@ -45,7 +45,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 134,
+   "won": 136,
    "lost": 49,
    "push": 0
   },
@@ -73,10 +73,50 @@
  ],
  "calls": [
   {
-   "when": "Nov 25, 2:15 PM ET",
+   "when": "Nov 25, 4:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 4:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 4:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 4:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 91¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 3:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 3:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
    "detail": "called at 94¢",
    "result": "won"
   },
@@ -105,44 +145,12 @@
    "result": "lost"
   },
   {
-   "when": "Nov 25, 1:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢",
+   "when": "Nov 25, 12:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Villarreal −1.5 — NO",
+   "detail": "Villarreal @ Slavia Prague · at 78¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 25, 1:30 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 93¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 1:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 86¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 1:15 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 88¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 1:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 84¢",
-   "result": "lost"
   },
   {
    "when": "Nov 25, 5:15 AM ET",
@@ -177,14 +185,6 @@
    "result": "lost"
   },
   {
-   "when": "Nov 24, 10:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 168.5 points — NO",
-   "detail": "Oregon @ St. John's · at 78¢",
-   "result": "lost"
-  },
-  {
    "when": "Nov 24, 10:45 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -203,10 +203,45 @@
  ],
  "wins": [
   {
-   "when": "Nov 25, 2:15 PM ET",
+   "when": "Nov 25, 4:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 25, 4:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 25, 4:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 25, 4:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
+   "when": "Nov 25, 3:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 25, 3:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
    "detail": "called at 94¢"
   },
   {
@@ -217,32 +252,18 @@
    "detail": "called at 92¢"
   },
   {
-   "when": "Nov 25, 1:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
+   "when": "Nov 25, 12:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Villarreal −1.5 — NO",
+   "detail": "Villarreal @ Slavia Prague · at 78¢"
   },
   {
-   "when": "Nov 25, 1:30 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 25, 1:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 25, 1:15 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 88¢"
+   "when": "Nov 25, 12:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Villarreal @ Slavia Prague · at 64¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
@@ -264,27 +285,6 @@
    "kind": "Soccer",
    "title": "Over 3.5 goals — NO",
    "detail": "Houston @ San Jose · at 66¢"
-  },
-  {
-   "when": "Nov 24, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 243.5 points — NO",
-   "detail": "Dallas @ Denver · at 71¢"
-  },
-  {
-   "when": "Nov 24, 9:30 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 157.5 points — YES",
-   "detail": "Grand Canyon @ Saint Louis · at 69¢"
-  },
-  {
-   "when": "Nov 24, 9:00 PM ET",
-   "emoji": "🏀",
-   "kind": "College basketball",
-   "title": "Over 151.5 points — YES",
-   "detail": "UNC Asheville @ Florida State · at 68¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
