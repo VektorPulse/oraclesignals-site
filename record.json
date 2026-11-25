@@ -1,34 +1,30 @@
 {
- "updated": "Nov 24, 9:15 PM ET",
+ "updated": "Nov 24, 9:30 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 603,
   "lost": 57,
-  "since": "Oct 8, 2026",
-  "net_c": 1.1
+  "since": "Oct 8, 2026"
  },
  "coins": [
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 324,
-   "lost": 48,
-   "net_c": -3.5
+   "won": 325,
+   "lost": 48
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
    "won": 647,
-   "lost": 86,
-   "net_c": -1.7
+   "lost": 86
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
    "won": 8,
-   "lost": 2,
-   "net_c": -10.2
+   "lost": 2
   }
  ],
  "sports": [
@@ -37,60 +33,60 @@
    "emoji": "🏈",
    "won": 77,
    "lost": 32,
-   "push": 0,
-   "net_c": 0.3
+   "push": 0
   },
   {
    "label": "College football",
    "emoji": "🎓",
    "won": 94,
    "lost": 25,
-   "push": 0,
-   "net_c": 4.8
+   "push": 0
   },
   {
    "label": "Soccer",
    "emoji": "⚽",
    "won": 133,
    "lost": 49,
-   "push": 0,
-   "net_c": -2.5
+   "push": 0
   },
   {
    "label": "Tennis",
    "emoji": "🎾",
    "won": 17,
    "lost": 7,
-   "push": 0,
-   "net_c": 3.8
+   "push": 0
   },
   {
    "label": "NBA",
    "emoji": "🏀",
    "won": 165,
    "lost": 79,
-   "push": 0,
-   "net_c": -5.5
+   "push": 0
   },
   {
    "label": "College basketball",
    "emoji": "🏀",
    "won": 82,
    "lost": 38,
-   "push": 0,
-   "net_c": -3.6
+   "push": 0
   }
  ],
  "calls": [
+  {
+   "when": "Nov 24, 9:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
   {
    "when": "Nov 24, 9:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 85¢",
-   "result": "won",
-   "net": 14.1,
-   "net_text": "+14¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 9:00 PM ET",
@@ -98,9 +94,7 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 91¢",
-   "result": "won",
-   "net": 8.0,
-   "net_text": "+8¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 8:45 PM ET",
@@ -108,9 +102,7 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 91¢",
-   "result": "won",
-   "net": 8.8,
-   "net_text": "+9¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 8:30 PM ET",
@@ -118,9 +110,7 @@
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 84¢",
-   "result": "won",
-   "net": 15.0,
-   "net_text": "+15¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 8:15 PM ET",
@@ -128,19 +118,7 @@
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 91¢",
-   "result": "won",
-   "net": 8.4,
-   "net_text": "+8¢ after fees"
-  },
-  {
-   "when": "Nov 24, 7:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 88¢",
-   "result": "won",
-   "net": 11.2,
-   "net_text": "+11¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 7:45 PM ET",
@@ -148,9 +126,7 @@
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 93¢",
-   "result": "won",
-   "net": 6.5,
-   "net_text": "+6¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 7:00 PM ET",
@@ -158,9 +134,7 @@
    "kind": "Natural gas call",
    "title": "Natural gas DOWN in 15 minutes",
    "detail": "called at 85¢",
-   "result": "won",
-   "net": 14.1,
-   "net_text": "+14¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 6:30 PM ET",
@@ -168,9 +142,7 @@
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 94¢",
-   "result": "won",
-   "net": 5.6,
-   "net_text": "+6¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 5:30 PM ET",
@@ -178,9 +150,7 @@
    "kind": "College basketball",
    "title": "Over 141.5 points — YES",
    "detail": "Wyoming @ Kent State · at 61¢",
-   "result": "won",
-   "net": 37.3,
-   "net_text": "+37¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 10:45 AM ET",
@@ -188,9 +158,7 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 89¢",
-   "result": "lost",
-   "net": -89.7,
-   "net_text": "−90¢ after fees"
+   "result": "lost"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
@@ -198,9 +166,7 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢",
-   "result": "won",
-   "net": 9.3,
-   "net_text": "+9¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 9:15 AM ET",
@@ -208,9 +174,7 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 93¢",
-   "result": "won",
-   "net": 6.8,
-   "net_text": "+7¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 7:00 AM ET",
@@ -218,9 +182,7 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 93¢",
-   "result": "won",
-   "net": 6.1,
-   "net_text": "+6¢ after fees"
+   "result": "won"
   },
   {
    "when": "Nov 24, 6:00 AM ET",
@@ -228,9 +190,7 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
-   "result": "lost",
-   "net": -87.8,
-   "net_text": "−88¢ after fees"
+   "result": "lost"
   },
   {
    "when": "Nov 24, 5:00 AM ET",
@@ -238,13 +198,17 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢",
-   "result": "won",
-   "net": 11.2,
-   "net_text": "+11¢ after fees"
+   "result": "won"
   }
  ],
- "hypothetical": "These results are based on simulated or hypothetical performance results that have certain inherent limitations. Unlike the results shown in an actual performance record, these results do not represent actual trading. Also, because these trades have not actually been executed, these results may have under-or over-compensated for the impact, if any, of certain market factors, such as lack of liquidity. Simulated or hypothetical trading programs in general are also subject to the fact that they are designed with the benefit of hindsight. No representation is being made that any account will or is likely to achieve profits or losses similar to these being shown.",
  "wins": [
+  {
+   "when": "Nov 24, 9:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 24, 9:15 PM ET",
    "emoji": "🐕",
@@ -279,13 +243,6 @@
    "kind": "Gold call",
    "title": "Gold DOWN in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 24, 7:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 88¢"
   },
   {
    "when": "Nov 24, 7:45 PM ET",
