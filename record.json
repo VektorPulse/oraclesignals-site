@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 4:15 PM ET",
+ "updated": "Nov 25, 5:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 350,
+   "won": 352,
    "lost": 50
   },
   {
@@ -73,6 +73,22 @@
  ],
  "calls": [
   {
+   "when": "Nov 25, 5:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 4:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 91¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 25, 4:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -118,22 +134,6 @@
    "kind": "Gold call",
    "title": "Gold UP in 15 minutes",
    "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 2:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 89¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 25, 1:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢",
    "result": "won"
   },
   {
@@ -203,6 +203,20 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 5:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 25, 4:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 91¢"
+  },
+  {
    "when": "Nov 25, 4:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -245,13 +259,6 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 25, 1:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
    "when": "Nov 25, 12:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
@@ -278,13 +285,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 24, 10:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Houston @ San Jose · at 66¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
