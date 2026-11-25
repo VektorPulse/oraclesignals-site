@@ -1,5 +1,5 @@
 {
- "updated": "Nov 24, 6:00 PM ET",
+ "updated": "Nov 24, 7:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 318,
-   "lost": 47
+   "won": 320,
+   "lost": 48
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 642,
+   "won": 644,
    "lost": 85
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 5,
+   "won": 7,
    "lost": 2
   }
  ],
@@ -45,8 +45,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 120,
-   "lost": 45,
+   "won": 133,
+   "lost": 49,
    "push": 0
   },
   {
@@ -66,12 +66,54 @@
   {
    "label": "College basketball",
    "emoji": "🏀",
-   "won": 76,
-   "lost": 32,
+   "won": 77,
+   "lost": 36,
    "push": 0
   }
  ],
  "wins": [
+  {
+   "when": "Nov 24, 7:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 24, 7:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 24, 7:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas DOWN in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 24, 6:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 24, 6:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 24, 6:30 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
   {
    "when": "Nov 24, 6:00 PM ET",
    "emoji": "🐕",
@@ -87,60 +129,18 @@
    "detail": "called at 87¢"
   },
   {
-   "when": "Nov 24, 4:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 24, 4:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 24, 4:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 24, 2:45 PM ET",
+   "when": "Nov 24, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Southampton −1.5 — NO",
-   "detail": "Southampton @ Sheffield Utd · at 85¢"
+   "title": "Betis to win — YES",
+   "detail": "Betis @ S Bratislava · at 77¢"
   },
   {
-   "when": "Nov 24, 2:45 PM ET",
+   "when": "Nov 24, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Sheffield Utd −1.5 — NO",
-   "detail": "Southampton @ Sheffield Utd · at 83¢"
-  },
-  {
-   "when": "Nov 24, 2:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Southampton @ Sheffield Utd · at 66¢"
-  },
-  {
-   "when": "Nov 24, 2:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 24, 2:15 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 90¢"
+   "title": "Betis −2.5 — NO",
+   "detail": "Betis @ S Bratislava · at 66¢"
   },
   {
    "when": "Nov 24, 10:30 AM ET",
