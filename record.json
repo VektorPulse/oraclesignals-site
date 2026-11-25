@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 5:00 PM ET",
+ "updated": "Nov 25, 6:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,13 +17,13 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 668,
+   "won": 670,
    "lost": 90
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 28,
+   "won": 29,
    "lost": 3
   }
  ],
@@ -45,7 +45,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 136,
+   "won": 139,
    "lost": 49,
    "push": 0
   },
@@ -72,6 +72,30 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 25, 6:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 88¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 6:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 5:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
   {
    "when": "Nov 25, 5:00 PM ET",
    "emoji": "🪙",
@@ -106,26 +130,10 @@
   },
   {
    "when": "Nov 25, 4:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 4:00 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 91¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 3:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢",
    "result": "won"
   },
   {
@@ -137,19 +145,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 1:45 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 86¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 25, 12:45 PM ET",
+   "when": "Nov 25, 2:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Villarreal −1.5 — NO",
-   "detail": "Villarreal @ Slavia Prague · at 78¢",
+   "title": "Over 1.5 goals — YES",
+   "detail": "West Brom @ Bolton · at 79¢",
    "result": "won"
   },
   {
@@ -203,6 +203,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 6:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 25, 6:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 25, 5:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
    "when": "Nov 25, 5:00 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -232,24 +253,10 @@
   },
   {
    "when": "Nov 25, 4:00 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
-   "when": "Nov 25, 4:00 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 25, 3:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 89¢"
   },
   {
    "when": "Nov 25, 3:30 PM ET",
@@ -259,18 +266,11 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 25, 12:45 PM ET",
+   "when": "Nov 25, 2:45 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Villarreal −1.5 — NO",
-   "detail": "Villarreal @ Slavia Prague · at 78¢"
-  },
-  {
-   "when": "Nov 25, 12:45 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Villarreal @ Slavia Prague · at 64¢"
+   "title": "Over 1.5 goals — YES",
+   "detail": "West Brom @ Bolton · at 79¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
