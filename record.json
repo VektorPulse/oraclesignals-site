@@ -1,5 +1,5 @@
 {
- "updated": "Nov 26, 2:15 AM ET",
+ "updated": "Nov 26, 2:45 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 367,
+   "won": 369,
    "lost": 51
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 674,
+   "won": 675,
    "lost": 91
   },
   {
@@ -72,6 +72,30 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 26, 2:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 2:30 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 2:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
   {
    "when": "Nov 26, 2:15 AM ET",
    "emoji": "🐕",
@@ -129,36 +153,12 @@
    "result": "won"
   },
   {
-   "when": "Nov 26, 1:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 1:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 89¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 25, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
    "title": "Over 220.5 points — NO",
    "detail": "Sacramento @ Golden State · at 61¢",
    "result": "lost"
-  },
-  {
-   "when": "Nov 25, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 230.5 points — NO",
-   "detail": "San Antonio @ Portland · at 63¢",
-   "result": "won"
   },
   {
    "when": "Nov 25, 5:15 AM ET",
@@ -203,6 +203,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 26, 2:45 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 26, 2:30 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 26, 2:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
    "when": "Nov 26, 2:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -245,20 +266,6 @@
    "detail": "called at 95¢"
   },
   {
-   "when": "Nov 26, 1:15 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 26, 1:00 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 25, 10:00 PM ET",
    "emoji": "🏀",
    "kind": "NBA",
@@ -271,13 +278,6 @@
    "kind": "NFL",
    "title": "Packers −4.5 — NO",
    "detail": "Packers @ Rams · at 70¢"
-  },
-  {
-   "when": "Nov 25, 8:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Packers −3.5 — NO",
-   "detail": "Packers @ Rams · at 69¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
