@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 10:15 PM ET",
+ "updated": "Nov 25, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,7 +11,7 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 359,
+   "won": 361,
    "lost": 51
   },
   {
@@ -23,7 +23,7 @@
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 33,
+   "won": 34,
    "lost": 3
   }
  ],
@@ -59,8 +59,8 @@
   {
    "label": "NBA",
    "emoji": "🏀",
-   "won": 168,
-   "lost": 80,
+   "won": 170,
+   "lost": 81,
    "push": 0
   },
   {
@@ -72,6 +72,30 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 25, 11:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 11:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 10:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 95¢",
+   "result": "won"
+  },
   {
    "when": "Nov 25, 10:15 PM ET",
    "emoji": "🪙",
@@ -98,14 +122,6 @@
   },
   {
    "when": "Nov 25, 9:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 90¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 9:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
@@ -113,19 +129,19 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 8:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢",
-   "result": "won"
+   "when": "Nov 25, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 220.5 points — NO",
+   "detail": "Cleveland @ New York · at 55¢",
+   "result": "lost"
   },
   {
-   "when": "Nov 25, 8:00 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 92¢",
+   "when": "Nov 25, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 226.5 points — NO",
+   "detail": "Minnesota @ Oklahoma City · at 60¢",
    "result": "won"
   },
   {
@@ -134,22 +150,6 @@
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 6:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 92¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 5:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 240.5 points — NO",
-   "detail": "Miami @ Philadelphia · at 59¢",
    "result": "won"
   },
   {
@@ -203,6 +203,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 11:15 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 25, 11:00 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
+  {
+   "when": "Nov 25, 10:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
    "when": "Nov 25, 10:15 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -218,31 +239,17 @@
   },
   {
    "when": "Nov 25, 9:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 90¢"
-  },
-  {
-   "when": "Nov 25, 9:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 93¢"
   },
   {
-   "when": "Nov 25, 8:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 25, 8:00 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 92¢"
+   "when": "Nov 25, 7:30 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 226.5 points — NO",
+   "detail": "Minnesota @ Oklahoma City · at 60¢"
   },
   {
    "when": "Nov 25, 7:15 PM ET",
@@ -252,25 +259,18 @@
    "detail": "called at 87¢"
   },
   {
+   "when": "Nov 25, 7:00 PM ET",
+   "emoji": "🏀",
+   "kind": "NBA",
+   "title": "Over 224.5 points — NO",
+   "detail": "Chicago @ Charlotte · at 61¢"
+  },
+  {
    "when": "Nov 25, 6:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 25, 5:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 240.5 points — NO",
-   "detail": "Miami @ Philadelphia · at 59¢"
-  },
-  {
-   "when": "Nov 25, 3:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Sporting −1.5 — NO",
-   "detail": "Man Utd @ Sporting · at 83¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
