@@ -1,5 +1,5 @@
 {
- "updated": "Nov 25, 6:15 PM ET",
+ "updated": "Nov 25, 7:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 352,
-   "lost": 50
+   "won": 354,
+   "lost": 51
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 670,
+   "won": 672,
    "lost": 90
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 29,
+   "won": 30,
    "lost": 3
   }
  ],
@@ -45,8 +45,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 139,
-   "lost": 49,
+   "won": 151,
+   "lost": 52,
    "push": 0
   },
   {
@@ -73,6 +73,54 @@
  ],
  "calls": [
   {
+   "when": "Nov 25, 7:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 7:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 92¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 25, 6:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "lost"
+  },
+  {
    "when": "Nov 25, 6:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -89,38 +137,6 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 5:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 5:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 4:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 91¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 4:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 25, 4:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -129,27 +145,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 25, 4:00 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 91¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 3:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 25, 2:45 PM ET",
+   "when": "Nov 25, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 1.5 goals — YES",
-   "detail": "West Brom @ Bolton · at 79¢",
+   "title": "Sporting −1.5 — NO",
+   "detail": "Man Utd @ Sporting · at 83¢",
    "result": "won"
   },
   {
@@ -203,6 +203,41 @@
  ],
  "wins": [
   {
+   "when": "Nov 25, 7:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 87¢"
+  },
+  {
+   "when": "Nov 25, 7:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 92¢"
+  },
+  {
+   "when": "Nov 25, 6:45 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 89¢"
+  },
+  {
    "when": "Nov 25, 6:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -217,34 +252,6 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 25, 5:30 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 25, 5:00 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 25, 4:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 25, 4:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 89¢"
-  },
-  {
    "when": "Nov 25, 4:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -252,25 +259,18 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 25, 4:00 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 25, 3:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 25, 2:45 PM ET",
+   "when": "Nov 25, 3:00 PM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 1.5 goals — YES",
-   "detail": "West Brom @ Bolton · at 79¢"
+   "title": "Sporting −1.5 — NO",
+   "detail": "Man Utd @ Sporting · at 83¢"
+  },
+  {
+   "when": "Nov 25, 3:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Man Utd −1.5 — NO",
+   "detail": "Man Utd @ Sporting · at 82¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
