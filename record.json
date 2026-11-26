@@ -1,5 +1,5 @@
 {
- "updated": "Nov 26, 12:15 PM ET",
+ "updated": "Nov 26, 1:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -11,13 +11,13 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 380,
+   "won": 382,
    "lost": 51
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 686,
+   "won": 687,
    "lost": 92
   },
   {
@@ -73,6 +73,30 @@
  ],
  "calls": [
   {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 12:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 26, 12:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -106,34 +130,10 @@
   },
   {
    "when": "Nov 26, 11:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 11:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 91¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 10:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 10:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 84¢",
    "result": "won"
   },
   {
@@ -203,6 +203,27 @@
  ],
  "wins": [
   {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
+   "when": "Nov 26, 12:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
    "when": "Nov 26, 12:00 PM ET",
    "emoji": "🪙",
    "kind": "Gold call",
@@ -218,31 +239,10 @@
   },
   {
    "when": "Nov 26, 11:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 26, 11:30 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 91¢"
-  },
-  {
-   "when": "Nov 26, 10:30 AM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold DOWN in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 26, 10:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 84¢"
   },
   {
    "when": "Nov 26, 10:15 AM ET",
