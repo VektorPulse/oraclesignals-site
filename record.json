@@ -1,10 +1,10 @@
 {
- "updated": "Nov 26, 2:30 PM ET",
+ "updated": "Nov 26, 4:45 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
   "won": 606,
-  "lost": 60,
+  "lost": 61,
   "since": "Oct 8, 2026"
  },
  "coins": [
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 688,
+   "won": 689,
    "lost": 92
   },
   {
@@ -31,8 +31,8 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 81,
-   "lost": 33,
+   "won": 85,
+   "lost": 34,
    "push": 0
   },
   {
@@ -72,6 +72,22 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 26, 4:45 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "lost"
+  },
+  {
+   "when": "Nov 26, 4:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
   {
    "when": "Nov 26, 2:30 PM ET",
    "emoji": "🪙",
@@ -114,35 +130,35 @@
   },
   {
    "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Bears −6.5 — NO",
+   "detail": "Bears @ Lions · at 70¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Bears −5.5 — NO",
+   "detail": "Bears @ Lions · at 67¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Over 58.5 points — NO",
+   "detail": "Bears @ Lions · at 59¢",
+   "result": "lost"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
    "detail": "called at 94¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 26, 12:15 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas DOWN in 15 minutes",
-   "detail": "called at 94¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 26, 12:00 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 11:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 87¢",
-   "result": "lost"
   },
   {
    "when": "Nov 26, 7:15 AM ET",
@@ -159,14 +175,6 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 95¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 25, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 220.5 points — NO",
-   "detail": "Sacramento @ Golden State · at 61¢",
-   "result": "lost"
   },
   {
    "when": "Nov 25, 5:15 AM ET",
@@ -191,17 +199,16 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 90¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 25, 12:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 84¢",
-   "result": "lost"
   }
  ],
  "wins": [
+  {
+   "when": "Nov 26, 4:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
   {
    "when": "Nov 26, 2:30 PM ET",
    "emoji": "🪙",
@@ -239,6 +246,20 @@
   },
   {
    "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Bears −6.5 — NO",
+   "detail": "Bears @ Lions · at 70¢"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Bears −5.5 — NO",
+   "detail": "Bears @ Lions · at 67¢"
+  },
+  {
+   "when": "Nov 26, 1:00 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE UP in 15 minutes",
@@ -257,27 +278,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 95¢"
-  },
-  {
-   "when": "Nov 25, 10:00 PM ET",
-   "emoji": "🏀",
-   "kind": "NBA",
-   "title": "Over 230.5 points — NO",
-   "detail": "San Antonio @ Portland · at 63¢"
-  },
-  {
-   "when": "Nov 25, 8:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Packers −4.5 — NO",
-   "detail": "Packers @ Rams · at 70¢"
-  },
-  {
-   "when": "Nov 25, 8:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Packers −3.5 — NO",
-   "detail": "Packers @ Rams · at 69¢"
   },
   {
    "when": "Nov 25, 4:15 AM ET",
