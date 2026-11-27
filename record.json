@@ -45,7 +45,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 151,
+   "won": 152,
    "lost": 52,
    "push": 0
   },
@@ -105,6 +105,14 @@
    "result": "won"
   },
   {
+   "when": "Nov 27, 2:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Paris FC −1.5 — NO",
+   "detail": "Paris FC @ Brest · at 78¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 27, 2:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -158,14 +166,6 @@
    "kind": "Natural gas call",
    "title": "Natural gas DOWN in 15 minutes",
    "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 27, 12:08 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Nebraska −2.5 — NO",
-   "detail": "Nebraska @ Iowa · at 67¢",
    "result": "won"
   },
   {
@@ -231,6 +231,13 @@
    "detail": "called at 86¢"
   },
   {
+   "when": "Nov 27, 2:45 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Paris FC −1.5 — NO",
+   "detail": "Paris FC @ Brest · at 78¢"
+  },
+  {
    "when": "Nov 27, 2:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -278,13 +285,6 @@
    "kind": "College football",
    "title": "Nebraska −2.5 — NO",
    "detail": "Nebraska @ Iowa · at 67¢"
-  },
-  {
-   "when": "Nov 27, 12:00 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Toledo −9.5 — NO",
-   "detail": "Toledo @ Ohio · at 70¢"
   },
   {
    "when": "Nov 27, 11:45 AM ET",
