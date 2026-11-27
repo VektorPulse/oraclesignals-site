@@ -1,9 +1,9 @@
 {
- "updated": "Nov 26, 11:15 PM ET",
+ "updated": "Nov 27, 12:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 606,
+  "won": 607,
   "lost": 61,
   "since": "Oct 8, 2026"
  },
@@ -11,19 +11,19 @@
   {
    "label": "Gold 15-minute calls",
    "emoji": "🪙",
-   "won": 388,
+   "won": 391,
    "lost": 51
   },
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 698,
+   "won": 699,
    "lost": 93
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 49,
+   "won": 50,
    "lost": 5
   }
  ],
@@ -31,7 +31,7 @@
   {
    "label": "NFL",
    "emoji": "🏈",
-   "won": 87,
+   "won": 92,
    "lost": 37,
    "push": 0
   },
@@ -39,7 +39,7 @@
    "label": "College football",
    "emoji": "🎓",
    "won": 98,
-   "lost": 27,
+   "lost": 29,
    "push": 0
   },
   {
@@ -73,18 +73,58 @@
  ],
  "calls": [
   {
-   "when": "Nov 26, 11:15 PM ET",
+   "when": "Nov 27, 12:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 12:15 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 11:45 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 26, 11:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
    "detail": "called at 85¢",
    "result": "won"
   },
   {
-   "when": "Nov 26, 10:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
+   "when": "Nov 26, 11:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 85¢",
    "result": "won"
   },
@@ -97,35 +137,27 @@
    "result": "won"
   },
   {
-   "when": "Nov 26, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢",
+   "when": "Nov 26, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Travis Kelce anytime TD — NO",
+   "detail": "Chiefs @ Bills · at 71¢",
    "result": "won"
   },
   {
-   "when": "Nov 26, 8:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢",
+   "when": "Nov 26, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "James Cook III 15+ receiving yds — NO",
+   "detail": "Chiefs @ Bills · at 71¢",
    "result": "won"
   },
   {
-   "when": "Nov 26, 7:45 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 6:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 85¢",
+   "when": "Nov 26, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Over 51.5 points — NO",
+   "detail": "Chiefs @ Bills · at 69¢",
    "result": "won"
   },
   {
@@ -135,30 +167,6 @@
    "title": "BTC UP in 15 minutes",
    "detail": "called at 84¢",
    "result": "lost"
-  },
-  {
-   "when": "Nov 26, 4:30 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Joe Milton III 175+ passing yds — NO",
-   "detail": "Eagles @ Cowboys · at 38¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 26, 4:30 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Cowboys −16.5 — NO",
-   "detail": "Eagles @ Cowboys · at 70¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 26, 4:30 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Cowboys −14.5 — NO",
-   "detail": "Eagles @ Cowboys · at 66¢",
-   "result": "won"
   },
   {
    "when": "Nov 26, 7:15 AM ET",
@@ -191,29 +199,56 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 25, 2:30 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢",
-   "result": "won"
   }
  ],
  "wins": [
+  {
+   "when": "Nov 27, 12:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 27, 12:15 AM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 27, 12:00 AM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 26, 11:45 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 26, 11:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 26, 11:30 PM ET",
+   "emoji": "🪙",
+   "kind": "Gold call",
+   "title": "Gold UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 26, 11:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 26, 10:45 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
    "detail": "called at 85¢"
   },
   {
@@ -224,53 +259,25 @@
    "detail": "called at 88¢"
   },
   {
-   "when": "Nov 26, 9:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 26, 8:15 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 92¢"
-  },
-  {
-   "when": "Nov 26, 7:45 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 26, 6:30 PM ET",
-   "emoji": "🪙",
-   "kind": "Gold call",
-   "title": "Gold UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 26, 4:30 PM ET",
+   "when": "Nov 26, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
-   "title": "Cowboys −16.5 — NO",
-   "detail": "Eagles @ Cowboys · at 70¢"
+   "title": "Travis Kelce anytime TD — NO",
+   "detail": "Chiefs @ Bills · at 71¢"
   },
   {
-   "when": "Nov 26, 4:30 PM ET",
+   "when": "Nov 26, 8:20 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
-   "title": "Cowboys −14.5 — NO",
-   "detail": "Eagles @ Cowboys · at 66¢"
+   "title": "James Cook III 15+ receiving yds — NO",
+   "detail": "Chiefs @ Bills · at 71¢"
   },
   {
-   "when": "Nov 26, 2:30 PM ET",
-   "emoji": "🔥",
-   "kind": "Natural gas call",
-   "title": "Natural gas UP in 15 minutes",
-   "detail": "called at 94¢"
+   "when": "Nov 26, 8:20 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Over 51.5 points — NO",
+   "detail": "Chiefs @ Bills · at 69¢"
   },
   {
    "when": "Nov 26, 1:15 AM ET",
@@ -302,13 +309,6 @@
   },
   {
    "when": "Nov 24, 9:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC UP in 15 minutes",
-   "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 24, 7:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
