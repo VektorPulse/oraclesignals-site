@@ -1,5 +1,5 @@
 {
- "updated": "Nov 27, 3:15 PM ET",
+ "updated": "Nov 27, 4:00 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 716,
+   "won": 718,
    "lost": 94
   },
   {
@@ -38,8 +38,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 98,
-   "lost": 29,
+   "won": 110,
+   "lost": 30,
    "push": 0
   },
   {
@@ -73,6 +73,22 @@
  ],
  "calls": [
   {
+   "when": "Nov 27, 4:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 3:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 27, 3:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -94,14 +110,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 94¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 27, 2:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 84¢",
    "result": "won"
   },
   {
@@ -153,11 +161,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 27, 12:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢",
+   "when": "Nov 27, 12:08 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Nebraska −2.5 — NO",
+   "detail": "Nebraska @ Iowa · at 67¢",
    "result": "won"
   },
   {
@@ -191,17 +199,23 @@
    "title": "BTC UP in 15 minutes",
    "detail": "called at 84¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 26, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Travis Kelce anytime TD — NO",
-   "detail": "Chiefs @ Bills · at 71¢",
-   "result": "won"
   }
  ],
  "wins": [
+  {
+   "when": "Nov 27, 4:00 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 27, 3:45 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 85¢"
+  },
   {
    "when": "Nov 27, 3:15 PM ET",
    "emoji": "🐕",
@@ -222,13 +236,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 94¢"
-  },
-  {
-   "when": "Nov 27, 2:15 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 84¢"
   },
   {
    "when": "Nov 27, 2:15 PM ET",
@@ -266,11 +273,18 @@
    "detail": "called at 94¢"
   },
   {
-   "when": "Nov 27, 12:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 86¢"
+   "when": "Nov 27, 12:08 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Nebraska −2.5 — NO",
+   "detail": "Nebraska @ Iowa · at 67¢"
+  },
+  {
+   "when": "Nov 27, 12:00 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Toledo −9.5 — NO",
+   "detail": "Toledo @ Ohio · at 70¢"
   },
   {
    "when": "Nov 27, 11:45 AM ET",
@@ -299,20 +313,6 @@
    "kind": "BTC call",
    "title": "BTC UP in 15 minutes",
    "detail": "called at 84¢"
-  },
-  {
-   "when": "Nov 26, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Travis Kelce anytime TD — NO",
-   "detail": "Chiefs @ Bills · at 71¢"
-  },
-  {
-   "when": "Nov 26, 8:20 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "James Cook III 15+ receiving yds — NO",
-   "detail": "Chiefs @ Bills · at 71¢"
   }
  ]
 }
