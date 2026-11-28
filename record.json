@@ -1,5 +1,5 @@
 {
- "updated": "Nov 27, 10:15 PM ET",
+ "updated": "Nov 27, 11:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,13 +17,13 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 730,
+   "won": 731,
    "lost": 94
   },
   {
    "label": "Natural gas 15-minute calls",
    "emoji": "🔥",
-   "won": 64,
+   "won": 65,
    "lost": 5
   }
  ],
@@ -38,8 +38,8 @@
   {
    "label": "College football",
    "emoji": "🎓",
-   "won": 114,
-   "lost": 36,
+   "won": 116,
+   "lost": 38,
    "push": 0
   },
   {
@@ -73,6 +73,22 @@
  ],
  "calls": [
   {
+   "when": "Nov 27, 11:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 27, 10:15 PM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
@@ -94,14 +110,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 27, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢",
    "result": "won"
   },
   {
@@ -137,28 +145,28 @@
    "result": "won"
   },
   {
-   "when": "Nov 27, 3:30 PM ET",
+   "when": "Nov 27, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "Memphis −10.5 — YES",
-   "detail": "Temple @ Memphis · at 68¢",
+   "title": "Texas A&M −14.5 — NO",
+   "detail": "Texas @ Texas A&M · at 60¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 7:30 PM ET",
+   "emoji": "🎓",
+   "kind": "College football",
+   "title": "Wisconsin −16.5 — NO",
+   "detail": "Minnesota @ Wisconsin · at 70¢",
    "result": "lost"
   },
   {
-   "when": "Nov 27, 3:30 PM ET",
+   "when": "Nov 27, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "North Dakota State −2.5 — YES",
-   "detail": "North Dakota State @ San José State · at 72¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 27, 3:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "North Dakota State −16.5 — NO",
-   "detail": "North Dakota State @ San José State · at 69¢",
-   "result": "won"
+   "title": "Wisconsin −14.5 — NO",
+   "detail": "Minnesota @ Wisconsin · at 67¢",
+   "result": "lost"
   },
   {
    "when": "Nov 27, 3:00 PM ET",
@@ -185,14 +193,6 @@
    "result": "won"
   },
   {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Broncos −6.5 — NO",
-   "detail": "Broncos @ Steelers · at 55¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 27, 2:30 PM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -202,6 +202,20 @@
   }
  ],
  "wins": [
+  {
+   "when": "Nov 27, 11:15 PM ET",
+   "emoji": "🔥",
+   "kind": "Natural gas call",
+   "title": "Natural gas UP in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 27, 10:30 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
   {
    "when": "Nov 27, 10:15 PM ET",
    "emoji": "🐕",
@@ -222,13 +236,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 88¢"
-  },
-  {
-   "when": "Nov 27, 9:45 PM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 94¢"
   },
   {
    "when": "Nov 27, 9:30 PM ET",
@@ -259,18 +266,11 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 27, 3:30 PM ET",
+   "when": "Nov 27, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
-   "title": "North Dakota State −2.5 — YES",
-   "detail": "North Dakota State @ San José State · at 72¢"
-  },
-  {
-   "when": "Nov 27, 3:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "North Dakota State −16.5 — NO",
-   "detail": "North Dakota State @ San José State · at 69¢"
+   "title": "Texas A&M −14.5 — NO",
+   "detail": "Texas @ Texas A&M · at 60¢"
   },
   {
    "when": "Nov 27, 3:00 PM ET",
