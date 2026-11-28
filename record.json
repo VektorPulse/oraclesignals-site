@@ -1,9 +1,9 @@
 {
- "updated": "Nov 28, 3:45 AM ET",
+ "updated": "Nov 28, 5:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 621,
+  "won": 622,
   "lost": 61,
   "since": "Oct 8, 2026"
  },
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 740,
+   "won": 742,
    "lost": 94
   },
   {
@@ -73,27 +73,35 @@
  ],
  "calls": [
   {
+   "when": "Nov 28, 5:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 5:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 4:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 28, 3:45 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 93¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 3:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 2:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢",
    "result": "won"
   },
   {
@@ -191,37 +199,36 @@
    "title": "Wisconsin −14.5 — NO",
    "detail": "Minnesota @ Wisconsin · at 67¢",
    "result": "lost"
-  },
-  {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢",
-   "result": "won"
   }
  ],
  "wins": [
+  {
+   "when": "Nov 28, 5:15 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 28, 5:15 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 28, 4:45 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 87¢"
+  },
   {
    "when": "Nov 28, 3:45 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
    "detail": "called at 93¢"
-  },
-  {
-   "when": "Nov 28, 3:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 28, 2:45 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 87¢"
   },
   {
    "when": "Nov 28, 12:15 AM ET",
@@ -292,13 +299,6 @@
    "kind": "Soccer",
    "title": "Over 5.5 goals — NO",
    "detail": "Miami @ Columbus · at 85¢"
-  },
-  {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
   },
   {
    "when": "Nov 27, 3:00 PM ET",
