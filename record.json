@@ -1,9 +1,9 @@
 {
- "updated": "Nov 28, 10:15 AM ET",
+ "updated": "Nov 28, 11:00 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 625,
+  "won": 626,
   "lost": 62,
   "since": "Oct 8, 2026"
  },
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 747,
+   "won": 748,
    "lost": 94
   },
   {
@@ -45,7 +45,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 158,
+   "won": 162,
    "lost": 52,
    "push": 0
   },
@@ -72,6 +72,22 @@
   }
  ],
  "calls": [
+  {
+   "when": "Nov 28, 11:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 11:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 84¢",
+   "result": "won"
+  },
   {
    "when": "Nov 28, 10:15 AM ET",
    "emoji": "🐕",
@@ -105,11 +121,27 @@
    "result": "won"
   },
   {
-   "when": "Nov 28, 8:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 92¢",
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Charlton @ Blackburn · at 75¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Wolves @ Lincoln City · at 73¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Norwich City @ Preston · at 64¢",
    "result": "won"
   },
   {
@@ -137,27 +169,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 28, 12:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 27, 11:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 84¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 27, 10:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Vancouver @ Salt Lake · at 62¢",
    "result": "won"
   },
   {
@@ -177,31 +193,29 @@
    "result": "won"
   },
   {
-   "when": "Nov 27, 8:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 5.5 goals — NO",
-   "detail": "Miami @ Columbus · at 85¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 27, 7:30 PM ET",
    "emoji": "🎓",
    "kind": "College football",
    "title": "Wisconsin −16.5 — NO",
    "detail": "Minnesota @ Wisconsin · at 70¢",
    "result": "lost"
-  },
-  {
-   "when": "Nov 27, 7:30 PM ET",
-   "emoji": "🎓",
-   "kind": "College football",
-   "title": "Wisconsin −14.5 — NO",
-   "detail": "Minnesota @ Wisconsin · at 67¢",
-   "result": "lost"
   }
  ],
  "wins": [
+  {
+   "when": "Nov 28, 11:00 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 93¢"
+  },
+  {
+   "when": "Nov 28, 11:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 84¢"
+  },
   {
    "when": "Nov 28, 10:15 AM ET",
    "emoji": "🐕",
@@ -231,11 +245,25 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 28, 8:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 92¢"
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Charlton @ Blackburn · at 75¢"
+  },
+  {
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Wolves @ Lincoln City · at 73¢"
+  },
+  {
+   "when": "Nov 28, 7:30 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Norwich City @ Preston · at 64¢"
   },
   {
    "when": "Nov 28, 6:45 AM ET",
@@ -266,20 +294,6 @@
    "detail": "called at 84¢"
   },
   {
-   "when": "Nov 27, 10:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Vancouver @ Salt Lake · at 62¢"
-  },
-  {
-   "when": "Nov 27, 9:45 PM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
    "when": "Nov 27, 9:30 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
@@ -294,25 +308,11 @@
    "detail": "West Virginia @ Utah · at 76¢"
   },
   {
-   "when": "Nov 27, 8:00 PM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 5.5 goals — NO",
-   "detail": "Miami @ Columbus · at 85¢"
-  },
-  {
    "when": "Nov 27, 3:00 PM ET",
    "emoji": "🏈",
    "kind": "NFL",
    "title": "DK Metcalf 4+ catches — NO",
    "detail": "Broncos @ Steelers · at 71¢"
-  },
-  {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Broncos −7.5 — NO",
-   "detail": "Broncos @ Steelers · at 61¢"
   }
  ]
 }
