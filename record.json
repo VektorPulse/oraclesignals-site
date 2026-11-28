@@ -1,5 +1,5 @@
 {
- "updated": "Nov 28, 1:00 AM ET",
+ "updated": "Nov 28, 2:15 AM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 734,
+   "won": 737,
    "lost": 94
   },
   {
@@ -45,7 +45,7 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 157,
+   "won": 158,
    "lost": 52,
    "push": 0
   },
@@ -73,19 +73,27 @@
  ],
  "calls": [
   {
-   "when": "Nov 28, 1:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 12:45 AM ET",
+   "when": "Nov 28, 2:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 84¢",
+   "detail": "called at 89¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 2:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 1:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢",
    "result": "won"
   },
   {
@@ -97,19 +105,19 @@
    "result": "won"
   },
   {
-   "when": "Nov 28, 12:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 84¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 27, 11:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 84¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 27, 10:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Vancouver @ Salt Lake · at 62¢",
    "result": "won"
   },
   {
@@ -191,30 +199,29 @@
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 86¢",
    "result": "won"
-  },
-  {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "DK Metcalf 4+ catches — NO",
-   "detail": "Broncos @ Steelers · at 71¢",
-   "result": "won"
   }
  ],
  "wins": [
   {
-   "when": "Nov 28, 1:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 28, 12:45 AM ET",
+   "when": "Nov 28, 2:15 AM ET",
    "emoji": "🐕",
    "kind": "DOGE call",
    "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 84¢"
+   "detail": "called at 89¢"
+  },
+  {
+   "when": "Nov 28, 2:00 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 90¢"
+  },
+  {
+   "when": "Nov 28, 1:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 94¢"
   },
   {
    "when": "Nov 28, 12:15 AM ET",
@@ -224,18 +231,18 @@
    "detail": "called at 90¢"
   },
   {
-   "when": "Nov 28, 12:00 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 84¢"
-  },
-  {
    "when": "Nov 27, 11:15 PM ET",
    "emoji": "🔥",
    "kind": "Natural gas call",
    "title": "Natural gas UP in 15 minutes",
    "detail": "called at 84¢"
+  },
+  {
+   "when": "Nov 27, 10:00 PM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 3.5 goals — NO",
+   "detail": "Vancouver @ Salt Lake · at 62¢"
   },
   {
    "when": "Nov 27, 9:45 PM ET",
@@ -306,13 +313,6 @@
    "kind": "NFL",
    "title": "Broncos −7.5 — NO",
    "detail": "Broncos @ Steelers · at 61¢"
-  },
-  {
-   "when": "Nov 27, 3:00 PM ET",
-   "emoji": "🏈",
-   "kind": "NFL",
-   "title": "Broncos −6.5 — NO",
-   "detail": "Broncos @ Steelers · at 55¢"
   }
  ]
 }
