@@ -1,9 +1,9 @@
 {
- "updated": "Nov 28, 11:00 AM ET",
+ "updated": "Nov 28, 12:15 PM ET",
  "btc": {
   "label": "BTC 15-minute calls",
   "emoji": "📡",
-  "won": 626,
+  "won": 628,
   "lost": 62,
   "since": "Oct 8, 2026"
  },
@@ -17,7 +17,7 @@
   {
    "label": "DOGE 15-minute calls",
    "emoji": "🐕",
-   "won": 748,
+   "won": 750,
    "lost": 94
   },
   {
@@ -46,7 +46,7 @@
    "label": "Soccer",
    "emoji": "⚽",
    "won": 162,
-   "lost": 52,
+   "lost": 55,
    "push": 0
   },
   {
@@ -73,6 +73,38 @@
  ],
  "calls": [
   {
+   "when": "Nov 28, 12:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 12:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 95¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 11:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢",
+   "result": "won"
+  },
+  {
+   "when": "Nov 28, 11:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 28, 11:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -89,27 +121,11 @@
    "result": "won"
   },
   {
-   "when": "Nov 28, 10:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢",
-   "result": "won"
-  },
-  {
    "when": "Nov 28, 10:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 85¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 9:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢",
    "result": "won"
   },
   {
@@ -121,12 +137,12 @@
    "result": "won"
   },
   {
-   "when": "Nov 28, 7:30 AM ET",
+   "when": "Nov 28, 8:00 AM ET",
    "emoji": "⚽",
    "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Charlton @ Blackburn · at 75¢",
-   "result": "won"
+   "title": "Over 1.5 goals — YES",
+   "detail": "Rayo @ Betis · at 83¢",
+   "result": "lost"
   },
   {
    "when": "Nov 28, 7:30 AM ET",
@@ -150,22 +166,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 6:00 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 84¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 28, 5:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢",
    "result": "won"
   },
   {
@@ -203,6 +203,34 @@
  ],
  "wins": [
   {
+   "when": "Nov 28, 12:15 PM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE UP in 15 minutes",
+   "detail": "called at 86¢"
+  },
+  {
+   "when": "Nov 28, 12:00 PM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC UP in 15 minutes",
+   "detail": "called at 95¢"
+  },
+  {
+   "when": "Nov 28, 11:30 AM ET",
+   "emoji": "₿",
+   "kind": "BTC call",
+   "title": "BTC DOWN in 15 minutes",
+   "detail": "called at 88¢"
+  },
+  {
+   "when": "Nov 28, 11:30 AM ET",
+   "emoji": "🐕",
+   "kind": "DOGE call",
+   "title": "DOGE DOWN in 15 minutes",
+   "detail": "called at 94¢"
+  },
+  {
    "when": "Nov 28, 11:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -217,13 +245,6 @@
    "detail": "called at 84¢"
   },
   {
-   "when": "Nov 28, 10:15 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE DOWN in 15 minutes",
-   "detail": "called at 88¢"
-  },
-  {
    "when": "Nov 28, 10:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -231,25 +252,11 @@
    "detail": "called at 85¢"
   },
   {
-   "when": "Nov 28, 9:30 AM ET",
-   "emoji": "🐕",
-   "kind": "DOGE call",
-   "title": "DOGE UP in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
    "when": "Nov 28, 8:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 28, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Charlton @ Blackburn · at 75¢"
   },
   {
    "when": "Nov 28, 7:30 AM ET",
@@ -271,20 +278,6 @@
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 87¢"
-  },
-  {
-   "when": "Nov 28, 5:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 86¢"
-  },
-  {
-   "when": "Nov 28, 12:15 AM ET",
-   "emoji": "₿",
-   "kind": "BTC call",
-   "title": "BTC DOWN in 15 minutes",
-   "detail": "called at 90¢"
   },
   {
    "when": "Nov 27, 11:15 PM ET",
@@ -313,6 +306,13 @@
    "kind": "NFL",
    "title": "DK Metcalf 4+ catches — NO",
    "detail": "Broncos @ Steelers · at 71¢"
+  },
+  {
+   "when": "Nov 27, 3:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Broncos −7.5 — NO",
+   "detail": "Broncos @ Steelers · at 61¢"
   }
  ]
 }
