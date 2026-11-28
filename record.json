@@ -45,8 +45,8 @@
   {
    "label": "Soccer",
    "emoji": "⚽",
-   "won": 162,
-   "lost": 55,
+   "won": 167,
+   "lost": 60,
    "push": 0
   },
   {
@@ -129,6 +129,14 @@
    "result": "won"
   },
   {
+   "when": "Nov 28, 10:15 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 4.5 goals — NO",
+   "detail": "Athletic @ Málaga · at 86¢",
+   "result": "lost"
+  },
+  {
    "when": "Nov 28, 10:00 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
@@ -137,35 +145,27 @@
    "result": "won"
   },
   {
+   "when": "Nov 28, 10:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 1.5 goals — YES",
+   "detail": "Stoke @ West Ham · at 77¢",
+   "result": "lost"
+  },
+  {
+   "when": "Nov 28, 10:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 2.5 goals — NO",
+   "detail": "Portsmouth @ Wrexham · at 61¢",
+   "result": "won"
+  },
+  {
    "when": "Nov 28, 8:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 85¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 8:00 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 1.5 goals — YES",
-   "detail": "Rayo @ Betis · at 83¢",
-   "result": "lost"
-  },
-  {
-   "when": "Nov 28, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Wolves @ Lincoln City · at 73¢",
-   "result": "won"
-  },
-  {
-   "when": "Nov 28, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Norwich City @ Preston · at 64¢",
    "result": "won"
   },
   {
@@ -259,25 +259,18 @@
    "detail": "called at 85¢"
   },
   {
+   "when": "Nov 28, 10:00 AM ET",
+   "emoji": "⚽",
+   "kind": "Soccer",
+   "title": "Over 2.5 goals — NO",
+   "detail": "Portsmouth @ Wrexham · at 61¢"
+  },
+  {
    "when": "Nov 28, 8:30 AM ET",
    "emoji": "₿",
    "kind": "BTC call",
    "title": "BTC DOWN in 15 minutes",
    "detail": "called at 85¢"
-  },
-  {
-   "when": "Nov 28, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Wolves @ Lincoln City · at 73¢"
-  },
-  {
-   "when": "Nov 28, 7:30 AM ET",
-   "emoji": "⚽",
-   "kind": "Soccer",
-   "title": "Over 3.5 goals — NO",
-   "detail": "Norwich City @ Preston · at 64¢"
   },
   {
    "when": "Nov 27, 11:15 PM ET",
@@ -313,6 +306,13 @@
    "kind": "NFL",
    "title": "Broncos −7.5 — NO",
    "detail": "Broncos @ Steelers · at 61¢"
+  },
+  {
+   "when": "Nov 27, 3:00 PM ET",
+   "emoji": "🏈",
+   "kind": "NFL",
+   "title": "Broncos −6.5 — NO",
+   "detail": "Broncos @ Steelers · at 55¢"
   }
  ]
 }
